@@ -1,0 +1,7 @@
+*.pt
+*.pth
+tmp/*
+*.log
+*.log.*
+__pycache__/*
+*.pyc
