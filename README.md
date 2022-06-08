@@ -34,7 +34,7 @@ Reviewers at the NeurIPS 2022 Datasets and Benchmarks Track: Feel free to downlo
 
 | baseline                             | acc on Twibot-22 | f1 on Twibot-22 | type  | tags                     |
 | -------------------------------------- | ------------------ | ----------------- | ------- | -------------------------- |
-| [NameBot](src/NameBot/)              | 0.7061           | 0.0050          | T     | `Logistic Regression`    |
+| [NameBot](src/NameBot/)              | 0.7061           | 0.0050          | F     | `Logistic Regression`    |
 | [Bot Hunter](src/BotHunter/)         | 0.7279           | 0.2346          | F     | `random forest`          |
 | [Botomater](src/Botometer/)          | 49.87            | 42.75           | F T G |                          |
 | [BotRGCN](src/BotRGCN/)              | 0.7691           | 0.4579          | F T G | `BotRGCN`                |
