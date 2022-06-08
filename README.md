@@ -9,7 +9,7 @@ TwiBot-22 is the largest and most comprehensive Twitter bot detection benchmark 
 
 ### Dataset Format
 
-Each dataset contains `node.json`, `label.csv`, `split.csv` and `edge.csv` (for datasets with graph structure). See [here](descriptions/metadata.md) for a detailed description of these files.
+Each dataset contains `node.json` (or `tweet.json` for TwiBot-22), `label.csv`, `split.csv` and `edge.csv` (for datasets with graph structure). See [here](descriptions/metadata.md) for a detailed description of these files.
 
 ### How to download TwiBot-22 dataset
 
