@@ -91,4 +91,4 @@ Welcome PR!
 
 ### Questions?
 
-Feel free to open issues in this repository! Instead of emails, Github issues are much better at facilitating a conversation between you and our team to address your needs.
+Feel free to open issues in this repository! Instead of emails, Github issues are much better at facilitating a conversation between you and our team to address your needs. You can also contact the project lead Shangbin Feng through ``shangbin@cs.washington.edu``.
