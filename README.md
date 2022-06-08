@@ -35,38 +35,38 @@ Reviewers at the NeurIPS 2022 Datasets and Benchmarks Track: Feel free to downlo
 | baseline                             | acc on Twibot-22 | f1 on Twibot-22 | type  | tags                     |
 | -------------------------------------- | ------------------ | ----------------- | ------- | -------------------------- |
 | [NameBot](src/NameBot/)              | 0.7061           | 0.0050          | None  | `Logistic Regression`    |
-| [Bot Hunter](src/BotHunter/)         | 0.7279           | 0.2346          | P     | `random forest`          |
-| [Botomater](src/Botometer/)          | 49.87            | 42.75           | P T G |                          |
-| [BotRGCN](src/BotRGCN/)              | 0.7691           | 0.4579          | P T G | `BotRGCN`                |
+| [Bot Hunter](src/BotHunter/)         | 0.7279           | 0.2346          | F     | `random forest`          |
+| [Botomater](src/Botometer/)          | 49.87            | 42.75           | F T G |                          |
+| [BotRGCN](src/BotRGCN/)              | 0.7691           | 0.4579          | F T G | `BotRGCN`                |
 | [Cresci et al.](src/Cresci/)         | -                | -               | T     | `DNA`                    |
-| [efthimion](src/efthimion/)          | 0.7481           | 0.2758          | P T   | `efthimion`              |
-| [Kipf et al.](src)                   | 0.7489           | 0.2513          | P T G | `Graph Neural Network`   |
-| [Velickovic et al.](src/V)           | 0.7585           | 0.4394          | P T G | `Graph Neural Network`   |
-| [Alhosseini et al.](src/Alhosseini/) | 0.6103           | 0.5473          | P G   | `gcn`                    |
-| [GraphHist](src/GraphHist/)          | -                | -               | P T G | `random forest`          |
-| [BGSRD](src/BGSRD/)                  | 0.7055           | 0.7200          | P     | `BERT GAT`               |
-| [Hayawi et al.](src/Hayawi/)         | 0.7187           | 0.1325          | P     | `lstm`                   |
-| [HGT](src/HGT_SimpleHGN/)            | 0.7491           | 0.3960          | P T G | `Graph Neural Networks`  |
-| [SimpleHGN](src/HGT_SimpleHGN/)      | 0.7672           | 0.4544          | P T G | `Graph Neural Networks`  |
-| [Kantepe et al.](src/Kantepe/)       | 0.764            | 0.587           | P T   | `random forest`          |
-| [Knauth et al](src/Knauth/)          | -                | -               | P T G | `random forest`          |
-| [Kouvela et al.](src/Kouvela/)       | 76.44            | 30.03           | P T   | `random forest`          |
-| [Kudugunta et al.](src/Kudugunta/)   | 0.6587           | 0.5167          | P     | `SMOTENN, random forest` |
-| [Lee et al.](src/Lee/)               | 76.28            | 30.41           | P T   | `random forest`          |
-| [LOBO](src/LOBO/)                    | 0.7570           | 0.3857          | P T   | `random forest`          |
-| [Miller et al.](src/Miller/)         | -                | -               | P T   | `k means`                |
-| [Moghaddam et al.](src/Moghaddam/)   | 0.7378           | 0.3207          | P G   | `random forest`          |
-| [Abreu et al.](src/Abreu/)           | 0.7066           | 0.5344          | P     | `random forest`          |
-| [RGT](src/RGT/)                      | 0.7647           | 0.4294          | P T G | `Graph Neural Networks`  |
-| [RoBERTa](src/RoBERTa/)              | 0.7196           | 0.1915          | P T   | `RoBERTa`                |
-| [Rodrguez-Ruiz](src/Rodrguez-Ruiz/)  | 0.7071           | 0.0008          | P T G | `SVM`                    |
-| [Santos et al.](src/Santos/)         | -                | -               | P T   | `decision tree`          |
-| [SATAR](src/SATAR/)                  | -                | -               | P T G |                          |
+| [efthimion](src/efthimion/)          | 0.7481           | 0.2758          | F T   | `efthimion`              |
+| [Kipf et al.](src)                   | 0.7489           | 0.2513          | F T G | `Graph Neural Network`   |
+| [Velickovic et al.](src/V)           | 0.7585           | 0.4394          | F T G | `Graph Neural Network`   |
+| [Alhosseini et al.](src/Alhosseini/) | 0.6103           | 0.5473          | F G   | `gcn`                    |
+| [GraphHist](src/GraphHist/)          | -                | -               | F T G | `random forest`          |
+| [BGSRD](src/BGSRD/)                  | 0.7055           | 0.7200          | F     | `BERT GAT`               |
+| [Hayawi et al.](src/Hayawi/)         | 0.7187           | 0.1325          | F     | `lstm`                   |
+| [HGT](src/HGT_SimpleHGN/)            | 0.7491           | 0.3960          | F T G | `Graph Neural Networks`  |
+| [SimpleHGN](src/HGT_SimpleHGN/)      | 0.7672           | 0.4544          | F T G | `Graph Neural Networks`  |
+| [Kantepe et al.](src/Kantepe/)       | 0.764            | 0.587           | F T   | `random forest`          |
+| [Knauth et al](src/Knauth/)          | -                | -               | F T G | `random forest`          |
+| [Kouvela et al.](src/Kouvela/)       | 76.44            | 30.03           | F T   | `random forest`          |
+| [Kudugunta et al.](src/Kudugunta/)   | 0.6587           | 0.5167          | F     | `SMOTENN, random forest` |
+| [Lee et al.](src/Lee/)               | 76.28            | 30.41           | F T   | `random forest`          |
+| [LOBO](src/LOBO/)                    | 0.7570           | 0.3857          | F T   | `random forest`          |
+| [Miller et al.](src/Miller/)         | -                | -               | F T   | `k means`                |
+| [Moghaddam et al.](src/Moghaddam/)   | 0.7378           | 0.3207          | F G   | `random forest`          |
+| [Abreu et al.](src/Abreu/)           | 0.7066           | 0.5344          | F     | `random forest`          |
+| [RGT](src/RGT/)                      | 0.7647           | 0.4294          | F T G | `Graph Neural Networks`  |
+| [RoBERTa](src/RoBERTa/)              | 0.7196           | 0.1915          | F T   | `RoBERTa`                |
+| [Rodrguez-Ruiz](src/Rodrguez-Ruiz/)  | 0.7071           | 0.0008          | F T G | `SVM`                    |
+| [Santos et al.](src/Santos/)         | -                | -               | F T   | `decision tree`          |
+| [SATAR](src/SATAR/)                  | -                | -               | F T G |                          |
 | [T5](src/Varol/)                     | 0.7170           | 0.1565          | T     | `T5`                     |
-| [Varol et al.](src/Varol)            | 0.7392           | 0.2754          | P T   | `random forest`          |
+| [Varol et al.](src/Varol)            | 0.7392           | 0.2754          | F T   | `random forest`          |
 | [Wei et al.](src/Wei/)               | 0.702            | 0.536           | T     |                          |
-| [SGBot](src/SGBot/)                  | 0.7392           | 0.2754          | P T   | `random forest`          |
-| [EvolveBot](src/EvolveBot/)          | 0.7109           | 0.1408          | P T G | `random forest`          |
+| [SGBot](src/SGBot/)                  | 0.7392           | 0.2754          | F T   | `random forest`          |
+| [EvolveBot](src/EvolveBot/)          | 0.7109           | 0.1408          | F T G | `random forest`          |
 
 where `-` represents the baseline could not scale to TwiBot-22 dataset
 
