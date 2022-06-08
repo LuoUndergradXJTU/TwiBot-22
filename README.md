@@ -13,6 +13,8 @@ Each dataset contains `node.json`, `label.csv`, `split.csv` and `edge.csv` (for 
 
 ### How to download TwiBot-22 dataset
 
+Reviewers at the NeurIPS 2022 Datasets and Benchmarks Track: Feel free to download TwiBot-22 at [Google Drive](https://drive.google.com/drive/folders/1YwiOUwtl8pCd2GD97Q_WEzwEUtSPoxFs?usp=sharing).
+
 `gdown --id`
 
 ### Requirements
