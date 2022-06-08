@@ -1,8 +1,10 @@
 ## Files 
 Each dataset contains `node.json`, `label.csv`, `split.csv` and `edge.csv` (for datasets with graph structure).
 
-### `node.json`
+### `node.json` or `tweet.json`
 This file contains twitter user information (for non-graph datasets) or entities (including users, tweets, lists and etc. See [here](statistics.md) for details).
+
+The node information of TwiBot-22 is too big for a single file, so we use `tweet_0.json` to `tweet_8.json` to store them.
 
 ### `split.csv`
 This file contains data split information, where the first column (id) is the user id and the second column (split) is the corresponding split (train, valid or test).
