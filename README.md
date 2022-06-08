@@ -70,7 +70,7 @@ For other datasets, you can directly download them from [Google Drive](https://d
 | [Moghaddam et al.](src/Moghaddam/)   | [link](https://ieeexplore.ieee.org/abstract/document/9735340) | 0.7378           | 0.3207          | F G   | `random forest`          |
 | [Abreu et al.](src/Abreu/)           | [link](https://ieeexplore.ieee.org/abstract/document/9280525) | 0.7066           | 0.5344          | F     | `random forest`          |
 | [RGT](src/RGT/)                      | [link](https://arxiv.org/abs/2109.02927) | 0.7647           | 0.4294          | F T G | `Graph Neural Networks`  |
-| [RoBERTa](src/RoBERTa/)              | [link]([https://arxiv.org/pdf/1907.11692.pdf%5C](https://arxiv.org/pdf/1907.11692.pdf\)) | 0.7196           | 0.1915          | F T   | `RoBERTa`                |
+| [RoBERTa](src/RoBERTa/)              | [link](https://arxiv.org/pdf/1907.11692.pdf) | 0.7196           | 0.1915          | F T   | `RoBERTa`                |
 | [Rodrguez-Ruiz](src/Rodrguez-Ruiz/)  | [link](https://www.sciencedirect.com/science/article/pii/S0167404820300031) | 0.7071           | 0.0008          | F T G | `SVM`                    |
 | [Santos et al.](src/Santos/)         | [link](https://dl.acm.org/doi/pdf/10.1145/3308560.3317599) | -                | -               | F T   | `decision tree`          |
 | [SATAR](src/SATAR/)                  | [link](https://arxiv.org/abs/2106.13089) | -                | -               | F T G |                          |
