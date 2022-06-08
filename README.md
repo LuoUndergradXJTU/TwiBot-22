@@ -25,7 +25,7 @@ For other datasets, please visit the [Bot Repository](https://botometer.osome.iu
 
 After downloading these datasets, you can transform them into the 4-file format detailed in "Dataset Format". Alternatively, you can directly download our preprocessed version:
 
-For TwiBot-20, visit the [TwiBot-20 github repository](https://github.com/BunsenFeng/TwiBot-20), apply for TwiBot-20 access, and there will be a `TwiBot-20-Format22.zip`.
+For TwiBot-20, visit the [TwiBot-20 github repository](https://github.com/BunsenFeng/TwiBot-20), apply for TwiBot-20 access, and there will be a `TwiBot-20-Format22.zip` in the TwiBot-20 Google Drive link.
 
 For other datasets, you can directly download them from [Google Drive](https://drive.google.com/drive/folders/1gXFZp3m7TTU-wyZRUiLHdf_sIZpISrze?usp=sharing). You should respect the "Content redistribution" section of the [Twitter Developer Agreement and Policy](https://developer.twitter.com/en/developer-terms/agreement-and-policy), the rules set by the [Bot Repository](https://botometer.osome.iu.edu/bot-repository/datasets.html), and only use these datasets for research purposes.
 
