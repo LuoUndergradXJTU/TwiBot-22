@@ -15,7 +15,7 @@ Each dataset contains `node.json` (or `tweet.json` for TwiBot-22), `label.csv`, 
 
 Reviewers at the NeurIPS 2022 Datasets and Benchmarks Track: Feel free to download TwiBot-22 at [Google Drive](https://drive.google.com/drive/folders/1YwiOUwtl8pCd2GD97Q_WEzwEUtSPoxFs?usp=sharing).
 
-`gdown --id`
+`gdown --id 1YwiOUwtl8pCd2GD97Q_WEzwEUtSPoxFs`
 
 ### Requirements
 
@@ -34,9 +34,9 @@ Reviewers at the NeurIPS 2022 Datasets and Benchmarks Track: Feel free to downlo
 
 | baseline                             | acc on Twibot-22 | f1 on Twibot-22 | type  | tags                     |
 | -------------------------------------- | ------------------ | ----------------- | ------- | -------------------------- |
-| [NameBot](src/NameBot/)              | 0.7061           | 0.0050          | T     | `Logistic Regression`    |
+| [NameBot](src/NameBot/)              | 0.7061           | 0.0050          | F     | `Logistic Regression`    |
 | [Bot Hunter](src/BotHunter/)         | 0.7279           | 0.2346          | F     | `random forest`          |
-| [Botomater](src/Botometer/)          | 49.87            | 42.75           | F T G |                          |
+| [Botomater](src/Botometer/)          | 0.4987           | 0.4257          | F T G |                          |
 | [BotRGCN](src/BotRGCN/)              | 0.7691           | 0.4579          | F T G | `BotRGCN`                |
 | [Cresci et al.](src/Cresci/)         | -                | -               | T     | `DNA`                    |
 | [efthimion](src/efthimion/)          | 0.7481           | 0.2758          | F T   | `efthimion`              |
@@ -50,9 +50,9 @@ Reviewers at the NeurIPS 2022 Datasets and Benchmarks Track: Feel free to downlo
 | [SimpleHGN](src/HGT_SimpleHGN/)      | 0.7672           | 0.4544          | F T G | `Graph Neural Networks`  |
 | [Kantepe et al.](src/Kantepe/)       | 0.764            | 0.587           | F T   | `random forest`          |
 | [Knauth et al](src/Knauth/)          | -                | -               | F T G | `random forest`          |
-| [Kouvela et al.](src/Kouvela/)       | 76.44            | 30.03           | F T   | `random forest`          |
+| [Kouvela et al.](src/Kouvela/)       | 0.7644           | 0.3003          | F T   | `random forest`          |
 | [Kudugunta et al.](src/Kudugunta/)   | 0.6587           | 0.5167          | F     | `SMOTENN, random forest` |
-| [Lee et al.](src/Lee/)               | 76.28            | 30.41           | F T   | `random forest`          |
+| [Lee et al.](src/Lee/)               | 0.7628           | 0.3041          | F T   | `random forest`          |
 | [LOBO](src/LOBO/)                    | 0.7570           | 0.3857          | F T   | `random forest`          |
 | [Miller et al.](src/Miller/)         | -                | -               | F T   | `k means`                |
 | [Moghaddam et al.](src/Moghaddam/)   | 0.7378           | 0.3207          | F G   | `random forest`          |
@@ -64,7 +64,7 @@ Reviewers at the NeurIPS 2022 Datasets and Benchmarks Track: Feel free to downlo
 | [SATAR](src/SATAR/)                  | -                | -               | F T G |                          |
 | [T5](src/Varol/)                     | 0.7170           | 0.1565          | T     | `T5`                     |
 | [Varol et al.](src/Varol)            | 0.7392           | 0.2754          | F T   | `random forest`          |
-| [Wei et al.](src/Wei/)               | 0.702            | 0.536           | T     |                          |
+| [Wei et al.](src/Wei/)               | 0.7020           | 0.5360          | T     |                          |
 | [SGBot](src/SGBot/)                  | 0.7392           | 0.2754          | F T   | `random forest`          |
 | [EvolveBot](src/EvolveBot/)          | 0.7109           | 0.1408          | F T G | `random forest`          |
 
