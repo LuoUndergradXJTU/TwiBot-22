@@ -17,6 +17,18 @@ Reviewers at the NeurIPS 2022 Datasets and Benchmarks Track: Feel free to downlo
 
 `gdown --id 1YwiOUwtl8pCd2GD97Q_WEzwEUtSPoxFs`
 
+### How to download other datasets
+
+For TwiBot-20, visit the [TwiBot-20 github repository](https://github.com/BunsenFeng/TwiBot-20).
+
+For other datasets, please visit the [Bot Repository](https://botometer.osome.iu.edu/bot-repository/datasets.html).
+
+After downloading these datasets, you can transform them into the 4-file format detailed in "Dataset Format". Alternatively, you can directly download our preprocessed version:
+
+For TwiBot-20, visit the [TwiBot-20 github repository](https://github.com/BunsenFeng/TwiBot-20), apply for TwiBot-20 access, and there will be a `TwiBot-20-Format22.zip`.
+
+For other datasets, you can directly download them from [Google Drive](https://drive.google.com/drive/folders/1gXFZp3m7TTU-wyZRUiLHdf_sIZpISrze?usp=sharing).
+
 ### Requirements
 
 - pip: `pip install -r requirements.txt`
