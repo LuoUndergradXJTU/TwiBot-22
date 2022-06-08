@@ -39,7 +39,7 @@ Each dataset contains `node.json`, `label.csv`, `split.csv` and `edge.csv` (for 
 | [Hayawi et al.](src/Hayawi/) |0.7187|0.1325|P|`lstm`|
 | [HGT](src/HGT_SimpleHGN/)|0.7491|0.3960|P T G|`Graph Neural Networks`|
 | [SimpleHGN](src/HGT_SimpleHGN/)|0.7672|0.4544|P T G|`Graph Neural Networks`|
-| [Kantepe et al.](src/Kantepe/))|0.764|0.587|P T|`random forest`|
+| [Kantepe et al.](src/Kantepe/)|0.764|0.587|P T|`random forest`|
 | [Knauth et al](src/Knauth/) | /                | /               | P T G | `random forest` |
 | [Kouvela et al.](src/Kouvela/)|76.44|30.03|P T|`random forest`|
 | [Kudugunta et al.](src/Kudugunta/)|0.6587|0.5167|P|`SMOTENN, random forest`|
