@@ -88,3 +88,7 @@ where `-` represents the baseline could not scale to TwiBot-22 dataset
 2. New baseline: load well-formatted dataset from the dataset directory and define your model.
 
 Welcome PR!
+
+### Questions?
+
+Feel free to open issues in this repository! Instead of emails, Github issues are much better at facilitating a conversation between you and our team to address your needs.
