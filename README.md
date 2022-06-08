@@ -25,7 +25,7 @@ Reviewers at the NeurIPS 2022 Datasets and Benchmarks Track: Feel free to downlo
 ### How to run baselines
 
 1. clone this repo by running `git clone `
-2. download datasets to `./datasets`
+2. make dataset directory `mkdir datasets` and download datasets to `./datasets`
 3. change directory to `src/{name_of_the_baseline}`
 4. run experiments under the guidance of corresponding `readme.md`
 
