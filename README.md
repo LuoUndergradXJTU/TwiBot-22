@@ -79,6 +79,8 @@ For other datasets, you can directly download them from [Google Drive](https://d
 | [Wei et al.](src/Wei/)               | [link](https://arxiv.org/pdf/2002.01336.pdf) | 0.7020           | 0.5360          | T     |                          |
 | [SGBot](src/SGBot/)                  | [link](https://arxiv.org/abs/1911.09179) | 0.7392           | 0.2754          | F T   | `random forest`          |
 | [EvolveBot](src/EvolveBot/)          | [link](https://ieeexplore.ieee.org/abstract/document/6553246) | 0.7109           | 0.1408          | F T G | `random forest`          |
+| [FriendBot](src/FriendBot)| [link](https://link.springer.com/chapter/10.1007/978-3-030-41251-7_3)  |-|-|F T G|`random forest`|
+| [Dehghan et al.](src/FriendBot)| [link](https://assets.researchsquare.com/files/rs-1428343/v1_covered.pdf?c=1647280648)  |-|-|F T G|`Graph`|
 
 where `-` represents the baseline could not scale to TwiBot-22 dataset
 
