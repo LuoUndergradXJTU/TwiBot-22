@@ -82,6 +82,18 @@ For other datasets, you can directly download them from [Google Drive](https://d
 
 where `-` represents the baseline could not scale to TwiBot-22 dataset
 
+### Citation
+Please cite [TwiBot-22]() if you use the TwiBot-22 dataset or this repository
+```
+@inproceedings{feng2021twibot,
+  title={Twibot-20: A comprehensive twitter bot detection benchmark},
+  author={Feng, Shangbin and Wan, Herun and Wang, Ningnan and Li, Jundong and Luo, Minnan},
+  booktitle={Proceedings of the 30th ACM International Conference on Information \& Knowledge Management},
+  pages={4485--4494},
+  year={2021}
+}
+```
+
 ### How to contribute
 
 1. New dataset: convert the original data to the [TwiBot-22 defined schema](descriptions/metadata.md).
