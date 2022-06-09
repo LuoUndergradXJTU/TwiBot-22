@@ -1,6 +1,6 @@
 # TwiBot-22
 
-This repo contains the official implementation of [TwiBot-22]() baselines.
+This is the offical repository of [TwiBot-22](https://twibot22.github.io/).
 
 ### Introduction
 
