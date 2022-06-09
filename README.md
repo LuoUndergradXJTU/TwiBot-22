@@ -1,4 +1,4 @@
-# Twibot-22 Baselines
+# TwiBot-22
 
 This repo contains the official implementation of [TwiBot-22]() baselines.
 
