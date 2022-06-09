@@ -36,7 +36,7 @@ For other datasets, you can directly download them from [Google Drive](https://d
 
 ### How to run baselines
 
-1. clone this repo by running `git clone `
+1. clone this repo by running `git clone https://github.com/LuoUndergradXJTU/TwiBot-22.git`
 2. make dataset directory `mkdir datasets` and download datasets to `./datasets`
 3. change directory to `src/{name_of_the_baseline}`
 4. run experiments under the guidance of corresponding `readme.md`
