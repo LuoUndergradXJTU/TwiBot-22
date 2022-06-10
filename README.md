@@ -87,12 +87,11 @@ where `-` represents the baseline could not scale to TwiBot-22 dataset
 ### Citation
 Please cite [TwiBot-22](https://arxiv.org/abs/2206.04564) if you use the TwiBot-22 dataset or this repository
 ```
-@inproceedings{feng2021twibot,
-  title={Twibot-20: A comprehensive twitter bot detection benchmark},
-  author={Feng, Shangbin and Wan, Herun and Wang, Ningnan and Li, Jundong and Luo, Minnan},
-  booktitle={Proceedings of the 30th ACM International Conference on Information \& Knowledge Management},
-  pages={4485--4494},
-  year={2021}
+@article{feng2022twibot,
+  title={TwiBot-22: Towards Graph-Based Twitter Bot Detection},
+  author={Feng, Shangbin and Tan, Zhaoxuan and Wan, Herun and Wang, Ningnan and Chen, Zilong and Zhang, Binchi and Zheng, Qinghua and Zhang, Wenqian and Lei, Zhenyu and Yang, Shujie and Feng, Xinshun and Zhang, Qingyue and Wang, Hongrui and Liu, Yuhan and Bai, Yuyang and Wang, Heng and Cai, Zijian and Wang, Yanbo and Zheng, Lijing and Ma, Zihan and Li, Jundong and Luo, Minnan},
+  journal={arXiv preprint arXiv:2206.04564},
+  year={2022}
 }
 ```
 
