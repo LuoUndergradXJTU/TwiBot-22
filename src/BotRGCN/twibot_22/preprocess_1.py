@@ -3,11 +3,14 @@ import numpy as np
 import torch
 from tqdm import tqdm
 from datetime import datetime as dt
+import json
 print('loading raw data')
 path='../datasets/Twibot-22/'
 
 user=pd.read_json(path+'user.json')
-
+edge=pd.read_csv(path+'edge.csv')
+user_idx=user['id']
+uid_index={uid:index for index,uid in enumerate(user_idx.values)}
 user_index_to_uid = list(user.id)
 uid_to_user_index = {x : i for i, x in enumerate(user_index_to_uid)}
 
@@ -38,6 +41,28 @@ torch.save(train_mask,"./processed_data/train_idx.pt")
 torch.save(valid_mask,"./processed_data/val_idx.pt")
 torch.save(test_mask,"./processed_data/test_idx.pt")
 torch.save(labels,'./processed_data/label.pt')
+
+print('extracting edge_index&edge_type')
+edge_index=[]
+edge_type=[]
+for i in tqdm(range(len(edge))):
+    sid=edge['source_id'][i]
+    tid=edge['target_id'][i]
+    if edge['relation'][i]=='followers':
+        try:
+            edge_index.append([uid_index[sid],uid_index[tid]])
+            edge_type.append(0)
+        except KeyError:
+            continue
+    elif edge['relation'][i]=='following':
+        try:
+            edge_index.append([uid_index[sid],uid_index[tid]])
+            edge_type.append(1)
+        except KeyError:
+            continue
+        
+torch.save(torch.LongTensor(edge_index).t(),"./processed_data/edge_index.pt")
+torch.save(torch.LongTensor(edge_type),"./processed_data/edge_type.pt")
 
 print('extracting num_properties')
 following_count=[]
@@ -166,3 +191,18 @@ cat_properties_tensor=torch.cat([protected_tensor.reshape([1000000,1]),verified_
 torch.save(num_properties_tensor,'./processed_data/num_properties_tensor.pt')
 
 torch.save(cat_properties_tensor,'./processed_data/cat_properties_tensor.pt')
+
+print("extracting each_user's tweets")
+id_tweet={i:[] for i in range(len(user_idx))}
+for i in range(10):
+    name='tweet_'+str(i)+'.json'
+    user_tweets=json.load(open("../../datasets/Twibot-22/"+name,'r'))
+    for each in user_tweets:
+        uid='u'+str(each['author_id'])
+        text=each['text']
+        try:
+            index=uid_index[uid]
+            id_tweet[index].append(text)
+        except KeyError:
+            continue
+json.dump(id_tweet,open('./processed_data/id_tweet.json','w'))
