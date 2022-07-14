@@ -5,6 +5,7 @@ import numpy as np
 from transformers import pipeline
 import os
 import pandas as pd
+import json
 
 user=pd.read_json('../datasets/Twibot-22/user.json')
 
@@ -42,14 +43,14 @@ def Des_embbeding():
 def tweets_embedding():
         print('Running feature2 embedding')
         path="./processed_data/tweets_tensor.pt"
-        if not os.path.exists(path):
+        if True:
             tweets_list=[]
             for i in tqdm(range(len(each_user_tweets))):
-                if len(each_user_tweets[i])==0:
+                if len(each_user_tweets[str(i)])==0:
                     total_each_person_tweets=torch.zeros(768)
                 else:
-                    for j in range(len(each_user_tweets[i])):
-                        each_tweet=tweet_text[each_user_tweets[i][j]]
+                    for j in range(len(each_user_tweets[str(i)])):
+                        each_tweet=each_user_tweets[str(i)][j]
                         if each_tweet is None:
                             total_word_tensor=torch.zeros(768)
                         else:
@@ -69,13 +70,13 @@ def tweets_embedding():
                     if (j==20):
                         total_each_person_tweets/=20
                     else:
-                        total_each_person_tweets/=len(each_user_tweets[i])
+                        total_each_person_tweets/=len(each_user_tweets[str(i)])
                         
                 tweets_list.append(total_each_person_tweets)
-                        
+                    
             tweet_tensor=torch.stack(tweets_list)
             torch.save(tweet_tensor,"./processed_data/tweets_tensor.pt")
-            
+                        
         else:
             tweets_tensor=torch.load(path)
         print('Finished')
