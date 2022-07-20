@@ -194,7 +194,7 @@ torch.save(cat_properties_tensor,'./processed_data/cat_properties_tensor.pt')
 
 print("extracting each_user's tweets")
 id_tweet={i:[] for i in range(len(user_idx))}
-for i in range(10):
+for i in range(9):
     name='tweet_'+str(i)+'.json'
     user_tweets=json.load(open("../../datasets/Twibot-22/"+name,'r'))
     for each in user_tweets:
