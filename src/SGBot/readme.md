@@ -23,15 +23,17 @@ The features are divided into user metadata and derived features. We ignore some
 
 #### How to reproduce:
 
-1. Specify the dataset you want to reproduce ;
+1. Specify the dataset you want to reproduce.
 
-2. Extract features and convert the raw dataset into standard format by running 
+2. Run utils.py to get the bi_gram_likelihood.json file.
+
+3. Extract features and convert the raw dataset into standard format by running 
 
    `python preprocess.py --dataset DATASETNAME`
 
    This command will create related features in corresponding directory.
 
-3. Using random forest model to train by running:
+4. Using random forest model to train by running:
 
    `python train.py --dataset DATASETNAME`
 
