@@ -10,7 +10,7 @@
 
 ```python
 ├── preprocess.py       # generate required features
-├── stream_cluster.py   # train model on given dataset
+└── stream_cluster.py   # train model on given dataset
 ```
 
 - **implement details**: “Re-tweet count” feature is discarded since required information is not included in datasets. “Link count”, “Reply/mention count”, and “Hashtag count” are available only in “cresci-2015”, “cresci-2017”, “Twibot-20”, and “Twibot-22” datasets. 
@@ -19,7 +19,7 @@
 
 #### How to reproduce:
 
-1. specify the dataset b y running `dataset=Twibot-22` (Twibot-22 for example) ;
+1. specify the dataset by running `dataset=Twibot-22` (Twibot-22 for example) ;
 
 2. generate required features from raw dataset by running: 
 
@@ -62,5 +62,5 @@ random seed: 100, 200, 300, 400, 500
 
 | baseline     | acc on Twibot-22 | f1 on Twibot-22 | type | tags|
 | ------------ | ---------------- | --------------- | ---- | --- |
-| Miller et al.|/|/|P T|`k means`|
+| Miller et al.|/|/|F T|`k means`|
 

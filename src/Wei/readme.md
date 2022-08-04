@@ -7,15 +7,15 @@
 
 - **file structure**: 
 
-```python
+```
 ├── Twibot-20
-├   ├── preprocess.py 
-├   ├── bilstm_attention.py 
-├   ├── data_processor.py   
-├── Twibot-22
-├   ├── preprocess.py 
-├   ├── bilstm_attention.py 
-├   ├── data_processor.py 
+│   ├── preprocess.py 
+│   ├── bilstm_attention.py 
+│   └── data_processor.py   
+└── Twibot-22
+    ├── preprocess.py 
+    ├── bilstm_attention.py 
+    └── data_processor.py 
 
 ```
 
@@ -31,7 +31,7 @@
 
    this command will create related features in corresponding directory.
 
-3. train bilstm model by running:
+2. train bilstm model by running:
 
    `python bilstm_attention.py`
 

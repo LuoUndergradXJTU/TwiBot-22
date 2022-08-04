@@ -7,8 +7,8 @@
 - **file structure**: 
 
 ```python
-├── all datasets
-│   └── twi.py  # train model on cresci-2015
+└── all datasets
+    └── twi.py  # train model on cresci-2015
 ```
 
 - **implement details**: We choose the algorithm which performs best in the origin paper. And due to many datasets don't have the "favourite count", we don't take the feature into count.
@@ -37,6 +37,8 @@ random seed: 100, 200, 300, 400, 500
 | Cresci-2015             | var  | 0.001  | 0.001    | 0.001  | 0.001  |
 | Twibot-20               | mean | 0.7345 | 0.7220   | 0.8281 | 0.7714 |
 | Twibot-20               | var  | 0.001  | 0.001    | 0.001  | 0.001  |
+| Twibot-22               | mean | 0.7066 | 0.5092   | 0.1173 | 0.5344 |
+| Twibot-22               | var  | 0.001  | 0.001    | 0.001  | 0.001  |
 | Cresci-2017             | mean | 0.9273 | 0.9834   | 0.9197 | 0.9504 |
 | Cresci-2017             | var  | 0.001  | 0.001    | 0.001  | 0.001  |
 | cresci-rtbust-2019      | mean | 0.8088 | 0.7857   | 0.8918 | 0.8354 |
@@ -58,5 +60,5 @@ random seed: 100, 200, 300, 400, 500
 
 | baseline     | acc on Twibot-22 | f1 on Twibot-22 | type | tags            |
 | ------------ | ---------------- | --------------- | ---- | --------------- |
-| Abreu et al. | 0.7066           | 0.5344          | P    | `random forest` |
+| Abreu et al. | 0.7066           | 0.5344          | F    | `random forest` |
 

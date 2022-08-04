@@ -9,7 +9,6 @@
 - **file structure**: 
 
 ```python
-|  
 └── train.py # train model on every dataset
 
 ```
@@ -61,5 +60,5 @@ random seed: 100, 200, 300, 400, 500
 
 | baseline | acc on Twibot-22 | f1 on Twibot-22 | type | tags|
 | -------- | ---------------- | --------------- | ---- | --- |
-| Kudugunta et al.|0.6587|0.5167|P|`SMOTENN, random forest`|
+| Kudugunta et al.|0.6587|0.5167|F|`SMOTENN, random forest`|
 

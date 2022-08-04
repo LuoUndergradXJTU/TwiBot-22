@@ -7,8 +7,8 @@
 - **file structure**: 
 
 ```python
-├── preprocess.py # extract features and convert raw dataset into standard format
-├── LRclassification.py #train model and classify Bot
+├── preprocess.py  # extract features and convert raw dataset into standard format
+└── LRclassification.py  # train model and classify Bot
 ```
 
 - **implement details**:
@@ -24,7 +24,7 @@
 
 1. In line 161 of the file LRclassification.py, change  the name of dataset to what you want to train.
 
-3. train Logistic Regression model by running:
+2. train Logistic Regression model by running:
 
    `python LRclassification.py`
 
@@ -67,5 +67,5 @@
 
 | baseline      | acc on Twibot-22 | f1 on Twibot-22 | type | tags                |
 | ------------- | ---------------- | --------------- | ---- | ------------------- |
-| NameBot  | 0.7061           | 0.0050          | None | `Logistic Regression` |
+| NameBot  | 0.7061           | 0.0050          | F | `Logistic Regression` |
 

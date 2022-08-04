@@ -14,9 +14,9 @@
 ├── result         # store the result file
 ├── data           # store the training data
 └── Twibot-22      # store the training data
-      ├── data           # store the training data
-      ├── model
-      └── run.py      # train model
+    ├── data           # store the training data
+    ├── model
+    └── run.py      # train model
   
 ```
 
@@ -63,4 +63,4 @@
 
 | baseline | acc on Twibot-22 | f1 on Twibot-22 | type | tags              |
 | -------- | ---------------- | --------------- | ---- | ----------------- |
-| BGRSD    | 0.7055           | 0.7200          | P    | `BERT` `GAT` |
+| BGRSD    | 0.7055           | 0.7200          | F    | `BERT` `GAT` |

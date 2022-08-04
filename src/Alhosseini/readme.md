@@ -16,8 +16,9 @@
 │   └── gcn.py  # train model on Twibot-20
 ├── dataload1.py # convert raw dataset into standard format and save them
 ├── Twibot-22
-├   └── gcntwi22.py  # train model on Twibot-22
-├── twi22.py # convert raw dataset into standard format and save them
+│   └── gcntwi22.py  # train model on Twibot-22
+└── twi22.py # convert raw dataset into standard format and save them
+```
 
 - **implement details**: We ignored favourites_count due to the lack of the information in our datasets. When calculating the age of users in twibot22, we use may 1, 2022 minus the date when the user account was created as the age; When calculating the age of users in other datasets, we use October 1, 2020 minus the date when the user account was created as the age.
 
@@ -27,13 +28,13 @@
 
 1. convert the raw dataset into standard format by running 
 
-   `python twi22.py
+   `python twi22.py`
 
    this command will create related features in corresponding directory.
 
 2. train GCN model by running:
 
-   `python gcntwi22.py
+   `python gcntwi22.py`
 
 
 
@@ -59,5 +60,5 @@
 
 | baseline | acc on Twibot-22 | f1 on Twibot-22 | type | tags|
 | -------- | ---------------- | --------------- | ---- | --- |
-| Alhosseini et al.|0.6103|0.5473|P G|`gcn`|
+| Alhosseini et al.|0.6103|0.5473|F G|`gcn`|
 

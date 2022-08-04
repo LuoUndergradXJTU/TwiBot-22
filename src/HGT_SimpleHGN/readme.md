@@ -13,18 +13,18 @@
 
 ```python
 ├── cresci-2015
-│   └── HGT.py  # train HGT on cresci-2015
-|   └── SimpleHGN.py # train SimpleHGN on cresci-2015
-|   └── Dataset.py
-|   └── layer.py
+│   ├── HGT.py  # train HGT on cresci-2015
+│   ├── SimpleHGN.py # train SimpleHGN on cresci-2015
+│   ├── Dataset.py
+│   └── layer.py
 ├── Twibot-20    
-│   └── HGT.py  # train HGT on Twibot-20
-|   └── SimpleHGN.py # train SimpleHGN on cresci-2015
-|   └── Dataset.py
-|   └── layer.py
+│   ├── HGT.py  # train HGT on Twibot-20
+│   ├── SimpleHGN.py # train SimpleHGN on cresci-2015
+│   ├── Dataset.py
+│   └── layer.py
 └── Twibot-22
-    └── HGT_sample.py  # train HGT on Twibot-22
-    └── SimpleHGN_sample.py # train SimpleHGN on Twibot-22
+    ├── HGT_sample.py  # train HGT on Twibot-22
+    ├── SimpleHGN_sample.py # train SimpleHGN on Twibot-22
     └── layer.py
 ```
 
@@ -109,5 +109,5 @@ CUDA_VISIBLE_DEVICES=0 python SimpleHGN.py --batch_size 128 --epochs 200 --path 
 
 | baseline | acc on Twibot-22 | f1 on Twibot-22 | type | tags|
 | -------- | ---------------- | --------------- | ---- | --- |
-| HGT|0.7491|0.3960|P T G|`Graph Neural Networks`|
-| SimpleHGN|0.7672|0.4544|P T G|`Graph Neural Networks`|
+| HGT|0.7491|0.3960|F T G|`Graph Neural Networks`|
+| SimpleHGN|0.7672|0.4544|F T G|`Graph Neural Networks`|

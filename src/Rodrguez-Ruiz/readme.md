@@ -9,9 +9,9 @@
 - **file structure**: 
 
 ```python
-├── dataset.py # convert raw dataset into standard format
-├── preprocess.py # extract features 
-├── classification.py #train model and classify Bot
+├── dataset.py  # convert raw dataset into standard format
+├── preprocess.py  # extract features 
+└── classification.py  # train model and classify Bot
 ```
 
 - **implement details**:
@@ -45,7 +45,7 @@
 
 2. train Logistic Regression model by running:
 
- 		 `python classification.py`
+    `python classification.py`
 
 
 
@@ -70,5 +70,5 @@
 
 | baseline | acc on Twibot-22 | f1 on Twibot-22 | type | tags|
 | -------- | ---------------- | --------------- | ---- | --- |
-| Rodrguez-Ruiz|0.7071|0.0008|P T G|`SVM`|
+| Rodrguez-Ruiz|0.7071|0.0008|F T G|`SVM`|
 

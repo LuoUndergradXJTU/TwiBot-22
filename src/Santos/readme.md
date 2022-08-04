@@ -26,9 +26,8 @@
 ├── dlcr2019.py # convert raw dataset into standard format and save them
 ├── botometer-feedback-2019   
 ├── dlbf2019.py # convert raw dataset into standard format and save them
-|
-|── dt.py       # train a decision tree
-
+└── dt.py       # train a decision tree
+```
 
 
 - **implement details**: Since some datasets don’t contain contents of tweets which users posted, we extracted features from user’s description if the dataset we use doesn’t have content of tweets.
@@ -39,16 +38,15 @@
 
 1. convert the raw dataset into standard format by running 
 
-   `python dltwi20.py
+   `python dltwi20.py`
 
    this command will create related features in corresponding directory.
 
 2. open:
 
-   `python gcntwi22.py
+   `python gcntwi22.py`
 
-   then change filename into features created by first command
-   and change the path to datasets in codes in line31-line34
+   then change filename into features created by first command and change the path to datasets in codes in line31-line34
    
    
 
@@ -86,5 +84,5 @@
 
 | baseline | acc on Twibot-22 | f1 on Twibot-22 | type | tags|
 | -------- | ---------------- | --------------- | ---- | --- |
-| Santos et al.|/|/|P T|`decision tree`|
+| Santos et al.|/|/|F T|`decision tree`|
 

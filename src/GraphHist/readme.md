@@ -45,5 +45,5 @@ random seed: 100, 200, 300, 400, 500
 
 | baseline  | acc on Twibot-22 | f1 on Twibot-22 | type  | tags            |
 | --------- | ---------------- | --------------- | ----- | --------------- |
-| GraphHist | /                | /               | P T G | `random forest` |
+| GraphHist | /                | /               | F T G | `random forest` |
 

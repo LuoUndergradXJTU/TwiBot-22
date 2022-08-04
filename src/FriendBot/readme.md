@@ -11,7 +11,7 @@
 ```python
 ├── feature_engineering.py      # generate required features
 ├── feature_twibot22.py         # generate required features for Twibot-22 dataset
-├── rand_forest.py              # train a random forest model on given dataset
+└── rand_forest.py              # train a random forest model on given dataset
 ```
 
 - **implement details**: In all datasets except for Twibot-22, only following relationship is available so only one relationship i.e. following relationship is leveraged to construct ego networks.
@@ -22,7 +22,7 @@
 
 1. specify the dataset b y running `dataset=Twibot-20` (Twibot-20 for example) ;
 
-3. train random forest model by running:
+2. train random forest model by running:
 
    `python rand_forest.py --dataset ${dataset}`
 
@@ -49,5 +49,5 @@ random seed: 0, 100, 200, 300, 400
 
 | baseline              | acc on Twibot-22 | f1 on Twibot-22 | type | tags|
 | --------------------- | ---------------- | --------------- | ---- | --- |
-| FriendBot  |/|/|P T G|`random forest`|
+| FriendBot  |/|/|F T G|`random forest`|
 

@@ -9,17 +9,17 @@
 - **file structure**: 
 
 ```python
-    |----boto-19\
-    |----cresci-18\
-    |----cresci-17\
-    |----cresci-19\
-    |----twibot-22\
-    |----midterm-18\
-    |----cresci-15\
-    |----twibot-20\
-    |----gilani-17\
-    |----run.py 
-    |----Hayawi.md # README
+├── boto-19\
+├── cresci-18\
+├── cresci-17\
+├── cresci-19\
+├── twibot-22\
+├── midterm-18\
+├── cresci-15\
+├── twibot-20\
+├── gilani-17\
+├── run.py 
+└── readme.md # README
 ```
 
 - **implement details**: “Sentiment”, “Timing” features are discarded since required information is not included in datasets.
@@ -80,5 +80,5 @@
 
 | baseline | acc on Twibot-22 | f1 on Twibot-22 | type | tags|
 | -------- | ---------------- | --------------- | ---- | --- |
-| Hayawi et al. |0.7187|0.1325|P|`lstm`|
+| Hayawi et al. |0.7187|0.1325|F|`lstm`|
 

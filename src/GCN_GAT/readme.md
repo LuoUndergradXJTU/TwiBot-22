@@ -5,14 +5,17 @@
 ---
 
 - **authors** **GCN** : **Thomas N. Kipf** , **Max Welling**
--  **authors** **GAT**:**Petar Velickovic,**  **Guillem Cucurull ** ,  **Arantxa Casanova **, **Arantxa Casanova**, **Pietro Lio**  , **Yoshua Bengio **
+- **authors** **GAT**: **Petar Velickovic**, **Guillem Cucurull**, **Arantxa Casanova**, **Arantxa Casanova**, **Pietro Lio**, **Yoshua Bengio**
 - **link**: https://arxiv.org/abs/1609.02907
 - **link**: https://arxiv.org/abs/1710.10903
 - **file structure**: 
 
 ```python
-├── cresci-2015,Twibot-20,Twibot-22
-│   └── main.py  # train model on the processed data
+└── cresci-2015,Twibot-20,Twibot-22
+    ├── main.py  # train model on the processed data
+    ├── dataset.py  # preprocess data
+    ├── utils.py  
+    └── model.py  # load GCN/GAT model 
 ```
 
 #### How to reproduce:
@@ -23,7 +26,7 @@
 
 3. train model by running:
 
-   `python main.py `
+   `python main.py`
 
    
 
@@ -57,6 +60,6 @@ GAT
 
 | baseline          | acc on Twibot-22 | f1 on Twibot-22 | type  | tags                   |
 | ----------------- | ---------------- | --------------- | ----- | ---------------------- |
-| Kipf et al.       | 0.7489           | 0.2513          | P T G | `Graph Neural Network` |
-| Velickovic et al. | 0.7585           | 0.4394          | P T G | Graph Neural Network   |
+| Kipf et al.       | 0.7489           | 0.2513          | F T G | `Graph Neural Network` |
+| Velickovic et al. | 0.7585           | 0.4394          | F T G | `Graph Neural Network` |
 

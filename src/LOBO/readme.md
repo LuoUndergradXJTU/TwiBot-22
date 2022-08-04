@@ -71,5 +71,5 @@ random seed: 100, 200, 300, 400, 500
 
 | baseline | acc on Twibot-22 | f1 on Twibot-22 | type | tags|
 | -------- | ---------------- | --------------- | ---- | --- |
-| LOBO |0.7570|0.3857|P T|`random forest`|
+| LOBO |0.7570|0.3857|F T|`random forest`|
 

@@ -10,15 +10,15 @@
 
 ```python
 ├── cresci-15
-│   └── Heterobot.py  # train model on cresci-2015
-|   └── Dataset.py
+│   ├── Heterobot.py  # train model on cresci-2015
+|   ├── Dataset.py
 |   └── layer.py
 ├── Twibot-20    
-│   └── Heterobot.py  # train model on Twibot-20
-|   └── Dataset.py
+│   ├── Heterobot.py  # train model on Twibot-20
+|   ├── Dataset.py
 |   └── layer.py
 └── Twibot-22
-    └── Heterobot_sample.py  # train model on Twibot-22
+    ├── Heterobot_sample.py  # train model on Twibot-22
     └── layer.py
 ```
 
@@ -69,7 +69,7 @@ CUDA_VISIBLE_DEVICES=0 python Heterobot.py --batch_size 128 --epochs 200 --path 
 ```
 
 * on Twibot-22
-```
+```python
 CUDA_VISIBLE_DEVICES=0 python Heterobot_sample.py --batch_size 256 --epochs 200 --path /path/to/preprocessed/file
 ```
 
@@ -90,5 +90,5 @@ CUDA_VISIBLE_DEVICES=0 python Heterobot_sample.py --batch_size 256 --epochs 200 
 
 | baseline | acc on Twibot-22 | f1 on Twibot-22 | type | tags|
 | -------- | ---------------- | --------------- | ---- | --- |
-| RGT | 0.7647 | 0.4294 | P T G |`Graph Neural Networks`|
+| RGT | 0.7647 | 0.4294 | F T G |`Graph Neural Networks`|
 

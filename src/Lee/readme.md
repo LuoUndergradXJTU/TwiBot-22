@@ -16,21 +16,21 @@ Kyumin Lee, Brian Eoff, James Caverlee
 ├── merge_feature.py # merge features, labels and splits.
 ├── train.py # train model  on specific dataset
 ├── cresci-2015
-│   └── tweet_split.py  # split the initial tweets data on cresci-2015 to speed up calculation
-│   └── content_features.py  # content features
+│   ├── tweet_split.py  # split the initial tweets data on cresci-2015 to speed up calculation
+│   ├── content_features.py  # content features
 │   └── content_feature_extraction.py  # calculate content features on cresci-2015
 ├── cresci-2017 
-│   └── tweet_split.py 
-│   └── content_features.py 
+│   ├── tweet_split.py 
+│   ├── content_features.py 
 │   └── content_feature_extraction.py  
 ├── Twibot-20    
-│   └── tweet_split.py  
-│   └── content_features.py 
+│   ├── tweet_split.py  
+│   ├── content_features.py 
 │   └── content_feature_extraction.py  
-├── Twibot-22
-│   └── tweet_split.py  
-│   └── content_features.py  
-│   └── content_feature_extraction.py  
+└── Twibot-22
+    ├── tweet_split.py  
+    ├── content_features.py  
+    └── content_feature_extraction.py  
 ```
 
 - **implement details**: 
@@ -95,7 +95,8 @@ For dataset midterm-2018, gilani-2017, cresci-stock-2018, cresci-rtbust-2019 and
 | gilani-2017 | mean | 74.81 | 77.58 | 60.19 | 67.78 |
 | gilani-2017 | std  | 1.2138 | 1.3134 | 2.1516 | 1.8089 |
 | cresci-2017 | mean | 98.85 | 99.56 | 99.13 | 99.35 |
-| cresci-2017 | std  | 0.0680 | 0.0766 | 0.0000 | midterm-2018 | mean | 96.4 | 97.36 | 98.37 | 97.87 |
+| cresci-2017 | std  | 0.0680 | 0.0766 | 0.0000 | 0.0381 |
+| midterm-2018 | mean | 96.4 | 97.36 | 98.37 | 97.87 |
 | midterm-2018 | std  | 0.1231 | 0.0701 | 0.0985 | 0.0732 |
 | cresci-stock-2018 | mean | 81.53 | 84.75 | 80.3 | 82.46 |
 | cresci-stock-2018 | std  | 0.3508 | 0.4156 | 0.63 | 0.3637 |
@@ -116,5 +117,5 @@ For dataset midterm-2018, gilani-2017, cresci-stock-2018, cresci-rtbust-2019 and
 
 | baseline | acc on Twibot-22 | f1 on Twibot-22 | type | tags|
 | -------- | ---------------- | --------------- | ---- | --- |
-| Lee et al.|76.28|30.41|P T|`random forest`|
+| Lee et al.|76.28|30.41|F T|`random forest`|
 

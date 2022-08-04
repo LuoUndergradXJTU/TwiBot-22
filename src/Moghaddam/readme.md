@@ -9,7 +9,6 @@
 - **file structure**: 
 
 ```python
-|  
 ├── process.py # convert raw dataset into standard format
 └── train.py # train model on every dataset
 
@@ -23,7 +22,9 @@
 1. process data, get the features and specify the dataset by running;
    
     `python process.py --datasets "dataset name"`
+
     there will be a .npy file, which is the processed feature
+
 2. train random forest model and specify the dataset by running:
 
    `python train.py --datasets "dataset name" > result.txt`
@@ -50,5 +51,5 @@ random seed: 100, 200, 300, 400, 500
 
 | baseline | acc on Twibot-22 | f1 on Twibot-22 | type | tags|
 | -------- | ---------------- | --------------- | ---- | --- |
-| Moghaddam et al.|0.7378|0.3207|P G|`random forest`|
+| Moghaddam et al.|0.7378|0.3207|F G|`random forest`|
 

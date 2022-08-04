@@ -10,12 +10,12 @@
 
 ```bash
 └── baseline
-	├── data_cresci15.py	# convert raw dataset into standard format on cresci-2015
-	├── data_twibot20.py	# convert raw dataset into standard format on Twibot-20
-	├── data_twibot22.py	# convert raw dataset into standard format on Twibot-22
-	├── solve_cresci15.py	# train model on cresci-15
-	├── solve_twibot20.py	# train model on Twibot-20
-	└── solve_twibot22.py	# train model on Twibot-22
+	 ├── data_cresci15.py	# convert raw dataset into standard format on cresci-2015
+	 ├── data_twibot20.py	# convert raw dataset into standard format on Twibot-20
+	 ├── data_twibot22.py	# convert raw dataset into standard format on Twibot-22
+	 ├── solve_cresci15.py	# train model on cresci-15
+	 ├── solve_twibot20.py	# train model on Twibot-20
+	 └── solve_twibot22.py	# train model on Twibot-22
 ```
 
 - **implement details**: 
@@ -67,5 +67,5 @@ random seed: 0, 100, 200, 300, 400
 
 | baseline | acc on Twibot-22 | f1 on Twibot-22 | type | tags|
 | -------- | ---------------- | --------------- | ---- | --- |
-| Yang et al. |0.7109|0.1408|P T G|`random forest`|
+| Yang et al. |0.7109|0.1408|F T G|`random forest`|
 

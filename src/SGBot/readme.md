@@ -10,7 +10,7 @@
 
 ```python
 ├── train.py  # train model on cresci-2015
-├── preprocess.py # convert raw dataset into standard format and extract features
+└── preprocess.py # convert raw dataset into standard format and extract features
 
 ```
 

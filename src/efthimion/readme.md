@@ -1,23 +1,27 @@
-### efthimion
+### Supervised Machine Learning Bot Detection Techniques to Identify Social Twitter Bots
 
 ---
 
-- **authors**: efthimion et al.
+- **authors**: Efthimion et al.
 
 - **link**: https://scholar.smu.edu/datasciencereview/vol1/iss2/5/
 
 - **file structure**: 
 
 ```python
- feature.py
-
+└── feature.py
+```
 - **implement details**: We abdicate the Levenshtein distance for time consumption problem.
 
   
 
 #### How to reproduce:
 
-1. run feature.py (different datasets are optional in the code)
+1. run
+
+    `python feature.py`
+    
+    different datasets are optional in the code.
 
 
 #### Result:
@@ -48,4 +52,4 @@
 
 | baseline | acc on Twibot-22 | f1 on Twibot-22 | type | tags|
 | -------- | ---------------- | --------------- | ---- | --- |
-| efthimion|0.7481|0.2758|P T|`efthimion`|
+| efthimion|0.7481|0.2758|F T|`efthimion`|

@@ -9,38 +9,36 @@
 - **file structure**: 
 
 ```python
-├─cresci-2015
-│      id_list.py
-│      label_list.py
-│      train.py
-|      des_embedding.py
-│      tweets_tensor.py
-│      user_tweets_dict.py
-│
-├─cresci-2017
-│      id_list.py
-│      label_list.py
-│      train.py
-|      des_embedding.py
-│      tweets_tensor.py
-│      user_tweets_dict.py
-│
-├─Twibot-20
-│      id_list.py
-│      label_list.py
-│      train.py
-|      des_
-│      tweets_tensor.py
-│      user_tweets_dict.py
-│
-└─Twibot-22
-        id_list.py
-        label_list.py
-        des_embedding.py
-        train.py
-        tweets_tensor.py
-        user_tweets_dict.py
+├── cresci-2015
+│   ├── id_list.py
+│   ├── label_list.py
+│   ├── train.py
+│   ├── des_embedding.py
+│   ├── tweets_tensor.py
+│   └── user_tweets_dict.py
+├── cresci-2017
+│   ├── id_list.py
+│   ├── label_list.py
+│   ├── train.py
+│   ├── des_embedding.py
+│   ├── tweets_tensor.py
+│   └── user_tweets_dict.py
+├── Twibot-20
+│   ├── id_list.py
+│   ├── label_list.py
+│   ├── train.py
+│   ├── des_
+│   ├── tweets_tensor.py
+│   └── user_tweets_dict.py
+└── Twibot-22
+    ├── id_list.py
+    ├── label_list.py
+    ├── des_embedding.py
+    ├── train.py
+    ├── tweets_tensor.py
+    └── user_tweets_dict.py
 ```
+
 - **implement details**: For Twibot-22, users' tweet counts could be cut to 20 for time consumption issue.
 
   
@@ -75,4 +73,4 @@
 
 | baseline | acc on Twibot-22 | f1 on Twibot-22 | type | tags|
 | -------- | ---------------- | --------------- | ---- | --- |
-| RoBERTa|0.7196|0.1915|P T|`RoBERTa`|
+| RoBERTa|0.7196|0.1915|F T|`RoBERTa`|

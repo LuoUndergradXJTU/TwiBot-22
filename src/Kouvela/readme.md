@@ -16,21 +16,21 @@ Maria Kouvela, Ilias Dimitriadis, Athena Vakali
 ├── merge_feature.py # merge features, labels and splits.
 ├── train.py # train model  on specific dataset
 ├── cresci-2015
-│   └── tweet_split.py  # split the initial tweets data on cresci-2015 to speed up calculation
-│   └── content_features.py  # content features
+│   ├── tweet_split.py  # split the initial tweets data on cresci-2015 to speed up calculation
+│   ├── content_features.py  # content features
 │   └── content_feature_extraction.py  # calculate content features on cresci-2015
 ├── cresci-2017 
-│   └── tweet_split.py 
-│   └── content_features.py 
+│   ├── tweet_split.py 
+│   ├── content_features.py 
 │   └── content_feature_extraction.py  
 ├── Twibot-20    
-│   └── tweet_split.py  
-│   └── content_features.py 
+│   ├── tweet_split.py  
+│   ├── content_features.py 
 │   └── content_feature_extraction.py  
-├── Twibot-22
-│   └── tweet_split.py  
-│   └── content_features.py  
-│   └── content_feature_extraction.py  
+└── Twibot-22
+    ├── tweet_split.py  
+    ├── content_features.py  
+    └── content_feature_extraction.py  
 ```
 
 - **implement details**: 
@@ -116,5 +116,5 @@ For dataset midterm-2018, gilani-2017, cresci-stock-2018, cresci-rtbust-2019 and
 
 | baseline | acc on Twibot-22 | f1 on Twibot-22 | type | tags|
 | -------- | ---------------- | --------------- | ---- | --- |
-| Kouvela et al.|76.44|30.03|P T|`random forest`|
+| Kouvela et al.|76.44|30.03|F T|`random forest`|
 

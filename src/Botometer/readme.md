@@ -9,17 +9,15 @@ This is an unofficial implementation Botometer. Coding by Herun Wan ([email addr
 - **file structure**:
 
 ```python
-│  check.py  # check the score of Botometer API
-│  combine.py  # combine the scores
-│  eval.py  # get the bot detection metrices
-│  MyBotomater.py  # the Botometer API class
-│  preprocess.py  # get username from raw dataset
-│  train.py  # get score from Botomater API
-│  train_threads.py  # get score from Botomater API using muti-threads
-│  scores.zip  # the score we collected  
-│  
-│      
-└─tmp  # other files
+├── check.py  # check the score of Botometer API
+├── combine.py  # combine the scores
+├── eval.py  # get the bot detection metrices
+├── MyBotomater.py  # the Botometer API class
+├── preprocess.py  # get username from raw dataset
+├── train.py  # get score from Botomater API
+├── train_threads.py  # get score from Botomater API using muti-threads
+├── scores.zip  # the score we collected   
+└── tmp  # other files
     ├─output  # the metrics
     ├─score  # the score obtained from Botomater API, you can unzip scores.zip here
     ├─username # the username of users in different datasets
@@ -136,4 +134,4 @@ you can choose the hyperparameters as following:
 
 | baseline  | acc on Twibot-22 | f1 on Twibot-22 | type  | tags |
 | :-------: | :--------------: | :-------------: | :---: | :--: |
-| Botomater |      49.87       |      42.75      | P T G |      |
+| Botomater |      49.87       |      42.75      | F T G |      |

@@ -9,11 +9,11 @@
 
 ```python
 ├── Twibot-20
-├── └──preprocess
+│   ├── preprocess.py
 │   └── train.py  # model on cresci-2015 and Twibot-20 
-├── Twibot-22
-├── └──preprocess
-│   └── train.py  # model on Twibot-22 
+└── Twibot-22
+    ├── preprocess.py
+    └── train.py  # model on Twibot-22 
 ```
 
 - **implement details**: In the original paper, the Gradient Boosted tree classification method has the best effect, but in our experiment, the effect of this method is significantly worse. The SVM method with the second best effect in the original paper is relatively better in our experiment, but the experiment is time-consuming. Since the core
@@ -25,11 +25,11 @@ of this paper is feature selection rather than classification methods, we finall
 
 1. convert the raw dataset into standard format by running 
 
-   `python preprocess.py `
+   `python preprocess.py`
 
    this command will create related features in corresponding directory.
 
-3. train random forest model by running:
+2. train random forest model by running:
 
    `python train.py`
 
@@ -60,5 +60,5 @@ random seed: 0, 100, 200, 300, 400
 
 | baseline | acc on Twibot-22 | f1 on Twibot-22 | type | tags|
 | -------- | ---------------- | --------------- | ---- | --- |
-| Varol et al.|0.764|0.587|P T|`random forest`|
+| Varol et al.|0.764|0.587|F T|`random forest`|
 

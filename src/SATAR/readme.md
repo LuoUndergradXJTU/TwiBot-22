@@ -9,25 +9,23 @@ This is an unofficial implementation in PyTorch of SATAR. Coding by Herun Wan ([
 - **file structure**:
 
 ```python
-│  dataset.py  # the file contains the dataset class
-│  eval.py  # the file evaluates performance from trained parameters
-│  get_neighbor_reps.py  # the file obtains the neighborhood vectors of each user 
-│  get_reps.py  # the file obtains the representation of each user
-│  model.py  # the file contain the SATAR model class
-│  pretrain.py  # the code to pretrain model
-│  train.py  # the code to train model
-│  utils.py  # the file contain some utils class or methods
-│  
-├─preprocess  # the files to preprocess datasets from raw data
-│      cresci-2015.py
-│      Twibot-20.py
-│      Twibot-22.py
-│      
+├── dataset.py  # the file contains the dataset class
+├── eval.py  # the file evaluates performance from trained parameters
+├── get_neighbor_reps.py  # the file obtains the neighborhood vectors of each user 
+├── get_reps.py  # the file obtains the representation of each user
+├── model.py  # the file contain the SATAR model class
+├── pretrain.py  # the code to pretrain model
+├── train.py  # the code to train model
+├── utils.py  # the file contain some utils class or methods
+├── preprocess  # the files to preprocess datasets from raw data
+│   ├── cresci-2015.py
+│   ├── Twibot-20.py
+│   └── Twibot-22.py
 └─tmp  # other files
-    ├─checkpoints  # save the trained parameters
-    ├─cresci-2015  # the preprocessed data
-    ├─Twibot-20
-    └─Twibot-22
+    ├── checkpoints  # save the trained parameters
+    ├── cresci-2015  # the preprocessed data
+    ├── Twibot-20
+    └── Twibot-22
 ```
 
 - **implement details**:  
@@ -196,4 +194,4 @@ python eval.py --dataset Twibot-20
 
 | baseline | acc on Twibot-22 | f1 on Twibot-22 | type  | tags |
 | :------: | :--------------: | :-------------: | :---: | :--: |
-|  SATAR   |        -         |        -        | P T G |      |
+|  SATAR   |        -         |        -        | F T G |      |
