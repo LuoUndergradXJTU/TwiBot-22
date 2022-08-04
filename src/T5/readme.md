@@ -9,46 +9,43 @@
 - **file structure**: 
 
 ```python
-├─cresci-2015
-│      concat.ipynb
-│      train.py
-|      des_embedding.py
-│      tweets_tensor.py
-│      user_tweets_dict.py
-│
-├─cresci-2017
-│      concat.ipynb
-│      train.py
-|      des_embedding.py
-│      tweets_tensor.py
-│      user_tweets_dict.py
-│
-├─Twibot-20
-│      id_list.py
-|      des_embedding.py
-│      label_list.py
-│      train.py
-│      tweets_tensor.py
-│      user_tweets_dict.py
-│
-└─Twibot-22
-        concat.ipynb
-        des_embedding.py
-        id_list.py
-        label_list.py
-        train.py
-        twi0.py
-        twi1.py
-        twi10.py
-        twi2.py
-        twi3.py
-        twi4.py
-        twi5.py
-        twi6.py
-        twi7.py
-        twi8.py
-        twi9.py
-        user_tweets_dict.py
+├── cresci-2015
+│   ├── concat.ipynb
+│   ├── train.py
+│   ├── des_embedding.py
+│   ├── tweets_tensor.py
+│   └── user_tweets_dict.py
+├── cresci-2017
+│   ├── concat.ipynb
+│   ├── train.py
+│   ├── des_embedding.py
+│   ├── tweets_tensor.py
+│   └── user_tweets_dict.py
+├── Twibot-20
+│   ├── id_list.py
+│   ├── des_embedding.py
+│   ├── label_list.py
+│   ├── train.py
+│   ├── tweets_tensor.py
+│   └── user_tweets_dict.py
+└── Twibot-22
+    ├── concat.ipynb
+    ├── des_embedding.py
+    ├── id_list.py
+    ├── label_list.py
+    ├── train.py
+    ├── twi0.py
+    ├── twi1.py
+    ├── twi10.py
+    ├── twi2.py
+    ├── twi3.py
+    ├── twi4.py
+    ├── twi5.py
+    ├── twi6.py
+    ├── twi7.py
+    ├── twi8.py
+    ├── twi9.py
+    └── user_tweets_dict.py
 ```
 
 - **implement details**: For Twibot-22, users' tweet counts could be cut to 20 for time consumption issue.

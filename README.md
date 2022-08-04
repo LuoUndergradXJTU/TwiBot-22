@@ -46,17 +46,20 @@ For other datasets, you can directly download them from [Google Drive](https://d
 
 | baseline                             | paper                     | acc on Twibot-22 | f1 on Twibot-22 | type  | tags                     |
 | -------------------------------------- | ------------------ | ----------------- | ------- | -------------------------- | -------------------------- |
-| [NameBot](src/NameBot/)              | [link](https://arxiv.org/pdf/1812.05932.pdf) | 0.7061           | 0.0050          | F     | `Logistic Regression`    |
+| [Abreu et al.](src/Abreu/)           | [link](https://ieeexplore.ieee.org/abstract/document/9280525) | 0.7066           | 0.5344          | F     | `random forest`          |
+| [Alhosseini et al.](src/Alhosseini/) | [link](https://dl.acm.org/doi/fullHtml/10.1145/3308560.3316504) | 0.6103           | 0.5473          | F G   | `gcn`                    |
+| [BGSRD](src/BGSRD/)                  | [link](https://www.mdpi.com/2073-8994/14/1/30) | 0.7055           | 0.7200          | F     | `BERT GAT`               |
 | [Bot Hunter](src/BotHunter/)         | [link](http://www.casos.cs.cmu.edu/publications/papers/LB_5.pdf) | 0.7279           | 0.2346          | F     | `random forest`          |
 | [Botometer](src/Botometer/)         | [link](https://botometer.osome.iu.edu/) | 0.4987           | 0.4257          | F T G |                          |
 | [BotRGCN](src/BotRGCN/)              | [link](https://arxiv.org/abs/2106.13092) | 0.7691           | 0.4579          | F T G | `BotRGCN`                |
 | [Cresci et al.](src/Cresci/)         | [link](https://ieeexplore.ieee.org/abstract/document/7436643) | -                | -               | T     | `DNA`                    |
-| [efthimion](src/efthimion/)          | [link](https://scholar.smu.edu/datasciencereview/vol1/iss2/5/) | 0.7481           | 0.2758          | F T   | `efthimion`              |
+| [Dehghan et al.](src/Dehghan)| [link](https://assets.researchsquare.com/files/rs-1428343/v1_covered.pdf?c=1647280648)  |-|-|F T G|`Graph`|
+| [Efthimion et al.](src/Efthimion/)          | [link](https://scholar.smu.edu/datasciencereview/vol1/iss2/5/) | 0.7481           | 0.2758          | F T   | `efthimion`              |
+| [EvolveBot](src/EvolveBot/)          | [link](https://ieeexplore.ieee.org/abstract/document/6553246) | 0.7109           | 0.1408          | F T G | `random forest`          |
+| [FriendBot](src/FriendBot)| [link](https://link.springer.com/chapter/10.1007/978-3-030-41251-7_3)  |-|-|F T G|`random forest`|
 | [Kipf et al.](src/GCN_GAT)           | [link](https://arxiv.org/abs/1609.02907) | 0.7489           | 0.2513          | F T G | `Graph Neural Network`   |
 | [Velickovic et al.](src/GCN_GAT)           | [link](https://arxiv.org/abs/1710.10903) | 0.7585           | 0.4394          | F T G | `Graph Neural Network`   |
-| [Alhosseini et al.](src/Alhosseini/) | [link](https://dl.acm.org/doi/fullHtml/10.1145/3308560.3316504) | 0.6103           | 0.5473          | F G   | `gcn`                    |
 | [GraphHist](src/GraphHist/)          | [link](https://arxiv.org/abs/1910.01180) | -                | -               | F T G | `random forest`          |
-| [BGSRD](src/BGSRD/)                  | [link](https://www.mdpi.com/2073-8994/14/1/30) | 0.7055           | 0.7200          | F     | `BERT GAT`               |
 | [Hayawi et al.](src/Hayawi/)         | [link](https://link.springer.com/content/pdf/10.1007/s13278-022-00869-w.pdf) | 0.7187           | 0.1325          | F     | `lstm`                   |
 | [HGT](src/HGT_SimpleHGN/)            | [link](https://arxiv.org/abs/2003.01332) | 0.7491           | 0.3960          | F T G | `Graph Neural Networks`  |
 | [SimpleHGN](src/HGT_SimpleHGN/)      | [link](https://arxiv.org/abs/2112.14936) | 0.7672           | 0.4544          | F T G | `Graph Neural Networks`  |
@@ -68,19 +71,16 @@ For other datasets, you can directly download them from [Google Drive](https://d
 | [LOBO](src/LOBO/)                    | [link](https://dl.acm.org/doi/10.1145/3274694.3274738) | 0.7570           | 0.3857          | F T   | `random forest`          |
 | [Miller et al.](src/Miller/)         | [link](https://dl.acm.org/doi/10.1016/j.ins.2013.11.016) | -                | -               | F T   | `k means`                |
 | [Moghaddam et al.](src/Moghaddam/)   | [link](https://ieeexplore.ieee.org/abstract/document/9735340) | 0.7378           | 0.3207          | F G   | `random forest`          |
-| [Abreu et al.](src/Abreu/)           | [link](https://ieeexplore.ieee.org/abstract/document/9280525) | 0.7066           | 0.5344          | F     | `random forest`          |
+| [NameBot](src/NameBot/)              | [link](https://arxiv.org/pdf/1812.05932.pdf) | 0.7061           | 0.0050          | F     | `Logistic Regression`    |
 | [RGT](src/RGT/)                      | [link](https://arxiv.org/abs/2109.02927) | 0.7647           | 0.4294          | F T G | `Graph Neural Networks`  |
 | [RoBERTa](src/RoBERTa/)              | [link](https://arxiv.org/pdf/1907.11692.pdf) | 0.7196           | 0.1915          | F T   | `RoBERTa`                |
 | [Rodrguez-Ruiz](src/Rodrguez-Ruiz/)  | [link](https://www.sciencedirect.com/science/article/pii/S0167404820300031) | 0.7071           | 0.0008          | F T G | `SVM`                    |
 | [Santos et al.](src/Santos/)         | [link](https://dl.acm.org/doi/pdf/10.1145/3308560.3317599) | -                | -               | F T   | `decision tree`          |
 | [SATAR](src/SATAR/)                  | [link](https://arxiv.org/abs/2106.13089) | -                | -               | F T G |                          |
-| [T5](src/Varol/)                     | [link](https://aaai.org/ocs/index.php/ICWSM/ICWSM17/paper/view/15587/14817) | 0.7170           | 0.1565          | T     | `T5`                     |
+| [SGBot](src/SGBot/)                  | [link](https://arxiv.org/abs/1911.09179) | 0.7392           | 0.2754          | F T   | `random forest`          |
+| [T5](src/T5/)                        | [link](https://aaai.org/ocs/index.php/ICWSM/ICWSM17/paper/view/15587/14817) | 0.7170           | 0.1565          | T     | `T5`                     |
 | [Varol et al.](src/Varol)            | [link](https://aaai.org/ocs/index.php/ICWSM/ICWSM17/paper/view/15587/14817) | 0.7392           | 0.2754          | F T   | `random forest`          |
 | [Wei et al.](src/Wei/)               | [link](https://arxiv.org/pdf/2002.01336.pdf) | 0.7020           | 0.5360          | T     |                          |
-| [SGBot](src/SGBot/)                  | [link](https://arxiv.org/abs/1911.09179) | 0.7392           | 0.2754          | F T   | `random forest`          |
-| [EvolveBot](src/EvolveBot/)          | [link](https://ieeexplore.ieee.org/abstract/document/6553246) | 0.7109           | 0.1408          | F T G | `random forest`          |
-| [FriendBot](src/FriendBot)| [link](https://link.springer.com/chapter/10.1007/978-3-030-41251-7_3)  |-|-|F T G|`random forest`|
-| [Dehghan et al.](src/Dehghan)| [link](https://assets.researchsquare.com/files/rs-1428343/v1_covered.pdf?c=1647280648)  |-|-|F T G|`Graph`|
 
 where `-` represents the baseline could not scale to TwiBot-22 dataset
 
