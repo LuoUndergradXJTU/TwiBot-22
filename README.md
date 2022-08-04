@@ -53,7 +53,7 @@ For other datasets, you can directly download them from [Google Drive](https://d
 | [Cresci et al.](src/Cresci/)         | [link](https://ieeexplore.ieee.org/abstract/document/7436643) | -                | -               | T     | `DNA`                    |
 | [efthimion](src/efthimion/)          | [link](https://scholar.smu.edu/datasciencereview/vol1/iss2/5/) | 0.7481           | 0.2758          | F T   | `efthimion`              |
 | [Kipf et al.](src/GCN_GAT)           | [link](https://arxiv.org/abs/1609.02907) | 0.7489           | 0.2513          | F T G | `Graph Neural Network`   |
-| [Velickovic et al.](src/V)           | [link](https://arxiv.org/abs/1710.10903) | 0.7585           | 0.4394          | F T G | `Graph Neural Network`   |
+| [Velickovic et al.](src/GCN_GAT)           | [link](https://arxiv.org/abs/1710.10903) | 0.7585           | 0.4394          | F T G | `Graph Neural Network`   |
 | [Alhosseini et al.](src/Alhosseini/) | [link](https://dl.acm.org/doi/fullHtml/10.1145/3308560.3316504) | 0.6103           | 0.5473          | F G   | `gcn`                    |
 | [GraphHist](src/GraphHist/)          | [link](https://arxiv.org/abs/1910.01180) | -                | -               | F T G | `random forest`          |
 | [BGSRD](src/BGSRD/)                  | [link](https://www.mdpi.com/2073-8994/14/1/30) | 0.7055           | 0.7200          | F     | `BERT GAT`               |
