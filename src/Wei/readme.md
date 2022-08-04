@@ -43,7 +43,7 @@
 
 random seed: 0, 100, 200, 300, 400
 
-| dataset     |      | acc   | precison| recall| f1     |
+| dataset     |      | acc   | precison| recall| f1    |
 | ----------- | ---- | ----- | ------- | ----- | ----- |
 | Cresci-2015 | mean | 0.961 | 0.917   | 0.753 | 0.827 |
 | Cresci-2015 | var  | 0.001 | 0.001   | 0.002 | 0.001 |
