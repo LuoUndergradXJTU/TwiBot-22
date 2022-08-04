@@ -50,6 +50,7 @@
 
 
 
+
 | baseline | acc on Twibot-22 | f1 on Twibot-22 | type | tags|
 | -------- | ---------------- | --------------- | ---- | --- |
 | efthimion|0.7481|0.2758|F T|`efthimion`|
