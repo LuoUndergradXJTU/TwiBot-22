@@ -48,7 +48,7 @@ For other datasets, you can directly download them from [Google Drive](https://d
 | ------------------------------------- | -------------------------------------------------------------------------------------- | ---------------- | --------------- | ----- | ------------------------ |
 | [Abreu et al.](src/Abreu/)            | [link](https://ieeexplore.ieee.org/abstract/document/9280525)                          | 0.7066           | 0.5344          | F     | `random forest`          |
 | [Alhosseini et al.](src/Alhosseini/)  | [link](https://dl.acm.org/doi/fullHtml/10.1145/3308560.3316504)                        | 0.6910           | 0.4991          | F G   | `gcn`                    |
-| [BGSRD](src/BGSRD/)                   | [link](https://www.mdpi.com/2073-8994/14/1/30)                                         | -                | -               | F     | `BERT GAT`               |
+| [BGSRD](src/BGSRD/)                   | [link](https://www.mdpi.com/2073-8994/14/1/30)                                         | 0.7188           | 0.2114          | F     | `BERT GAT`               |
 | [Bot Hunter](src/BotHunter/)          | [link](http://www.casos.cs.cmu.edu/publications/papers/LB_5.pdf)                       | 0.7279           | 0.2346          | F     | `random forest`          |
 | [Botometer](src/Botometer/)           | [link](https://botometer.osome.iu.edu/)                                                | 0.4987           | 0.4257          | F T G |                          |
 | [BotRGCN](src/BotRGCN/)               | [link](https://arxiv.org/abs/2106.13092)                                               | 0.7966           | 0.5750          | F T G | `BotRGCN`                |
@@ -57,8 +57,8 @@ For other datasets, you can directly download them from [Google Drive](https://d
 | [Efthimion et al.](src/Efthimion/)    | [link](https://scholar.smu.edu/datasciencereview/vol1/iss2/5/)                         | 0.7408           | 0.2758          | F T   | `efthimion`              |
 | [EvolveBot](src/EvolveBot/)           | [link](https://ieeexplore.ieee.org/abstract/document/6553246)                          | 0.7109           | 0.1409          | F T G | `random forest`          |
 | [FriendBot](src/FriendBot)            | [link](https://link.springer.com/chapter/10.1007/978-3-030-41251-7_3)                  | -                | -               | F T G | `random forest`          |
-| [Kipf et al.](src/GCN_GAT)            | [link](https://arxiv.org/abs/1609.02907)                                               | 0.7489           | 0.2513          | F T G | `Graph Neural Network`   |
-| [Velickovic et al.](src/GCN_GAT)      | [link](https://arxiv.org/abs/1710.10903)                                               | 0.7585           | 0.4394          | F T G | `Graph Neural Network`   |
+| [Kipf et al.](src/GCN_GAT)            | [link](https://arxiv.org/abs/1609.02907)                                               | 0.7839           | 0.5496          | F T G | `Graph Neural Network`   |
+| [Velickovic et al.](src/GCN_GAT)      | [link](https://arxiv.org/abs/1710.10903)                                               | 0.7948           | 0.5586          | F T G | `Graph Neural Network`   |
 | [GraphHist](src/GraphHist/)           | [link](https://arxiv.org/abs/1910.01180)                                               | -                | -               | F T G | `random forest`          |
 | [Hayawi et al.](src/Hayawi/)          | [link](https://link.springer.com/content/pdf/10.1007/s13278-022-00869-w.pdf)           | 0.7650           | 0.2474          | F     | `lstm`                   |
 | [HGT](src/HGT_SimpleHGN/)             | [link](https://arxiv.org/abs/2003.01332)                                               | 0.7491           | 0.3960          | F T G | `Graph Neural Networks`  |
@@ -69,12 +69,12 @@ For other datasets, you can directly download them from [Google Drive](https://d
 | [Kudugunta et al.](src/Kudugunta/)    | [link](https://arxiv.org/abs/1802.04289)                                               | 0.6587           | 0.5167          | F     | `SMOTENN, random forest` |
 | [Lee et al.](src/Lee/)                | [link](https://ojs.aaai.org/index.php/ICWSM/article/view/14106)                        | 0.7628           | 0.3041          | F T   | `random forest`          |
 | [LOBO](src/LOBO/)                     | [link](https://dl.acm.org/doi/10.1145/3274694.3274738)                                 | 0.7570           | 0.3857          | F T   | `random forest`          |
-| [Miller et al.](src/Miller/)          | [link](https://dl.acm.org/doi/10.1016/j.ins.2013.11.016)                               | -                | -               | F T   | `k means`                |
+| [Miller et al.](src/Miller/)          | [link](https://dl.acm.org/doi/10.1016/j.ins.2013.11.016)                               | 0.3037           | 0.4529          | F T   | `k means`                |
 | [Moghaddam et al.](src/Moghaddam/)    | [link](https://ieeexplore.ieee.org/abstract/document/9735340)                          | 0.7378           | 0.3207          | F G   | `random forest`          |
 | [NameBot](src/NameBot/)               | [link](https://arxiv.org/pdf/1812.05932.pdf)                                           | 0.7061           | 0.0050          | F     | `Logistic Regression`    |
 | [RGT](src/RGT/)                       | [link](https://arxiv.org/abs/2109.02927)                                               | 0.7647           | 0.4294          | F T G | `Graph Neural Networks`  |
 | [RoBERTa](src/RoBERTa/)               | [link](https://arxiv.org/pdf/1907.11692.pdf)                                           | 0.7207           | 0.2053          | F T   | `RoBERTa`                |
-| [Rodrguez-Ruiz](src/Rodrguez-Ruiz/)   | [link](https://www.sciencedirect.com/science/article/pii/S0167404820300031)            | 0.7071           | 0.0008          | F T G | `SVM`                    |
+| [Rodrguez-Ruiz](src/Rodrguez-Ruiz/)   | [link](https://www.sciencedirect.com/science/article/pii/S0167404820300031)            | 0.4936           | 0.5657          | F T G | `SVM`                    |
 | [Santos et al.](src/Santos/)          | [link](https://dl.acm.org/doi/pdf/10.1145/3308560.3317599)                             | -                | -               | F T   | `decision tree`          |
 | [SATAR](src/SATAR/)                   | [link](https://arxiv.org/abs/2106.13089)                                               | -                | -               | F T G |                          |
 | [SGBot](src/SGBot/)                   | [link](https://arxiv.org/abs/1911.09179)                                               | 0.7508           | 0.3659          | F T   | `random forest`          |

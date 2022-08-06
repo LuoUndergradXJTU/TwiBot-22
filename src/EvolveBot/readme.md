@@ -10,14 +10,14 @@
 
 ```bash
 └── baseline
-	 ├── data_cresci15.py	# convert raw dataset into standard format on cresci-2015
-	 ├── data_twibot20.py	# convert raw dataset into standard format on Twibot-20
-	 ├── data_twibot22.py	# convert raw dataset into standard format on Twibot-22
-	 ├── solve_cresci15.py	# train model on cresci-15
-	 ├── solve_twibot20.py	# train model on Twibot-20
-	 ├── solve_twibot22.py	# train model on Twibot-22
-	 ├── solve_twibot20_nograph.py	# train model on Twibot-20 without graph features
-	 └── solve_twibot22_nograph.py	# train model on Twibot-22 without graph features
+	├── data_cresci15.py	# convert raw dataset into standard format on cresci-2015
+	├── data_twibot20.py	# convert raw dataset into standard format on Twibot-20
+	├── data_twibot22.py	# convert raw dataset into standard format on Twibot-22
+	├── solve_cresci15.py	# train model on cresci-15
+	├── solve_twibot20.py	# train model on Twibot-20
+	├── solve_twibot22.py	# train model on Twibot-22
+	├── solve_twibot20_nograph.py	# train model on Twibot-20 without graph features
+	└── solve_twibot22_nograph.py	# train model on Twibot-22 without graph features
 ```
 
 - **implement details**: 
