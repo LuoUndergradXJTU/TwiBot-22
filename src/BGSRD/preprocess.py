@@ -128,7 +128,7 @@ if dataset_name == "Twibot-22 ":
 
 #%%
 import random
-count = 1000000
+count = 50000
 clean_description = torch.load(store_path + dataset_name +'_description.pt')
 print('build_graph begin')
 edge_index = [[],[]]
@@ -139,4 +139,51 @@ for doc_words in clean_description:
     for word in words:
         word_set.add(word)
 
-voca
+vocab = list(word_set)
+vocab_size = len(vocab)
+random.shuffle(vocab)
+
+word_edge_dict = {}
+
+word_id_map = {}
+for i in range(vocab_size):
+    if i < count:
+        word_id_map[vocab[i]] = i + len(clean_description)
+    else:
+        word_id_map[vocab[i]] = False
+
+for i in range(len(clean_description)):
+    doc_words = clean_description[i]
+    words = doc_words.split()
+    appeared = set()
+    for word in words:
+        if word in appeared:
+            continue
+        elif word_id_map[word]:
+            edge_index[0].append(i)
+            edge_index[1].append(word_id_map[word])
+            appeared.add(word)
+    appeared = list(appeared)
+    for word in appeared:
+        for word_co in appeared:
+            if word_co == word:
+                continue
+            else:
+                edge_index[0].append(word_id_map[word])
+                edge_index[1].append(word_id_map[word_co])
+#%%
+edge_index = torch.LongTensor(edge_index)
+
+
+
+
+# %%
+print(f'Finish edge_index={edge_index.size()}, vocab_size={len(vocab)}, sentences_size={len(clean_description)}')
+
+# %%
+edge_index_new = {}
+edge_index_new['edge_index'] = edge_index
+edge_index_new['word_size'] = min(len(vocab),count)
+torch.save(edge_index_new,f'{store_path}{dataset_name}_edge_index.pt')
+# %%
+
