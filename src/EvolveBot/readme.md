@@ -15,7 +15,9 @@
 	 ├── data_twibot22.py	# convert raw dataset into standard format on Twibot-22
 	 ├── solve_cresci15.py	# train model on cresci-15
 	 ├── solve_twibot20.py	# train model on Twibot-20
-	 └── solve_twibot22.py	# train model on Twibot-22
+	 ├── solve_twibot22.py	# train model on Twibot-22
+	 ├── solve_twibot20_nograph.py	# train model on Twibot-20 without graph features
+	 └── solve_twibot22_nograph.py	# train model on Twibot-22 without graph features
 ```
 
 - **implement details**: 
@@ -53,11 +55,11 @@ random seed: 0, 100, 200, 300, 400
 | dataset     |      | acc    | precison | recall | f1     |
 | ----------- | ---- | ------ | -------- | ------ | ------ |
 | Cresci-2015 | mean | 0.9218 | 0.8503   | 0.9583 | 0.9007 |
-| Cresci-2015 | var  | 0.0175 | 0.0377   | 0.0066 | 0.0199 |
-| Twibot-20   | mean | 0.6582 | 0.6693   | 0.7280 | 0.6974 |
-| Twibot-20   | var  | 0.0064 | 0.0061   | 0.0042 | 0.0051 |
-| Twibot-22   | mean | 0.7109 | 0.5638   | 0.0804 | 0.1408 |
-| Twibot-22   | var  | 0.0003 | 0.0040   | 0.0001 | 0.0008 |
+| Cresci-2015 | std  | 0.0174 | 0.0377   | 0.0066 | 0.0198 |
+| Twibot-20   | mean | 0.6583 | 0.6693   | 0.7281 | 0.6975 |
+| Twibot-20   | std  | 0.0063 | 0.0060   | 0.0041 | 0.0050 |
+| Twibot-22   | mean | 0.7109 | 0.5638   | 0.0804 | 0.1409 |
+| Twibot-22   | std  | 0.0003 | 0.0040   | 0.0005 | 0.0008 |
 
 
 
@@ -67,5 +69,5 @@ random seed: 0, 100, 200, 300, 400
 
 | baseline | acc on Twibot-22 | f1 on Twibot-22 | type | tags|
 | -------- | ---------------- | --------------- | ---- | --- |
-| Yang et al. |0.7109|0.1408|F T G|`random forest`|
+| Yang et al. |0.7109|0.1409|F T G|`random forest`|
 

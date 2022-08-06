@@ -21,7 +21,7 @@ This is an unofficial implementation in PyTorch of SATAR. Coding by Herun Wan ([
 │   ├── cresci-2015.py
 │   ├── Twibot-20.py
 │   └── Twibot-22.py
-└─tmp  # other files
+└── tmp  # other files
     ├── checkpoints  # save the trained parameters
     ├── cresci-2015  # the preprocessed data
     ├── Twibot-20
@@ -30,7 +30,7 @@ This is an unofficial implementation in PyTorch of SATAR. Coding by Herun Wan ([
 
 - **implement details**:  
   - Semantic Information. In practice, due to the GPU memory limitations, the number of tweets per user is limited to 128, the maximum length of each tweet is 64, and the length of words formed by all tweets of a user is at most 1024.
-  -  Neighborhood Information. In pre-train, we set the initial neighbor vectors of each user to 0. In fine-tune, we use the pre-trained model to get all users' representation and obtain neighbor vector of each user by averaging the neighbors' representation. 
+  - Neighborhood Information. In pre-train, we set the initial neighbor vectors of each user to 0. In fine-tune, we use the pre-trained model to get all users' representation and obtain neighbor vector of each user by averaging the neighbors' representation. 
   - Property Information. We adopt followed 15 properties: follower count, following count, tweet count, listed count, whether have withheld, whether have url, whether have profile image url, whether have pinned tweet id, wether have entities, whether have location, whether verified, whether protected, the length of description, the length of username, days difference between created time and collected time. For numerical properties, we adopt z-score normalization and 0-1 coding for true-or-false properties.
   - Due to dataset limitations, the model can only perform detection on Twibot-22, Twibot-20 and cresci-2015 dataset. Twibot-22 requires a lot of computing resources to perform.
     
@@ -113,7 +113,7 @@ python get_reps.py --dataset Twibot-20 --n_hidden 128
 
 make sure that the hidden dimensions are equal
 
-after running done, make make sure that the 'tmp/Twibot-20/' dictionary contains following files:
+after running done, make sure that the 'tmp/Twibot-20/' dictionary contains following files:
 
 - reps.npy
 
@@ -121,14 +121,14 @@ after running done, make make sure that the 'tmp/Twibot-20/' dictionary contains
 python get_neighbor_reps.py --dataset Twibot-20
 ```
 
-after running done, make make sure that the 'tmp/Twibot-20/' dictionary contains following files:
+after running done, make sure that the 'tmp/Twibot-20/' dictionary contains following files:
 
 - neighbor_reps.npy
   
 
 #### Train model
 
-forth, train the SATAR model by running:
+fourth, train the SATAR model by running:
 
 ```python
 python train.py --dataset Twibot-20
@@ -185,7 +185,7 @@ python eval.py --dataset Twibot-20
 |             |  84.45   |  86.23   |   82.76   | 90.00  |
 |             |  83.18   |  85.57   |   79.84   | 92.19  |
 |             |  83.26   |  85.59   |   80.11   | 91.88  |
-|    maen     |  84.02   |  86.07   |   81.50   | 91.22  |
+|    mean     |  84.02   |  86.07   |   81.50   | 91.22  |
 |     std     |   0.85   |   0.70   |   1.45    |  1.82  |
 
 

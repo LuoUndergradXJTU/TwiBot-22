@@ -60,5 +60,5 @@
 
 | baseline | acc on Twibot-22 | f1 on Twibot-22 | type | tags|
 | -------- | ---------------- | --------------- | ---- | --- |
-| Alhosseini et al.|0.6103|0.5473|F G|`gcn`|
+| Alhosseini et al.|0.6910|0.4991|F G|`gcn`|
 

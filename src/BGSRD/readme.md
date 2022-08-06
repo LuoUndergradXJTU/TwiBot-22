@@ -63,4 +63,4 @@
 
 | baseline | acc on Twibot-22 | f1 on Twibot-22 | type | tags              |
 | -------- | ---------------- | --------------- | ---- | ----------------- |
-| BGRSD    | 0.7055           | 0.7200          | F    | `BERT` `GAT` |
+| BGRSD    | ------           | ------          | F    | `BERT` `GAT` |

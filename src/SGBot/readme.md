@@ -58,5 +58,5 @@ The features are divided into user metadata and derived features. We ignore some
 
 | baseline | acc on Twibot-22 | f1 on Twibot-22 | type | tags|
 | -------- | ---------------- | --------------- | ---- | --- |
-| Varol et al.|0.7392|0.2754|P T|`random forest`|
+| Varol et al.|0.7508|0.3659|P T|`random forest`|
 

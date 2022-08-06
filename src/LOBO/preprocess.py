@@ -262,8 +262,8 @@ if datasets in ('Twibot-20', 'cresci-2017', 'cresci-2015'):
 
 
 elif datasets == 'Twibot-22':
-    print('Due to the scability of Twibot-22 dataset, preprocessing may take a long time and is memory-intensive. So we recommend directly using our semi-processed dataset for training and prediction.')
-    print('You can view our source code in Twibot-22/semi-processed/preprocess.py')
+    
+    print('You can view our source code for preprocessing in Twibot-22/semi-processed/preprocess.py')
     
     print('Loading semi-processed datasets...')
     path_raw = '../../datasets/Twibot-22/'

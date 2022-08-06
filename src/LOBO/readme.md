@@ -26,6 +26,9 @@
 1. Some features(# User favorites, Seconds active, Days active, # Geolocated tweets, % of Geolocated Tweets, # Tweets analyzed, # Favorites, Favorites (per tweet), # APIs used, # Retweets analyzed) that are either unavailable from the datasets or computational costly are not included in cresci-15, cresci-17, Twibot-20.
 2. Due to the large scale of Twibot-22, only a subset of tweets is used for some users to generate their feature vectors.
   
+- **preliminary**:
+Due to the scale of Twibot-22 dataset, preprocessing may take a long time and is memory-intensive. So we do not recommend that you preprocess the data by yourself. You can download preprocessed data from https://drive.google.com/file/d/1-KF8qfW0F3a5L2HBE0bhzMAL9m76tVOM/view?usp=sharing and 
+unzip it to Twibot-22/semi-processed_dataset before your reproduction on Twibot-22.
 
 #### How to reproduce:
 
