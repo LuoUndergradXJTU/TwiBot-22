@@ -36,6 +36,7 @@ you can check the results in /results/dataset.log
 
 | dataset                   |      | acc    | precison | recall | f1     |
 | ------------------------- | ---- | ------ | -------- | ------ | ------ |
+| Twibot-22                 | mean | 0.7125 | 0.7990   | 0.5214 | 0.3709 |
 | Twibot-20                 | mean | 0.8191 | 0.9656   | 0.7630 | 0.8524 |
 | botometer-feedback-2019   | mean | 0.7597 | 0.3171   | 0.5909 | 0.4127 |
 | cresci-rtbust-2019        | mean | 0.5000 | 0.5741   | 0.5124 | 0.5415 | 

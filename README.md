@@ -64,7 +64,7 @@ For other datasets, you can directly download them from [Google Drive](https://d
 | [HGT](src/HGT_SimpleHGN/)             | [link](https://arxiv.org/abs/2003.01332)                                               | 0.7491           | 0.3960          | F T G | `Graph Neural Networks`  |
 | [SimpleHGN](src/HGT_SimpleHGN/)       | [link](https://arxiv.org/abs/2112.14936)                                               | 0.7672           | 0.4544          | F T G | `Graph Neural Networks`  |
 | [Kantepe et al.](src/Kantepe/)        | [link](https://ieeexplore.ieee.org/abstract/document/8093483)                          | 0.7640           | 0.5870          | F T   | `random forest`          |
-| [Knauth et al.](src/Knauth/)          | [link](https://aclanthology.org/R19-1065/)                                             | -                | -               | F T G | `random forest`          |
+| [Knauth et al.](src/Knauth/)          | [link](https://aclanthology.org/R19-1065/)                                             | 0.7125           | 0.3709          | F T G | `random forest`          |
 | [Kouvela et al.](src/Kouvela/)        | [link](https://dl.acm.org/doi/abs/10.1145/3415958.3433075)                             | 0.7644           | 0.3003          | F T   | `random forest`          |
 | [Kudugunta et al.](src/Kudugunta/)    | [link](https://arxiv.org/abs/1802.04289)                                               | 0.6587           | 0.5167          | F     | `SMOTENN, random forest` |
 | [Lee et al.](src/Lee/)                | [link](https://ojs.aaai.org/index.php/ICWSM/article/view/14106)                        | 0.7628           | 0.3041          | F T   | `random forest`          |

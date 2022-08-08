@@ -45,6 +45,7 @@ Check the results in results/dataset.log
 
 | dataset                   |      | acc    | precison | recall | f1     |
 | ------------------------- | ---- | ------ | -------- | ------ | ------ |
+| Twibot-22                 | mean | -      |  -       | -      | -      |
 | Twibot-20_all             | mean | 0.8604 | 0.9472   | 0.8219 | 0.8801 |
 | Twibot-20_Deepwalk        | mean | 0.8634 | 0.9400   | 0.8300 | 0.8816 |
 | Twibot-20_Node2vec        | mean | 0.8607 | 0.9425   | 0.8798 | 0.8718 |
