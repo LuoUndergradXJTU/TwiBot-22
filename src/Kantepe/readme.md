@@ -60,5 +60,5 @@ random seed: 0, 100, 200, 300, 400
 
 | baseline | acc on Twibot-22 | f1 on Twibot-22 | type | tags|
 | -------- | ---------------- | --------------- | ---- | --- |
-| Varol et al.|0.764|0.587|F T|`random forest`|
+| Kantepe et al.|0.764|0.587|F T|`random forest`|
 
