@@ -1,6 +1,6 @@
 # TwiBot-22
 
-This is the offical repository of [TwiBot-22](https://twibot22.github.io/).
+This is the official repository of [TwiBot-22](https://twibot22.github.io/).
 
 ### Introduction
 
