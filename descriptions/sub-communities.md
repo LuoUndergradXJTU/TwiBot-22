@@ -1,4 +1,4 @@
-## Statistics of 10 sub communities
+## Statistics of 10 sub-communities
 
 To evaluate the generalization ability of existing Twitter bot detection approaches, we identify 10 sub-communities in the TwiBot-22 network. Here is the statistics of 10 sub communities. For more details, please refer to the [TwiBot-22 paper]().
 
