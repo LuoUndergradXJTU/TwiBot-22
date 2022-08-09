@@ -84,6 +84,8 @@ For other datasets, you can directly download them from [Google Drive](https://d
 
 where `-` represents the baseline could not scale to TwiBot-22 dataset
 
+#### Precision
+
 |      Precision       | Botometer-feedback-2019 |    Cresci-2015     |    Cresci-2017    | Cresci-rtbust-2019 | Cresci-stock-2018  |   Gilani-2017    |   Midterm-2018   |    Twibot-20     |    Twibot-22     |
 | :------------------: | :---------------------: | :----------------: | :---------------: | :----------------: | :----------------: | :--------------: | :--------------: | :--------------: | :--------------: |
 |     Abreu et al.     |    63.63 </br>$_{3.60}$     |  99.05 </br> $_{0.21}$  | 98.34 </br> $_{0.13}$  |  78.57 </br> $_{1.44}$  |  75.45 </br> $_{0.45}$  | 76.82 </br> $_{1.20}$ | 97.28 </br> $_{0.07}$ | 72.20 </br> $_{0.52}$ | 50.92 </br> $_{0.10}$ |
@@ -122,7 +124,7 @@ where `-` represents the baseline could not scale to TwiBot-22 dataset
 |     Varol et al.     |            -            |  92.22 </br> $_{0.66}$  |         -         |          -         |          -         |         -        |         -        | 78.04 </br> $_{0.61}$ | 75.74 </br> $_{0.31}$ |
 |      Wei et al.      |            -            |  91.70 </br> $_{1.70}$  | 85.90 </br> $_{1.90}$  |          -         |          -         |         -        |         -        | 61.00 </br> $_{2.10}$ | 62.70 </br> $_{1.80}$ |
 
-
+#### Recall
 
 |       Recall         | Botometer-feedback-2019 |    Cresci-2015     |    Cresci-2017    | Cresci-rtbust-2019 | Cresci-stock-2018  |   Gilani-2017    |   Midterm-2018   |    Twibot-20     |    Twibot-22     |
 | :------------------: | :---------------------: | :----------------: | :---------------: | :----------------: | :----------------: | :--------------: | :--------------: | :--------------: | :--------------: |
@@ -162,6 +164,7 @@ where `-` represents the baseline could not scale to TwiBot-22 dataset
 |     Varol et al.     |            -            |  97.40 </br> $_{0.90}$  |         -         |          -         |          -         |         -        |         -        | 84.37 </br> $_{0.67}$ | 16.83 </br> $_{0.21}$ |
 |      Wei et al.      |            -            |  75.30 </br> $_{1.50}$  | 72.10 </br> $_{1.50}$  |          -         |          -         |         -        |         -        | 54.00 </br> $_{2.70}$ | 46.80 </br> $_{1.40}$ |
 
+#### F1
 
 |         F1           | Botometer-feedback-2019 |    Cresci-2015     |    Cresci-2017    | Cresci-rtbust-2019 | Cresci-stock-2018  |   Gilani-2017    |   Midterm-2018   |    Twibot-20     |    Twibot-22     |
 | :------------------: | :---------------------: | :----------------: | :---------------: | :----------------: | :----------------: | :--------------: | :--------------: | :--------------: | :--------------: |
