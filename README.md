@@ -47,7 +47,7 @@ For other datasets, you can directly download them from [Google Drive](https://d
 | baseline                              | paper                                                                                  | acc on Twibot-22 | f1 on Twibot-22 | type  | tags                     |
 | ------------------------------------- | -------------------------------------------------------------------------------------- | ---------------- | --------------- | ----- | ------------------------ |
 | [Abreu et al.](src/Abreu/)            | [link](https://ieeexplore.ieee.org/abstract/document/9280525)                          | 0.7066           | 0.5344          | F     | `random forest`          |
-| [Alhosseini et al.](src/Alhosseini/)  | [link](https://dl.acm.org/doi/fullHtml/10.1145/3308560.3316504)                        | 0.6910           | 0.4991          | F G   | `gcn`                    |
+| [Alhosseini et al.](src/Alhosseini/)  | [link](https://dl.acm.org/doi/fullHtml/10.1145/3308560.3316504)                        | 0.4772           | 0.3810          | F G   | `gcn`                    |
 | [BGSRD](src/BGSRD/)                   | [link](https://www.mdpi.com/2073-8994/14/1/30)                                         | 0.7188           | 0.2114          | F     | `BERT GAT`               |
 | [Bot Hunter](src/BotHunter/)          | [link](http://www.casos.cs.cmu.edu/publications/papers/LB_5.pdf)                       | 0.7279           | 0.2346          | F     | `random forest`          |
 | [Botometer](src/Botometer/)           | [link](https://botometer.osome.iu.edu/)                                                | 0.4987           | 0.4257          | F T G |                          |
