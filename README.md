@@ -44,43 +44,43 @@ For other datasets, you can directly download them from [Google Drive](https://d
 ### Baseline Overview
 
 
-| baseline                              | paper                                                                                  | acc on Twibot-22 | f1 on Twibot-22 | type  | tags                     |
-| ------------------------------------- | -------------------------------------------------------------------------------------- | ---------------- | --------------- | ----- | ------------------------ |
-| [Abreu et al.](src/Abreu/)            | [link](https://ieeexplore.ieee.org/abstract/document/9280525)                          | 0.7066           | 0.5344          | F     | `random forest`          |
-| [Alhosseini et al.](src/Alhosseini/)  | [link](https://dl.acm.org/doi/fullHtml/10.1145/3308560.3316504)                        | 0.4772           | 0.3810          | F G   | `gcn`                    |
-| [BGSRD](src/BGSRD/)                   | [link](https://www.mdpi.com/2073-8994/14/1/30)                                         | 0.7188           | 0.2114          | F     | `BERT GAT`               |
-| [Bot Hunter](src/BotHunter/)          | [link](http://www.casos.cs.cmu.edu/publications/papers/LB_5.pdf)                       | 0.7279           | 0.2346          | F     | `random forest`          |
-| [Botometer](src/Botometer/)           | [link](https://botometer.osome.iu.edu/)                                                | 0.4987           | 0.4257          | F T G |                          |
-| [BotRGCN](src/BotRGCN/)               | [link](https://arxiv.org/abs/2106.13092)                                               | 0.7966           | 0.5750          | F T G | `BotRGCN`                |
-| [Cresci et al.](src/Cresci/)          | [link](https://ieeexplore.ieee.org/abstract/document/7436643)                          | -                | -               | T     | `DNA`                    |
+| baseline                              | paper                                                        | acc on Twibot-22 | f1 on Twibot-22 | type  | tags                     |
+| ------------------------------------- | ------------------------------------------------------------ | ---------------- | --------------- | ----- | ------------------------ |
+| [Abreu et al.](src/Abreu/)            | [link](https://ieeexplore.ieee.org/abstract/document/9280525) | 0.7066           | 0.5344          | F     | `random forest`          |
+| [Alhosseini et al.](src/Alhosseini/)  | [link](https://dl.acm.org/doi/fullHtml/10.1145/3308560.3316504) | 0.4772           | 0.3810          | F G   | `gcn`                    |
+| [BGSRD](src/BGSRD/)                   | [link](https://www.mdpi.com/2073-8994/14/1/30)               | 0.7188           | 0.2114          | F     | `BERT GAT`               |
+| [Bot Hunter](src/BotHunter/)          | [link](http://www.casos.cs.cmu.edu/publications/papers/LB_5.pdf) | 0.7279           | 0.2346          | F     | `random forest`          |
+| [Botometer](src/Botometer/)           | [link](https://botometer.osome.iu.edu/)                      | 0.4987           | 0.4257          | F T G |                          |
+| [BotRGCN](src/BotRGCN/)               | [link](https://arxiv.org/abs/2106.13092)                     | 0.7966           | 0.5750          | F T G | `BotRGCN`                |
+| [Cresci et al.](src/Cresci/)          | [link](https://ieeexplore.ieee.org/abstract/document/7436643) | -                | -               | T     | `DNA`                    |
 | [Dehghan et al.](src/Dehghan)         | [link](https://assets.researchsquare.com/files/rs-1428343/v1_covered.pdf?c=1647280648) | -                | -               | F T G | `Graph`                  |
-| [Efthimion et al.](src/Efthimion/)    | [link](https://scholar.smu.edu/datasciencereview/vol1/iss2/5/)                         | 0.7408           | 0.2758          | F T   | `efthimion`              |
-| [EvolveBot](src/EvolveBot/)           | [link](https://ieeexplore.ieee.org/abstract/document/6553246)                          | 0.7109           | 0.1409          | F T G | `random forest`          |
-| [FriendBot](src/FriendBot)            | [link](https://link.springer.com/chapter/10.1007/978-3-030-41251-7_3)                  | -                | -               | F T G | `random forest`          |
-| [Kipf et al.](src/GCN_GAT)            | [link](https://arxiv.org/abs/1609.02907)                                               | 0.7839           | 0.5496          | F T G | `Graph Neural Network`   |
-| [Velickovic et al.](src/GCN_GAT)      | [link](https://arxiv.org/abs/1710.10903)                                               | 0.7948           | 0.5586          | F T G | `Graph Neural Network`   |
-| [GraphHist](src/GraphHist/)           | [link](https://arxiv.org/abs/1910.01180)                                               | -                | -               | F T G | `random forest`          |
-| [Hayawi et al.](src/Hayawi/)          | [link](https://link.springer.com/content/pdf/10.1007/s13278-022-00869-w.pdf)           | 0.7650           | 0.2474          | F     | `lstm`                   |
-| [HGT](src/HGT_SimpleHGN/)             | [link](https://arxiv.org/abs/2003.01332)                                               | 0.7491           | 0.3960          | F T G | `Graph Neural Networks`  |
-| [SimpleHGN](src/HGT_SimpleHGN/)       | [link](https://arxiv.org/abs/2112.14936)                                               | 0.7672           | 0.4544          | F T G | `Graph Neural Networks`  |
-| [Kantepe et al.](src/Kantepe/)        | [link](https://ieeexplore.ieee.org/abstract/document/8093483)                          | 0.7640           | 0.5870          | F T   | `random forest`          |
-| [Knauth et al.](src/Knauth/)          | [link](https://aclanthology.org/R19-1065/)                                             | 0.7125           | 0.3709          | F T G | `random forest`          |
-| [Kouvela et al.](src/Kouvela/)        | [link](https://dl.acm.org/doi/abs/10.1145/3415958.3433075)                             | 0.7644           | 0.3003          | F T   | `random forest`          |
-| [Kudugunta et al.](src/Kudugunta/)    | [link](https://arxiv.org/abs/1802.04289)                                               | 0.6587           | 0.5167          | F     | `SMOTENN, random forest` |
-| [Lee et al.](src/Lee/)                | [link](https://ojs.aaai.org/index.php/ICWSM/article/view/14106)                        | 0.7628           | 0.3041          | F T   | `random forest`          |
-| [LOBO](src/LOBO/)                     | [link](https://dl.acm.org/doi/10.1145/3274694.3274738)                                 | 0.7570           | 0.3857          | F T   | `random forest`          |
-| [Miller et al.](src/Miller/)          | [link](https://dl.acm.org/doi/10.1016/j.ins.2013.11.016)                               | 0.3037           | 0.4529          | F T   | `k means`                |
-| [Moghaddam et al.](src/Moghaddam/)    | [link](https://ieeexplore.ieee.org/abstract/document/9735340)                          | 0.7378           | 0.3207          | F G   | `random forest`          |
-| [NameBot](src/NameBot/)               | [link](https://arxiv.org/pdf/1812.05932.pdf)                                           | 0.7061           | 0.0050          | F     | `Logistic Regression`    |
-| [RGT](src/RGT/)                       | [link](https://arxiv.org/abs/2109.02927)                                               | 0.7647           | 0.4294          | F T G | `Graph Neural Networks`  |
-| [RoBERTa](src/RoBERTa/)               | [link](https://arxiv.org/pdf/1907.11692.pdf)                                           | 0.7207           | 0.2053          | F T   | `RoBERTa`                |
-| [Rodrguez-Ruiz](src/Rodrguez-Ruiz/)   | [link](https://www.sciencedirect.com/science/article/pii/S0167404820300031)            | 0.4936           | 0.5657          | F T G | `SVM`                    |
-| [Santos et al.](src/Santos/)          | [link](https://dl.acm.org/doi/pdf/10.1145/3308560.3317599)                             | -                | -               | F T   | `decision tree`          |
-| [SATAR](src/SATAR/)                   | [link](https://arxiv.org/abs/2106.13089)                                               | -                | -               | F T G |                          |
-| [SGBot](src/SGBot/)                   | [link](https://arxiv.org/abs/1911.09179)                                               | 0.7508           | 0.3659          | F T   | `random forest`          |
-| [T5](src/T5/)                         | [link](https://aaai.org/ocs/index.php/ICWSM/ICWSM17/paper/view/15587/14817)            | 0.7205           | 0.2027          | T     | `T5`                     |
-| [Varol et al.](src/Varol)             | [link](https://aaai.org/ocs/index.php/ICWSM/ICWSM17/paper/view/15587/14817)            | 0.7392           | 0.2754          | F T   | `random forest`          |
-| [Wei et al.](src/Wei/)                | [link](https://arxiv.org/pdf/2002.01336.pdf)                                           | 0.7020           | 0.5360          | T     |                          |
+| [Efthimion et al.](src/Efthimion/)    | [link](https://scholar.smu.edu/datasciencereview/vol1/iss2/5/) | 0.7408           | 0.2758          | F T   | `efthimion`              |
+| [EvolveBot](src/EvolveBot/)           | [link](https://ieeexplore.ieee.org/abstract/document/6553246) | 0.7109           | 0.1409          | F T G | `random forest`          |
+| [FriendBot](src/FriendBot)            | [link](https://link.springer.com/chapter/10.1007/978-3-030-41251-7_3) | -                | -               | F T G | `random forest`          |
+| [Kipf et al.](src/GCN_GAT)            | [link](https://arxiv.org/abs/1609.02907)                     | 0.7839           | 0.5496          | F T G | `Graph Neural Network`   |
+| [Velickovic et al.](src/GCN_GAT)      | [link](https://arxiv.org/abs/1710.10903)                     | 0.7948           | 0.5586          | F T G | `Graph Neural Network`   |
+| [GraphHist](src/GraphHist/)           | [link](https://arxiv.org/abs/1910.01180)                     | -                | -               | F T G | `random forest`          |
+| [Hayawi et al.](src/Hayawi/)          | [link](https://link.springer.com/content/pdf/10.1007/s13278-022-00869-w.pdf) | 0.7650           | 0.2474          | F     | `lstm`                   |
+| [HGT](src/HGT_SimpleHGN/)             | [link](https://arxiv.org/abs/2003.01332)                     | 0.7491           | 0.3960          | F T G | `Graph Neural Networks`  |
+| [SimpleHGN](src/HGT_SimpleHGN/)       | [link](https://arxiv.org/abs/2112.14936)                     | 0.7672           | 0.4544          | F T G | `Graph Neural Networks`  |
+| [Kantepe et al.](src/Kantepe/)        | [link](https://ieeexplore.ieee.org/abstract/document/8093483) | 0.7640           | 0.5870          | F T   | `random forest`          |
+| [Knauth et al.](src/Knauth/)          | [link](https://aclanthology.org/R19-1065/)                   | 0.7125           | 0.3709          | F T G | `random forest`          |
+| [Kouvela et al.](src/Kouvela/)        | [link](https://dl.acm.org/doi/abs/10.1145/3415958.3433075)   | 0.7644           | 0.3003          | F T   | `random forest`          |
+| [Kudugunta et al.](src/Kudugunta/)    | [link](https://arxiv.org/abs/1802.04289)                     | 0.6587           | 0.5167          | F     | `SMOTENN, random forest` |
+| [Lee et al.](src/Lee/)                | [link](https://ojs.aaai.org/index.php/ICWSM/article/view/14106) | 0.7628           | 0.3041          | F T   | `random forest`          |
+| [LOBO](src/LOBO/)                     | [link](https://dl.acm.org/doi/10.1145/3274694.3274738)       | 0.7570           | 0.3857          | F T   | `random forest`          |
+| [Miller et al.](src/Miller/)          | [link](https://dl.acm.org/doi/10.1016/j.ins.2013.11.016)     | 0.3037           | 0.4529          | F T   | `k means`                |
+| [Moghaddam et al.](src/Moghaddam/)    | [link](https://ieeexplore.ieee.org/abstract/document/9735340) | 0.7378           | 0.3207          | F G   | `random forest`          |
+| [NameBot](src/NameBot/)               | [link](https://arxiv.org/pdf/1812.05932.pdf)                 | 0.7061           | 0.0050          | F     | `Logistic Regression`    |
+| [RGT](src/RGT/)                       | [link](https://arxiv.org/abs/2109.02927)                     | 0.7647           | 0.4294          | F T G | `Graph Neural Networks`  |
+| [RoBERTa](src/RoBERTa/)               | [link](https://arxiv.org/pdf/1907.11692.pdf)                 | 0.7207           | 0.2053          | F T   | `RoBERTa`                |
+| [Rodriguez-Ruiz](src/Rodriguez-Ruiz/) | [link](https://www.sciencedirect.com/science/article/pii/S0167404820300031) | 0.4936           | 0.5657          | F T G | `SVM`                    |
+| [Santos et al.](src/Santos/)          | [link](https://dl.acm.org/doi/pdf/10.1145/3308560.3317599)   | -                | -               | F T   | `decision tree`          |
+| [SATAR](src/SATAR/)                   | [link](https://arxiv.org/abs/2106.13089)                     | -                | -               | F T G |                          |
+| [SGBot](src/SGBot/)                   | [link](https://arxiv.org/abs/1911.09179)                     | 0.7508           | 0.3659          | F T   | `random forest`          |
+| [T5](src/T5/)                         | [link](https://aaai.org/ocs/index.php/ICWSM/ICWSM17/paper/view/15587/14817) | 0.7205           | 0.2027          | T     | `T5`                     |
+| [Varol et al.](src/Varol)             | [link](https://aaai.org/ocs/index.php/ICWSM/ICWSM17/paper/view/15587/14817) | 0.7392           | 0.2754          | F T   | `random forest`          |
+| [Wei et al.](src/Wei/)                | [link](https://arxiv.org/pdf/2002.01336.pdf)                 | 0.7020           | 0.5360          | T     |                          |
 
 where `-` represents the baseline could not scale to TwiBot-22 dataset
 
@@ -116,7 +116,7 @@ where `-` represents the baseline could not scale to TwiBot-22 dataset
 |       NameBot        |    45.45 </br> $_{0.00}$     |  76.81 </br> $_{0.00}$  | 80.39 </br> $_{0.03}$  |  65.00 </br> $_{0.00}$  |  58.34 </br> $_{0.00}$  | 58.21 </br> $_{0.00}$ | 86.93 </br> $_{0.00}$ | 58.72 </br> $_{0.00}$ | 67.73 </br> $_{0.00}$ |
 |         RGT          |            -            |  96.38 </br> $_{0.59}$  |         -         |          -         |          -         |         -        |         -        | 85.15 </br> $_{0.28}$ | 75.03 </br> $_{0.85}$ |
 |       RoBERTa        |            -            |  97.58 </br> $_{0.27}$  | 92.43 </br> $_{0.99}$  |          -         |          -         |         -        |         -        | 73.88 </br> $_{1.06}$ | 63.28 </br> $_{0.90}$ |
-| Rodrguez-Ruiz et al. |            -            |  78.64 </br> $_{0.00}$  | 79.47 </br> $_{0.00}$  |          -         |          -         |         -        |         -        | 61.60 </br> $_{0.00}$ | 33.23 </br> $_{0.00}$ |
+| Rodriguez-Ruiz et al. |            -            |  78.64 </br> $_{0.00}$  | 79.47 </br> $_{0.00}$  |          -         |          -         |         -        |         -        | 61.60 </br> $_{0.00}$ | 33.23 </br> $_{0.00}$ |
 |    Santos et al.     |    50.00 </br> $_{0.00}$     |  72.86 </br> $_{0.00}$  | 81.71 </br> $_{0.00}$  |  75.68 </br> $_{0.00}$  |  65.39 </br> $_{0.00}$  | 32.26 </br> $_{0.00}$ | 88.05 </br> $_{0.00}$ | 62.73 </br> $_{0.00}$ |         -        |
 |        SATAR         |            -            |  90.66 </br> $_{0.67}$  |         -         |          -         |          -         |         -        |         -        | 81.50 </br> $_{1.45}$ |         -        |
 |        SGBot         |    59.70 </br> $_{3.91}$     |  99.45 </br> $_{0.20}$  | 98.26 </br> $_{0.17}$  |  83.08 </br> $_{2.60}$  |  83.90 </br> $_{0.29}$  | 82.68 </br> $_{1.88}$ | 99.35 </br> $_{0.22}$ | 76.40 </br> $_{0.40}$ | 73.11 </br> $_{0.18}$ |
@@ -156,7 +156,7 @@ where `-` represents the baseline could not scale to TwiBot-22 dataset
 |       NameBot        |    33.33 </br> $_{0.00}$     |  91.12 </br> $_{0.00}$  | 91.79 </br> $_{0.00}$  |  70.27 </br> $_{0.00}$  |  64.13 </br> $_{0.00}$  | 36.45 </br> $_{0.00}$ | 96.82 </br> $_{0.00}$ | 70.47 </br> $_{0.00}$ |  0.03 </br> $_{0.00}$ |
 |         RGT          |            -            |  99.23 </br> $_{0.15}$  |         -         |          -         |          -         |         -        |         -        | 91.06 </br> $_{0.80}$ | 30.10 </br> $_{0.17}$ |
 |       RoBERTa        |            -            |  94.11 </br> $_{0.58}$  | 96.27 </br> $_{1.05}$  |          -         |          -         |         -        |         -        | 72.38 </br> $_{2.05}$ | 12.27 </br> $_{1.22}$ |
-| Rodrguez-Ruiz et al. |            -            |  99.11 </br> $_{0.00}$  | 92.88 </br> $_{0.00}$  |          -         |          -         |         -        |         -        | 98.75 </br> $_{0.00}$ | 81.32 </br> $_{0.00}$ |
+| Rodriguez-Ruiz et al. |            -            |  99.11 </br> $_{0.00}$  | 92.88 </br> $_{0.00}$  |          -         |          -         |         -        |         -        | 98.75 </br> $_{0.00}$ | 81.32 </br> $_{0.00}$ |
 |    Santos et al.     |    13.33 </br> $_{0.00}$     |  85.80 </br> $_{0.00}$  | 84.40 </br> $_{0.00}$  |  75.68 </br> $_{0.00}$  |  64.95 </br> $_{0.00}$  |  9.35 </br> $_{0.04}$ | 97.24 </br> $_{0.00}$ | 58.13 </br> $_{0.00}$ |         -        |
 |        SATAR         |            -            |  99.88 </br> $_{0.16}$  |         -         |          -         |          -         |         -        |         -        | 91.22 </br> $_{1.82}$ |         -        |
 |        SGBot         |    45.33 </br> $_{2.98}$     |  63.67 </br> $_{1.31}$  | 90.86 </br> $_{0.39}$  |  81.62 </br> $_{2.26}$  |  81.03 </br> $_{0.90}$  | 63.62 </br> $_{2.17}$ | 99.66 </br> $_{0.20}$ | 94.91 </br> $_{0.69}$ | 24.32 </br> $_{0.09}$ |
@@ -196,7 +196,7 @@ where `-` represents the baseline could not scale to TwiBot-22 dataset
 |       NameBot        |    38.46 </br> $_{0.00}$     |  83.36 </br> $_{0.00}$  | 85.71 </br> $_{0.02}$  |  67.53 </br> $_{0.00}$  |  61.10 </br> $_{0.00}$  | 44.83 </br> $_{0.00}$ | 91.61 </br> $_{0.00}$ | 65.06 </br> $_{0.00}$ |  0.50 </br> $_{0.00}$ |
 |         RGT          |    -     |  97.78 </br> $_{0.24}$  | -  |  -  |  -  | - | - | 88.01 </br> $_{0.41}$ | 42.94 </br> $_{1.85}$ |
 |       RoBERTa        |    -     |  95.86 </br> $_{0.19}$  | 94.30 </br> $_{0.18}$  |  -  |  -  | - | - | 73.09 </br> $_{0.59}$ | 20.53 </br> $_{1.71}$ |
-| Rodrguez-Ruiz et al. |    -     |  87.70 </br> $_{0.00}$  | 85.65 </br> $_{0.00}$  |  -  |  -  | - | - | 63.10 </br> $_{0.00}$ | 56.57 </br> $_{0.00}$ |
+| Rodriguez-Ruiz et al. |    -     |  87.70 </br> $_{0.00}$  | 85.65 </br> $_{0.00}$  |  -  |  -  | - | - | 63.10 </br> $_{0.00}$ | 56.57 </br> $_{0.00}$ |
 |    Santos et al.     |    21.05 </br> $_{0.00}$     |  78.80 </br> $_{0.00}$  | 83.03 </br> $_{0.00}$  |  75.68 </br> $_{0.00}$  |  65.17 </br> $_{0.00}$  | 14.49 </br> $_{0.00}$ | 92.42 </br> $_{0.00}$ | 60.34 </br> $_{0.00}$ | - |
 |        SATAR         |    -     |  95.05 </br> $_{0.34}$  | -  |  -  |  -  | - | - | 86.07 </br> $_{0.70}$ | - |
 |        SGBot         |    49.60 </br> $_{3.43}$     |  77.91 </br> $_{0.13}$  | 94.61 </br> $_{0.19}$  |  82.26 </br> $_{1.73}$  |  82.34 </br> $_{0.11}$  | 72.10 </br> $_{0.19}$ | 99.52 </br> $_{0.02}$ | 84.90 </br> $_{0.42}$ | 36.59 </br> $_{0.18}$ |
