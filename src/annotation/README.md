@@ -24,4 +24,4 @@ In ```annotation_combine.csv```, label means:
 
 ## Expert Annotation Data
 
-In expert annotation step, we select 1000 users and assign each user to 5 Twitter bot detection experts to identify if it is a bot. Their annotation results are listed in ```label.manual.csv```
+In expert annotation step, we select 1000 users and assign each user to 5 Twitter bot detection experts to identify if it is a bot. ```record_combine.csv``` contains the raw annotation data and the annotation results are listed in ```label.manual.csv```.
