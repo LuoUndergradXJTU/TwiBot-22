@@ -30,13 +30,13 @@ In expert annotation step, we select 1000 users and assign each user to 5 Twitte
 ## Labeling Functions Ablation Study
 We remove labeling functions in annotation process and compare their results with the full annotation model.
 
-|  labeling function   |  bot->bot | bot->human | human->human | human->bot |
-|  :----:  | :----:  | :----: | :----: | :----: |
-|w/o  adaboost|77050|49665|869317| 3968 |
-|w/o random forest|117191|9524|841531|31754|
-|w/o MLP|109152|17563|796159|77126|
-|w/o GCN|120925|5790|833776|39509|
-|w/o GAT|123397|3318|824436|48849|
-|w/o RGCN|123676|3042|819293|53970|
-|w/o verify|122177|4538|873101|184|
-|w/o keywords|123880|2835|840142|33143|
+|  labeling function   |  bot->bot | bot->human | human->human | human->bot | changed (%)|
+|  :----:  | :----:  | :----: | :----: | :----: | :----: |
+|w/o  adaboost|77050|49665|869317| 3968 | 5.36|
+|w/o random forest|117191|9524|841531|31754| 4.13|
+|w/o MLP|109152|17563|796159|77126|9.46|
+|w/o GCN|120925|5790|833776|39509|4.54|
+|w/o GAT|123397|3318|824436|48849|5.22|
+|w/o RGCN|123676|3042|819293|53970|5.70|
+|w/o verify|122177|4538|873101|184|0.47|
+|w/o keywords|123880|2835|840142|33143|3.60|
