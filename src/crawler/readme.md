@@ -1,0 +1,10 @@
+### Crawler to Collect User Network
+
+A common drawback of existing Twitter bot detection datasets is that they only feature a few types of bots and genuine users, while real-world Twitter is home to diversified users and bots. As a result, [TwiBot-20](https://dl.acm.org/doi/abs/10.1145/3459637.3482019?casa_token=Er3w_RyuS8QAAAAA:XL0-Ss4aBpRbdlubnzp06KrXFYKE1vkAp5oZoVn5yHXwoiIRhgAQXNwiW6q0zZuyd_UWyl-kfJfB) proposes to use breadth-first search (BFS) for user collection, starting from "seed users" and expanding with user follow relationships. To ensure that TwiBot-22 includes different types of bots and genuine users, we augment BFS with two diversity-aware sampling strategies:
+
+- **Distribution diversity**. Given user metadata such as follower count, different types of users fall differently into the metadata distribution. Distribution diversity aims to sample users in the top, middle, and bottom of the distribution. For numerical metadata, among a user's neighbors and their metadata values, we select the *k* users with the highest value, *k* with the lowest, and *k* randomly chosen from the rest. For true-or-false metadata, we select *k* with true and *k* with false.
+- **Value diversity**. Given a user and its metadata, value diversity is adopted so that neighbors with significantly different metadata values are more likely to be included, ensuring the diversity of collected users. For numerical metadata, among expanding user *u*'s neighbors *X* and their metadata values *x<sup>num</sup>*, the probability of user *x* being sampled is denoted as *p(x) |u<sup>num</sup> - x<sup>num</sup>|*. For true-or-false metadata we select *k* users from the opposite class.
+
+This is the code of the crawler.
+
+For more details, please refer to the [TwiBot-22 paper](https://arxiv.org/abs/2206.04564).
