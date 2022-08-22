@@ -28,8 +28,8 @@ In expert annotation step, we select 1000 users and assign each user to 5 Twitte
 
 
 ## Labeling Functions Ablation Study
-We remove labeling functions in annotation process and compare the annotation results with full annotation functions.
- 
+We remove labeling functions in annotation process and compare their results with the full annotation model.
+
 |  labeling function   |  bot->bot | bot->human | human->human | human->bot |
 |  :----:  | :----:  | :----: | :----: | :----: |
 |w/o  adaboost|77050|49665|869317| 3968 |
