@@ -1,6 +1,6 @@
 # TwiBot-22
 
-This is the official repository of [TwiBot-22](https://twibot22.github.io/).
+This is the official repository of [TwiBot-22](https://twibot22.github.io/). NeurIPS 2022, Datasets and Benchmarks Track.
 
 ### Introduction
 
@@ -15,7 +15,7 @@ Each dataset contains `node.json` (or `tweet.json`, `user.json`, `list.json`, an
 
 Reviewers at the NeurIPS 2022 Datasets and Benchmarks Track: Feel free to download TwiBot-22 at [Google Drive](https://drive.google.com/drive/folders/1YwiOUwtl8pCd2GD97Q_WEzwEUtSPoxFs?usp=sharing).
 
-`gdown --id 1YwiOUwtl8pCd2GD97Q_WEzwEUtSPoxFs`
+Please apply for access by contacting shangbin at cs.washington.edu and clearly state your institution, your research advisor (if any), and your use case of TwiBot-22.
 
 ### How to download other datasets
 
