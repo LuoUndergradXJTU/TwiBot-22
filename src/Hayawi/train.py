@@ -1,5 +1,5 @@
 from model import DeeProBot
-from Dataset import training_data,val_data,test_data
+from dataset import training_data,val_data,test_data
 import torch
 from torch import nn
 from utils import accuracy,init_weights

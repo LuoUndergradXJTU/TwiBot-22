@@ -7,6 +7,65 @@ import numpy as np
 import os
 from torch_geometric.data import Data, HeteroData
 
+
+import json
+from torch.utils.data import Dataset,DataLoader
+
+class training_data(Dataset):
+    def __init__(self,root='./boto-19/'):
+        self.root=root
+        self.idx=torch.load(root+'train_idx.pt')
+        self.des=torch.load(root+'des_tensor.pt')[:,self.idx,:]
+        self.num_prop=torch.load(root+'num_properties_tensor.pt')[self.idx]
+        self.label=torch.load(root+'label.pt')[self.idx]
+        
+    def __len__(self):
+        return len(self.idx)
+    
+    def __getitem__(self,idx):
+        des=self.des[:,idx,:]
+        num_prop=self.num_prop[idx]
+        label=self.label[idx]
+        
+        return des,num_prop,label
+    
+class val_data(Dataset):
+    def __init__(self,root='./boto-19/'):
+        self.root=root
+        self.idx=torch.load(root+'val_idx.pt')
+        self.des=torch.load(root+'des_tensor.pt')[:,self.idx,:]
+        self.num_prop=torch.load(root+'num_properties_tensor.pt')[self.idx]
+        self.label=torch.load(root+'label.pt')[self.idx]
+        
+    def __len__(self):
+        return len(self.idx-1)
+    
+    def __getitem__(self,idx):
+        des=self.des[:,idx,:]
+        num_prop=self.num_prop[idx]
+        label=self.label[idx]
+        
+        return des,num_prop,label
+    
+class test_data(Dataset):
+    def __init__(self,root='./boto-19/'):
+        self.root=root
+        self.idx=torch.load(root+'test_idx.pt')
+        self.des=torch.load(root+'des_tensor.pt')[:,self.idx,:]
+        self.num_prop=torch.load(root+'num_properties_tensor.pt')[self.idx]
+        self.label=torch.load(root+'label.pt')[self.idx]
+        
+    def __len__(self):
+        return len(self.idx)
+    
+    def __getitem__(self,idx):
+        des=self.des[:,idx,:]
+        num_prop=self.num_prop[idx]
+        label=self.label[idx]
+        
+        return des,num_prop,label
+
+
 def get_data_dir(server_id):
     if server_id == "206":
         return Path("/new_temp/fsb/Twibot22-baselines/datasets")
