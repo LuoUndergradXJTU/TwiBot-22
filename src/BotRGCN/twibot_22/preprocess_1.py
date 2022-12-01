@@ -17,22 +17,26 @@ uid_to_user_index = {x : i for i, x in enumerate(user_index_to_uid)}
 print('extracting labels and splits')
 split=pd.read_csv("../datasets/Twibot-22/split.csv")
 label=pd.read_csv("../datasets/Twibot-22/label.csv")
+uid_label={uid:label for uid, label in zip(label['id'].values,label['label'].values)}
+uid_split={uid:split for uid, split in zip(split['id'].values,split['split'].values)}
+label_new=[]
 train_idx=[]
 test_idx=[]
 val_idx=[]
-for i,single_split in enumerate(tqdm(split.split.values)):
+for i,uid in enumerate(tqdm(user_idx.values)):
+    single_label=uid_label[uid]
+    single_split=uid_split[uid]
+    if single_label =='human':
+        label_new.append(0)
+    else:
+        label_new.append(1)
     if single_split=='train':
         train_idx.append(i)
     elif single_split=='test':
         test_idx.append(i)
     else:
         val_idx.append(i)
-label_new=[]
-for i,single_label in enumerate(tqdm(label.label.values)):
-    if single_label =='human':
-        label_new.append(0)
-    else:
-        label_new.append(1)
+
 labels=torch.LongTensor(label_new)
 train_mask = torch.LongTensor(train_idx)
 valid_mask = torch.LongTensor(val_idx)
