@@ -1,11 +1,10 @@
 import torch
 import numpy as np
 import pandas as pd
-from torch_geometric.data import Data, HeteroData
 from tqdm import tqdm
 from datetime import datetime as dt
-import sys
 from dataset_tool import fast_merge,df_to_mask
+import os
 
 print('loading raw data')
 node=pd.read_json("../datasets/Twibot-20/node.json")
@@ -15,6 +14,9 @@ split=pd.read_csv("../datasets/Twibot-20/split.csv")
 print('processing raw data')
 user,tweet=fast_merge(dataset='Twibot-20')
 path='processed_data/'
+
+if not os.path.exists("processed_data"):
+    os.mkdir("processed_data")
 
 #labels
 print('extracting labels and splits')
@@ -219,10 +221,10 @@ edge['source_id']=list(map(lambda x:uid_to_user_index[x],edge['source_id'].value
 dict={i:[] for i in range(len(user))}
 for i in tqdm(range(len(user))):
     try:
-        edge['source_id'][i]
+        edge.iloc[i]['source_id']
     except KeyError:
         continue
     else:
-        dict[edge['source_id'][i]].append(tweet['text'][edge['target_id'][i]+len(user)])
+        dict[edge.iloc[i]['source_id']].append(tweet['text'][edge.iloc[i]['target_id']+len(user)])
 
 np.save('processed_data/each_user_tweets.npy',dict)

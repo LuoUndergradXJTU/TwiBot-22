@@ -1,11 +1,10 @@
 import torch
 import numpy as np
 import pandas as pd
-from torch_geometric.data import Data, HeteroData
 from tqdm import tqdm
 from datetime import datetime as dt
-import sys
 from dataset_tool import fast_merge,df_to_mask
+import os
 
 print('loading raw data')
 node=pd.read_json("../datasets/cresci-2015/node.json")
@@ -15,6 +14,9 @@ split=pd.read_csv("../datasets/cresci-2015/split.csv")
 print('processing raw data')
 user,tweet=fast_merge(dataset='cresci-2015')
 path='processed_data/'
+
+if not os.path.exists("processed_data"):
+    os.mkdir("processed_data")
 
 #labels
 print('extracting labels and splits')
@@ -175,15 +177,11 @@ cat_properties_tensor=default_profile_image_tensor.reshape([5301,1])
 torch.save(cat_properties_tensor,path+'cat_properties_tensor.pt')
 
 #get each_user_tweets
-user, tweet = fast_merge("cresci-2015", '209')
-
 user_index_to_uid = list(user.id)
 tweet_index_to_tid = list(tweet.id)
         
 uid_to_user_index = {x : i for i, x in enumerate(user_index_to_uid)}
 tid_to_tweet_index = {x : i for i, x in enumerate(tweet_index_to_tid)}
-
-edge=pd.read_csv("../datasets/cresci-2015/edge.csv")
 
 edge=edge[edge.relation=='post']
 
@@ -211,11 +209,6 @@ edge['source_id']=list(map(lambda x:uid_to_user_index[x],edge['source_id'].value
 
 dict={i:[] for i in range(len(user))}
 for i in tqdm(range(len(user))):
-    try:
-        edge['source_id'][i]
-    except KeyError:
-        continue
-    else:
-        dict[edge['source_id'][i]].append(tweet['text'][edge['target_id'][i]+len(user)])
+    dict[edge.iloc[i]['source_id']].append(tweet['text'][edge.iloc[i]['target_id']+len(user)])
 
 np.save('processed_data/each_user_tweets.npy',dict)
