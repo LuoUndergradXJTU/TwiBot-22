@@ -219,12 +219,12 @@ edge['source_id']=list(map(lambda x:uid_to_user_index[x],edge['source_id'].value
 
 
 dict={i:[] for i in range(len(user))}
-for i in tqdm(range(len(user))):
+for i in tqdm(range(len(edge))):
     try:
         edge.iloc[i]['source_id']
     except KeyError:
         continue
     else:
-        dict[edge.iloc[i]['source_id']].append(tweet['text'][edge.iloc[i]['target_id']+len(user)])
+        dict[edge.iloc[i]['source_id']].append(edge.iloc[i]['target_id'])
 
 np.save('processed_data/each_user_tweets.npy',dict)
