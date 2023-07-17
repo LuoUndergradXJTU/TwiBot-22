@@ -1,5 +1,6 @@
-*.pt
-*.pth
+commands.sh
+src/BotRGCN/datasets/*
+src/BotRGCN/twibot-20/processed_data/*.pt
 tmp/*
 src/*/tmp/*
 src/tmp*
