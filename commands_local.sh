@@ -9,3 +9,4 @@ conda install --name botbusters importlib-metadata -y
 conda install --name botbusters packaging==21.3 -y
 conda install --name botbusters tqdm -y
 conda install --name botbusters -c conda-forge matplotlib -y
+conda install --name botbusters scikit-learn -y
