@@ -16,6 +16,7 @@ user,tweet=fast_merge(dataset='Twibot-20')
 path='processed_data/'
 
 if not os.path.exists("processed_data"):
+    print("Cannot find processed data, making directory")
     os.mkdir("processed_data")
 
 #labels
@@ -46,108 +47,115 @@ torch.save(valid_mask,path+"val_idx.pt")
 torch.save(test_mask,path+"test_idx.pt")
 
 #graph
-print('extracting graph info')
-edge_index=[]
-edge_type=[]
-for i in tqdm(range(len(edge))):
-    if edge['relation'][i]=='post':
-        continue
-    elif edge['relation'][i]=='friend':
-        try:
-            source_id=uid_to_user_index[edge['source_id'][i]]
-            target_id=uid_to_user_index[edge['target_id'][i]]
-        except KeyError:
+if os.path.isfile(path+'edge_index.pt') and  os.path.isfile(path+'edge_type.pt') :
+    print("edge_type.pt and edge_index.pt exists, skipping")
+else:
+    print('extracting graph info')
+    edge_index=[]
+    edge_type=[]
+    for i in tqdm(range(len(edge))):
+        if edge['relation'][i]=='post':
             continue
+        elif edge['relation'][i]=='friend':
+            try:
+                source_id=uid_to_user_index[edge['source_id'][i]]
+                target_id=uid_to_user_index[edge['target_id'][i]]
+            except KeyError:
+                continue
+            else:
+                edge_index.append([uid_to_user_index[edge['source_id'][i]],uid_to_user_index[edge['target_id'][i]]])
+                edge_type.append(0)
         else:
-            edge_index.append([uid_to_user_index[edge['source_id'][i]],uid_to_user_index[edge['target_id'][i]]])
-            edge_type.append(0)
-    else:
-        try:
-            source_id=uid_to_user_index[edge['source_id'][i]]
-            target_id=uid_to_user_index[edge['target_id'][i]]
-        except KeyError:
-            continue
-        else:
-            edge_index.append([uid_to_user_index[edge['source_id'][i]],uid_to_user_index[edge['target_id'][i]]])
-            edge_type.append(1)
-torch.save(torch.tensor(edge_index,dtype=torch.long).t(),path+'edge_index.pt')
-torch.save(torch.tensor(edge_type,dtype=torch.long),path+'edge_type.pt')
+            try:
+                source_id=uid_to_user_index[edge['source_id'][i]]
+                target_id=uid_to_user_index[edge['target_id'][i]]
+            except KeyError:
+                continue
+            else:
+                edge_index.append([uid_to_user_index[edge['source_id'][i]],uid_to_user_index[edge['target_id'][i]]])
+                edge_type.append(1)
+    torch.save(torch.tensor(edge_index,dtype=torch.long).t(),path+'edge_index.pt')
+    torch.save(torch.tensor(edge_type,dtype=torch.long),path+'edge_type.pt')
 
 #num_properties
-print('extracting num_properties')
-following_count=[]
-for i,each in enumerate(node['public_metrics']):
-    if i==len(user):
-        break
-    if each is not None and isinstance(each,dict):
-        if each['following_count'] is not None:
-            following_count.append(each['following_count'])
+if os.path.isfile(path+'num_properties_tensor.pt'):
+    print("num_properties_tensor.pt exists, skipping")
+else:
+    print('extracting num_properties')
+    following_count=[]
+    for i,each in enumerate(node['public_metrics']):
+        if i==len(user):
+            break
+        if each is not None and isinstance(each,dict):
+            if each['following_count'] is not None:
+                following_count.append(each['following_count'])
+            else:
+                following_count.append(0)
         else:
             following_count.append(0)
-    else:
-        following_count.append(0)
-        
-statues=[]
-for i,each in enumerate(node['public_metrics']):
-    if i==len(user):
-        break
-    if each is not None and isinstance(each,dict):
-        if each['listed_count'] is not None:
-            statues.append(each['listed_count'])
+            
+    statues=[]
+    for i,each in enumerate(node['public_metrics']):
+        if i==len(user):
+            break
+        if each is not None and isinstance(each,dict):
+            if each['listed_count'] is not None:
+                statues.append(each['listed_count'])
+            else:
+                statues.append(0)
         else:
             statues.append(0)
-    else:
-        statues.append(0)
-        
-followers_count=[]
-for each in user['public_metrics']:
-    if each is not None and each['followers_count'] is not None:
-        followers_count.append(int(each['followers_count']))
-    else:
-        followers_count.append(0)
-
-        
-screen_name_length=[]
-for each in user['username']:
-    if each is not None:
-        screen_name_length.append(len(each))
-    else:
-        screen_name_length.append(int(0))
-        
-
-created_at=user['created_at']
-created_at=pd.to_datetime(created_at,unit='s')
-
-
-df_followers_count=pd.DataFrame(followers_count)
-followers_count=(df_followers_count-df_followers_count.mean())/df_followers_count.std()
-followers_count=torch.tensor(np.array(followers_count),dtype=torch.float32)
-
-date0=dt.strptime('Tue Sep 1 00:00:00 +0000 2020 ','%a %b %d %X %z %Y ')
-active_days=[]
-for each in created_at:
-    active_days.append((date0-each).days)
+            
+    followers_count=[]
+    for each in user['public_metrics']:
+        if each is not None and each['followers_count'] is not None:
+            followers_count.append(int(each['followers_count']))
+        else:
+            followers_count.append(0)
     
-active_days=pd.DataFrame(active_days)
-active_days.fillna(int(0))
-active_days=active_days.fillna(int(0)).astype(np.float32)
-active_days=(active_days-active_days.mean())/active_days.std()
-active_days=torch.tensor(np.array(active_days),dtype=torch.float32)
+            
+    screen_name_length=[]
+    for each in user['username']:
+        if each is not None:
+            screen_name_length.append(len(each))
+        else:
+            screen_name_length.append(int(0))
+            
+    
+    created_at=user['created_at']
+    created_at=pd.to_datetime(created_at,unit='s')
+    
+    
+    df_followers_count=pd.DataFrame(followers_count)
+    followers_count=(df_followers_count-df_followers_count.mean())/df_followers_count.std()
+    followers_count=torch.tensor(np.array(followers_count),dtype=torch.float32)
+    
+    date0=dt.strptime('Tue Sep 1 00:00:00 +0000 2020 ','%a %b %d %X %z %Y ')
+    active_days=[]
+    for each in created_at:
+        active_days.append((date0-each).days)
+        
+    active_days=pd.DataFrame(active_days)
+    active_days.fillna(int(0))
+    active_days=active_days.fillna(int(0)).astype(np.float32)
+    active_days=(active_days-active_days.mean())/active_days.std()
+    active_days=torch.tensor(np.array(active_days),dtype=torch.float32)
+    
+    screen_name_length=pd.DataFrame(screen_name_length)
+    screen_name_length=(screen_name_length-screen_name_length.mean())/screen_name_length.std()
+    screen_name_length=torch.tensor(np.array(screen_name_length),dtype=torch.float32)
+    
+    following_count=pd.DataFrame(following_count)
+    following_count=(following_count-following_count.mean())/following_count.std()
+    following_count=torch.tensor(np.array(following_count),dtype=torch.float32)
+    
+    statues=pd.DataFrame(statues)
+    statues=(statues-statues.mean())/statues.std()
+    statues=torch.tensor(np.array(statues),dtype=torch.float32)
+    
+    num_properties_tensor=torch.cat([followers_count,active_days,screen_name_length,following_count,statues],dim=1)
+    torch.save(num_properties_tensor,path+'num_properties_tensor.pt')
 
-screen_name_length=pd.DataFrame(screen_name_length)
-screen_name_length=(screen_name_length-screen_name_length.mean())/screen_name_length.std()
-screen_name_length=torch.tensor(np.array(screen_name_length),dtype=torch.float32)
-
-following_count=pd.DataFrame(following_count)
-following_count=(following_count-following_count.mean())/following_count.std()
-following_count=torch.tensor(np.array(following_count),dtype=torch.float32)
-
-statues=pd.DataFrame(statues)
-statues=(statues-statues.mean())/statues.std()
-statues=torch.tensor(np.array(statues),dtype=torch.float32)
-
-num_properties_tensor=torch.cat([followers_count,active_days,screen_name_length,following_count,statues],dim=1)
-torch.save(num_properties_tensor,path+'num_properties_tensor.pt')
 
 #cat_properties
 print('extracting cat_properties')

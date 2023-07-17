@@ -4,18 +4,30 @@ from dataset_tool import fast_merge
 import numpy as np
 from transformers import pipeline
 import os
-
+import pickle
 user,tweet=fast_merge(dataset="cresci-2015")
 
 user_text=list(user['description'])
 tweet_text = [text for text in tweet.text]
-each_user_tweets=torch.load('./processed_data/each_user_tweets.npy')
 
-feature_extract=pipeline('feature-extraction',model='roberta-base',tokenizer='roberta-base',device=3,padding=True, truncation=True,max_length=50, add_special_tokens = True)
+#each_user_tweets=torch.load('./processed_data1/each_user_tweets.npy')
+#each_user_tweets=torch.from_numpy(np.load('./processed_data1/each_user_tweets.npy', allow_pickle=True))
+
+with open('./processed_data1/each_user_tweets.pickle', 'rb') as handle:
+    dictionary = pickle.load(handle)
+    
+each_user_tweets = torch.load(dictionary)
+
+# feature_extract=pipeline('feature-extraction',model='roberta-base',tokenizer='roberta-base',device=3,padding=True, truncation=True,max_length=50, add_special_tokens = True)
+
+from transformers import RobertaTokenizer, RobertaModel
+tokenizer = RobertaTokenizer.from_pretrained('roberta-base', local_files_only=True)
+model = RobertaModel.from_pretrained('roberta-base', local_files_only=True)
+feature_extract=pipeline('feature-extraction',model=model,tokenizer=tokenizer,device=0)
 
 def Des_embbeding():
         print('Running feature1 embedding')
-        path="./processed_data/des_tensor.pt"
+        path="./processed_data1/des_tensor.pt"
         if not os.path.exists(path):
             des_vec=[]
             for k,each in enumerate(tqdm(user_text)):
@@ -40,7 +52,7 @@ def Des_embbeding():
 
 def tweets_embedding():
         print('Running feature2 embedding')
-        path="./processed_data/tweets_tensor.pt"
+        path="./processed_data1/tweets_tensor.pt"
         if not os.path.exists(path):
             tweets_list=[]
             for i in tqdm(range(len(each_user_tweets))):
@@ -73,7 +85,7 @@ def tweets_embedding():
                 tweets_list.append(total_each_person_tweets)
                         
             tweet_tensor=torch.stack(tweets_list)
-            torch.save(tweet_tensor,"./processed_data/tweets_tensor.pt")
+            torch.save(tweet_tensor,"./processed_data1/tweets_tensor.pt")
             
         else:
             tweets_tensor=torch.load(path)

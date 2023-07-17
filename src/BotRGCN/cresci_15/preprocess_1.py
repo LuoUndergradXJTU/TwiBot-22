@@ -13,10 +13,10 @@ label=pd.read_csv("../datasets/cresci-2015/label.csv")
 split=pd.read_csv("../datasets/cresci-2015/split.csv")
 print('processing raw data')
 user,tweet=fast_merge(dataset='cresci-2015')
-path='processed_data/'
+path='processed_data1/'
 
-if not os.path.exists("processed_data"):
-    os.mkdir("processed_data")
+if not os.path.exists("processed_data1"):
+    os.mkdir("processed_data1")
 
 #labels
 print('extracting labels and splits')
@@ -26,6 +26,8 @@ for i in range(len(label)):
         label_list.append(int(0))
     else:
         label_list.append(int(1))
+    if i%10000==0:
+        print(i)
 label_tensor=torch.tensor(label_list,dtype=torch.long)
 torch.save(label_tensor,path+'label.pt')
 
@@ -37,8 +39,11 @@ tweet_index_to_tid = list(tweet.id)
 unique_uid=set(user.id)
 uid_to_user_index = {x : i for i, x in enumerate(user_index_to_uid)}
 tid_to_tweet_index = {x : i for i, x in enumerate(tweet_index_to_tid)}
+print("entering df_to_mask 1")
 train_mask = df_to_mask(train_uid_with_label, uid_to_user_index, "train")
+print("entering df_to_mask 2")
 valid_mask = df_to_mask(valid_uid_with_label, uid_to_user_index, "val")
+print("entering df_to_mask 3")
 test_mask = df_to_mask(test_uid_with_label, uid_to_user_index, "test")
 torch.save(train_mask,path+"train_idx.pt")
 torch.save(valid_mask,path+"val_idx.pt")
@@ -49,6 +54,8 @@ print('extracting graph info')
 edge_index=[]
 edge_type=[]
 for i in tqdm(range(len(edge))):
+    if i%10000==0:
+        print(i)
     if edge['relation'][i]=='post':
         continue
     elif edge['relation'][i]=='friend':
@@ -76,6 +83,8 @@ torch.save(torch.tensor(edge_type,dtype=torch.long),path+'edge_type.pt')
 print('extracting num_properties')
 following_count=[]
 for i,each in enumerate(node['public_metrics']):
+    if i%10000==0:
+        print(i)
     if i==len(user):
         break
     if each is not None and isinstance(each,dict):
@@ -88,6 +97,8 @@ for i,each in enumerate(node['public_metrics']):
         
 statues=[]
 for i,each in enumerate(node['public_metrics']):
+    if i%10000==0:
+        print(i)
     if i==len(user):
         break
     if each is not None and isinstance(each,dict):
@@ -205,10 +216,10 @@ edge['target_id']=list(map(lambda x:tid_to_tweet_index[x],edge['target_id'].valu
 
 edge['source_id']=list(map(lambda x:uid_to_user_index[x],edge['source_id'].values))
 
-
-
 dict={i:[] for i in range(len(user))}
 for i in tqdm(range(len(edge))):
     dict[edge.iloc[i]['source_id']].append(edge.iloc[i]['target_id'])
 
-np.save('processed_data/each_user_tweets.npy',dict)
+import pickle
+with open('processed_data1/each_user_tweets.pickle', 'wb') as handle:
+    pickle.dump(dict, handle, protocol=pickle.HIGHEST_PROTOCOL)

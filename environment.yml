@@ -2,7 +2,7 @@ name: botbusters
 channels:
   - defaults
 dependencies:
-  - python==3.9
+  - python==3.7
   - matplotlib
   - jupyter
   - pip
@@ -47,13 +47,13 @@ dependencies:
     - spacy-transformers
     - tensorboardX
     - tokenizers
-    - torch==1.9.1
-    - torch-cluster
-    - torch-geometric
-    - torch-scatter
-    - torch-sparse
-    - torch-spline-conv
-    - torch-tb-profiler
+    # - torch==1.11.0
+    # - torch-cluster
+    # - torch-geometric
+    # - torch-scatter
+    # - torch-sparse
+    # - torch-spline-conv
+    # - torch-tb-profiler
     - torchmetrics
     - torchsummary
     - tqdm
