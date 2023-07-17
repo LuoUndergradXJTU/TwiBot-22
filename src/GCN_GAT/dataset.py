@@ -6,7 +6,7 @@ from torch_geometric.data import Data
 
 
 def get_transfer_data():
-    path = '../../BotRGCN/twibot_22/processed_data'
+    path = '../../BotRGCN/cresci_15/processed_data'
     labels = torch.load(osp.join(path, 'label.pt'))
     des_embedding = torch.load(osp.join(path, 'des_tensor.pt'))
     tweet_embedding = torch.load(osp.join(path, 'tweets_tensor.pt'))
@@ -29,9 +29,13 @@ data_index = {
 }
 
 
+
 def get_train_data(dataset_name):
-    path = '../../BotRGCN/{}/processed_data'.format(data_index[dataset_name])
+    print(f"dataset_name: {dataset_name}")
+    path = '../BotRGCN/{}/processed_data'.format(data_index[dataset_name])
+    
     if not osp.exists(path):
+        print(f"{path} does not exist...")
         raise KeyError
     labels = torch.load(osp.join(path, 'label.pt'))
     des_embedding = torch.load(osp.join(path, 'des_tensor.pt'))

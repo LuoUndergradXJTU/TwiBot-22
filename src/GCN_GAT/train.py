@@ -8,6 +8,9 @@ from tqdm import tqdm
 import torch.nn as nn
 from model import BotGAT, BotGCN, BotRGCN
 
+if not os.path.exists("checkpoints/"):
+    os.mkdir("checkpoints/")
+    
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 parser = ArgumentParser()
 parser.add_argument('--dataset', type=str)
