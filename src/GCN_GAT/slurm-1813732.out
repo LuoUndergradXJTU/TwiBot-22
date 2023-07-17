@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "train.py", line 32, in <module>
-    data = get_train_data(dataset_name)
-  File "/scratch/network/rr4001/projects/voon/TwitterBotBusters/src/GCN_GAT/dataset.py", line 35, in get_train_data
-    raise KeyError
-KeyError
