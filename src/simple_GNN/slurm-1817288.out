@@ -1,0 +1,36 @@
+  0%|          | 0/5301 [00:00<?, ?it/s]../utils/dataset.py:68: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  user["label"][i] = id_to_label[user["id"][i]]
+../utils/dataset.py:69: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  user["split"][i] = id_to_split[user["id"][i]]
+  1%|          | 65/5301 [00:00<00:08, 623.65it/s] 16%|█▋        | 874/5301 [00:00<00:00, 4938.58it/s] 31%|███▏      | 1660/5301 [00:00<00:00, 6258.79it/s] 47%|████▋     | 2473/5301 [00:00<00:00, 6990.88it/s] 62%|██████▏   | 3286/5301 [00:00<00:00, 7399.06it/s] 77%|███████▋  | 4100/5301 [00:00<00:00, 7649.17it/s] 93%|█████████▎| 4914/5301 [00:00<00:00, 7807.62it/s]100%|██████████| 5301/5301 [00:00<00:00, 7046.55it/s]
+  0%|          | 0/29 [00:00<?, ?it/s]Epoch:0:   0%|          | 0/29 [00:00<?, ?it/s]Epoch:0:   0%|          | 0/29 [00:00<?, ?it/s, loss=0.756]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.756]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.756]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.751]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.751]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.754]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.754]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.748]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.748]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.748]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.748]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.748]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.748]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.748]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.748]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.747]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.747]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.743]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.743]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.741]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.741]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.706]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.706]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.647]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.647]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.651]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.651]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.646]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.646]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.643]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.643]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.646]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.646]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.648]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.648]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.645]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.645]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.678]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.678]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.682]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.682]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.68] Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.68]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.678]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.678]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.667]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.667]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.646]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.646]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.649]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.649]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.649]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.649]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.65] Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.65]Epoch:0:   3%|▎         | 1/29 [00:00<00:06,  4.63it/s, loss=0.647]Epoch:0:  97%|█████████▋| 28/29 [00:00<00:00, 108.89it/s, loss=0.647]Epoch:0:  97%|█████████▋| 28/29 [00:00<00:00, 108.89it/s, loss=0.647]Epoch:0:  97%|█████████▋| 28/29 [00:00<00:00, 108.89it/s, loss=0.653]Epoch:0: 100%|██████████| 29/29 [00:00<00:00, 89.91it/s, loss=0.653] 
+(1058, 2)
+[[-0.1503255  -0.21731684]
+ [-0.1878028  -0.25723287]
+ [-0.28277457 -0.36710307]
+ ...
+ [-0.26995316 -0.34280968]
+ [ 0.          0.        ]
+ [-0.2530542  -0.34392485]]
+Traceback (most recent call last):
+  File "train.py", line 249, in <module>
+    trainer.train()
+  File "train.py", line 160, in train
+    val_results = self.valid()
+  File "/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/torch/autograd/grad_mode.py", line 28, in decorate_context
+    return func(*args, **kwargs)
+  File "train.py", line 109, in valid
+    val_loss = self.loss_func(torch.tensor(pred_probs).reshape(-1, 1), data.y)
+  File "/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/torch/nn/modules/loss.py", line 1121, in forward
+    ignore_index=self.ignore_index, reduction=self.reduction)
+  File "/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/torch/nn/functional.py", line 2824, in cross_entropy
+    return torch._C._nn.cross_entropy_loss(input, target, weight, _Reduction.get_enum(reduction), ignore_index)
+ValueError: Expected input batch_size (2116) to match target batch_size (40).

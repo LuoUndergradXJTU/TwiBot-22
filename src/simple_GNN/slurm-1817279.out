@@ -1,0 +1,18 @@
+  0%|          | 0/5301 [00:00<?, ?it/s]../utils/dataset.py:68: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  user["label"][i] = id_to_label[user["id"][i]]
+../utils/dataset.py:69: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  user["split"][i] = id_to_split[user["id"][i]]
+  1%|          | 65/5301 [00:00<00:08, 623.94it/s] 16%|█▌        | 861/5301 [00:00<00:00, 4865.12it/s] 31%|███▏      | 1659/5301 [00:00<00:00, 6273.73it/s] 46%|████▌     | 2448/5301 [00:00<00:00, 6906.24it/s] 61%|██████▏   | 3250/5301 [00:00<00:00, 7305.54it/s] 76%|███████▋  | 4053/5301 [00:00<00:00, 7549.96it/s] 92%|█████████▏| 4857/5301 [00:00<00:00, 7708.04it/s]100%|██████████| 5301/5301 [00:00<00:00, 6975.71it/s]
+  0%|          | 0/29 [00:00<?, ?it/s]Epoch:0:   0%|          | 0/29 [00:00<?, ?it/s]Epoch:0:   0%|          | 0/29 [00:00<?, ?it/s, loss=1.27]Epoch:0:   0%|          | 0/29 [00:00<?, ?it/s, loss=1.27]
+Traceback (most recent call last):
+  File "train.py", line 242, in <module>
+    trainer.train()
+  File "train.py", line 149, in train
+    cur_epoch_label.append(data.y[:batch_size].numpy())
+TypeError: can't convert cuda:0 device type tensor to numpy. Use Tensor.cpu() to copy the tensor to host memory first.
