@@ -20,6 +20,11 @@ each_user_tweets = torch.load(dictionary)
 
 # feature_extract=pipeline('feature-extraction',model='roberta-base',tokenizer='roberta-base',device=3,padding=True, truncation=True,max_length=50, add_special_tokens = True)
 
+# KENT TO DO: 
+# 1. Edit the following four lines with other embedding (e.g. other Tokenizer) or Roberta with different model size (e.g. roberta-large
+# 2. Rerun ./preprocess.py (which will replace the files in ./cresci_15/processed_data/)
+# 3. Then, go to TwitterBotBusters/src/GCN_GAT/ and run python3 train.py --config gcn-1.yaml
+# 4. Repeat steps 1 to 3 with different embedding and see if anything changes. 
 from transformers import RobertaTokenizer, RobertaModel
 tokenizer = RobertaTokenizer.from_pretrained('roberta-base', local_files_only=True)
 model = RobertaModel.from_pretrained('roberta-base', local_files_only=True)
