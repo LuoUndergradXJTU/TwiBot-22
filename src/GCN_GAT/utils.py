@@ -6,12 +6,12 @@ import torch.nn.functional as func
 
 def null_metrics():
     return {
-        'acc': 0.0,
-        'f1-score': 0.0,
-        'precision': 0.0,
-        'recall': 0.0,
-        'mcc': 0.0,
-        'roc-auc': 0.0,
+        'Acc': 0.0,
+        'Pre': 0.0,
+        'Rec': 0.0,
+        'MiF': 0.0,
+        'MCC': 0.0,
+        'AUC': 0.0,
         'pr-auc': 0.0
     }
 
@@ -32,33 +32,33 @@ def calc_metrics(y, pred):
     pred_score = pred_score.to('cpu').tolist()
     precision, recall, _thresholds = precision_recall_curve(y, pred_score)
     metrics = {
-        'acc': accuracy_score(y, pred_label),
-        'f1-score': f1_score(y, pred_label),
-        'precision': precision_score(y, pred_label),
-        'recall': recall_score(y, pred_label),
-        'mcc': matthews_corrcoef(y, pred_label),
-        'roc-auc': roc_auc_score(y, pred_score),
+        'Acc': accuracy_score(y, pred_label),
+        'Pre': precision_score(y, pred_label),
+        'Rec': recall_score(y, pred_label),
+        'MiF': f1_score(y, pred_label),
+        'AUC': roc_auc_score(y, pred_score),
+        'MCC': matthews_corrcoef(y, pred_label),
         'pr-auc': auc(recall, precision)
     }
     plog = ''
-    for key in ['acc', 'f1-score', 'mcc']:
+    for key in ['Acc', 'MiF', 'MCC']:
         plog += ' {}: {:.6}'.format(key, metrics[key])
     return metrics, plog
 
 
 def is_better(now, pre):
-    if now['acc'] != pre['acc']:
-        return now['acc'] > pre['acc']
-    if now['f1-score'] != pre['f1-score']:
-        return now['f1-score'] > pre['f1-score']
-    if now['mcc'] != pre['mcc']:
-        return now['mcc'] > pre['mcc']
+    if now['Acc'] != pre['Acc']:
+        return now['Acc'] > pre['Acc']
+    if now['MiF'] != pre['MiF']:
+        return now['MiF'] > pre['MiF']
+    if now['MCC'] != pre['MCC']:
+        return now['MCC'] > pre['MCC']
     if now['pr-auc'] != pre['pr-auc']:
         return now['pr-auc'] > pre['pr-auc']
-    if now['roc-auc'] != pre['roc-auc']:
-        return now['roc-auc'] > pre['roc-auc']
-    if now['precision'] != pre['precision']:
-        return now['precision'] > pre['precision']
-    if now['recall'] != pre['recall']:
-        return now['recall'] > pre['recall']
+    if now['AUC'] != pre['AUC']:
+        return now['AUC'] > pre['AUC']
+    if now['Pre'] != pre['Pre']:
+        return now['Pre'] > pre['Pre']
+    if now['Rec'] != pre['Rec']:
+        return now['Rec'] > pre['Rec']
     return False

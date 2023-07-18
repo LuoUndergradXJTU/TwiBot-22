@@ -1,26 +1,0 @@
-  0%|          | 0/5301 [00:00<?, ?it/s]../utils/dataset.py:68: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame
-
-See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  user["label"][i] = id_to_label[user["id"][i]]
-../utils/dataset.py:69: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame
-
-See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  user["split"][i] = id_to_split[user["id"][i]]
-  1%|          | 65/5301 [00:00<00:08, 624.84it/s] 17%|█▋        | 880/5301 [00:00<00:00, 4976.22it/s] 32%|███▏      | 1698/5301 [00:00<00:00, 6422.16it/s] 47%|████▋     | 2505/5301 [00:00<00:00, 7066.27it/s] 63%|██████▎   | 3324/5301 [00:00<00:00, 7469.08it/s] 78%|███████▊  | 4145/5301 [00:00<00:00, 7717.21it/s] 94%|█████████▎| 4965/5301 [00:00<00:00, 7873.86it/s]100%|██████████| 5301/5301 [00:00<00:00, 7110.02it/s]
-  0%|          | 0/29 [00:00<?, ?it/s]  0%|          | 0/29 [00:00<?, ?it/s]
-Traceback (most recent call last):
-  File "train.py", line 237, in <module>
-    trainer.train()
-  File "train.py", line 139, in train
-    train_results = evaluate_on_all_metrics(data.y[:batch_size].cpu().numpy(), pred.argmax(dim=-1).cpu().numpy())
-  File "../utils/eval.py", line 17, in evaluate_on_all_metrics
-    ret[name] = func(y_true, y_pred)
-  File "/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/sklearn/metrics/_ranking.py", line 572, in roc_auc_score
-    sample_weight=sample_weight,
-  File "/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/sklearn/metrics/_base.py", line 75, in _average_binary_score
-    return binary_metric(y_true, y_score, sample_weight=sample_weight)
-  File "/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/sklearn/metrics/_ranking.py", line 338, in _binary_roc_auc_score
-    "Only one class present in y_true. ROC AUC score "
-ValueError: Only one class present in y_true. ROC AUC score is not defined in that case.

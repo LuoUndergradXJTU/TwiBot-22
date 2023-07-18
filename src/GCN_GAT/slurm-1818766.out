@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "train.py", line 51, in <module>
+    assert mode in ['GCN', 'GAT', 'RGCN']
+AssertionError

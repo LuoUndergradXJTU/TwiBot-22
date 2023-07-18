@@ -12,4 +12,4 @@ module purge
 module load anaconda3/2023.3
 conda activate /scratch/network/rr4001/projects/voon/envs/botbusters
 
-python3 train.py --dataset cresci-2015 --max_epoch 5 --mode "GCN"
+python3 train.py --config 1.yaml

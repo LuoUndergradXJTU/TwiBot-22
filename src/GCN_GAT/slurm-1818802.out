@@ -1,0 +1,7 @@
+dataset_name: cresci-2015
+Traceback (most recent call last):
+  File "train.py", line 65, in <module>
+    config = os.path.splitext(os.path.basename(config))[0]
+  File "/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/posixpath.py", line 146, in basename
+    p = os.fspath(p)
+TypeError: expected str, bytes or os.PathLike object, not dict

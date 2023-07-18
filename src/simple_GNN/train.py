@@ -7,26 +7,29 @@ CS7643 Instructions
    - A plot of the training and validation loss.
 4. Feel free to add/remove configuration settings that you'd like to change.
 """
+import warnings
+with warnings.catch_warnings():
+    import torch
+    from model import GNN_classifier
+    from preprocess import generate_hetero_graph_loader, generate_homo_graph_loader_only_user
+    from tqdm import tqdm
+    import numpy as np
 
-import torch
-from model import GNN_classifier
-from preprocess import generate_hetero_graph_loader, generate_homo_graph_loader_only_user
-from tqdm import tqdm
-import numpy as np
+    import sys
+    
+    from utils.eval import evaluate_on_all_metrics
+    import argparse
+    import yaml
+    import pandas as pd
+    import os 
+    from datetime import datetime
+    import matplotlib.pyplot as plt
+    import copy
 
-import sys
+    parser = argparse.ArgumentParser(description='simple_GNN')
+    parser.add_argument('--config', default='./config/1.yaml')
+
 sys.path.append("..")
-from utils.eval import evaluate_on_all_metrics
-import argparse
-import yaml
-import pandas as pd
-import os 
-from datetime import datetime
-import matplotlib.pyplot as plt
-import copy
-
-parser = argparse.ArgumentParser(description='simple_GNN')
-parser.add_argument('--config', default='./config/1.yaml')
 
 class homo_Trainer:
     def __init__(
@@ -64,9 +67,11 @@ class homo_Trainer:
         #   self.optimizer = something else
         if loss_func == "cross_entropy":
             self.loss_func = torch.nn.CrossEntropyLoss()
-        # elif loss_func == "something else":
-        #   self.loss_func = something else
-
+        elif loss_func == "bce_with_logits":
+            # bugged, don't use
+            self.loss_func = torch.nn.BCEWithLogitsLoss()
+        #else:
+        #...
         # Retrieve "1" from parser.add_argument('--config', default='./config/1.yaml')
         self.config = os.path.splitext(os.path.basename(config))[0]
 
@@ -159,16 +164,17 @@ class homo_Trainer:
                     preds.append(pred.argmax(dim=-1).cpu().numpy())
                     labels.append(data.y[:batch_size].cpu().numpy())
 
-
             train_results = evaluate_on_all_metrics(np.concatenate(labels, axis=0), 
                                                     np.concatenate(preds, axis=0))
             val_results, val_loss = self.valid()
-            test_results = self.test()
 
             best = 0
             if val_results['Acc'] > best:
                 best = val_results['Acc']
-                best_model = copy.deepcopy(self.model)
+                self.best_model = copy.deepcopy(self.model)
+
+            # Run test on best model (on validation) so far
+            test_results = self.test()
 
             one_epoch_results = {'epoch': epoch,
                                 'train_loss': loss.item(),
@@ -178,7 +184,7 @@ class homo_Trainer:
                                 'train_f1': train_results['MiF'],
                                 'train_auc': train_results['AUC'],
                                 'train_mcc': train_results['MCC'],
-                                'valid_loss': val_loss,
+                                'valid_loss': val_loss.item(),
                                 'valid_acc': val_results['Acc'],
                                 'valid_pre': val_results['Pre'],
                                 'valid_rec': val_results['Rec'],
@@ -211,8 +217,8 @@ class homo_Trainer:
         ax[0].set_title('Loss vs. Epochs')
         ax[0].legend()
 
-        ax[1].plot(self.results['epoch'], self.results['train_acc'], label='train_auc')
-        ax[1].plot(self.results['epoch'], self.results['valid_acc'], label='valid_auc')
+        ax[1].plot(self.results['epoch'], self.results['train_acc'], label='train_acc')
+        ax[1].plot(self.results['epoch'], self.results['valid_acc'], label='valid_acc')
 
         ax[1].set_xlabel('Epochs')
         ax[1].set_ylabel('Accuracy')
@@ -222,7 +228,7 @@ class homo_Trainer:
         plt.savefig(f'./output/{self.config}_{timenow}.png')
 
         if args.save_best:
-            torch.save(best_model.state_dict(),
+            torch.save(self.best_model.state_dict(),
                     f'./checkpoints/{self.config}_{timenow}.pth')
             
 if __name__ == "__main__":

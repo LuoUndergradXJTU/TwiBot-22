@@ -1,11 +1,15 @@
-from pathlib import Path
-import pandas as pd
-from tqdm import tqdm
-from transformers import RobertaTokenizer, RobertaModel
-import torch
-import numpy as np
-import os
-from torch_geometric.data import Data, HeteroData
+import warnings
+with warnings.catch_warnings():
+    from pathlib import Path
+    import pandas as pd
+    from tqdm import tqdm
+    from transformers import RobertaTokenizer, RobertaModel
+    import torch
+    import numpy as np
+    import os
+    from torch_geometric.data import Data, HeteroData
+
+pd.set_option('mode.chained_assignment', None)
 
 def get_data_dir(server_id):
     # if server_id == "206":

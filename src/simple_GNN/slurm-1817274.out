@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "train.py", line 215, in <module>
-    with open("./config/{args.config}") as f:
-FileNotFoundError: [Errno 2] No such file or directory: './config/{args.config}'

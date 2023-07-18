@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "train.py", line 222, in <module>
-    trainer = homo_Trainer(epochs=args.epoch,
-AttributeError: 'Namespace' object has no attribute 'epoch'

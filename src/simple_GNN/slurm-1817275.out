@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "train.py", line 216, in <module>
-    config = yaml.load(f)
-TypeError: load() missing 1 required positional argument: 'Loader'
