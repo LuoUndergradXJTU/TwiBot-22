@@ -1,0 +1,25 @@
+/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/matplotlib/__init__.py:202: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  if LooseVersion(module.__version__) < minver:
+/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/setuptools/_distutils/version.py:346: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  other = LooseVersion(other)
+/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/matplotlib/__init__.py:202: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  if LooseVersion(module.__version__) < minver:
+/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/setuptools/_distutils/version.py:346: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  other = LooseVersion(other)
+/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/matplotlib/__init__.py:202: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  if LooseVersion(module.__version__) < minver:
+/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/setuptools/_distutils/version.py:346: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  other = LooseVersion(other)
+/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/matplotlib/__init__.py:202: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  if LooseVersion(module.__version__) < minver:
+/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/setuptools/_distutils/version.py:346: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  other = LooseVersion(other)
+/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/matplotlib/__init__.py:202: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  if LooseVersion(module.__version__) < minver:
+/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/setuptools/_distutils/version.py:346: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  other = LooseVersion(other)
+/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/matplotlib/backend_bases.py:60: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  if LooseVersion(PILLOW_VERSION) >= "3.4":
+/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/setuptools/_distutils/version.py:346: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  other = LooseVersion(other)
+  0%|          | 0/5301 [00:00<?, ?it/s]  1%|▏         | 71/5301 [00:00<00:08, 612.77it/s] 16%|█▌        | 835/5301 [00:00<00:00, 4491.24it/s] 30%|███       | 1603/5301 [00:00<00:00, 5893.97it/s] 45%|████▍     | 2375/5301 [00:00<00:00, 6599.03it/s] 59%|█████▉    | 3149/5301 [00:00<00:00, 7002.00it/s] 74%|███████▍  | 3923/5301 [00:00<00:00, 7249.97it/s] 89%|████████▊ | 4701/5301 [00:00<00:00, 7420.30it/s]100%|██████████| 5301/5301 [00:00<00:00, 6680.59it/s]

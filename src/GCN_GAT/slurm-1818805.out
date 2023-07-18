@@ -1,11 +1,0 @@
-dataset_name: cresci-2015
-Data(edge_index=[2, 14220], y=[5301], edge_type=[14220], des_embedding=[5301, 768], tweet_embedding=[5301, 768], num_property_embedding=[5301, 5], cat_property_embedding=[5301, 1], train_idx=[3708], val_idx=[1058], test_idx=[535], num_nodes=5301)
-  0% 0/1000 [00:00<?, ?it/s]  0% 0/1000 [00:14<?, ?it/s]
-Epoch-0 train loss: 0.000175043 Acc: 0.669633 MiF: 0.723164 MCC: 0.320635
-Epoch-0 validation loss: 0.590527 Acc: 0.78828 MiF: 0.85641 MCC: 0.562374
-Traceback (most recent call last):
-  File "train.py", line 287, in <module>
-    train()
-  File "train.py", line 224, in train
-    pbar.set_postfix_str('val acc {} no up cnt {}'.format(val_results['acc'], cnt))
-KeyError: 'acc'

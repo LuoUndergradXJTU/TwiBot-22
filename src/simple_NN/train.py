@@ -1,5 +1,5 @@
 """
-CS7643 Instructions
+CS7643 Instructions for Chaeyoung/Michael
 1. Create a new config file like in './config/1.yaml' and rename is as '2.yaml'.
 2. Navigate to ./simple_GNN and run 'python3 train.py --config 2.yaml'
 3. You will then see the output of your config appearing in output:
@@ -111,7 +111,7 @@ class Trainer:
         pred_probs = np.concatenate(pred_probs, axis=0)
         gt = np.concatenate(gt, axis=0)
 
-        val_results = evaluate_on_all_metrics(labels, preds)
+        val_results = evaluate_on_all_metrics(gt, preds)
         val_loss = self.loss_func(torch.tensor(pred_probs), torch.tensor(gt))
         
         return val_results, val_loss
@@ -124,12 +124,12 @@ class Trainer:
             data = data.to(self.device)
             pred = self.best_model(data)
             preds.append(pred.argmax(dim=-1).cpu().numpy())
-            gt.append(labels.numpy())
+            gt.append(labels.cpu().numpy())
             
         preds = np.concatenate(preds, axis=0)
         gt = np.concatenate(gt, axis=0)
 
-        test_results = evaluate_on_all_metrics(labels, preds)
+        test_results = evaluate_on_all_metrics(gt, preds)
         return test_results
     
     def train(self):

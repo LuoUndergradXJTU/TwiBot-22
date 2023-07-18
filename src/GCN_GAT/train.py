@@ -1,3 +1,12 @@
+"""
+CS7643 Instructions for Chaeyoung/Michael
+1. Create a new config file like in './config/1.yaml' and rename is as '2.yaml'.
+2. Navigate to ./simple_GNN and run 'python3 train.py --config 2.yaml'
+3. You will then see the output of your config appearing in output:
+   - A set of training, validation and test metrics.
+   - A plot of the training and validation loss.
+4. Feel free to add/remove configuration settings that you'd like to change.
+"""
 import warnings
 with warnings.catch_warnings():
     warnings.filterwarnings("ignore",category=DeprecationWarning)
@@ -64,31 +73,6 @@ data = get_train_data(dataset_name)
 # Retrieve "1" from parser.add_argument('--config', default='./config/1.yaml')
 config = os.path.splitext(os.path.basename(args.config))[0]
 
-# Create a dataframe that contains epoch, loss, and all the metrics
-results = pd.DataFrame(columns=['epoch',
-                                        'train_loss',
-                                        'train_acc',
-                                        'train_pre',
-                                        'train_rec',
-                                        'train_f1',
-                                        'train_auc',
-                                        'train_mcc',
-                                        'train_ap',
-                                        'valid_loss',
-                                        'valid_acc',
-                                        'valid_pre',
-                                        'valid_rec',
-                                        'valid_f1',
-                                        'valid_auc',
-                                        'valid_mcc',
-                                        'valid_ap',
-                                        'test_acc',
-                                        'test_pre',
-                                        'test_rec',
-                                        'test_f1',
-                                        'test_auc',
-                                        'test_mcc',
-                                        'test_ap'])
                             
 def forward_one_epoch(epoch, model, optimizer, loss_fn, train_loader, val_loader):
     model.train()
@@ -164,7 +148,7 @@ def validation(epoch, name, model, loss_fn, loader):
     return ave_loss, metrics
 
 
-def train():
+def train(results):
     print(data)
     train_loader = NeighborLoader(data,
                                   num_neighbors=[256] * 4,
@@ -236,6 +220,7 @@ def train():
                 'train_f1': train_results['MiF'],
                 'train_auc': train_results['AUC'],
                 'train_mcc': train_results['MCC'],
+                'train_pr_auc': train_results['pr-auc'],
                 'valid_loss': val_loss,
                 'valid_acc': val_results['Acc'],
                 'valid_pre': val_results['Pre'],
@@ -243,12 +228,14 @@ def train():
                 'valid_f1': val_results['MiF'],
                 'valid_auc': val_results['AUC'],
                 'valid_mcc': val_results['MCC'],
+                'valid_pr_auc': val_results['pr-auc'],
                 'test_acc': test_results['Acc'],
                 'test_pre': test_results['Pre'],
                 'test_rec': test_results['Rec'],
                 'test_f1': test_results['MiF'],
                 'test_auc': test_results['AUC'],
-                'test_mcc': test_results['MCC']
+                'test_mcc': test_results['MCC'],
+                'test_pr_auc': test_results['pr-auc']
                 }
 
         results = results.append(one_epoch_results, ignore_index=True)
@@ -284,4 +271,31 @@ def train():
         print(key, value)
 
 if __name__ == '__main__':
-    train()
+
+    # Create a dataframe that contains epoch, loss, and all the metrics
+    results = pd.DataFrame(columns=['epoch',
+                                            'train_loss',
+                                            'train_acc',
+                                            'train_pre',
+                                            'train_rec',
+                                            'train_f1',
+                                            'train_auc',
+                                            'train_mcc',
+                                            'train_pr_auc',
+                                            'valid_loss',
+                                            'valid_acc',
+                                            'valid_pre',
+                                            'valid_rec',
+                                            'valid_f1',
+                                            'valid_auc',
+                                            'valid_mcc',
+                                            'valid_pr_auc',
+                                            'test_acc',
+                                            'test_pre',
+                                            'test_rec',
+                                            'test_f1',
+                                            'test_auc',
+                                            'test_mcc',
+                                            'test_pr_auc'])
+
+    train(results)

@@ -1,5 +1,5 @@
 """
-CS7643 Instructions
+CS7643 Instructions for Chaeyoung/Michael
 1. Create a new config file like in './config/1.yaml' and rename is as '2.yaml'.
 2. Navigate to ./simple_GNN and run 'python3 train.py --config 2.yaml'
 3. You will then see the output of your config appearing in output:
@@ -160,9 +160,15 @@ class homo_Trainer:
                     
                     progress_bar.set_description(desc=f"Epoch:{epoch}")
                     progress_bar.set_postfix(loss=loss.item())
+                    
 
                     preds.append(pred.argmax(dim=-1).cpu().numpy())
+                    
                     labels.append(data.y[:batch_size].cpu().numpy())
+                    print(pred)
+                    print(preds)
+                    print(labels)
+                    print('\n')
 
             train_results = evaluate_on_all_metrics(np.concatenate(labels, axis=0), 
                                                     np.concatenate(preds, axis=0))
