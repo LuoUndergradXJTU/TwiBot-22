@@ -31,6 +31,24 @@ with warnings.catch_warnings():
 
 sys.path.append("..")
 
+class AverageMeter(object):
+    """Computes and stores the average and current value"""
+
+    def __init__(self):
+        self.reset()
+
+    def reset(self):
+        self.val = 0
+        self.avg = 0
+        self.sum = 0
+        self.count = 0
+
+    def update(self, val, n=1):
+        self.val = val
+        self.sum += val * n
+        self.count += n
+        self.avg = self.sum / self.count
+        
 class homo_Trainer:
     def __init__(
         self,
@@ -141,6 +159,9 @@ class homo_Trainer:
         return test_results
     
     def train(self):
+        iter_time = AverageMeter()
+        losses = AverageMeter()
+        acc = AverageMeter()
         self.model.train()
         for epoch in range(self.epochs):
             with tqdm(self.train_loader) as progress_bar:
@@ -154,6 +175,7 @@ class homo_Trainer:
                     pred = self.model(data.x, data.edge_index)[:batch_size]
                     loss = self.loss_func(pred, data.y[:batch_size])
 
+
                     loss.backward()
                     self.optimizer.zero_grad()
                     self.optimizer.step()
@@ -161,14 +183,19 @@ class homo_Trainer:
                     progress_bar.set_description(desc=f"Epoch:{epoch}")
                     progress_bar.set_postfix(loss=loss.item())
                     
-
                     preds.append(pred.argmax(dim=-1).cpu().numpy())
-                    
-                    labels.append(data.y[:batch_size].cpu().numpy())
-                    print(pred)
-                    print(preds)
-                    print(labels)
-                    print('\n')
+                    labels.append(data.y[:batch_size].cpu().numpy())                    
+                    # print(batch_size)
+                    # print(pred.shape)
+                    # print(loss.shape)
+                    # # print(preds.shape)
+                    # # print(labels.shape)
+                    # print(pred[0])
+                    # # print(loss.item)
+                    # print(preds[0])
+                    # print(labels[0])
+                    # print('\n')
+
 
             train_results = evaluate_on_all_metrics(np.concatenate(labels, axis=0), 
                                                     np.concatenate(preds, axis=0))
