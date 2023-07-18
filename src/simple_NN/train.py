@@ -15,7 +15,7 @@ class Trainer:
         batch_size=128,
         hidden_dim=256,
         activation="relu",
-        dataset="cresci-2017",
+        dataset="cresci-2015",
         server_id="209",
         device="cuda:0",
         optimizer="Adam",

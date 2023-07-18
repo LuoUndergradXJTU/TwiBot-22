@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "train.py", line 85, in <module>
+    trainer = Trainer()
+  File "train.py", line 26, in __init__
+    self.train_loader, self.valid_loader, self.test_loader = get_dataloaders(batch_size, dataset, server_id)
+  File "/scratch/network/rr4001/projects/voon/TwitterBotBusters/src/simple_NN/preprocess.py", line 21, in get_dataloaders
+    train, valid, test = merge_and_split(dataset, server_id)
+  File "../utils/dataset.py", line 87, in merge_and_split
+    node_info = pd.read_json(dataset_dir / "node.json")
+  File "/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/pandas/util/_decorators.py", line 207, in wrapper
+    return func(*args, **kwargs)
+  File "/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/pandas/io/json/_json.py", line 614, in read_json
+    return json_reader.read()
+  File "/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/pandas/io/json/_json.py", line 748, in read
+    obj = self._get_object_parser(self.data)
+  File "/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/pandas/io/json/_json.py", line 770, in _get_object_parser
+    obj = FrameParser(json, **kwargs).parse()
+  File "/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/pandas/io/json/_json.py", line 885, in parse
+    self._parse_no_numpy()
+  File "/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/pandas/io/json/_json.py", line 1140, in _parse_no_numpy
+    loads(json, precise_float=self.precise_float), dtype=None
+ValueError: Expected object or value

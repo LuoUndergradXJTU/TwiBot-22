@@ -8,6 +8,13 @@ import sys
 sys.path.append("..")
 from utils.eval import evaluate_on_all_metrics
 import argparse
+import yaml
+import pandas as pd
+
+parser = argparse.ArgumentParser(description='simple_GNN')
+parser.add_argument('--config', default='./config/1.yaml')
+
+# Read in config file from the same folder
 
 class homo_Trainer:
     def __init__(
@@ -24,9 +31,10 @@ class homo_Trainer:
         dataset="cresci-2015",
         server_id="209",
         device="cuda:0",
-        optimizer=torch.optim.Adam,
+        optimizer="adam",
         weight_decay=1e-5,
         lr=1e-4,
+        loss_func="cross_entropy"
     ):
         self.epochs = epochs
         self.batch_size = batch_size
@@ -37,9 +45,16 @@ class homo_Trainer:
         
         self.device = torch.device(device)
         self.model.to(self.device)
-        self.optimizer = optimizer(self.model.parameters(), lr=lr, weight_decay=weight_decay)
-
-        self.loss_func = torch.nn.CrossEntropyLoss()
+        if optimizer == "adam":
+            self.optimizer = torch.optim.Adam(self.model.parameters(), lr=lr, weight_decay=weight_decay)
+        # elif optimizer == "something else":
+        #   self.optimizer = something else
+        if loss_func == "cross_entropy":
+            self.loss_func = torch.nn.CrossEntropyLoss()
+        # elif loss_func == "something else":
+        #   self.loss_func = something else
+        self.results = pd.DataFrame()
+        
     
     @torch.no_grad()
     def valid(self):
@@ -97,5 +112,27 @@ class homo_Trainer:
             self.test()
 
 if __name__ == "__main__":
-    trainer = homo_Trainer()
+    global args
+    args = parser.parse_args()
+    with open(args.config) as f:
+        config = yaml.load(f)
+
+    for key in config:
+        for k, v in config[key].items():
+            setattr(args, k, v)
+
+    trainer = homo_Trainer(epochs=args.epoch,
+                            batch_size=args.batch_size,
+                            input_dim=args.input_dim,
+                            hidden_dim=args.hidden_dim,
+                            num_layers=args.num_layers,
+                            num_neighbors=args.num_neighbors,
+                            activation=args.activation,
+                            dataset="cresci-2015",
+                            server_id="209",
+                            device="cuda:0",
+                            optimizer=args.optimizer,
+                            weight_decay=args.weight_decay,
+                            lr=args.lr,
+                            loss_func=args.loss_func)
     trainer.train()

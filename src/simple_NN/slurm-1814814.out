@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "train.py", line 85, in <module>
+    trainer = Trainer()
+  File "train.py", line 26, in __init__
+    self.train_loader, self.valid_loader, self.test_loader = get_dataloaders(batch_size, dataset, server_id)
+  File "/scratch/network/rr4001/projects/voon/TwitterBotBusters/src/simple_NN/preprocess.py", line 22, in get_dataloaders
+    train_data, train_labels = simple_vectorize(train)
+  File "/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/torch/autograd/grad_mode.py", line 28, in decorate_context
+    return func(*args, **kwargs)
+  File "../utils/dataset.py", line 104, in simple_vectorize
+    tokenizer = RobertaTokenizer.from_pretrained('roberta-base')
+  File "/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/transformers/tokenization_utils_base.py", line 1665, in from_pretrained
+    use_auth_token=use_auth_token,
+  File "/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/transformers/file_utils.py", line 1142, in cached_path
+    local_files_only=local_files_only,
+  File "/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/transformers/file_utils.py", line 1349, in get_from_cache
+    "Connection error, and we cannot find the requested files in the cached path."
+ValueError: Connection error, and we cannot find the requested files in the cached path. Please try again or make sure your Internet connection is on.

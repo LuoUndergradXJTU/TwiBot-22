@@ -8,14 +8,16 @@ import os
 from torch_geometric.data import Data, HeteroData
 
 def get_data_dir(server_id):
-    if server_id == "206":
-        return Path("/new_temp/fsb/Twibot22-baselines/datasets")
-    elif server_id == "208":
-        return Path("")
-    elif server_id == "209":
-        return Path("/data2/whr/czl/TwiBot22-baselines/datasets")
-    else:
-        raise NotImplementedError
+    # if server_id == "206":
+    #     return Path("/new_temp/fsb/Twibot22-baselines/datasets")
+    # elif server_id == "208":
+    #     return Path("")
+    # elif server_id == "209":
+    #     return Path("/data2/whr/czl/TwiBot22-baselines/datasets")
+    # else:
+    #     raise NotImplementedError
+    # Change to your own path
+    return Path("/scratch/network/rr4001/projects/voon/TwitterBotBusters/src/BotRGCN/datasets/")
 
 dataset_names = [
     'botometer-feedback-2019', 'botwiki-2019', 'celebrity-2019', 'cresci-2015', 'cresci-2017', 'cresci-rtbust-2019', 'cresci-stock-2018', 'gilani-2017', 'midterm-2018', 'political-bots-2019', 'pronbots-2019', 'vendor-purchased-2019', 'verified-2019', "Twibot-20","Twibot-22"
@@ -100,8 +102,11 @@ def merge_and_split(dataset="botometer-feedback-2019", server_id="209"):
 
 @torch.no_grad()
 def simple_vectorize(data):
-    tokenizer = RobertaTokenizer.from_pretrained('roberta-base')
-    model = RobertaModel.from_pretrained('roberta-base')
+
+    
+    tokenizer = RobertaTokenizer.from_pretrained('roberta-base', local_files_only=True)
+    model = RobertaModel.from_pretrained('roberta-base', local_files_only=True)
+    # feature_extract=pipeline('feature-extraction',model=model,tokenizer=tokenizer,device=0)
     
     # public_metrics = list(data["public_metrics"])
     descriptions = list(data["description"])
@@ -148,8 +153,8 @@ def homo_graph_vectorize(include_node_feature=False, dataset="Twibot-20", server
     
     
     if include_node_feature:
-        tokenizer = RobertaTokenizer.from_pretained('roberta-base')
-        model = RobertaModel.from_pretrained("roberta-base")
+        tokenizer = RobertaTokenizer.from_pretrained('roberta-base', local_files_only=True)
+        model = RobertaModel.from_pretrained('roberta-base', local_files_only=True)
         
         text_feats = []
         for t in tqdm(text):
@@ -250,8 +255,8 @@ def hetero_graph_vectorize(include_node_feature=False, dataset="cresci-2015", se
     test_uid_with_label = user[user.split.str == "test"]["id", "split", "label"]
     
     if include_node_feature:
-        tokenizer = RobertaTokenizer.from_pretrained('roberta-base')
-        model = RobertaModel.from_pretrained("roberta-base")
+        tokenizer = RobertaTokenizer.from_pretrained('roberta-base', local_files_only=True)
+        model = RobertaModel.from_pretrained('roberta-base', local_files_only=True)
         
         user_text_feats = []
         tweet_text_feats = []
@@ -330,8 +335,8 @@ def homo_graph_vectorize_only_user(include_node_feature=False, dataset="cresci-2
     
     if include_node_feature:
         if "user_info.pt" not in os.listdir(dataset_dir):
-            tokenizer = RobertaTokenizer.from_pretrained('roberta-base')
-            model = RobertaModel.from_pretrained("roberta-base")
+            tokenizer = RobertaTokenizer.from_pretrained('roberta-base', local_files_only=True)
+            model = RobertaModel.from_pretrained('roberta-base', local_files_only=True)
             
             user_text_feats = []
             

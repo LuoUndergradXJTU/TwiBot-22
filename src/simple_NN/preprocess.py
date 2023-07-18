@@ -17,7 +17,7 @@ class simple_dataset(Dataset):
     def __len__(self):
         return self.data.size(0)
     
-def get_dataloaders(batch_size, dataset="botometer-feedback-2019", server_id="209"):
+def get_dataloaders(batch_size, dataset="cresci-2015", server_id="209"):
     train, valid, test = merge_and_split(dataset, server_id)
     train_data, train_labels = simple_vectorize(train)
     valid_data, valid_labels = simple_vectorize(valid)
