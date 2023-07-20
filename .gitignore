@@ -13,15 +13,15 @@ datasets/*
 *.npy
 *.npz
 *.ipynb
-*.csv
+# *.csv
 *.txt
 # *.md
 data/*
 test.py
 *.json
 events.*
-*.yaml
-*.ckpt
+# *.yaml
+# *.ckpt
 *.zip
 *.rar
 *.tar
