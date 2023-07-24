@@ -1,5 +1,5 @@
 Train:
-  epochs: 50
+  epochs: 500
   model: twoLayerMLP
   batch_size: 128
   hidden_dim: 256

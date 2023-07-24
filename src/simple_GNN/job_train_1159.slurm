@@ -10,9 +10,6 @@ module purge
 module load anaconda3/2023.3
 conda activate /scratch/network/rr4001/projects/voon/envs/botbusters
 
-python3 train.py --config 1.yaml
-python3 train.py --config 1b.yaml
-python3 train.py --config 1c.yaml
-python3 train.py --config 2a.yaml
-python3 train.py --config 2b.yaml
-python3 train.py --config 2c.yaml
+python3 train.py --config 3_layer_lr_00001_long_long_deep.yaml
+python3 train.py --config 4_layer_lr_00001_long_long.yaml
+python3 train.py --config 4_layer_lr_00001_long_long_deep.yaml
