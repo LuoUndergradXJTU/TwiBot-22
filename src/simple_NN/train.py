@@ -116,7 +116,7 @@ class Trainer:
             x = batch[0].to(self.device)
             y = batch[1].to(self.device)
             n_batch = len(x)
-            out = self.model(x, batch.edge_index)
+            out = self.model(x)
             label = y[:n_batch]
             out = out[:n_batch]
             all_label += label.data
@@ -191,7 +191,7 @@ class Trainer:
                 self.best_model = copy.deepcopy(self.model)
             
             # Run test on the best model
-            test_results = self.valid("test")
+            test_results, _ = self.valid("test")
 
             one_epoch_results = {'epoch': epoch,
                                 'train_loss': train_loss,
