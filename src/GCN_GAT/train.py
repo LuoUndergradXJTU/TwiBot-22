@@ -100,7 +100,7 @@ def forward_one_epoch(epoch, model, optimizer, loss_fn, train_loader, val_loader
         loss.backward()
         optimizer.step()
     ave_loss /= cnt
-    ave_loss /= cnt
+    # ave_loss /= cnt
     all_label = torch.stack(all_label)
     all_pred = torch.stack(all_pred)
     train_results, plog = calc_metrics(all_label, all_pred)

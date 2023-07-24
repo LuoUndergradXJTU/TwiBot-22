@@ -10,7 +10,7 @@ metrics = {
     "Pre": precision_score,
     "Rec": recall_score,
     "MiF": f1_score,
-    "AUC": roc_auc_score,
+    "AUC": roc_auc_score, # bugged. 
     "MCC": matthews_corrcoef
 }
 
@@ -20,6 +20,8 @@ def evaluate_on_all_metrics(y_true, y_pred):
     for name, func in metrics.items():
         try:
             ret[name] = func(y_true, y_pred)
+            #  to do:
+            # for auc, need to feed in y_pred_prob instead of y_pred
         except:
             # invalid figure
             ret[name] = 0

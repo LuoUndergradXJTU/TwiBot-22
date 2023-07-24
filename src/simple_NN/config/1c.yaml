@@ -2,7 +2,7 @@ Train:
   epochs: 50
   model: twoLayerMLP
   batch_size: 128
-  hidden_dim: 256
+  hidden_dim: 512
   activation: relu
   optimizer: adam
   lr: 0.0001
