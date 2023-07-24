@@ -13,13 +13,11 @@ with warnings.catch_warnings():
     import torch
     import numpy as np
     from preprocess import get_dataloaders
-    from model import twoLayerMLP, threeLayerMLP
+    from model import twoLayerMLP
     from tqdm import tqdm
 
     import sys
-    # from utils.eval import evaluate_on_all_metrics
-
-    from util import null_metrics, calc_metrics, is_better
+    from utils.eval import evaluate_on_all_metrics
     import argparse
     import yaml
     import pandas as pd
@@ -37,7 +35,6 @@ class Trainer:
     def __init__(
         self,
         epochs=50,
-        model="twoLayerMLP",
         batch_size=128,
         hidden_dim=256,
         activation="relu",
@@ -53,10 +50,7 @@ class Trainer:
         self.batch_size = batch_size
         self.epochs = epochs
         self.train_loader, self.valid_loader, self.test_loader = get_dataloaders(batch_size, dataset, server_id)
-        if model == "twoLayerMLP":
-            self.model = twoLayerMLP(self.train_loader.dataset[0][0].size(0), 2, hidden_dim=hidden_dim, activation=activation).to(device)
-        elif model == "threeLayerMLP":
-            self.model = threeLayerMLP(self.train_loader.dataset[0][0].size(0), 2, hidden_dim=hidden_dim, activation=activation).to(device)
+        self.model = twoLayerMLP(self.train_loader.dataset[0][0].size(0), 2, hidden_dim=hidden_dim, activation=activation).to(device)
         
         self.lr = lr
         if optimizer == "adam":
@@ -70,7 +64,7 @@ class Trainer:
             self.loss_fn = torch.nn.BCEWithLogitsLoss()
         #else:
         #...
-        self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+        self.device = torch.device(device)
 
         # Retrieve "1" from parser.add_argument('--config', default='./config/1.yaml')
         self.config = os.path.splitext(os.path.basename(config))[0]
@@ -101,89 +95,68 @@ class Trainer:
         
         
     @torch.no_grad()
-    def valid(self, name = "valid"):
-        self.model.eval()
-        all_label = []
-        all_pred = []
-        ave_loss = 0.0
-        cnt = 0.0
-        if name == "valid":
-            loader = self.valid_loader
-        elif name == "test":
-            loader = self.test_loader
+    def valid(self):
+        preds = []
+        pred_probs = []
+        gt = []
         
-        for batch in loader:
-            x = batch[0].to(self.device)
-            y = batch[1].to(self.device)
-            n_batch = len(x)
-            out = self.model(x, batch.edge_index)
-            label = y[:n_batch]
-            out = out[:n_batch]
-            all_label += label.data
-            all_pred += out
-            loss = self.loss_func(out, label)
-            ave_loss += loss.item() * n_batch
-            cnt += n_batch
+        for data, labels in self.valid_loader:
+            data = data.to(self.device)
+            pred = self.model(data)
+            preds.append(pred.argmax(dim=-1).cpu().numpy())
+            pred_probs.append(pred.cpu().numpy())
+            gt.append(labels.numpy())
             
-        ave_loss /= cnt
-        all_label = torch.stack(all_label)
-        all_pred = torch.stack(all_pred)
-        val_results, plog = calc_metrics(all_label, all_pred)
-        return val_results, ave_loss
-    
-    # @torch.no_grad()
-    # def test(self):
-    #     preds = []
-    #     gt = []
-    #     for data, labels in self.test_loader:
-    #         data = data.to(self.device)
-    #         pred = self.best_model(data)
-    #         preds.append(pred.argmax(dim=-1).cpu().numpy())
-    #         gt.append(labels.cpu().numpy())
-            
-    #     preds = np.concatenate(preds, axis=0)
-    #     gt = np.concatenate(gt, axis=0)
+        preds = np.concatenate(preds, axis=0)
+        pred_probs = np.concatenate(pred_probs, axis=0)
+        gt = np.concatenate(gt, axis=0)
 
-    #     test_results = evaluate_on_all_metrics(gt, preds)
-    #     return test_results
+        val_results = evaluate_on_all_metrics(gt, preds)
+        val_loss = self.loss_func(torch.tensor(pred_probs), torch.tensor(gt))
+        
+        return val_results, val_loss
+    
+    @torch.no_grad()
+    def test(self):
+        preds = []
+        gt = []
+        for data, labels in self.test_loader:
+            data = data.to(self.device)
+            pred = self.best_model(data)
+            preds.append(pred.argmax(dim=-1).cpu().numpy())
+            gt.append(labels.cpu().numpy())
+            
+        preds = np.concatenate(preds, axis=0)
+        gt = np.concatenate(gt, axis=0)
+
+        test_results = evaluate_on_all_metrics(gt, preds)
+        return test_results
     
     def train(self):
-        # self.model.train()
         for epoch in range(self.epochs):
-            all_label = []
-            all_pred =[]
-            ave_loss = 0.0
-            cnt = 0.0
-            for batch in self.train_loader:
-                x = batch[0].to(self.device)
-                y = batch[1].to(self.device)
-                # print(batch)
-                # print(type(batch))
-                self.optimizer.zero_grad()
-                # batch = batch.to(self.device)
-                n_batch = len(batch[0])
-                out = self.model(x)
-                label = y[:n_batch]
-                out = out[:n_batch]
+            with tqdm(self.train_loader) as progress_bar:
+                preds = []
+                labels_arr  = []
+                for data, labels in progress_bar:
+                    data = data.to(self.device)
+                    labels = labels.to(self.device)
+                    pred = self.model(data)
+                    loss = self.loss_func(pred, labels)
+                    
+                    loss.backward()
+                    self.optimizer.zero_grad()
+                    self.optimizer.step()
+                    
+                    progress_bar.set_description(desc=f"Epoch:{epoch}")
+                    progress_bar.set_postfix(loss=loss.item())
+                    
+                    preds.append(pred.argmax(dim=-1).cpu().numpy())
+                    labels_arr.append(labels.cpu().numpy())
 
-                all_label += label.data
-                all_pred += out
-                loss = self.loss_func(out, label)
-                ave_loss += loss.item()*n_batch
-                cnt+=n_batch
 
-                loss.backward()
-                self.optimizer.step()
-            ave_loss /= cnt
-            # ave_loss /= cnt
-            all_label = torch.stack(all_label)
-            all_pred = torch.stack(all_pred)
-            train_results, plog = calc_metrics(all_label, all_pred)
-            plog = 'Epoch-{} train loss: {:.6}'.format(epoch, ave_loss) + plog
-            train_loss = ave_loss
-
-        
-            val_results, val_loss = self.valid("valid")
+            train_results = evaluate_on_all_metrics(np.concatenate(labels_arr, axis=0), 
+                                                    np.concatenate(preds, axis=0))
+            val_results, val_loss = self.valid()
             
             best = 0
             if val_results['Acc'] > best:
@@ -191,32 +164,29 @@ class Trainer:
                 self.best_model = copy.deepcopy(self.model)
             
             # Run test on the best model
-            test_results = self.valid("test")
+            test_results = self.test()
 
             one_epoch_results = {'epoch': epoch,
-                                'train_loss': train_loss,
+                                'train_loss': loss.item(),
                                 'train_acc': train_results['Acc'],
                                 'train_pre': train_results['Pre'],
                                 'train_rec': train_results['Rec'],
                                 'train_f1': train_results['MiF'],
                                 'train_auc': train_results['AUC'],
                                 'train_mcc': train_results['MCC'],
-                                'train_pr-auc': train_results['pr-auc'],
-                                'valid_loss': val_loss,
+                                'valid_loss': val_loss.item(),
                                 'valid_acc': val_results['Acc'],
                                 'valid_pre': val_results['Pre'],
                                 'valid_rec': val_results['Rec'],
                                 'valid_f1': val_results['MiF'],
                                 'valid_auc': val_results['AUC'],
                                 'valid_mcc': val_results['MCC'],
-                                'valid_pr-auc': val_results['pr-auc'],
                                 'test_acc': test_results['Acc'],
                                 'test_pre': test_results['Pre'],
                                 'test_rec': test_results['Rec'],
                                 'test_f1': test_results['MiF'],
                                 'test_auc': test_results['AUC'],
-                                'test_mcc': test_results['MCC'],
-                                'test_pr-auc': test_results['pr-auc'],
+                                'test_mcc': test_results['MCC']
                                 }
             
             self.results = self.results.append(one_epoch_results, ignore_index=True)
@@ -264,7 +234,6 @@ if __name__ == "__main__":
             setattr(args, k, v)
 
     trainer = Trainer(epochs=args.epochs,
-                    model=args.model,
                     batch_size=args.batch_size,
                     hidden_dim=args.hidden_dim,
                     activation=args.activation,

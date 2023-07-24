@@ -1,6 +1,5 @@
 Train:
   epochs: 50
-  model: twoLayerMLP
   batch_size: 128
   hidden_dim: 256
   activation: relu
