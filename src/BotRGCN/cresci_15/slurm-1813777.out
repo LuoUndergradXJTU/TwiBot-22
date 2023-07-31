@@ -1,15 +1,0 @@
-  0%|          | 0/5301 [00:00<?, ?it/s]/scratch/network/rr4001/projects/voon/TwitterBotBusters/src/BotRGCN/cresci_15/dataset_tool.py:74: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame
-
-See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  user["label"][i] = id_to_label[user["id"][i]]
-/scratch/network/rr4001/projects/voon/TwitterBotBusters/src/BotRGCN/cresci_15/dataset_tool.py:75: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame
-
-See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  user["split"][i] = id_to_split[user["id"][i]]
-  1%|          | 59/5301 [00:00<00:08, 589.41it/s] 17%|█▋        | 892/5301 [00:00<00:00, 5140.35it/s] 33%|███▎      | 1731/5301 [00:00<00:00, 6621.88it/s] 48%|████▊     | 2555/5301 [00:00<00:00, 7257.06it/s] 64%|██████▍   | 3392/5301 [00:00<00:00, 7656.85it/s] 80%|███████▉  | 4231/5301 [00:00<00:00, 7905.24it/s] 96%|█████████▌| 5069/5301 [00:00<00:00, 8058.62it/s]100%|██████████| 5301/5301 [00:00<00:00, 7281.66it/s]
-Traceback (most recent call last):
-  File "preprocess_2.py", line 14, in <module>
-    each_user_tweets=torch.from_numpy(np.load('./processed_data/each_user_tweets.npy', allow_pickle=True))
-TypeError: can't convert np.ndarray of type numpy.object_. The only supported types are: float64, float32, float16, complex64, complex128, int64, int32, int16, int8, uint8, and bool.

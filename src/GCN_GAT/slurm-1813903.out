@@ -1,10 +1,0 @@
-dataset_name: cresci-2015
-Data(edge_index=[2, 14220], y=[5301], edge_type=[14220], des_embedding=[5301, 768], tweet_embedding=[5301, 768], num_property_embedding=[5301, 5], cat_property_embedding=[5301, 1], train_idx=[3708], val_idx=[1058], test_idx=[535], num_nodes=5301)
-  0% 0/5 [00:00<?, ?it/s]  0% 0/5 [00:00<?, ?it/s, val acc 0.6323251417769377 no up cnt 0] 20% 1/5 [00:00<00:02,  1.86it/s, val acc 0.6323251417769377 no up cnt 0] 20% 1/5 [00:00<00:02,  1.86it/s, val acc 0.6512287334593573 no up cnt 0] 40% 2/5 [00:00<00:01,  2.28it/s, val acc 0.6512287334593573 no up cnt 0] 40% 2/5 [00:01<00:01,  2.28it/s, val acc 0.9158790170132325 no up cnt 0] 60% 3/5 [00:01<00:00,  2.61it/s, val acc 0.9158790170132325 no up cnt 0] 60% 3/5 [00:01<00:00,  2.61it/s, val acc 0.9565217391304348 no up cnt 0] 80% 4/5 [00:01<00:00,  2.81it/s, val acc 0.9565217391304348 no up cnt 0] 80% 4/5 [00:01<00:00,  2.81it/s, val acc 0.9725897920604915 no up cnt 0]100% 5/5 [00:01<00:00,  2.90it/s, val acc 0.9725897920604915 no up cnt 0]100% 5/5 [00:01<00:00,  2.69it/s, val acc 0.9725897920604915 no up cnt 0]
-acc 0.9383177570093458
-f1-score 0.9534555712270804
-precision 0.9110512129380054
-recall 1.0
-mcc 0.8708837885775997
-roc-auc 0.9832096837172979
-pr-auc 0.9878615728450987

@@ -1,2 +1,0 @@
-/var/spool/slurmd/job1813637/slurm_script: line 18: 2222732 Killed                  python3 hello_twibot.py
-slurmstepd: error: Detected 1 oom_kill event in StepId=1813637.batch. Some of the step tasks have been OOM Killed.

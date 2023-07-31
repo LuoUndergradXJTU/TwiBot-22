@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "train.py", line 49, in <module>
-    with open(f"./config/{args.config}") as f:
-FileNotFoundError: [Errno 2] No such file or directory: './config/1.yaml'
