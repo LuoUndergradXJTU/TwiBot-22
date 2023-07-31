@@ -1,19 +1,0 @@
-  0%|          | 0/5301 [00:00<?, ?it/s]/scratch/network/rr4001/projects/voon/TwitterBotBusters/src/BotRGCN/cresci_15/dataset_tool.py:74: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame
-
-See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  user["label"][i] = id_to_label[user["id"][i]]
-/scratch/network/rr4001/projects/voon/TwitterBotBusters/src/BotRGCN/cresci_15/dataset_tool.py:75: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame
-
-See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  user["split"][i] = id_to_split[user["id"][i]]
-  1%|          | 52/5301 [00:00<00:10, 516.97it/s] 17%|█▋        | 880/5301 [00:00<00:00, 5070.01it/s] 32%|███▏      | 1713/5301 [00:00<00:00, 6553.87it/s] 48%|████▊     | 2550/5301 [00:00<00:00, 7267.46it/s] 64%|██████▎   | 3373/5301 [00:00<00:00, 7614.14it/s] 79%|███████▉  | 4211/5301 [00:00<00:00, 7873.45it/s] 95%|█████████▌| 5055/5301 [00:00<00:00, 8056.87it/s]100%|██████████| 5301/5301 [00:00<00:00, 7258.20it/s]
-Traceback (most recent call last):
-  File "preprocess_2.py", line 12, in <module>
-    each_user_tweets=torch.load('./processed_data/each_user_tweets.npy')
-  File "/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/torch/serialization.py", line 608, in load
-    return _legacy_load(opened_file, map_location, pickle_module, **pickle_load_args)
-  File "/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/torch/serialization.py", line 777, in _legacy_load
-    magic_number = pickle_module.load(f, **pickle_load_args)
-_pickle.UnpicklingError: STACK_GLOBAL requires str

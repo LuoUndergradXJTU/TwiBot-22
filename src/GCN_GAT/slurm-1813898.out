@@ -1,15 +1,0 @@
-dataset_name: cresci-2015
-Data(edge_index=[2, 14220], y=[5301], edge_type=[14220], des_embedding=[5301, 768], tweet_embedding=[5301, 768], num_property_embedding=[5301, 5], cat_property_embedding=[5301, 1], train_idx=[3708], val_idx=[1058], test_idx=[535], num_nodes=5301)
-  0% 0/5 [00:00<?, ?it/s]  0% 0/5 [00:00<?, ?it/s, val acc 0.6323251417769377 no up cnt 0] 20% 1/5 [00:00<00:02,  1.79it/s, val acc 0.6323251417769377 no up cnt 0] 20% 1/5 [00:00<00:02,  1.79it/s, val acc 0.6332703213610587 no up cnt 0] 40% 2/5 [00:00<00:01,  2.25it/s, val acc 0.6332703213610587 no up cnt 0] 40% 2/5 [00:01<00:01,  2.25it/s, val acc 0.8913043478260869 no up cnt 0] 60% 3/5 [00:01<00:00,  2.62it/s, val acc 0.8913043478260869 no up cnt 0] 60% 3/5 [00:01<00:00,  2.62it/s, val acc 0.946124763705104 no up cnt 0]  80% 4/5 [00:01<00:00,  2.81it/s, val acc 0.946124763705104 no up cnt 0] 80% 4/5 [00:01<00:00,  2.81it/s, val acc 0.9763705103969754 no up cnt 0]100% 5/5 [00:01<00:00,  2.94it/s, val acc 0.9763705103969754 no up cnt 0]100% 5/5 [00:01<00:00,  2.69it/s, val acc 0.9763705103969754 no up cnt 0]
-Traceback (most recent call last):
-  File "train.py", line 171, in <module>
-    train()
-  File "train.py", line 165, in train
-    torch.save(best_state_dict, 'checkpoints/{}_{}.pt'.format(dataset_name, test_metrics['acc']))
-  File "/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/torch/serialization.py", line 376, in save
-    with _open_file_like(f, 'wb') as opened_file:
-  File "/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/torch/serialization.py", line 230, in _open_file_like
-    return _open_file(name_or_buffer, mode)
-  File "/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/torch/serialization.py", line 211, in __init__
-    super(_open_file, self).__init__(open(name, mode))
-FileNotFoundError: [Errno 2] No such file or directory: 'checkpoints/cresci-2015_0.9495327102803738.pt'

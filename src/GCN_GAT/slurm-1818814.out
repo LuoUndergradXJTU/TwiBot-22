@@ -1,1173 +1,0 @@
-dataset_name: cresci-2015
-Data(edge_index=[2, 14220], y=[5301], edge_type=[14220], des_embedding=[5301, 768], tweet_embedding=[5301, 768], num_property_embedding=[5301, 5], cat_property_embedding=[5301, 1], train_idx=[3708], val_idx=[1058], test_idx=[535], num_nodes=5301)
-  0% 0/1000 [00:00<?, ?it/s]  0% 0/1000 [00:00<?, ?it/s, val acc 0.6370510396975425 no up cnt 0]  0% 1/1000 [00:00<10:30,  1.58it/s, val acc 0.6370510396975425 no up cnt 0]  0% 1/1000 [00:01<10:30,  1.58it/s, val acc 0.7844990548204159 no up cnt 0]  0% 2/1000 [00:01<08:15,  2.01it/s, val acc 0.7844990548204159 no up cnt 0]  0% 2/1000 [00:01<08:15,  2.01it/s, val acc 0.9234404536862004 no up cnt 0]  0% 3/1000 [00:01<07:33,  2.20it/s, val acc 0.9234404536862004 no up cnt 0]  0% 3/1000 [00:01<07:33,  2.20it/s, val acc 0.9517958412098299 no up cnt 0]  0% 4/1000 [00:01<07:13,  2.30it/s, val acc 0.9517958412098299 no up cnt 0]  0% 4/1000 [00:02<07:13,  2.30it/s, val acc 0.9678638941398866 no up cnt 0]  0% 5/1000 [00:02<07:02,  2.35it/s, val acc 0.9678638941398866 no up cnt 0]  0% 5/1000 [00:02<07:02,  2.35it/s, val acc 0.9773156899810964 no up cnt 0]  1% 6/1000 [00:02<06:57,  2.38it/s, val acc 0.9773156899810964 no up cnt 0]  1% 6/1000 [00:03<06:57,  2.38it/s, val acc 0.9829867674858223 no up cnt 0]  1% 7/1000 [00:03<06:53,  2.40it/s, val acc 0.9829867674858223 no up cnt 0]  1% 7/1000 [00:03<06:53,  2.40it/s, val acc 0.9896030245746692 no up cnt 0]  1% 8/1000 [00:03<06:50,  2.42it/s, val acc 0.9896030245746692 no up cnt 0]  1% 8/1000 [00:03<06:50,  2.42it/s, val acc 0.9886578449905482 no up cnt 1]  1% 9/1000 [00:03<06:48,  2.43it/s, val acc 0.9886578449905482 no up cnt 1]  1% 9/1000 [00:04<06:48,  2.43it/s, val acc 0.9886578449905482 no up cnt 2]  1% 10/1000 [00:04<07:11,  2.30it/s, val acc 0.9886578449905482 no up cnt 2]  1% 10/1000 [00:04<07:11,  2.30it/s, val acc 0.9886578449905482 no up cnt 3]  1% 11/1000 [00:04<07:01,  2.35it/s, val acc 0.9886578449905482 no up cnt 3]  1% 11/1000 [00:05<07:01,  2.35it/s, val acc 0.9877126654064272 no up cnt 4]  1% 12/1000 [00:05<06:54,  2.38it/s, val acc 0.9877126654064272 no up cnt 4]  1% 12/1000 [00:05<06:54,  2.38it/s, val acc 0.9886578449905482 no up cnt 5]  1% 13/1000 [00:05<06:50,  2.41it/s, val acc 0.9886578449905482 no up cnt 5]  1% 13/1000 [00:05<06:50,  2.41it/s, val acc 0.9905482041587902 no up cnt 0]  1% 14/1000 [00:05<06:46,  2.42it/s, val acc 0.9905482041587902 no up cnt 0]  1% 14/1000 [00:06<06:46,  2.42it/s, val acc 0.9914933837429112 no up cnt 0]  2% 15/1000 [00:06<06:43,  2.44it/s, val acc 0.9914933837429112 no up cnt 0]  2% 15/1000 [00:06<06:43,  2.44it/s, val acc 0.9905482041587902 no up cnt 1]  2% 16/1000 [00:06<06:40,  2.46it/s, val acc 0.9905482041587902 no up cnt 1]  2% 16/1000 [00:07<06:40,  2.46it/s, val acc 0.9905482041587902 no up cnt 2]  2% 17/1000 [00:07<06:38,  2.47it/s, val acc 0.9905482041587902 no up cnt 2]  2% 17/1000 [00:07<06:38,  2.47it/s, val acc 0.9924385633270322 no up cnt 0]  2% 18/1000 [00:07<06:36,  2.48it/s, val acc 0.9924385633270322 no up cnt 0]  2% 18/1000 [00:07<06:36,  2.48it/s, val acc 0.9914933837429112 no up cnt 1]  2% 19/1000 [00:07<06:34,  2.49it/s, val acc 0.9914933837429112 no up cnt 1]  2% 19/1000 [00:08<06:34,  2.49it/s, val acc 0.9905482041587902 no up cnt 2]  2% 20/1000 [00:08<06:36,  2.47it/s, val acc 0.9905482041587902 no up cnt 2]  2% 20/1000 [00:08<06:36,  2.47it/s, val acc 0.9924385633270322 no up cnt 0]  2% 21/1000 [00:08<06:53,  2.37it/s, val acc 0.9924385633270322 no up cnt 0]  2% 21/1000 [00:09<06:53,  2.37it/s, val acc 0.9914933837429112 no up cnt 1]  2% 22/1000 [00:09<06:48,  2.40it/s, val acc 0.9914933837429112 no up cnt 1]  2% 22/1000 [00:09<06:48,  2.40it/s, val acc 0.9914933837429112 no up cnt 2]  2% 23/1000 [00:09<06:43,  2.42it/s, val acc 0.9914933837429112 no up cnt 2]  2% 23/1000 [00:10<06:43,  2.42it/s, val acc 0.994328922495274 no up cnt 0]   2% 24/1000 [00:10<06:40,  2.44it/s, val acc 0.994328922495274 no up cnt 0]  2% 24/1000 [00:10<06:40,  2.44it/s, val acc 0.9933837429111532 no up cnt 1]  2% 25/1000 [00:10<06:37,  2.45it/s, val acc 0.9933837429111532 no up cnt 1]  2% 25/1000 [00:10<06:37,  2.45it/s, val acc 0.9914933837429112 no up cnt 2]  3% 26/1000 [00:10<06:34,  2.47it/s, val acc 0.9914933837429112 no up cnt 2]  3% 26/1000 [00:11<06:34,  2.47it/s, val acc 0.9924385633270322 no up cnt 3]  3% 27/1000 [00:11<06:34,  2.47it/s, val acc 0.9924385633270322 no up cnt 3]  3% 27/1000 [00:11<06:34,  2.47it/s, val acc 0.9933837429111532 no up cnt 4]  3% 28/1000 [00:11<06:34,  2.47it/s, val acc 0.9933837429111532 no up cnt 4]  3% 28/1000 [00:12<06:34,  2.47it/s, val acc 0.9924385633270322 no up cnt 5]  3% 29/1000 [00:12<06:32,  2.47it/s, val acc 0.9924385633270322 no up cnt 5]  3% 29/1000 [00:12<06:32,  2.47it/s, val acc 0.994328922495274 no up cnt 0]   3% 30/1000 [00:12<06:30,  2.49it/s, val acc 0.994328922495274 no up cnt 0]  3% 30/1000 [00:12<06:30,  2.49it/s, val acc 0.9924385633270322 no up cnt 1]  3% 31/1000 [00:12<06:29,  2.49it/s, val acc 0.9924385633270322 no up cnt 1]  3% 31/1000 [00:13<06:29,  2.49it/s, val acc 0.9924385633270322 no up cnt 2]  3% 32/1000 [00:13<06:28,  2.49it/s, val acc 0.9924385633270322 no up cnt 2]  3% 32/1000 [00:13<06:28,  2.49it/s, val acc 0.9924385633270322 no up cnt 3]  3% 33/1000 [00:13<06:27,  2.49it/s, val acc 0.9924385633270322 no up cnt 3]  3% 33/1000 [00:14<06:27,  2.49it/s, val acc 0.9924385633270322 no up cnt 4]  3% 34/1000 [00:14<06:50,  2.35it/s, val acc 0.9924385633270322 no up cnt 4]  3% 34/1000 [00:14<06:50,  2.35it/s, val acc 0.994328922495274 no up cnt 5]   4% 35/1000 [00:14<06:42,  2.40it/s, val acc 0.994328922495274 no up cnt 5]  4% 35/1000 [00:14<06:42,  2.40it/s, val acc 0.9905482041587902 no up cnt 6]  4% 36/1000 [00:14<06:36,  2.43it/s, val acc 0.9905482041587902 no up cnt 6]  4% 36/1000 [00:15<06:36,  2.43it/s, val acc 0.9933837429111532 no up cnt 7]  4% 37/1000 [00:15<06:34,  2.44it/s, val acc 0.9933837429111532 no up cnt 7]  4% 37/1000 [00:15<06:34,  2.44it/s, val acc 0.9933837429111532 no up cnt 8]  4% 38/1000 [00:15<06:31,  2.45it/s, val acc 0.9933837429111532 no up cnt 8]  4% 38/1000 [00:16<06:31,  2.45it/s, val acc 0.9914933837429112 no up cnt 9]  4% 39/1000 [00:16<06:31,  2.45it/s, val acc 0.9914933837429112 no up cnt 9]  4% 39/1000 [00:16<06:31,  2.45it/s, val acc 0.9914933837429112 no up cnt 10]  4% 40/1000 [00:16<06:30,  2.46it/s, val acc 0.9914933837429112 no up cnt 10]  4% 40/1000 [00:16<06:30,  2.46it/s, val acc 0.9933837429111532 no up cnt 11]  4% 41/1000 [00:17<06:29,  2.46it/s, val acc 0.9933837429111532 no up cnt 11]  4% 41/1000 [00:17<06:29,  2.46it/s, val acc 0.9905482041587902 no up cnt 12]  4% 42/1000 [00:17<06:27,  2.47it/s, val acc 0.9905482041587902 no up cnt 12]  4% 42/1000 [00:17<06:27,  2.47it/s, val acc 0.9905482041587902 no up cnt 13]  4% 43/1000 [00:17<06:25,  2.48it/s, val acc 0.9905482041587902 no up cnt 13]  4% 43/1000 [00:18<06:25,  2.48it/s, val acc 0.9905482041587902 no up cnt 14]  4% 44/1000 [00:18<06:26,  2.47it/s, val acc 0.9905482041587902 no up cnt 14]  4% 44/1000 [00:18<06:26,  2.47it/s, val acc 0.9905482041587902 no up cnt 15]  4% 45/1000 [00:18<06:26,  2.47it/s, val acc 0.9905482041587902 no up cnt 15]  4% 45/1000 [00:19<06:26,  2.47it/s, val acc 0.9905482041587902 no up cnt 16]  5% 46/1000 [00:19<06:47,  2.34it/s, val acc 0.9905482041587902 no up cnt 16]  5% 46/1000 [00:19<06:47,  2.34it/s, val acc 0.994328922495274 no up cnt 0]    5% 47/1000 [00:19<06:40,  2.38it/s, val acc 0.994328922495274 no up cnt 0]  5% 47/1000 [00:19<06:40,  2.38it/s, val acc 0.9914933837429112 no up cnt 1]  5% 48/1000 [00:19<06:34,  2.41it/s, val acc 0.9914933837429112 no up cnt 1]  5% 48/1000 [00:20<06:34,  2.41it/s, val acc 0.994328922495274 no up cnt 2]   5% 49/1000 [00:20<06:31,  2.43it/s, val acc 0.994328922495274 no up cnt 2]  5% 49/1000 [00:20<06:31,  2.43it/s, val acc 0.9933837429111532 no up cnt 3]  5% 50/1000 [00:20<06:29,  2.44it/s, val acc 0.9933837429111532 no up cnt 3]  5% 50/1000 [00:21<06:29,  2.44it/s, val acc 0.994328922495274 no up cnt 4]   5% 51/1000 [00:21<06:27,  2.45it/s, val acc 0.994328922495274 no up cnt 4]  5% 51/1000 [00:21<06:27,  2.45it/s, val acc 0.9905482041587902 no up cnt 5]  5% 52/1000 [00:21<06:26,  2.45it/s, val acc 0.9905482041587902 no up cnt 5]  5% 52/1000 [00:21<06:26,  2.45it/s, val acc 0.9905482041587902 no up cnt 6]  5% 53/1000 [00:21<06:26,  2.45it/s, val acc 0.9905482041587902 no up cnt 6]  5% 53/1000 [00:22<06:26,  2.45it/s, val acc 0.994328922495274 no up cnt 0]   5% 54/1000 [00:22<06:27,  2.44it/s, val acc 0.994328922495274 no up cnt 0]  5% 54/1000 [00:22<06:27,  2.44it/s, val acc 0.9905482041587902 no up cnt 1]  6% 55/1000 [00:22<06:25,  2.45it/s, val acc 0.9905482041587902 no up cnt 1]  6% 55/1000 [00:23<06:25,  2.45it/s, val acc 0.9933837429111532 no up cnt 2]  6% 56/1000 [00:23<06:24,  2.46it/s, val acc 0.9933837429111532 no up cnt 2]  6% 56/1000 [00:23<06:24,  2.46it/s, val acc 0.994328922495274 no up cnt 3]   6% 57/1000 [00:23<06:23,  2.46it/s, val acc 0.994328922495274 no up cnt 3]  6% 57/1000 [00:23<06:23,  2.46it/s, val acc 0.994328922495274 no up cnt 4]  6% 58/1000 [00:23<06:24,  2.45it/s, val acc 0.994328922495274 no up cnt 4]  6% 58/1000 [00:24<06:24,  2.45it/s, val acc 0.995274102079395 no up cnt 0]  6% 59/1000 [00:24<06:39,  2.35it/s, val acc 0.995274102079395 no up cnt 0]  6% 59/1000 [00:24<06:39,  2.35it/s, val acc 0.9914933837429112 no up cnt 1]  6% 60/1000 [00:24<06:34,  2.38it/s, val acc 0.9914933837429112 no up cnt 1]  6% 60/1000 [00:25<06:34,  2.38it/s, val acc 0.9905482041587902 no up cnt 2]  6% 61/1000 [00:25<06:28,  2.42it/s, val acc 0.9905482041587902 no up cnt 2]  6% 61/1000 [00:25<06:28,  2.42it/s, val acc 0.9933837429111532 no up cnt 3]  6% 62/1000 [00:25<06:25,  2.43it/s, val acc 0.9933837429111532 no up cnt 3]  6% 62/1000 [00:26<06:25,  2.43it/s, val acc 0.994328922495274 no up cnt 4]   6% 63/1000 [00:26<06:23,  2.45it/s, val acc 0.994328922495274 no up cnt 4]  6% 63/1000 [00:26<06:23,  2.45it/s, val acc 0.9914933837429112 no up cnt 5]  6% 64/1000 [00:26<06:21,  2.46it/s, val acc 0.9914933837429112 no up cnt 5]  6% 64/1000 [00:26<06:21,  2.46it/s, val acc 0.9905482041587902 no up cnt 6]  6% 65/1000 [00:26<06:18,  2.47it/s, val acc 0.9905482041587902 no up cnt 6]  6% 65/1000 [00:27<06:18,  2.47it/s, val acc 0.994328922495274 no up cnt 7]   7% 66/1000 [00:27<06:17,  2.47it/s, val acc 0.994328922495274 no up cnt 7]  7% 66/1000 [00:27<06:17,  2.47it/s, val acc 0.9905482041587902 no up cnt 8]  7% 67/1000 [00:27<06:18,  2.47it/s, val acc 0.9905482041587902 no up cnt 8]  7% 67/1000 [00:28<06:18,  2.47it/s, val acc 0.9905482041587902 no up cnt 9]  7% 68/1000 [00:28<06:18,  2.47it/s, val acc 0.9905482041587902 no up cnt 9]  7% 68/1000 [00:28<06:18,  2.47it/s, val acc 0.9924385633270322 no up cnt 10]  7% 69/1000 [00:28<06:18,  2.46it/s, val acc 0.9924385633270322 no up cnt 10]  7% 69/1000 [00:28<06:18,  2.46it/s, val acc 0.9914933837429112 no up cnt 11]  7% 70/1000 [00:28<06:17,  2.46it/s, val acc 0.9914933837429112 no up cnt 11]  7% 70/1000 [00:29<06:17,  2.46it/s, val acc 0.9914933837429112 no up cnt 12]  7% 71/1000 [00:29<06:37,  2.34it/s, val acc 0.9914933837429112 no up cnt 12]  7% 71/1000 [00:29<06:37,  2.34it/s, val acc 0.9933837429111532 no up cnt 13]  7% 72/1000 [00:29<06:31,  2.37it/s, val acc 0.9933837429111532 no up cnt 13]  7% 72/1000 [00:30<06:31,  2.37it/s, val acc 0.9905482041587902 no up cnt 14]  7% 73/1000 [00:30<06:25,  2.40it/s, val acc 0.9905482041587902 no up cnt 14]  7% 73/1000 [00:30<06:25,  2.40it/s, val acc 0.9914933837429112 no up cnt 15]  7% 74/1000 [00:30<06:23,  2.42it/s, val acc 0.9914933837429112 no up cnt 15]  7% 74/1000 [00:30<06:23,  2.42it/s, val acc 0.9924385633270322 no up cnt 16]  8% 75/1000 [00:30<06:20,  2.43it/s, val acc 0.9924385633270322 no up cnt 16]  8% 75/1000 [00:31<06:20,  2.43it/s, val acc 0.9933837429111532 no up cnt 17]  8% 76/1000 [00:31<06:19,  2.44it/s, val acc 0.9933837429111532 no up cnt 17]  8% 76/1000 [00:31<06:19,  2.44it/s, val acc 0.9914933837429112 no up cnt 18]  8% 77/1000 [00:31<06:18,  2.44it/s, val acc 0.9914933837429112 no up cnt 18]  8% 77/1000 [00:32<06:18,  2.44it/s, val acc 0.9914933837429112 no up cnt 19]  8% 78/1000 [00:32<06:15,  2.46it/s, val acc 0.9914933837429112 no up cnt 19]  8% 78/1000 [00:32<06:15,  2.46it/s, val acc 0.9914933837429112 no up cnt 20]  8% 79/1000 [00:32<06:13,  2.47it/s, val acc 0.9914933837429112 no up cnt 20]  8% 79/1000 [00:32<06:13,  2.47it/s, val acc 0.9933837429111532 no up cnt 21]  8% 80/1000 [00:33<06:12,  2.47it/s, val acc 0.9933837429111532 no up cnt 21]  8% 80/1000 [00:33<06:12,  2.47it/s, val acc 0.9905482041587902 no up cnt 22]  8% 81/1000 [00:33<06:09,  2.48it/s, val acc 0.9905482041587902 no up cnt 22]  8% 81/1000 [00:33<06:09,  2.48it/s, val acc 0.9905482041587902 no up cnt 23]  8% 82/1000 [00:33<06:10,  2.48it/s, val acc 0.9905482041587902 no up cnt 23]  8% 82/1000 [00:34<06:10,  2.48it/s, val acc 0.9924385633270322 no up cnt 24]  8% 83/1000 [00:34<06:12,  2.46it/s, val acc 0.9924385633270322 no up cnt 24]  8% 83/1000 [00:34<06:12,  2.46it/s, val acc 0.9905482041587902 no up cnt 25]  8% 84/1000 [00:34<06:27,  2.36it/s, val acc 0.9905482041587902 no up cnt 25]  8% 84/1000 [00:35<06:27,  2.36it/s, val acc 0.9905482041587902 no up cnt 26]  8% 85/1000 [00:35<06:24,  2.38it/s, val acc 0.9905482041587902 no up cnt 26]  8% 85/1000 [00:35<06:24,  2.38it/s, val acc 0.9924385633270322 no up cnt 27]  9% 86/1000 [00:35<06:21,  2.40it/s, val acc 0.9924385633270322 no up cnt 27]  9% 86/1000 [00:35<06:21,  2.40it/s, val acc 0.9933837429111532 no up cnt 28]  9% 87/1000 [00:35<06:17,  2.42it/s, val acc 0.9933837429111532 no up cnt 28]  9% 87/1000 [00:36<06:17,  2.42it/s, val acc 0.9924385633270322 no up cnt 29]  9% 88/1000 [00:36<06:15,  2.43it/s, val acc 0.9924385633270322 no up cnt 29]  9% 88/1000 [00:36<06:15,  2.43it/s, val acc 0.9914933837429112 no up cnt 30]  9% 89/1000 [00:36<06:12,  2.44it/s, val acc 0.9914933837429112 no up cnt 30]  9% 89/1000 [00:37<06:12,  2.44it/s, val acc 0.9905482041587902 no up cnt 31]  9% 90/1000 [00:37<06:12,  2.45it/s, val acc 0.9905482041587902 no up cnt 31]  9% 90/1000 [00:37<06:12,  2.45it/s, val acc 0.9905482041587902 no up cnt 32]  9% 91/1000 [00:37<06:10,  2.45it/s, val acc 0.9905482041587902 no up cnt 32]  9% 91/1000 [00:37<06:10,  2.45it/s, val acc 0.9924385633270322 no up cnt 33]  9% 92/1000 [00:37<06:09,  2.46it/s, val acc 0.9924385633270322 no up cnt 33]  9% 92/1000 [00:38<06:09,  2.46it/s, val acc 0.9924385633270322 no up cnt 34]  9% 93/1000 [00:38<06:08,  2.46it/s, val acc 0.9924385633270322 no up cnt 34]  9% 93/1000 [00:38<06:08,  2.46it/s, val acc 0.9924385633270322 no up cnt 35]  9% 94/1000 [00:38<06:08,  2.46it/s, val acc 0.9924385633270322 no up cnt 35]  9% 94/1000 [00:39<06:08,  2.46it/s, val acc 0.9914933837429112 no up cnt 36] 10% 95/1000 [00:39<06:07,  2.46it/s, val acc 0.9914933837429112 no up cnt 36] 10% 95/1000 [00:39<06:07,  2.46it/s, val acc 0.9905482041587902 no up cnt 37] 10% 96/1000 [00:39<06:27,  2.33it/s, val acc 0.9905482041587902 no up cnt 37] 10% 96/1000 [00:40<06:27,  2.33it/s, val acc 0.9914933837429112 no up cnt 38] 10% 97/1000 [00:40<06:20,  2.37it/s, val acc 0.9914933837429112 no up cnt 38] 10% 97/1000 [00:40<06:20,  2.37it/s, val acc 0.9905482041587902 no up cnt 39] 10% 98/1000 [00:40<06:16,  2.40it/s, val acc 0.9905482041587902 no up cnt 39] 10% 98/1000 [00:40<06:16,  2.40it/s, val acc 0.9924385633270322 no up cnt 40] 10% 99/1000 [00:40<06:12,  2.42it/s, val acc 0.9924385633270322 no up cnt 40] 10% 99/1000 [00:41<06:12,  2.42it/s, val acc 0.9924385633270322 no up cnt 41] 10% 100/1000 [00:41<06:10,  2.43it/s, val acc 0.9924385633270322 no up cnt 41] 10% 100/1000 [00:41<06:10,  2.43it/s, val acc 0.9924385633270322 no up cnt 42] 10% 101/1000 [00:41<06:08,  2.44it/s, val acc 0.9924385633270322 no up cnt 42] 10% 101/1000 [00:42<06:08,  2.44it/s, val acc 0.9905482041587902 no up cnt 43] 10% 102/1000 [00:42<06:07,  2.45it/s, val acc 0.9905482041587902 no up cnt 43] 10% 102/1000 [00:42<06:07,  2.45it/s, val acc 0.9924385633270322 no up cnt 44] 10% 103/1000 [00:42<06:05,  2.46it/s, val acc 0.9924385633270322 no up cnt 44] 10% 103/1000 [00:42<06:05,  2.46it/s, val acc 0.9905482041587902 no up cnt 45] 10% 104/1000 [00:42<06:04,  2.46it/s, val acc 0.9905482041587902 no up cnt 45] 10% 104/1000 [00:43<06:04,  2.46it/s, val acc 0.9905482041587902 no up cnt 46] 10% 105/1000 [00:43<06:03,  2.46it/s, val acc 0.9905482041587902 no up cnt 46] 10% 105/1000 [00:43<06:03,  2.46it/s, val acc 0.9924385633270322 no up cnt 47] 11% 106/1000 [00:43<06:02,  2.47it/s, val acc 0.9924385633270322 no up cnt 47] 11% 106/1000 [00:44<06:02,  2.47it/s, val acc 0.9905482041587902 no up cnt 48] 11% 107/1000 [00:44<06:02,  2.46it/s, val acc 0.9905482041587902 no up cnt 48] 11% 107/1000 [00:44<06:02,  2.46it/s, val acc 0.9905482041587902 no up cnt 49] 11% 108/1000 [00:44<06:02,  2.46it/s, val acc 0.9905482041587902 no up cnt 49] 11% 108/1000 [00:44<06:02,  2.46it/s, val acc 0.9914933837429112 no up cnt 50] 11% 108/1000 [00:44<06:11,  2.40it/s, val acc 0.9914933837429112 no up cnt 50]
-Epoch-0 train loss: 0.000180869 Acc: 0.633765 MiF: 0.719653 MCC: 0.194071
-Epoch-0 validation loss: 0.637182 Acc: 0.637051 MiF: 0.777003 MCC: 0.0903668
-Epoch-1000 test loss: 0.630279 Acc: 0.654206 MiF: 0.785134 MCC: 0.198411
-Epoch-1 train loss: 0.000155552 Acc: 0.733279 MiF: 0.824427 MCC: 0.42903
-Epoch-1 validation loss: 0.510677 Acc: 0.784499 MiF: 0.854406 MCC: 0.555591
-Epoch-1000 test loss: 0.493111 Acc: 0.781308 MiF: 0.852459 MCC: 0.549243
-Epoch-2 train loss: 0.000100591 Acc: 0.903452 MiF: 0.926368 MCC: 0.790977
-Epoch-2 validation loss: 0.276841 Acc: 0.92344 MiF: 0.942837 MCC: 0.839938
-Epoch-1000 test loss: 0.288499 Acc: 0.880374 MiF: 0.913279 MCC: 0.752038
-Epoch-3 train loss: 4.66666e-05 Acc: 0.94822 MiF: 0.959305 MCC: 0.888285
-Epoch-3 validation loss: 0.165536 Acc: 0.951796 MiF: 0.963177 MCC: 0.897965
-Epoch-1000 test loss: 0.212869 Acc: 0.927103 MiF: 0.945302 MCC: 0.847133
-Epoch-4 train loss: 2.63713e-05 Acc: 0.968986 MiF: 0.975568 MCC: 0.933176
-Epoch-4 validation loss: 0.141652 Acc: 0.967864 MiF: 0.975219 MCC: 0.931912
-Epoch-1000 test loss: 0.213296 Acc: 0.930841 MiF: 0.948107 MCC: 0.855598
-Epoch-5 train loss: 1.75015e-05 Acc: 0.984088 MiF: 0.987444 MCC: 0.965749
-Epoch-5 validation loss: 0.11577 Acc: 0.977316 MiF: 0.982379 MCC: 0.951739
-Epoch-1000 test loss: 0.19071 Acc: 0.942056 MiF: 0.956153 MCC: 0.878549
-Epoch-6 train loss: 1.60123e-05 Acc: 0.983819 MiF: 0.987212 MCC: 0.965188
-Epoch-6 validation loss: 0.103926 Acc: 0.982987 MiF: 0.986726 MCC: 0.963711
-Epoch-1000 test loss: 0.177032 Acc: 0.951402 MiF: 0.962963 MCC: 0.897786
-Epoch-7 train loss: 1.3561e-05 Acc: 0.987594 MiF: 0.990204 MCC: 0.973303
-Epoch-7 validation loss: 0.0882488 Acc: 0.989603 MiF: 0.991846 MCC: 0.977754
-Epoch-1000 test loss: 0.144472 Acc: 0.960748 MiF: 0.969871 MCC: 0.917137
-Epoch-8 train loss: 1.11933e-05 Acc: 0.990561 MiF: 0.992558 MCC: 0.979695
-Epoch-8 validation loss: 0.0888587 Acc: 0.988658 MiF: 0.991111 MCC: 0.975743
-Epoch-1000 test loss: 0.149614 Acc: 0.958879 MiF: 0.968481 MCC: 0.913257
-Epoch-9 train loss: 1.19399e-05 Acc: 0.9911 MiF: 0.992971 MCC: 0.980852
-Epoch-9 validation loss: 0.0960545 Acc: 0.988658 MiF: 0.991111 MCC: 0.975743
-Epoch-1000 test loss: 0.172695 Acc: 0.953271 MiF: 0.964337 MCC: 0.901646
-Epoch-10 train loss: 1.11306e-05 Acc: 0.991909 MiF: 0.993612 MCC: 0.982593
-Epoch-10 validation loss: 0.0915101 Acc: 0.988658 MiF: 0.991111 MCC: 0.975743
-Epoch-1000 test loss: 0.162258 Acc: 0.95514 MiF: 0.965714 MCC: 0.905512
-Epoch-11 train loss: 1.019e-05 Acc: 0.992988 MiF: 0.994459 MCC: 0.984917
-Epoch-11 validation loss: 0.100724 Acc: 0.987713 MiF: 0.990377 MCC: 0.973733
-Epoch-1000 test loss: 0.186782 Acc: 0.949533 MiF: 0.961593 MCC: 0.893929
-Epoch-12 train loss: 1.15394e-05 Acc: 0.9911 MiF: 0.992977 MCC: 0.980852
-Epoch-12 validation loss: 0.0942598 Acc: 0.988658 MiF: 0.991111 MCC: 0.975743
-Epoch-1000 test loss: 0.170873 Acc: 0.95514 MiF: 0.965714 MCC: 0.905512
-Epoch-13 train loss: 9.90064e-06 Acc: 0.993528 MiF: 0.994889 MCC: 0.986076
-Epoch-13 validation loss: 0.0831293 Acc: 0.990548 MiF: 0.992582 MCC: 0.979767
-Epoch-1000 test loss: 0.139414 Acc: 0.958879 MiF: 0.968391 MCC: 0.912786
-Epoch-14 train loss: 1.01951e-05 Acc: 0.993258 MiF: 0.994673 MCC: 0.985496
-Epoch-14 validation loss: 0.0804464 Acc: 0.991493 MiF: 0.993318 MCC: 0.981782
-Epoch-1000 test loss: 0.131513 Acc: 0.958879 MiF: 0.968391 MCC: 0.912786
-Epoch-15 train loss: 9.11368e-06 Acc: 0.995415 MiF: 0.996374 MCC: 0.990141
-Epoch-15 validation loss: 0.0878112 Acc: 0.990548 MiF: 0.992582 MCC: 0.979767
-Epoch-1000 test loss: 0.157403 Acc: 0.953271 MiF: 0.964235 MCC: 0.901109
-Epoch-16 train loss: 8.69172e-06 Acc: 0.994876 MiF: 0.995953 MCC: 0.988979
-Epoch-16 validation loss: 0.0861166 Acc: 0.990548 MiF: 0.992582 MCC: 0.979767
-Epoch-1000 test loss: 0.152267 Acc: 0.95514 MiF: 0.965616 MCC: 0.904997
-Epoch-17 train loss: 1.00724e-05 Acc: 0.992179 MiF: 0.993834 MCC: 0.983182
-Epoch-17 validation loss: 0.0740038 Acc: 0.992439 MiF: 0.994048 MCC: 0.983759
-Epoch-1000 test loss: 0.114334 Acc: 0.960748 MiF: 0.969784 MCC: 0.916689
-Epoch-18 train loss: 8.655e-06 Acc: 0.995685 MiF: 0.99659 MCC: 0.990719
-Epoch-18 validation loss: 0.0796117 Acc: 0.991493 MiF: 0.993318 MCC: 0.981782
-Epoch-1000 test loss: 0.132869 Acc: 0.958879 MiF: 0.968391 MCC: 0.912786
-Epoch-19 train loss: 7.90862e-06 Acc: 0.994606 MiF: 0.995737 MCC: 0.988398
-Epoch-19 validation loss: 0.0859419 Acc: 0.990548 MiF: 0.992582 MCC: 0.979767
-Epoch-1000 test loss: 0.150403 Acc: 0.95514 MiF: 0.965616 MCC: 0.904997
-Epoch-20 train loss: 9.22371e-06 Acc: 0.993528 MiF: 0.994889 MCC: 0.986076
-Epoch-20 validation loss: 0.0740849 Acc: 0.992439 MiF: 0.994048 MCC: 0.983759
-Epoch-1000 test loss: 0.107449 Acc: 0.964486 MiF: 0.972583 MCC: 0.92451
-Epoch-21 train loss: 8.26443e-06 Acc: 0.995146 MiF: 0.996164 MCC: 0.989558
-Epoch-21 validation loss: 0.0845167 Acc: 0.991493 MiF: 0.993318 MCC: 0.981782
-Epoch-1000 test loss: 0.141235 Acc: 0.957009 MiF: 0.967001 MCC: 0.908889
-Epoch-22 train loss: 7.74775e-06 Acc: 0.996224 MiF: 0.997015 MCC: 0.99188
-Epoch-22 validation loss: 0.0814415 Acc: 0.991493 MiF: 0.993309 MCC: 0.981736
-Epoch-1000 test loss: 0.127072 Acc: 0.960748 MiF: 0.969784 MCC: 0.916689
-Epoch-23 train loss: 7.2988e-06 Acc: 0.995955 MiF: 0.996806 MCC: 0.991303
-Epoch-23 validation loss: 0.0754847 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.107282 Acc: 0.964486 MiF: 0.972504 MCC: 0.924173
-Epoch-24 train loss: 8.93943e-06 Acc: 0.993797 MiF: 0.995103 MCC: 0.986658
-Epoch-24 validation loss: 0.0774419 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.11525 Acc: 0.960748 MiF: 0.969784 MCC: 0.916689
-Epoch-25 train loss: 7.50569e-06 Acc: 0.995955 MiF: 0.9968 MCC: 0.991303
-Epoch-25 validation loss: 0.0886808 Acc: 0.991493 MiF: 0.993309 MCC: 0.981736
-Epoch-1000 test loss: 0.148747 Acc: 0.95514 MiF: 0.965616 MCC: 0.904997
-Epoch-26 train loss: 8.04109e-06 Acc: 0.995415 MiF: 0.996373 MCC: 0.990144
-Epoch-26 validation loss: 0.0814216 Acc: 0.992439 MiF: 0.994048 MCC: 0.983759
-Epoch-1000 test loss: 0.126582 Acc: 0.960748 MiF: 0.969784 MCC: 0.916689
-Epoch-27 train loss: 7.24815e-06 Acc: 0.995955 MiF: 0.996802 MCC: 0.991299
-Epoch-27 validation loss: 0.0779397 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.109806 Acc: 0.962617 MiF: 0.971098 MCC: 0.920237
-Epoch-28 train loss: 7.50914e-06 Acc: 0.996764 MiF: 0.997442 MCC: 0.99304
-Epoch-28 validation loss: 0.0818818 Acc: 0.992439 MiF: 0.994048 MCC: 0.983759
-Epoch-1000 test loss: 0.125442 Acc: 0.960748 MiF: 0.969784 MCC: 0.916689
-Epoch-29 train loss: 6.67393e-06 Acc: 0.997033 MiF: 0.997655 MCC: 0.99362
-Epoch-29 validation loss: 0.0770553 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.104804 Acc: 0.964486 MiF: 0.972504 MCC: 0.924173
-Epoch-30 train loss: 7.18543e-06 Acc: 0.995685 MiF: 0.996588 MCC: 0.99072
-Epoch-30 validation loss: 0.088455 Acc: 0.992439 MiF: 0.994048 MCC: 0.983759
-Epoch-1000 test loss: 0.138339 Acc: 0.960748 MiF: 0.969784 MCC: 0.916689
-Epoch-31 train loss: 7.00519e-06 Acc: 0.996494 MiF: 0.99723 MCC: 0.99246
-Epoch-31 validation loss: 0.0820297 Acc: 0.992439 MiF: 0.994048 MCC: 0.983759
-Epoch-1000 test loss: 0.119563 Acc: 0.960748 MiF: 0.969784 MCC: 0.916689
-Epoch-32 train loss: 7.22685e-06 Acc: 0.996224 MiF: 0.997016 MCC: 0.991879
-Epoch-32 validation loss: 0.083092 Acc: 0.992439 MiF: 0.994048 MCC: 0.983759
-Epoch-1000 test loss: 0.121708 Acc: 0.960748 MiF: 0.969784 MCC: 0.916689
-Epoch-33 train loss: 7.13254e-06 Acc: 0.996224 MiF: 0.997017 MCC: 0.99188
-Epoch-33 validation loss: 0.0832863 Acc: 0.992439 MiF: 0.994048 MCC: 0.983759
-Epoch-1000 test loss: 0.119787 Acc: 0.960748 MiF: 0.969784 MCC: 0.916689
-Epoch-34 train loss: 6.90449e-06 Acc: 0.996224 MiF: 0.997016 MCC: 0.991879
-Epoch-34 validation loss: 0.0776747 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.0994127 Acc: 0.970093 MiF: 0.976744 MCC: 0.936012
-Epoch-35 train loss: 6.6533e-06 Acc: 0.997843 MiF: 0.998294 MCC: 0.995361
-Epoch-35 validation loss: 0.0889471 Acc: 0.990548 MiF: 0.992571 MCC: 0.979715
-Epoch-1000 test loss: 0.135301 Acc: 0.960748 MiF: 0.969784 MCC: 0.916689
-Epoch-36 train loss: 6.43569e-06 Acc: 0.996494 MiF: 0.99723 MCC: 0.99246
-Epoch-36 validation loss: 0.0805791 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.107711 Acc: 0.964486 MiF: 0.972504 MCC: 0.924173
-Epoch-37 train loss: 6.27422e-06 Acc: 0.997573 MiF: 0.998081 MCC: 0.99478
-Epoch-37 validation loss: 0.0811345 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.108335 Acc: 0.966355 MiF: 0.973913 MCC: 0.928113
-Epoch-38 train loss: 6.4061e-06 Acc: 0.997033 MiF: 0.997654 MCC: 0.993621
-Epoch-38 validation loss: 0.0851266 Acc: 0.991493 MiF: 0.993309 MCC: 0.981736
-Epoch-1000 test loss: 0.12212 Acc: 0.962617 MiF: 0.971182 MCC: 0.920597
-Epoch-39 train loss: 5.85259e-06 Acc: 0.997303 MiF: 0.997866 MCC: 0.994204
-Epoch-39 validation loss: 0.0861035 Acc: 0.991493 MiF: 0.993309 MCC: 0.981736
-Epoch-1000 test loss: 0.120455 Acc: 0.962617 MiF: 0.971182 MCC: 0.920597
-Epoch-40 train loss: 6.02906e-06 Acc: 0.997573 MiF: 0.998081 MCC: 0.99478
-Epoch-40 validation loss: 0.0853881 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.112637 Acc: 0.962617 MiF: 0.971098 MCC: 0.920237
-Epoch-41 train loss: 5.85467e-06 Acc: 0.997303 MiF: 0.997867 MCC: 0.994201
-Epoch-41 validation loss: 0.099927 Acc: 0.990548 MiF: 0.992571 MCC: 0.979715
-Epoch-1000 test loss: 0.150996 Acc: 0.958879 MiF: 0.968391 MCC: 0.912786
-Epoch-42 train loss: 6.22197e-06 Acc: 0.997573 MiF: 0.998081 MCC: 0.99478
-Epoch-42 validation loss: 0.0905717 Acc: 0.990548 MiF: 0.992571 MCC: 0.979715
-Epoch-1000 test loss: 0.131811 Acc: 0.960748 MiF: 0.969784 MCC: 0.916689
-Epoch-43 train loss: 6.16861e-06 Acc: 0.997033 MiF: 0.997654 MCC: 0.993621
-Epoch-43 validation loss: 0.0884128 Acc: 0.990548 MiF: 0.992571 MCC: 0.979715
-Epoch-1000 test loss: 0.126544 Acc: 0.960748 MiF: 0.969784 MCC: 0.916689
-Epoch-44 train loss: 5.98573e-06 Acc: 0.997303 MiF: 0.997867 MCC: 0.994201
-Epoch-44 validation loss: 0.0917667 Acc: 0.990548 MiF: 0.992571 MCC: 0.979715
-Epoch-1000 test loss: 0.13459 Acc: 0.960748 MiF: 0.969784 MCC: 0.916689
-Epoch-45 train loss: 6.27524e-06 Acc: 0.997303 MiF: 0.997868 MCC: 0.9942
-Epoch-45 validation loss: 0.0922067 Acc: 0.990548 MiF: 0.992571 MCC: 0.979715
-Epoch-1000 test loss: 0.131998 Acc: 0.960748 MiF: 0.969784 MCC: 0.916689
-Epoch-46 train loss: 6.12157e-06 Acc: 0.997573 MiF: 0.998081 MCC: 0.99478
-Epoch-46 validation loss: 0.0823553 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.104265 Acc: 0.968224 MiF: 0.975327 MCC: 0.932059
-Epoch-47 train loss: 5.80647e-06 Acc: 0.998112 MiF: 0.998507 MCC: 0.995942
-Epoch-47 validation loss: 0.0875567 Acc: 0.991493 MiF: 0.993309 MCC: 0.981736
-Epoch-1000 test loss: 0.119642 Acc: 0.964486 MiF: 0.972583 MCC: 0.92451
-Epoch-48 train loss: 5.35673e-06 Acc: 0.998112 MiF: 0.998507 MCC: 0.99594
-Epoch-48 validation loss: 0.0838432 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.105405 Acc: 0.968224 MiF: 0.975327 MCC: 0.932059
-Epoch-49 train loss: 5.5319e-06 Acc: 0.998112 MiF: 0.998507 MCC: 0.995942
-Epoch-49 validation loss: 0.0876952 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.113859 Acc: 0.968224 MiF: 0.975327 MCC: 0.932059
-Epoch-50 train loss: 5.61693e-06 Acc: 0.997573 MiF: 0.998081 MCC: 0.99478
-Epoch-50 validation loss: 0.0876748 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.111948 Acc: 0.968224 MiF: 0.975327 MCC: 0.932059
-Epoch-51 train loss: 5.51419e-06 Acc: 0.997303 MiF: 0.997866 MCC: 0.994204
-Epoch-51 validation loss: 0.0975809 Acc: 0.990548 MiF: 0.992571 MCC: 0.979715
-Epoch-1000 test loss: 0.145612 Acc: 0.960748 MiF: 0.969784 MCC: 0.916689
-Epoch-52 train loss: 5.953e-06 Acc: 0.997573 MiF: 0.998081 MCC: 0.99478
-Epoch-52 validation loss: 0.0937807 Acc: 0.990548 MiF: 0.992571 MCC: 0.979715
-Epoch-1000 test loss: 0.131036 Acc: 0.962617 MiF: 0.971182 MCC: 0.920597
-Epoch-53 train loss: 5.33032e-06 Acc: 0.997573 MiF: 0.998081 MCC: 0.99478
-Epoch-53 validation loss: 0.0864542 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.105476 Acc: 0.966355 MiF: 0.973913 MCC: 0.928113
-Epoch-54 train loss: 5.21845e-06 Acc: 0.998112 MiF: 0.998507 MCC: 0.995942
-Epoch-54 validation loss: 0.0940253 Acc: 0.990548 MiF: 0.992571 MCC: 0.979715
-Epoch-1000 test loss: 0.126705 Acc: 0.964486 MiF: 0.972583 MCC: 0.92451
-Epoch-55 train loss: 4.99794e-06 Acc: 0.998112 MiF: 0.998507 MCC: 0.995942
-Epoch-55 validation loss: 0.0887087 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.105675 Acc: 0.968224 MiF: 0.975327 MCC: 0.932059
-Epoch-56 train loss: 4.86927e-06 Acc: 0.998112 MiF: 0.998507 MCC: 0.99594
-Epoch-56 validation loss: 0.0895605 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.105205 Acc: 0.966355 MiF: 0.973837 MCC: 0.927864
-Epoch-57 train loss: 5.40446e-06 Acc: 0.998112 MiF: 0.998507 MCC: 0.99594
-Epoch-57 validation loss: 0.0876935 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.102589 Acc: 0.970093 MiF: 0.976744 MCC: 0.936012
-Epoch-58 train loss: 5.17801e-06 Acc: 0.998112 MiF: 0.998507 MCC: 0.99594
-Epoch-58 validation loss: 0.0880389 Acc: 0.995274 MiF: 0.996271 MCC: 0.989838
-Epoch-1000 test loss: 0.100577 Acc: 0.970093 MiF: 0.976744 MCC: 0.936012
-Epoch-59 train loss: 5.2448e-06 Acc: 0.997843 MiF: 0.998293 MCC: 0.995363
-Epoch-59 validation loss: 0.0908057 Acc: 0.991493 MiF: 0.993309 MCC: 0.981736
-Epoch-1000 test loss: 0.110373 Acc: 0.968224 MiF: 0.975327 MCC: 0.932059
-Epoch-60 train loss: 5.00611e-06 Acc: 0.998112 MiF: 0.998507 MCC: 0.995942
-Epoch-60 validation loss: 0.0934547 Acc: 0.990548 MiF: 0.992571 MCC: 0.979715
-Epoch-1000 test loss: 0.119976 Acc: 0.966355 MiF: 0.973988 MCC: 0.928428
-Epoch-61 train loss: 4.47828e-06 Acc: 0.998112 MiF: 0.998507 MCC: 0.99594
-Epoch-61 validation loss: 0.0894361 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.106309 Acc: 0.968224 MiF: 0.975327 MCC: 0.932059
-Epoch-62 train loss: 4.56757e-06 Acc: 0.998382 MiF: 0.99872 MCC: 0.996522
-Epoch-62 validation loss: 0.0887031 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.100468 Acc: 0.966355 MiF: 0.973837 MCC: 0.927864
-Epoch-63 train loss: 4.48954e-06 Acc: 0.998112 MiF: 0.998507 MCC: 0.995942
-Epoch-63 validation loss: 0.0928391 Acc: 0.991493 MiF: 0.993309 MCC: 0.981736
-Epoch-1000 test loss: 0.107997 Acc: 0.966355 MiF: 0.973837 MCC: 0.927864
-Epoch-64 train loss: 4.42424e-06 Acc: 0.998382 MiF: 0.99872 MCC: 0.996521
-Epoch-64 validation loss: 0.103077 Acc: 0.990548 MiF: 0.992571 MCC: 0.979715
-Epoch-1000 test loss: 0.132382 Acc: 0.968224 MiF: 0.975398 MCC: 0.932352
-Epoch-65 train loss: 4.30816e-06 Acc: 0.997573 MiF: 0.998081 MCC: 0.99478
-Epoch-65 validation loss: 0.087383 Acc: 0.994329 MiF: 0.995522 MCC: 0.987799
-Epoch-1000 test loss: 0.0954455 Acc: 0.970093 MiF: 0.976676 MCC: 0.935806
-Epoch-66 train loss: 4.35723e-06 Acc: 0.997843 MiF: 0.998293 MCC: 0.995363
-Epoch-66 validation loss: 0.106063 Acc: 0.990548 MiF: 0.992571 MCC: 0.979715
-Epoch-1000 test loss: 0.135738 Acc: 0.968224 MiF: 0.975398 MCC: 0.932352
-Epoch-67 train loss: 4.25124e-06 Acc: 0.998382 MiF: 0.99872 MCC: 0.996522
-Epoch-67 validation loss: 0.107736 Acc: 0.990548 MiF: 0.992571 MCC: 0.979715
-Epoch-1000 test loss: 0.140519 Acc: 0.966355 MiF: 0.973988 MCC: 0.928428
-Epoch-68 train loss: 4.49872e-06 Acc: 0.997843 MiF: 0.998294 MCC: 0.995361
-Epoch-68 validation loss: 0.0953886 Acc: 0.992439 MiF: 0.994048 MCC: 0.983759
-Epoch-1000 test loss: 0.105896 Acc: 0.966355 MiF: 0.973837 MCC: 0.927864
-Epoch-69 train loss: 3.92361e-06 Acc: 0.998652 MiF: 0.998933 MCC: 0.997101
-Epoch-69 validation loss: 0.102093 Acc: 0.991493 MiF: 0.993309 MCC: 0.981736
-Epoch-1000 test loss: 0.123311 Acc: 0.966355 MiF: 0.973913 MCC: 0.928113
-Epoch-70 train loss: 4.2011e-06 Acc: 0.998382 MiF: 0.99872 MCC: 0.996521
-Epoch-70 validation loss: 0.0979738 Acc: 0.991493 MiF: 0.993309 MCC: 0.981736
-Epoch-1000 test loss: 0.113601 Acc: 0.968224 MiF: 0.975327 MCC: 0.932059
-Epoch-71 train loss: 4.07395e-06 Acc: 0.998112 MiF: 0.998507 MCC: 0.995942
-Epoch-71 validation loss: 0.0965151 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.108241 Acc: 0.968224 MiF: 0.975255 MCC: 0.931832
-Epoch-72 train loss: 4.19358e-06 Acc: 0.998112 MiF: 0.998506 MCC: 0.995944
-Epoch-72 validation loss: 0.117149 Acc: 0.990548 MiF: 0.992571 MCC: 0.979715
-Epoch-1000 test loss: 0.161409 Acc: 0.958879 MiF: 0.968391 MCC: 0.912786
-Epoch-73 train loss: 4.01993e-06 Acc: 0.998112 MiF: 0.998507 MCC: 0.995942
-Epoch-73 validation loss: 0.102363 Acc: 0.991493 MiF: 0.993309 MCC: 0.981736
-Epoch-1000 test loss: 0.12211 Acc: 0.964486 MiF: 0.972424 MCC: 0.923901
-Epoch-74 train loss: 3.55525e-06 Acc: 0.998112 MiF: 0.998507 MCC: 0.99594
-Epoch-74 validation loss: 0.094721 Acc: 0.992439 MiF: 0.994039 MCC: 0.983736
-Epoch-1000 test loss: 0.0994217 Acc: 0.970093 MiF: 0.976676 MCC: 0.935806
-Epoch-75 train loss: 4.16204e-06 Acc: 0.997843 MiF: 0.998294 MCC: 0.995361
-Epoch-75 validation loss: 0.0872881 Acc: 0.993384 MiF: 0.994772 MCC: 0.985765
-Epoch-1000 test loss: 0.0885537 Acc: 0.970093 MiF: 0.976471 MCC: 0.935571
-Epoch-76 train loss: 3.59263e-06 Acc: 0.998112 MiF: 0.998507 MCC: 0.99594
-Epoch-76 validation loss: 0.107991 Acc: 0.991493 MiF: 0.993309 MCC: 0.981736
-Epoch-1000 test loss: 0.126662 Acc: 0.964486 MiF: 0.972424 MCC: 0.923901
-Epoch-77 train loss: 3.14619e-06 Acc: 0.998652 MiF: 0.998933 MCC: 0.997101
-Epoch-77 validation loss: 0.112085 Acc: 0.991493 MiF: 0.993309 MCC: 0.981736
-Epoch-1000 test loss: 0.133692 Acc: 0.964486 MiF: 0.972424 MCC: 0.923901
-Epoch-78 train loss: 3.51152e-06 Acc: 0.998112 MiF: 0.998507 MCC: 0.99594
-Epoch-78 validation loss: 0.10144 Acc: 0.991493 MiF: 0.993289 MCC: 0.981694
-Epoch-1000 test loss: 0.105956 Acc: 0.964486 MiF: 0.972263 MCC: 0.923551
-Epoch-79 train loss: 4.03126e-06 Acc: 0.997303 MiF: 0.997866 MCC: 0.994204
-Epoch-79 validation loss: 0.1015 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.117295 Acc: 0.966355 MiF: 0.973837 MCC: 0.927864
-Epoch-80 train loss: 3.82429e-06 Acc: 0.997303 MiF: 0.997866 MCC: 0.994204
-Epoch-80 validation loss: 0.111213 Acc: 0.990548 MiF: 0.992571 MCC: 0.979715
-Epoch-1000 test loss: 0.141856 Acc: 0.964486 MiF: 0.972424 MCC: 0.923901
-Epoch-81 train loss: 3.49089e-06 Acc: 0.997573 MiF: 0.998079 MCC: 0.994785
-Epoch-81 validation loss: 0.116521 Acc: 0.990548 MiF: 0.992571 MCC: 0.979715
-Epoch-1000 test loss: 0.150115 Acc: 0.964486 MiF: 0.972424 MCC: 0.923901
-Epoch-82 train loss: 2.72187e-06 Acc: 0.997573 MiF: 0.998081 MCC: 0.99478
-Epoch-82 validation loss: 0.104734 Acc: 0.992439 MiF: 0.994039 MCC: 0.983736
-Epoch-1000 test loss: 0.114125 Acc: 0.968224 MiF: 0.975255 MCC: 0.931832
-Epoch-83 train loss: 2.89876e-06 Acc: 0.998112 MiF: 0.998505 MCC: 0.995948
-Epoch-83 validation loss: 0.138555 Acc: 0.990548 MiF: 0.992571 MCC: 0.979715
-Epoch-1000 test loss: 0.191075 Acc: 0.958879 MiF: 0.968391 MCC: 0.912786
-Epoch-84 train loss: 3.09754e-06 Acc: 0.998382 MiF: 0.998721 MCC: 0.99652
-Epoch-84 validation loss: 0.117574 Acc: 0.990548 MiF: 0.992571 MCC: 0.979715
-Epoch-1000 test loss: 0.138376 Acc: 0.964486 MiF: 0.972424 MCC: 0.923901
-Epoch-85 train loss: 2.89052e-06 Acc: 0.998112 MiF: 0.998507 MCC: 0.995942
-Epoch-85 validation loss: 0.11427 Acc: 0.992439 MiF: 0.994048 MCC: 0.983759
-Epoch-1000 test loss: 0.131077 Acc: 0.966355 MiF: 0.973837 MCC: 0.927864
-Epoch-86 train loss: 2.70932e-06 Acc: 0.998921 MiF: 0.999147 MCC: 0.99768
-Epoch-86 validation loss: 0.111751 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.121609 Acc: 0.966355 MiF: 0.973837 MCC: 0.927864
-Epoch-87 train loss: 2.58849e-06 Acc: 0.998382 MiF: 0.998721 MCC: 0.99652
-Epoch-87 validation loss: 0.109868 Acc: 0.992439 MiF: 0.994039 MCC: 0.983736
-Epoch-1000 test loss: 0.112832 Acc: 0.970093 MiF: 0.976676 MCC: 0.935806
-Epoch-88 train loss: 3.11832e-06 Acc: 0.998382 MiF: 0.99872 MCC: 0.996521
-Epoch-88 validation loss: 0.12052 Acc: 0.991493 MiF: 0.993309 MCC: 0.981736
-Epoch-1000 test loss: 0.132983 Acc: 0.966355 MiF: 0.973837 MCC: 0.927864
-Epoch-89 train loss: 2.5824e-06 Acc: 0.998382 MiF: 0.99872 MCC: 0.996521
-Epoch-89 validation loss: 0.126791 Acc: 0.990548 MiF: 0.992571 MCC: 0.979715
-Epoch-1000 test loss: 0.163261 Acc: 0.964486 MiF: 0.972424 MCC: 0.923901
-Epoch-90 train loss: 2.61443e-06 Acc: 0.997843 MiF: 0.998293 MCC: 0.995363
-Epoch-90 validation loss: 0.128517 Acc: 0.990548 MiF: 0.992571 MCC: 0.979715
-Epoch-1000 test loss: 0.163825 Acc: 0.964486 MiF: 0.972424 MCC: 0.923901
-Epoch-91 train loss: 2.27897e-06 Acc: 0.998921 MiF: 0.999147 MCC: 0.99768
-Epoch-91 validation loss: 0.11905 Acc: 0.992439 MiF: 0.994048 MCC: 0.983759
-Epoch-1000 test loss: 0.139968 Acc: 0.966355 MiF: 0.973837 MCC: 0.927864
-Epoch-92 train loss: 2.09188e-06 Acc: 0.998921 MiF: 0.999147 MCC: 0.99768
-Epoch-92 validation loss: 0.113848 Acc: 0.992439 MiF: 0.994039 MCC: 0.983736
-Epoch-1000 test loss: 0.126127 Acc: 0.968224 MiF: 0.975255 MCC: 0.931832
-Epoch-93 train loss: 2.11898e-06 Acc: 0.998652 MiF: 0.998933 MCC: 0.997101
-Epoch-93 validation loss: 0.112662 Acc: 0.992439 MiF: 0.994039 MCC: 0.983736
-Epoch-1000 test loss: 0.129931 Acc: 0.966355 MiF: 0.973837 MCC: 0.927864
-Epoch-94 train loss: 1.84614e-06 Acc: 0.99973 MiF: 0.999787 MCC: 0.99942
-Epoch-94 validation loss: 0.125932 Acc: 0.991493 MiF: 0.993309 MCC: 0.981736
-Epoch-1000 test loss: 0.155178 Acc: 0.966355 MiF: 0.973837 MCC: 0.927864
-Epoch-95 train loss: 1.81392e-06 Acc: 0.998921 MiF: 0.999147 MCC: 0.99768
-Epoch-95 validation loss: 0.115736 Acc: 0.990548 MiF: 0.992537 MCC: 0.979659
-Epoch-1000 test loss: 0.123783 Acc: 0.970093 MiF: 0.976608 MCC: 0.935665
-Epoch-96 train loss: 1.85666e-06 Acc: 0.998921 MiF: 0.999147 MCC: 0.99768
-Epoch-96 validation loss: 0.13983 Acc: 0.991493 MiF: 0.993309 MCC: 0.981736
-Epoch-1000 test loss: 0.177545 Acc: 0.964486 MiF: 0.972424 MCC: 0.923901
-Epoch-97 train loss: 2.69501e-06 Acc: 0.998112 MiF: 0.998507 MCC: 0.99594
-Epoch-97 validation loss: 0.118432 Acc: 0.990548 MiF: 0.992504 MCC: 0.979749
-Epoch-1000 test loss: 0.116542 Acc: 0.970093 MiF: 0.976331 MCC: 0.935722
-Epoch-98 train loss: 2.00933e-06 Acc: 0.999461 MiF: 0.999573 MCC: 0.99884
-Epoch-98 validation loss: 0.123519 Acc: 0.992439 MiF: 0.994048 MCC: 0.983759
-Epoch-1000 test loss: 0.150388 Acc: 0.964486 MiF: 0.972344 MCC: 0.923694
-Epoch-99 train loss: 1.82281e-06 Acc: 0.998921 MiF: 0.999147 MCC: 0.99768
-Epoch-99 validation loss: 0.124408 Acc: 0.992439 MiF: 0.994048 MCC: 0.983759
-Epoch-1000 test loss: 0.150462 Acc: 0.964486 MiF: 0.972344 MCC: 0.923694
-Epoch-100 train loss: 1.63857e-06 Acc: 0.999461 MiF: 0.999573 MCC: 0.99884
-Epoch-100 validation loss: 0.132104 Acc: 0.992439 MiF: 0.994048 MCC: 0.983759
-Epoch-1000 test loss: 0.170574 Acc: 0.962617 MiF: 0.97093 MCC: 0.919716
-Epoch-101 train loss: 2.07131e-06 Acc: 0.998652 MiF: 0.998933 MCC: 0.997101
-Epoch-101 validation loss: 0.142187 Acc: 0.990548 MiF: 0.992571 MCC: 0.979715
-Epoch-1000 test loss: 0.195501 Acc: 0.958879 MiF: 0.968116 MCC: 0.911775
-Epoch-102 train loss: 2.28908e-06 Acc: 0.997843 MiF: 0.998294 MCC: 0.99536
-Epoch-102 validation loss: 0.116808 Acc: 0.992439 MiF: 0.994039 MCC: 0.983736
-Epoch-1000 test loss: 0.136996 Acc: 0.966355 MiF: 0.973761 MCC: 0.927679
-Epoch-103 train loss: 1.67044e-06 Acc: 0.998652 MiF: 0.998933 MCC: 0.997101
-Epoch-103 validation loss: 0.143865 Acc: 0.990548 MiF: 0.992571 MCC: 0.979715
-Epoch-1000 test loss: 0.202111 Acc: 0.957009 MiF: 0.966715 MCC: 0.907813
-Epoch-104 train loss: 1.46793e-06 Acc: 0.999461 MiF: 0.999574 MCC: 0.998841
-Epoch-104 validation loss: 0.118821 Acc: 0.990548 MiF: 0.992537 MCC: 0.979659
-Epoch-1000 test loss: 0.137812 Acc: 0.970093 MiF: 0.97654 MCC: 0.935587
-Epoch-105 train loss: 1.37246e-06 Acc: 0.998921 MiF: 0.999147 MCC: 0.99768
-Epoch-105 validation loss: 0.134697 Acc: 0.992439 MiF: 0.994048 MCC: 0.983759
-Epoch-1000 test loss: 0.176247 Acc: 0.962617 MiF: 0.97093 MCC: 0.919716
-Epoch-106 train loss: 1.59689e-06 Acc: 0.998652 MiF: 0.998933 MCC: 0.997101
-Epoch-106 validation loss: 0.118343 Acc: 0.990548 MiF: 0.992515 MCC: 0.979703
-Epoch-1000 test loss: 0.125939 Acc: 0.968224 MiF: 0.974963 MCC: 0.931555
-Epoch-107 train loss: 9.44816e-07 Acc: 0.99973 MiF: 0.999787 MCC: 0.99942
-Epoch-107 validation loss: 0.148028 Acc: 0.990548 MiF: 0.992571 MCC: 0.979715
-Epoch-1000 test loss: 0.213854 Acc: 0.958879 MiF: 0.968116 MCC: 0.911775
-Epoch-108 train loss: 8.73931e-07 Acc: 0.999461 MiF: 0.999573 MCC: 0.99884
-Epoch-108 validation loss: 0.137626 Acc: 0.991493 MiF: 0.993299 MCC: 0.981707
-Acc 0.9588785046728971
-Pre 0.9488636363636364
-Rec 0.9881656804733728
-MiF 0.9681159420289855
-AUC 0.9916498963746132
-MCC 0.9117753020647664
-pr-auc 0.9950611926958596
-dataset_name: cresci-2015
-Data(edge_index=[2, 14220], y=[5301], edge_type=[14220], des_embedding=[5301, 768], tweet_embedding=[5301, 768], num_property_embedding=[5301, 5], cat_property_embedding=[5301, 1], train_idx=[3708], val_idx=[1058], test_idx=[535], num_nodes=5301)
-  0% 0/1000 [00:00<?, ?it/s]  0% 0/1000 [00:13<?, ?it/s, val acc 0.7930056710775047 no up cnt 0]  0% 1/1000 [00:14<3:53:46, 14.04s/it, val acc 0.7930056710775047 no up cnt 0]  0% 1/1000 [00:14<3:53:46, 14.04s/it, val acc 0.7863894139886578 no up cnt 1]  0% 2/1000 [00:14<1:40:46,  6.06s/it, val acc 0.7863894139886578 no up cnt 1]  0% 2/1000 [00:14<1:40:46,  6.06s/it, val acc 0.7948960302457467 no up cnt 0]  0% 3/1000 [00:14<58:12,  3.50s/it, val acc 0.7948960302457467 no up cnt 0]    0% 3/1000 [00:15<58:12,  3.50s/it, val acc 0.8950850661625709 no up cnt 0]  0% 4/1000 [00:15<38:13,  2.30s/it, val acc 0.8950850661625709 no up cnt 0]  0% 4/1000 [00:15<38:13,  2.30s/it, val acc 0.9593572778827977 no up cnt 0]  0% 5/1000 [00:15<27:10,  1.64s/it, val acc 0.9593572778827977 no up cnt 0]  0% 5/1000 [00:16<27:10,  1.64s/it, val acc 0.9754253308128544 no up cnt 0]  1% 6/1000 [00:16<20:30,  1.24s/it, val acc 0.9754253308128544 no up cnt 0]  1% 6/1000 [00:16<20:30,  1.24s/it, val acc 0.9820415879017014 no up cnt 0]  1% 7/1000 [00:16<16:17,  1.02it/s, val acc 0.9820415879017014 no up cnt 0]  1% 7/1000 [00:17<16:17,  1.02it/s, val acc 0.9867674858223062 no up cnt 0]  1% 8/1000 [00:17<13:30,  1.22it/s, val acc 0.9867674858223062 no up cnt 0]  1% 8/1000 [00:17<13:30,  1.22it/s, val acc 0.9886578449905482 no up cnt 0]  1% 9/1000 [00:17<11:39,  1.42it/s, val acc 0.9886578449905482 no up cnt 0]  1% 9/1000 [00:18<11:39,  1.42it/s, val acc 0.9914933837429112 no up cnt 0]  1% 10/1000 [00:18<10:48,  1.53it/s, val acc 0.9914933837429112 no up cnt 0]  1% 10/1000 [00:18<10:48,  1.53it/s, val acc 0.9914933837429112 no up cnt 0]  1% 11/1000 [00:18<09:48,  1.68it/s, val acc 0.9914933837429112 no up cnt 0]  1% 11/1000 [00:19<09:48,  1.68it/s, val acc 0.9914933837429112 no up cnt 0]  1% 12/1000 [00:19<09:07,  1.81it/s, val acc 0.9914933837429112 no up cnt 0]  1% 12/1000 [00:19<09:07,  1.81it/s, val acc 0.9914933837429112 no up cnt 0]  1% 13/1000 [00:19<08:39,  1.90it/s, val acc 0.9914933837429112 no up cnt 0]  1% 13/1000 [00:20<08:39,  1.90it/s, val acc 0.9914933837429112 no up cnt 0]  1% 14/1000 [00:20<08:21,  1.97it/s, val acc 0.9914933837429112 no up cnt 0]  1% 14/1000 [00:20<08:21,  1.97it/s, val acc 0.9924385633270322 no up cnt 0]  2% 15/1000 [00:20<08:06,  2.02it/s, val acc 0.9924385633270322 no up cnt 0]  2% 15/1000 [00:21<08:06,  2.02it/s, val acc 0.9914933837429112 no up cnt 1]  2% 16/1000 [00:21<07:59,  2.05it/s, val acc 0.9914933837429112 no up cnt 1]  2% 16/1000 [00:21<07:59,  2.05it/s, val acc 0.9914933837429112 no up cnt 2]  2% 17/1000 [00:21<07:50,  2.09it/s, val acc 0.9914933837429112 no up cnt 2]  2% 17/1000 [00:21<07:50,  2.09it/s, val acc 0.9933837429111532 no up cnt 0]  2% 18/1000 [00:21<07:45,  2.11it/s, val acc 0.9933837429111532 no up cnt 0]  2% 18/1000 [00:22<07:45,  2.11it/s, val acc 0.9933837429111532 no up cnt 1]  2% 19/1000 [00:22<07:40,  2.13it/s, val acc 0.9933837429111532 no up cnt 1]  2% 19/1000 [00:22<07:40,  2.13it/s, val acc 0.9933837429111532 no up cnt 0]  2% 20/1000 [00:22<07:38,  2.14it/s, val acc 0.9933837429111532 no up cnt 0]  2% 20/1000 [00:23<07:38,  2.14it/s, val acc 0.9933837429111532 no up cnt 1]  2% 21/1000 [00:23<07:59,  2.04it/s, val acc 0.9933837429111532 no up cnt 1]  2% 21/1000 [00:23<07:59,  2.04it/s, val acc 0.9933837429111532 no up cnt 2]  2% 22/1000 [00:23<07:50,  2.08it/s, val acc 0.9933837429111532 no up cnt 2]  2% 22/1000 [00:24<07:50,  2.08it/s, val acc 0.9933837429111532 no up cnt 0]  2% 23/1000 [00:24<07:45,  2.10it/s, val acc 0.9933837429111532 no up cnt 0]  2% 23/1000 [00:24<07:45,  2.10it/s, val acc 0.994328922495274 no up cnt 0]   2% 24/1000 [00:24<07:40,  2.12it/s, val acc 0.994328922495274 no up cnt 0]  2% 24/1000 [00:25<07:40,  2.12it/s, val acc 0.994328922495274 no up cnt 0]  2% 25/1000 [00:25<07:36,  2.14it/s, val acc 0.994328922495274 no up cnt 0]  2% 25/1000 [00:25<07:36,  2.14it/s, val acc 0.9933837429111532 no up cnt 1]  3% 26/1000 [00:25<07:34,  2.14it/s, val acc 0.9933837429111532 no up cnt 1]  3% 26/1000 [00:26<07:34,  2.14it/s, val acc 0.9933837429111532 no up cnt 2]  3% 27/1000 [00:26<07:32,  2.15it/s, val acc 0.9933837429111532 no up cnt 2]  3% 27/1000 [00:26<07:32,  2.15it/s, val acc 0.994328922495274 no up cnt 0]   3% 28/1000 [00:26<07:31,  2.15it/s, val acc 0.994328922495274 no up cnt 0]  3% 28/1000 [00:27<07:31,  2.15it/s, val acc 0.994328922495274 no up cnt 1]  3% 29/1000 [00:27<07:30,  2.16it/s, val acc 0.994328922495274 no up cnt 1]  3% 29/1000 [00:27<07:30,  2.16it/s, val acc 0.994328922495274 no up cnt 2]  3% 30/1000 [00:27<07:28,  2.16it/s, val acc 0.994328922495274 no up cnt 2]  3% 30/1000 [00:28<07:28,  2.16it/s, val acc 0.994328922495274 no up cnt 0]  3% 31/1000 [00:28<07:28,  2.16it/s, val acc 0.994328922495274 no up cnt 0]  3% 31/1000 [00:28<07:28,  2.16it/s, val acc 0.994328922495274 no up cnt 1]  3% 32/1000 [00:28<07:28,  2.16it/s, val acc 0.994328922495274 no up cnt 1]  3% 32/1000 [00:28<07:28,  2.16it/s, val acc 0.994328922495274 no up cnt 2]  3% 33/1000 [00:29<07:29,  2.15it/s, val acc 0.994328922495274 no up cnt 2]  3% 33/1000 [00:29<07:29,  2.15it/s, val acc 0.994328922495274 no up cnt 3]  3% 34/1000 [00:29<07:42,  2.09it/s, val acc 0.994328922495274 no up cnt 3]  3% 34/1000 [00:29<07:42,  2.09it/s, val acc 0.994328922495274 no up cnt 4]  4% 35/1000 [00:29<07:36,  2.11it/s, val acc 0.994328922495274 no up cnt 4]  4% 35/1000 [00:30<07:36,  2.11it/s, val acc 0.994328922495274 no up cnt 5]  4% 36/1000 [00:30<07:35,  2.12it/s, val acc 0.994328922495274 no up cnt 5]  4% 36/1000 [00:30<07:35,  2.12it/s, val acc 0.994328922495274 no up cnt 0]  4% 37/1000 [00:30<07:31,  2.13it/s, val acc 0.994328922495274 no up cnt 0]  4% 37/1000 [00:31<07:31,  2.13it/s, val acc 0.994328922495274 no up cnt 0]  4% 38/1000 [00:31<07:29,  2.14it/s, val acc 0.994328922495274 no up cnt 0]  4% 38/1000 [00:31<07:29,  2.14it/s, val acc 0.994328922495274 no up cnt 1]  4% 39/1000 [00:31<07:27,  2.15it/s, val acc 0.994328922495274 no up cnt 1]  4% 39/1000 [00:32<07:27,  2.15it/s, val acc 0.994328922495274 no up cnt 2]  4% 40/1000 [00:32<07:26,  2.15it/s, val acc 0.994328922495274 no up cnt 2]  4% 40/1000 [00:32<07:26,  2.15it/s, val acc 0.994328922495274 no up cnt 3]  4% 41/1000 [00:32<07:25,  2.15it/s, val acc 0.994328922495274 no up cnt 3]  4% 41/1000 [00:33<07:25,  2.15it/s, val acc 0.994328922495274 no up cnt 4]  4% 42/1000 [00:33<07:23,  2.16it/s, val acc 0.994328922495274 no up cnt 4]  4% 42/1000 [00:33<07:23,  2.16it/s, val acc 0.994328922495274 no up cnt 5]  4% 43/1000 [00:33<07:22,  2.16it/s, val acc 0.994328922495274 no up cnt 5]  4% 43/1000 [00:34<07:22,  2.16it/s, val acc 0.994328922495274 no up cnt 0]  4% 44/1000 [00:34<07:21,  2.16it/s, val acc 0.994328922495274 no up cnt 0]  4% 44/1000 [00:34<07:21,  2.16it/s, val acc 0.994328922495274 no up cnt 1]  4% 45/1000 [00:34<07:22,  2.16it/s, val acc 0.994328922495274 no up cnt 1]  4% 45/1000 [00:35<07:22,  2.16it/s, val acc 0.994328922495274 no up cnt 2]  5% 46/1000 [00:35<07:44,  2.05it/s, val acc 0.994328922495274 no up cnt 2]  5% 46/1000 [00:35<07:44,  2.05it/s, val acc 0.994328922495274 no up cnt 3]  5% 47/1000 [00:35<07:36,  2.09it/s, val acc 0.994328922495274 no up cnt 3]  5% 47/1000 [00:36<07:36,  2.09it/s, val acc 0.9933837429111532 no up cnt 4]  5% 48/1000 [00:36<07:31,  2.11it/s, val acc 0.9933837429111532 no up cnt 4]  5% 48/1000 [00:36<07:31,  2.11it/s, val acc 0.994328922495274 no up cnt 5]   5% 49/1000 [00:36<07:26,  2.13it/s, val acc 0.994328922495274 no up cnt 5]  5% 49/1000 [00:36<07:26,  2.13it/s, val acc 0.994328922495274 no up cnt 6]  5% 50/1000 [00:36<07:24,  2.14it/s, val acc 0.994328922495274 no up cnt 6]  5% 50/1000 [00:37<07:24,  2.14it/s, val acc 0.994328922495274 no up cnt 7]  5% 51/1000 [00:37<07:22,  2.14it/s, val acc 0.994328922495274 no up cnt 7]  5% 51/1000 [00:37<07:22,  2.14it/s, val acc 0.994328922495274 no up cnt 8]  5% 52/1000 [00:37<07:20,  2.15it/s, val acc 0.994328922495274 no up cnt 8]  5% 52/1000 [00:38<07:20,  2.15it/s, val acc 0.994328922495274 no up cnt 9]  5% 53/1000 [00:38<07:19,  2.16it/s, val acc 0.994328922495274 no up cnt 9]  5% 53/1000 [00:38<07:19,  2.16it/s, val acc 0.9933837429111532 no up cnt 10]  5% 54/1000 [00:38<07:18,  2.16it/s, val acc 0.9933837429111532 no up cnt 10]  5% 54/1000 [00:39<07:18,  2.16it/s, val acc 0.994328922495274 no up cnt 11]   6% 55/1000 [00:39<07:16,  2.17it/s, val acc 0.994328922495274 no up cnt 11]  6% 55/1000 [00:39<07:16,  2.17it/s, val acc 0.994328922495274 no up cnt 0]   6% 56/1000 [00:39<07:16,  2.16it/s, val acc 0.994328922495274 no up cnt 0]  6% 56/1000 [00:40<07:16,  2.16it/s, val acc 0.994328922495274 no up cnt 1]  6% 57/1000 [00:40<07:16,  2.16it/s, val acc 0.994328922495274 no up cnt 1]  6% 57/1000 [00:40<07:16,  2.16it/s, val acc 0.994328922495274 no up cnt 2]  6% 58/1000 [00:40<07:15,  2.16it/s, val acc 0.994328922495274 no up cnt 2]  6% 58/1000 [00:41<07:15,  2.16it/s, val acc 0.994328922495274 no up cnt 3]  6% 59/1000 [00:41<07:31,  2.08it/s, val acc 0.994328922495274 no up cnt 3]  6% 59/1000 [00:41<07:31,  2.08it/s, val acc 0.9933837429111532 no up cnt 4]  6% 60/1000 [00:41<07:26,  2.11it/s, val acc 0.9933837429111532 no up cnt 4]  6% 60/1000 [00:42<07:26,  2.11it/s, val acc 0.994328922495274 no up cnt 5]   6% 61/1000 [00:42<07:21,  2.13it/s, val acc 0.994328922495274 no up cnt 5]  6% 61/1000 [00:42<07:21,  2.13it/s, val acc 0.994328922495274 no up cnt 6]  6% 62/1000 [00:42<07:18,  2.14it/s, val acc 0.994328922495274 no up cnt 6]  6% 62/1000 [00:43<07:18,  2.14it/s, val acc 0.994328922495274 no up cnt 7]  6% 63/1000 [00:43<07:16,  2.15it/s, val acc 0.994328922495274 no up cnt 7]  6% 63/1000 [00:43<07:16,  2.15it/s, val acc 0.9933837429111532 no up cnt 8]  6% 64/1000 [00:43<07:14,  2.15it/s, val acc 0.9933837429111532 no up cnt 8]  6% 64/1000 [00:43<07:14,  2.15it/s, val acc 0.994328922495274 no up cnt 9]   6% 65/1000 [00:43<07:13,  2.16it/s, val acc 0.994328922495274 no up cnt 9]  6% 65/1000 [00:44<07:13,  2.16it/s, val acc 0.994328922495274 no up cnt 10]  7% 66/1000 [00:44<07:12,  2.16it/s, val acc 0.994328922495274 no up cnt 10]  7% 66/1000 [00:44<07:12,  2.16it/s, val acc 0.994328922495274 no up cnt 11]  7% 67/1000 [00:44<07:11,  2.16it/s, val acc 0.994328922495274 no up cnt 11]  7% 67/1000 [00:45<07:11,  2.16it/s, val acc 0.994328922495274 no up cnt 12]  7% 68/1000 [00:45<07:10,  2.16it/s, val acc 0.994328922495274 no up cnt 12]  7% 68/1000 [00:45<07:10,  2.16it/s, val acc 0.994328922495274 no up cnt 13]  7% 69/1000 [00:45<07:10,  2.16it/s, val acc 0.994328922495274 no up cnt 13]  7% 69/1000 [00:46<07:10,  2.16it/s, val acc 0.994328922495274 no up cnt 14]  7% 70/1000 [00:46<07:09,  2.16it/s, val acc 0.994328922495274 no up cnt 14]  7% 70/1000 [00:46<07:09,  2.16it/s, val acc 0.994328922495274 no up cnt 15]  7% 71/1000 [00:46<07:30,  2.06it/s, val acc 0.994328922495274 no up cnt 15]  7% 71/1000 [00:47<07:30,  2.06it/s, val acc 0.994328922495274 no up cnt 16]  7% 72/1000 [00:47<07:23,  2.09it/s, val acc 0.994328922495274 no up cnt 16]  7% 72/1000 [00:47<07:23,  2.09it/s, val acc 0.994328922495274 no up cnt 17]  7% 73/1000 [00:47<07:17,  2.12it/s, val acc 0.994328922495274 no up cnt 17]  7% 73/1000 [00:48<07:17,  2.12it/s, val acc 0.994328922495274 no up cnt 18]  7% 74/1000 [00:48<07:14,  2.13it/s, val acc 0.994328922495274 no up cnt 18]  7% 74/1000 [00:48<07:14,  2.13it/s, val acc 0.994328922495274 no up cnt 19]  8% 75/1000 [00:48<07:10,  2.15it/s, val acc 0.994328922495274 no up cnt 19]  8% 75/1000 [00:49<07:10,  2.15it/s, val acc 0.994328922495274 no up cnt 20]  8% 76/1000 [00:49<07:09,  2.15it/s, val acc 0.994328922495274 no up cnt 20]  8% 76/1000 [00:49<07:09,  2.15it/s, val acc 0.9933837429111532 no up cnt 21]  8% 77/1000 [00:49<07:07,  2.16it/s, val acc 0.9933837429111532 no up cnt 21]  8% 77/1000 [00:50<07:07,  2.16it/s, val acc 0.9924385633270322 no up cnt 22]  8% 78/1000 [00:50<07:06,  2.16it/s, val acc 0.9924385633270322 no up cnt 22]  8% 78/1000 [00:50<07:06,  2.16it/s, val acc 0.994328922495274 no up cnt 23]   8% 79/1000 [00:50<07:05,  2.17it/s, val acc 0.994328922495274 no up cnt 23]  8% 79/1000 [00:50<07:05,  2.17it/s, val acc 0.994328922495274 no up cnt 24]  8% 80/1000 [00:50<07:04,  2.17it/s, val acc 0.994328922495274 no up cnt 24]  8% 80/1000 [00:51<07:04,  2.17it/s, val acc 0.9933837429111532 no up cnt 25]  8% 81/1000 [00:51<07:03,  2.17it/s, val acc 0.9933837429111532 no up cnt 25]  8% 81/1000 [00:51<07:03,  2.17it/s, val acc 0.9933837429111532 no up cnt 26]  8% 82/1000 [00:51<07:02,  2.17it/s, val acc 0.9933837429111532 no up cnt 26]  8% 82/1000 [00:52<07:02,  2.17it/s, val acc 0.9933837429111532 no up cnt 27]  8% 83/1000 [00:52<07:02,  2.17it/s, val acc 0.9933837429111532 no up cnt 27]  8% 83/1000 [00:52<07:02,  2.17it/s, val acc 0.994328922495274 no up cnt 28]   8% 84/1000 [00:52<07:18,  2.09it/s, val acc 0.994328922495274 no up cnt 28]  8% 84/1000 [00:53<07:18,  2.09it/s, val acc 0.994328922495274 no up cnt 29]  8% 85/1000 [00:53<07:13,  2.11it/s, val acc 0.994328922495274 no up cnt 29]  8% 85/1000 [00:53<07:13,  2.11it/s, val acc 0.994328922495274 no up cnt 30]  9% 86/1000 [00:53<07:10,  2.12it/s, val acc 0.994328922495274 no up cnt 30]  9% 86/1000 [00:54<07:10,  2.12it/s, val acc 0.9933837429111532 no up cnt 31]  9% 87/1000 [00:54<07:06,  2.14it/s, val acc 0.9933837429111532 no up cnt 31]  9% 87/1000 [00:54<07:06,  2.14it/s, val acc 0.994328922495274 no up cnt 32]   9% 88/1000 [00:54<07:07,  2.13it/s, val acc 0.994328922495274 no up cnt 32]  9% 88/1000 [00:55<07:07,  2.13it/s, val acc 0.994328922495274 no up cnt 33]  9% 89/1000 [00:55<07:05,  2.14it/s, val acc 0.994328922495274 no up cnt 33]  9% 89/1000 [00:55<07:05,  2.14it/s, val acc 0.9933837429111532 no up cnt 34]  9% 90/1000 [00:55<07:03,  2.15it/s, val acc 0.9933837429111532 no up cnt 34]  9% 90/1000 [00:56<07:03,  2.15it/s, val acc 0.994328922495274 no up cnt 35]   9% 91/1000 [00:56<07:02,  2.15it/s, val acc 0.994328922495274 no up cnt 35]  9% 91/1000 [00:56<07:02,  2.15it/s, val acc 0.9933837429111532 no up cnt 36]  9% 92/1000 [00:56<07:00,  2.16it/s, val acc 0.9933837429111532 no up cnt 36]  9% 92/1000 [00:57<07:00,  2.16it/s, val acc 0.9933837429111532 no up cnt 37]  9% 93/1000 [00:57<06:59,  2.16it/s, val acc 0.9933837429111532 no up cnt 37]  9% 93/1000 [00:57<06:59,  2.16it/s, val acc 0.994328922495274 no up cnt 38]   9% 94/1000 [00:57<06:58,  2.16it/s, val acc 0.994328922495274 no up cnt 38]  9% 94/1000 [00:57<06:58,  2.16it/s, val acc 0.9924385633270322 no up cnt 39] 10% 95/1000 [00:57<06:58,  2.16it/s, val acc 0.9924385633270322 no up cnt 39] 10% 95/1000 [00:58<06:58,  2.16it/s, val acc 0.9933837429111532 no up cnt 40] 10% 96/1000 [00:58<07:18,  2.06it/s, val acc 0.9933837429111532 no up cnt 40] 10% 96/1000 [00:58<07:18,  2.06it/s, val acc 0.995274102079395 no up cnt 0]   10% 97/1000 [00:58<07:12,  2.09it/s, val acc 0.995274102079395 no up cnt 0] 10% 97/1000 [00:59<07:12,  2.09it/s, val acc 0.994328922495274 no up cnt 1] 10% 98/1000 [00:59<07:06,  2.11it/s, val acc 0.994328922495274 no up cnt 1] 10% 98/1000 [00:59<07:06,  2.11it/s, val acc 0.9905482041587902 no up cnt 2] 10% 99/1000 [00:59<07:03,  2.13it/s, val acc 0.9905482041587902 no up cnt 2] 10% 99/1000 [01:00<07:03,  2.13it/s, val acc 0.994328922495274 no up cnt 3]  10% 100/1000 [01:00<06:59,  2.14it/s, val acc 0.994328922495274 no up cnt 3] 10% 100/1000 [01:00<06:59,  2.14it/s, val acc 0.9933837429111532 no up cnt 4] 10% 101/1000 [01:00<06:58,  2.15it/s, val acc 0.9933837429111532 no up cnt 4] 10% 101/1000 [01:01<06:58,  2.15it/s, val acc 0.9933837429111532 no up cnt 5] 10% 102/1000 [01:01<06:56,  2.16it/s, val acc 0.9933837429111532 no up cnt 5] 10% 102/1000 [01:01<06:56,  2.16it/s, val acc 0.9933837429111532 no up cnt 6] 10% 103/1000 [01:01<06:55,  2.16it/s, val acc 0.9933837429111532 no up cnt 6] 10% 103/1000 [01:02<06:55,  2.16it/s, val acc 0.9933837429111532 no up cnt 7] 10% 104/1000 [01:02<06:54,  2.16it/s, val acc 0.9933837429111532 no up cnt 7] 10% 104/1000 [01:02<06:54,  2.16it/s, val acc 0.9924385633270322 no up cnt 8] 10% 105/1000 [01:02<06:55,  2.15it/s, val acc 0.9924385633270322 no up cnt 8] 10% 105/1000 [01:03<06:55,  2.15it/s, val acc 0.9933837429111532 no up cnt 9] 11% 106/1000 [01:03<06:54,  2.16it/s, val acc 0.9933837429111532 no up cnt 9] 11% 106/1000 [01:03<06:54,  2.16it/s, val acc 0.9914933837429112 no up cnt 10] 11% 107/1000 [01:03<06:53,  2.16it/s, val acc 0.9914933837429112 no up cnt 10] 11% 107/1000 [01:04<06:53,  2.16it/s, val acc 0.9933837429111532 no up cnt 11] 11% 108/1000 [01:04<06:52,  2.16it/s, val acc 0.9933837429111532 no up cnt 11] 11% 108/1000 [01:04<06:52,  2.16it/s, val acc 0.9933837429111532 no up cnt 12] 11% 109/1000 [01:04<07:06,  2.09it/s, val acc 0.9933837429111532 no up cnt 12] 11% 109/1000 [01:04<07:06,  2.09it/s, val acc 0.9933837429111532 no up cnt 13] 11% 110/1000 [01:05<07:02,  2.11it/s, val acc 0.9933837429111532 no up cnt 13] 11% 110/1000 [01:05<07:02,  2.11it/s, val acc 0.9933837429111532 no up cnt 14] 11% 111/1000 [01:05<06:57,  2.13it/s, val acc 0.9933837429111532 no up cnt 14] 11% 111/1000 [01:05<06:57,  2.13it/s, val acc 0.9924385633270322 no up cnt 15] 11% 112/1000 [01:05<06:54,  2.14it/s, val acc 0.9924385633270322 no up cnt 15] 11% 112/1000 [01:06<06:54,  2.14it/s, val acc 0.9924385633270322 no up cnt 16] 11% 113/1000 [01:06<06:52,  2.15it/s, val acc 0.9924385633270322 no up cnt 16] 11% 113/1000 [01:06<06:52,  2.15it/s, val acc 0.9924385633270322 no up cnt 17] 11% 114/1000 [01:06<06:51,  2.15it/s, val acc 0.9924385633270322 no up cnt 17] 11% 114/1000 [01:07<06:51,  2.15it/s, val acc 0.9924385633270322 no up cnt 18] 12% 115/1000 [01:07<06:50,  2.16it/s, val acc 0.9924385633270322 no up cnt 18] 12% 115/1000 [01:07<06:50,  2.16it/s, val acc 0.994328922495274 no up cnt 19]  12% 116/1000 [01:07<06:48,  2.16it/s, val acc 0.994328922495274 no up cnt 19] 12% 116/1000 [01:08<06:48,  2.16it/s, val acc 0.9914933837429112 no up cnt 20] 12% 117/1000 [01:08<06:47,  2.17it/s, val acc 0.9914933837429112 no up cnt 20] 12% 117/1000 [01:08<06:47,  2.17it/s, val acc 0.9924385633270322 no up cnt 21] 12% 118/1000 [01:08<06:48,  2.16it/s, val acc 0.9924385633270322 no up cnt 21] 12% 118/1000 [01:09<06:48,  2.16it/s, val acc 0.9924385633270322 no up cnt 22] 12% 119/1000 [01:09<06:47,  2.16it/s, val acc 0.9924385633270322 no up cnt 22] 12% 119/1000 [01:09<06:47,  2.16it/s, val acc 0.9924385633270322 no up cnt 23] 12% 120/1000 [01:09<06:46,  2.16it/s, val acc 0.9924385633270322 no up cnt 23] 12% 120/1000 [01:10<06:46,  2.16it/s, val acc 0.9933837429111532 no up cnt 24] 12% 121/1000 [01:10<07:00,  2.09it/s, val acc 0.9933837429111532 no up cnt 24] 12% 121/1000 [01:10<07:00,  2.09it/s, val acc 0.9933837429111532 no up cnt 25] 12% 122/1000 [01:10<06:57,  2.10it/s, val acc 0.9933837429111532 no up cnt 25] 12% 122/1000 [01:11<06:57,  2.10it/s, val acc 0.9924385633270322 no up cnt 26] 12% 123/1000 [01:11<06:53,  2.12it/s, val acc 0.9924385633270322 no up cnt 26] 12% 123/1000 [01:11<06:53,  2.12it/s, val acc 0.9924385633270322 no up cnt 27] 12% 124/1000 [01:11<06:49,  2.14it/s, val acc 0.9924385633270322 no up cnt 27] 12% 124/1000 [01:11<06:49,  2.14it/s, val acc 0.994328922495274 no up cnt 28]  12% 125/1000 [01:12<06:48,  2.14it/s, val acc 0.994328922495274 no up cnt 28] 12% 125/1000 [01:12<06:48,  2.14it/s, val acc 0.9924385633270322 no up cnt 29] 13% 126/1000 [01:12<06:46,  2.15it/s, val acc 0.9924385633270322 no up cnt 29] 13% 126/1000 [01:12<06:46,  2.15it/s, val acc 0.9924385633270322 no up cnt 30] 13% 127/1000 [01:12<06:45,  2.15it/s, val acc 0.9924385633270322 no up cnt 30] 13% 127/1000 [01:13<06:45,  2.15it/s, val acc 0.9924385633270322 no up cnt 31] 13% 128/1000 [01:13<06:43,  2.16it/s, val acc 0.9924385633270322 no up cnt 31] 13% 128/1000 [01:13<06:43,  2.16it/s, val acc 0.9914933837429112 no up cnt 32] 13% 129/1000 [01:13<06:42,  2.16it/s, val acc 0.9914933837429112 no up cnt 32] 13% 129/1000 [01:14<06:42,  2.16it/s, val acc 0.9933837429111532 no up cnt 33] 13% 130/1000 [01:14<06:41,  2.17it/s, val acc 0.9933837429111532 no up cnt 33] 13% 130/1000 [01:14<06:41,  2.17it/s, val acc 0.9933837429111532 no up cnt 34] 13% 131/1000 [01:14<06:42,  2.16it/s, val acc 0.9933837429111532 no up cnt 34] 13% 131/1000 [01:15<06:42,  2.16it/s, val acc 0.9924385633270322 no up cnt 35] 13% 132/1000 [01:15<06:41,  2.16it/s, val acc 0.9924385633270322 no up cnt 35] 13% 132/1000 [01:15<06:41,  2.16it/s, val acc 0.9933837429111532 no up cnt 36] 13% 133/1000 [01:15<06:40,  2.16it/s, val acc 0.9933837429111532 no up cnt 36] 13% 133/1000 [01:16<06:40,  2.16it/s, val acc 0.9933837429111532 no up cnt 37] 13% 134/1000 [01:16<07:00,  2.06it/s, val acc 0.9933837429111532 no up cnt 37] 13% 134/1000 [01:16<07:00,  2.06it/s, val acc 0.9924385633270322 no up cnt 38] 14% 135/1000 [01:16<06:54,  2.09it/s, val acc 0.9924385633270322 no up cnt 38] 14% 135/1000 [01:17<06:54,  2.09it/s, val acc 0.994328922495274 no up cnt 39]  14% 136/1000 [01:17<06:49,  2.11it/s, val acc 0.994328922495274 no up cnt 39] 14% 136/1000 [01:17<06:49,  2.11it/s, val acc 0.9933837429111532 no up cnt 40] 14% 137/1000 [01:17<06:45,  2.13it/s, val acc 0.9933837429111532 no up cnt 40] 14% 137/1000 [01:18<06:45,  2.13it/s, val acc 0.9933837429111532 no up cnt 41] 14% 138/1000 [01:18<06:42,  2.14it/s, val acc 0.9933837429111532 no up cnt 41] 14% 138/1000 [01:18<06:42,  2.14it/s, val acc 0.9933837429111532 no up cnt 42] 14% 139/1000 [01:18<06:40,  2.15it/s, val acc 0.9933837429111532 no up cnt 42] 14% 139/1000 [01:18<06:40,  2.15it/s, val acc 0.9933837429111532 no up cnt 43] 14% 140/1000 [01:19<06:39,  2.15it/s, val acc 0.9933837429111532 no up cnt 43] 14% 140/1000 [01:19<06:39,  2.15it/s, val acc 0.9933837429111532 no up cnt 44] 14% 141/1000 [01:19<06:37,  2.16it/s, val acc 0.9933837429111532 no up cnt 44] 14% 141/1000 [01:19<06:37,  2.16it/s, val acc 0.9933837429111532 no up cnt 45] 14% 142/1000 [01:19<06:36,  2.16it/s, val acc 0.9933837429111532 no up cnt 45] 14% 142/1000 [01:20<06:36,  2.16it/s, val acc 0.9933837429111532 no up cnt 46] 14% 143/1000 [01:20<06:35,  2.17it/s, val acc 0.9933837429111532 no up cnt 46] 14% 143/1000 [01:20<06:35,  2.17it/s, val acc 0.9933837429111532 no up cnt 47] 14% 144/1000 [01:20<06:35,  2.17it/s, val acc 0.9933837429111532 no up cnt 47] 14% 144/1000 [01:21<06:35,  2.17it/s, val acc 0.9933837429111532 no up cnt 48] 14% 145/1000 [01:21<06:34,  2.17it/s, val acc 0.9933837429111532 no up cnt 48] 14% 145/1000 [01:21<06:34,  2.17it/s, val acc 0.9933837429111532 no up cnt 49] 15% 146/1000 [01:21<06:47,  2.09it/s, val acc 0.9933837429111532 no up cnt 49] 15% 146/1000 [01:22<06:47,  2.09it/s, val acc 0.9933837429111532 no up cnt 50] 15% 146/1000 [01:22<08:01,  1.78it/s, val acc 0.9933837429111532 no up cnt 50]
-Epoch-0 train loss: 0.000164427 Acc: 0.786947 MiF: 0.852004 MCC: 0.540886
-Epoch-0 validation loss: 0.552434 Acc: 0.793006 MiF: 0.859345 MCC: 0.573794
-Epoch-1000 test loss: 0.578409 Acc: 0.758879 MiF: 0.839752 MCC: 0.499829
-Epoch-1 train loss: 0.00013374 Acc: 0.81041 MiF: 0.869112 MCC: 0.60734
-Epoch-1 validation loss: 0.464352 Acc: 0.786389 MiF: 0.855499 MCC: 0.559655
-Epoch-1000 test loss: 0.498007 Acc: 0.747664 MiF: 0.833539 MCC: 0.474232
-Epoch-2 train loss: 0.000108358 Acc: 0.811219 MiF: 0.869985 MCC: 0.611591
-Epoch-2 validation loss: 0.394173 Acc: 0.794896 MiF: 0.86045 MCC: 0.577811
-Epoch-1000 test loss: 0.439423 Acc: 0.760748 MiF: 0.840796 MCC: 0.504031
-Epoch-3 train loss: 7.83423e-05 Acc: 0.869202 MiF: 0.905403 MCC: 0.726036
-Epoch-3 validation loss: 0.252117 Acc: 0.895085 MiF: 0.923395 MCC: 0.782913
-Epoch-1000 test loss: 0.329716 Acc: 0.839252 MiF: 0.887139 MCC: 0.670199
-Epoch-4 train loss: 4.39902e-05 Acc: 0.951726 MiF: 0.962701 MCC: 0.896329
-Epoch-4 validation loss: 0.126871 Acc: 0.959357 MiF: 0.968863 MCC: 0.91419
-Epoch-1000 test loss: 0.240368 Acc: 0.897196 MiF: 0.924554 MCC: 0.786173
-Epoch-5 train loss: 2.2469e-05 Acc: 0.974919 MiF: 0.980276 MCC: 0.945964
-Epoch-5 validation loss: 0.076679 Acc: 0.975425 MiF: 0.98091 MCC: 0.947616
-Epoch-1000 test loss: 0.210323 Acc: 0.938318 MiF: 0.953456 MCC: 0.870884
-Epoch-6 train loss: 1.46684e-05 Acc: 0.986246 MiF: 0.989165 MCC: 0.970399
-Epoch-6 validation loss: 0.0581625 Acc: 0.982042 MiF: 0.985999 MCC: 0.961712
-Epoch-1000 test loss: 0.202594 Acc: 0.940187 MiF: 0.954802 MCC: 0.874715
-Epoch-7 train loss: 1.08535e-05 Acc: 0.989213 MiF: 0.991489 MCC: 0.976786
-Epoch-7 validation loss: 0.043594 Acc: 0.986767 MiF: 0.989645 MCC: 0.971725
-Epoch-1000 test loss: 0.1804 Acc: 0.953271 MiF: 0.964337 MCC: 0.901646
-Epoch-8 train loss: 9.95701e-06 Acc: 0.9911 MiF: 0.992974 MCC: 0.980851
-Epoch-8 validation loss: 0.0389976 Acc: 0.988658 MiF: 0.991111 MCC: 0.975743
-Epoch-1000 test loss: 0.177866 Acc: 0.95514 MiF: 0.965714 MCC: 0.905512
-Epoch-9 train loss: 9.12734e-06 Acc: 0.990831 MiF: 0.992778 MCC: 0.98029
-Epoch-9 validation loss: 0.0276482 Acc: 0.991493 MiF: 0.993318 MCC: 0.981782
-Epoch-1000 test loss: 0.1348 Acc: 0.962617 MiF: 0.971182 MCC: 0.920597
-Epoch-10 train loss: 7.75858e-06 Acc: 0.993258 MiF: 0.994675 MCC: 0.985496
-Epoch-10 validation loss: 0.0308997 Acc: 0.991493 MiF: 0.993318 MCC: 0.981782
-Epoch-1000 test loss: 0.161815 Acc: 0.95514 MiF: 0.965616 MCC: 0.904997
-Epoch-11 train loss: 7.38204e-06 Acc: 0.992718 MiF: 0.994242 MCC: 0.984341
-Epoch-11 validation loss: 0.0308925 Acc: 0.991493 MiF: 0.993318 MCC: 0.981782
-Epoch-1000 test loss: 0.167443 Acc: 0.95514 MiF: 0.965616 MCC: 0.904997
-Epoch-12 train loss: 7.86934e-06 Acc: 0.992718 MiF: 0.994244 MCC: 0.984338
-Epoch-12 validation loss: 0.0282456 Acc: 0.991493 MiF: 0.993318 MCC: 0.981782
-Epoch-1000 test loss: 0.158533 Acc: 0.95514 MiF: 0.965616 MCC: 0.904997
-Epoch-13 train loss: 6.43165e-06 Acc: 0.994606 MiF: 0.995743 MCC: 0.988401
-Epoch-13 validation loss: 0.0247302 Acc: 0.991493 MiF: 0.993318 MCC: 0.981782
-Epoch-1000 test loss: 0.145629 Acc: 0.957009 MiF: 0.967001 MCC: 0.908889
-Epoch-14 train loss: 5.57633e-06 Acc: 0.994606 MiF: 0.995739 MCC: 0.988398
-Epoch-14 validation loss: 0.0225132 Acc: 0.992439 MiF: 0.994056 MCC: 0.983799
-Epoch-1000 test loss: 0.135531 Acc: 0.958879 MiF: 0.968391 MCC: 0.912786
-Epoch-15 train loss: 5.86278e-06 Acc: 0.995146 MiF: 0.996162 MCC: 0.98956
-Epoch-15 validation loss: 0.0255578 Acc: 0.991493 MiF: 0.993318 MCC: 0.981782
-Epoch-1000 test loss: 0.152454 Acc: 0.95514 MiF: 0.965616 MCC: 0.904997
-Epoch-16 train loss: 5.73083e-06 Acc: 0.993258 MiF: 0.994677 MCC: 0.985496
-Epoch-16 validation loss: 0.0247985 Acc: 0.991493 MiF: 0.993309 MCC: 0.981736
-Epoch-1000 test loss: 0.149135 Acc: 0.957009 MiF: 0.967001 MCC: 0.908889
-Epoch-17 train loss: 5.604e-06 Acc: 0.994067 MiF: 0.995311 MCC: 0.987237
-Epoch-17 validation loss: 0.0213057 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.130262 Acc: 0.960748 MiF: 0.969784 MCC: 0.916689
-Epoch-18 train loss: 6.19923e-06 Acc: 0.994337 MiF: 0.995525 MCC: 0.987817
-Epoch-18 validation loss: 0.0228239 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.138345 Acc: 0.958879 MiF: 0.968391 MCC: 0.912786
-Epoch-19 train loss: 5.0608e-06 Acc: 0.994876 MiF: 0.995955 MCC: 0.988981
-Epoch-19 validation loss: 0.0187493 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.113326 Acc: 0.966355 MiF: 0.973913 MCC: 0.928113
-Epoch-20 train loss: 5.03881e-06 Acc: 0.994606 MiF: 0.995743 MCC: 0.988401
-Epoch-20 validation loss: 0.0192854 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.118531 Acc: 0.964486 MiF: 0.972504 MCC: 0.924173
-Epoch-21 train loss: 5.11874e-06 Acc: 0.995146 MiF: 0.996164 MCC: 0.989558
-Epoch-21 validation loss: 0.0220981 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.138522 Acc: 0.960748 MiF: 0.969784 MCC: 0.916689
-Epoch-22 train loss: 4.633e-06 Acc: 0.995955 MiF: 0.996805 MCC: 0.991301
-Epoch-22 validation loss: 0.019338 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.119324 Acc: 0.964486 MiF: 0.972583 MCC: 0.92451
-Epoch-23 train loss: 4.61634e-06 Acc: 0.995685 MiF: 0.99659 MCC: 0.990719
-Epoch-23 validation loss: 0.0186467 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.112614 Acc: 0.968224 MiF: 0.975327 MCC: 0.932059
-Epoch-24 train loss: 4.39218e-06 Acc: 0.995685 MiF: 0.996591 MCC: 0.990719
-Epoch-24 validation loss: 0.0190501 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.115095 Acc: 0.968224 MiF: 0.975398 MCC: 0.932352
-Epoch-25 train loss: 4.62588e-06 Acc: 0.995415 MiF: 0.996376 MCC: 0.990139
-Epoch-25 validation loss: 0.0189044 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.113598 Acc: 0.966355 MiF: 0.973913 MCC: 0.928113
-Epoch-26 train loss: 3.83573e-06 Acc: 0.997843 MiF: 0.998294 MCC: 0.995361
-Epoch-26 validation loss: 0.02114 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.126305 Acc: 0.962617 MiF: 0.971182 MCC: 0.920597
-Epoch-27 train loss: 4.49601e-06 Acc: 0.996494 MiF: 0.997228 MCC: 0.992461
-Epoch-27 validation loss: 0.0186556 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.106394 Acc: 0.966355 MiF: 0.973837 MCC: 0.927864
-Epoch-28 train loss: 3.65311e-06 Acc: 0.996764 MiF: 0.997442 MCC: 0.99304
-Epoch-28 validation loss: 0.0201386 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.114984 Acc: 0.964486 MiF: 0.972424 MCC: 0.923901
-Epoch-29 train loss: 3.6753e-06 Acc: 0.997303 MiF: 0.997868 MCC: 0.9942
-Epoch-29 validation loss: 0.019624 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.113438 Acc: 0.964486 MiF: 0.972424 MCC: 0.923901
-Epoch-30 train loss: 3.49789e-06 Acc: 0.996764 MiF: 0.997439 MCC: 0.993044
-Epoch-30 validation loss: 0.0189899 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.11096 Acc: 0.966355 MiF: 0.973837 MCC: 0.927864
-Epoch-31 train loss: 3.3839e-06 Acc: 0.997033 MiF: 0.997655 MCC: 0.99362
-Epoch-31 validation loss: 0.0173627 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.0976146 Acc: 0.968224 MiF: 0.975255 MCC: 0.931832
-Epoch-32 train loss: 3.14879e-06 Acc: 0.998112 MiF: 0.998507 MCC: 0.99594
-Epoch-32 validation loss: 0.0206335 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.12205 Acc: 0.966355 MiF: 0.973913 MCC: 0.928113
-Epoch-33 train loss: 3.25259e-06 Acc: 0.997033 MiF: 0.997654 MCC: 0.993621
-Epoch-33 validation loss: 0.0217325 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.128811 Acc: 0.964486 MiF: 0.972504 MCC: 0.924173
-Epoch-34 train loss: 3.43999e-06 Acc: 0.997033 MiF: 0.997654 MCC: 0.993621
-Epoch-34 validation loss: 0.0220461 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.126899 Acc: 0.968224 MiF: 0.975398 MCC: 0.932352
-Epoch-35 train loss: 3.64517e-06 Acc: 0.997303 MiF: 0.997868 MCC: 0.9942
-Epoch-35 validation loss: 0.0212014 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.122872 Acc: 0.968224 MiF: 0.975398 MCC: 0.932352
-Epoch-36 train loss: 2.96957e-06 Acc: 0.997843 MiF: 0.998294 MCC: 0.99536
-Epoch-36 validation loss: 0.0194454 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.114242 Acc: 0.968224 MiF: 0.975327 MCC: 0.932059
-Epoch-37 train loss: 3.60219e-06 Acc: 0.996494 MiF: 0.997228 MCC: 0.992461
-Epoch-37 validation loss: 0.0176175 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.103425 Acc: 0.966355 MiF: 0.973837 MCC: 0.927864
-Epoch-38 train loss: 3.4186e-06 Acc: 0.997573 MiF: 0.998081 MCC: 0.99478
-Epoch-38 validation loss: 0.018574 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.11048 Acc: 0.968224 MiF: 0.975327 MCC: 0.932059
-Epoch-39 train loss: 3.34807e-06 Acc: 0.997573 MiF: 0.998081 MCC: 0.99478
-Epoch-39 validation loss: 0.0193844 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.116377 Acc: 0.970093 MiF: 0.976812 MCC: 0.936282
-Epoch-40 train loss: 3.06148e-06 Acc: 0.997303 MiF: 0.997868 MCC: 0.9942
-Epoch-40 validation loss: 0.0174628 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.103974 Acc: 0.968224 MiF: 0.975327 MCC: 0.932059
-Epoch-41 train loss: 3.10492e-06 Acc: 0.998112 MiF: 0.998507 MCC: 0.995942
-Epoch-41 validation loss: 0.0204441 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.119192 Acc: 0.970093 MiF: 0.976812 MCC: 0.936282
-Epoch-42 train loss: 3.14118e-06 Acc: 0.997303 MiF: 0.997869 MCC: 0.9942
-Epoch-42 validation loss: 0.0175018 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.0994134 Acc: 0.966355 MiF: 0.973837 MCC: 0.927864
-Epoch-43 train loss: 2.63092e-06 Acc: 0.997843 MiF: 0.998294 MCC: 0.99536
-Epoch-43 validation loss: 0.0182743 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.106101 Acc: 0.966355 MiF: 0.973837 MCC: 0.927864
-Epoch-44 train loss: 2.6821e-06 Acc: 0.997843 MiF: 0.998294 MCC: 0.995361
-Epoch-44 validation loss: 0.0193646 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.110166 Acc: 0.966355 MiF: 0.973837 MCC: 0.927864
-Epoch-45 train loss: 2.63067e-06 Acc: 0.998382 MiF: 0.99872 MCC: 0.996521
-Epoch-45 validation loss: 0.0185067 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.103564 Acc: 0.964486 MiF: 0.972344 MCC: 0.923694
-Epoch-46 train loss: 2.73681e-06 Acc: 0.997303 MiF: 0.997867 MCC: 0.994201
-Epoch-46 validation loss: 0.0193804 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.108037 Acc: 0.966355 MiF: 0.973837 MCC: 0.927864
-Epoch-47 train loss: 3.31537e-06 Acc: 0.997573 MiF: 0.99808 MCC: 0.994782
-Epoch-47 validation loss: 0.0210824 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.114936 Acc: 0.966355 MiF: 0.973913 MCC: 0.928113
-Epoch-48 train loss: 2.7398e-06 Acc: 0.997843 MiF: 0.998294 MCC: 0.995361
-Epoch-48 validation loss: 0.0188501 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.102351 Acc: 0.964486 MiF: 0.972344 MCC: 0.923694
-Epoch-49 train loss: 2.55612e-06 Acc: 0.998382 MiF: 0.99872 MCC: 0.996521
-Epoch-49 validation loss: 0.0177114 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.0938459 Acc: 0.962617 MiF: 0.970845 MCC: 0.919551
-Epoch-50 train loss: 3.0786e-06 Acc: 0.997843 MiF: 0.998294 MCC: 0.995361
-Epoch-50 validation loss: 0.0195696 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.101525 Acc: 0.964486 MiF: 0.972344 MCC: 0.923694
-Epoch-51 train loss: 2.55035e-06 Acc: 0.998652 MiF: 0.998933 MCC: 0.997101
-Epoch-51 validation loss: 0.0234002 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.121338 Acc: 0.962617 MiF: 0.971014 MCC: 0.919944
-Epoch-52 train loss: 2.71532e-06 Acc: 0.998652 MiF: 0.998933 MCC: 0.997101
-Epoch-52 validation loss: 0.0210697 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.108383 Acc: 0.966355 MiF: 0.973837 MCC: 0.927864
-Epoch-53 train loss: 2.57838e-06 Acc: 0.997573 MiF: 0.998081 MCC: 0.99478
-Epoch-53 validation loss: 0.0238687 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.1232 Acc: 0.966355 MiF: 0.973913 MCC: 0.928113
-Epoch-54 train loss: 2.67474e-06 Acc: 0.998652 MiF: 0.998933 MCC: 0.997101
-Epoch-54 validation loss: 0.0209429 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.108885 Acc: 0.966355 MiF: 0.973837 MCC: 0.927864
-Epoch-55 train loss: 2.6608e-06 Acc: 0.998112 MiF: 0.998507 MCC: 0.995942
-Epoch-55 validation loss: 0.0189764 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.0986009 Acc: 0.966355 MiF: 0.973761 MCC: 0.927679
-Epoch-56 train loss: 2.42027e-06 Acc: 0.998921 MiF: 0.999146 MCC: 0.997682
-Epoch-56 validation loss: 0.0210096 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.108862 Acc: 0.968224 MiF: 0.975255 MCC: 0.931832
-Epoch-57 train loss: 2.4213e-06 Acc: 0.998112 MiF: 0.998507 MCC: 0.995942
-Epoch-57 validation loss: 0.0204151 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.105612 Acc: 0.968224 MiF: 0.975255 MCC: 0.931832
-Epoch-58 train loss: 2.68858e-06 Acc: 0.997843 MiF: 0.998294 MCC: 0.99536
-Epoch-58 validation loss: 0.0154667 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.0770489 Acc: 0.968224 MiF: 0.97511 MCC: 0.931569
-Epoch-59 train loss: 2.3177e-06 Acc: 0.998921 MiF: 0.999146 MCC: 0.997682
-Epoch-59 validation loss: 0.0217513 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.112658 Acc: 0.970093 MiF: 0.976744 MCC: 0.936012
-Epoch-60 train loss: 2.77363e-06 Acc: 0.998112 MiF: 0.998507 MCC: 0.99594
-Epoch-60 validation loss: 0.017797 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.0922213 Acc: 0.964486 MiF: 0.972263 MCC: 0.923551
-Epoch-61 train loss: 2.23523e-06 Acc: 0.998652 MiF: 0.998933 MCC: 0.997101
-Epoch-61 validation loss: 0.0194441 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.0998986 Acc: 0.964486 MiF: 0.972263 MCC: 0.923551
-Epoch-62 train loss: 2.47267e-06 Acc: 0.997843 MiF: 0.998294 MCC: 0.99536
-Epoch-62 validation loss: 0.018405 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.0942788 Acc: 0.962617 MiF: 0.97076 MCC: 0.91945
-Epoch-63 train loss: 2.01621e-06 Acc: 0.998921 MiF: 0.999146 MCC: 0.997682
-Epoch-63 validation loss: 0.021873 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.110928 Acc: 0.966355 MiF: 0.973837 MCC: 0.927864
-Epoch-64 train loss: 2.38978e-06 Acc: 0.998652 MiF: 0.998933 MCC: 0.997101
-Epoch-64 validation loss: 0.0199051 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.102055 Acc: 0.966355 MiF: 0.973761 MCC: 0.927679
-Epoch-65 train loss: 2.154e-06 Acc: 0.998382 MiF: 0.99872 MCC: 0.996521
-Epoch-65 validation loss: 0.0163539 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.082972 Acc: 0.964486 MiF: 0.972182 MCC: 0.923471
-Epoch-66 train loss: 2.15003e-06 Acc: 0.998652 MiF: 0.998933 MCC: 0.997101
-Epoch-66 validation loss: 0.0180022 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.0916321 Acc: 0.962617 MiF: 0.97076 MCC: 0.91945
-Epoch-67 train loss: 2.35938e-06 Acc: 0.998382 MiF: 0.99872 MCC: 0.996521
-Epoch-67 validation loss: 0.0188747 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.0939003 Acc: 0.962617 MiF: 0.97076 MCC: 0.91945
-Epoch-68 train loss: 1.97335e-06 Acc: 0.998652 MiF: 0.998933 MCC: 0.997101
-Epoch-68 validation loss: 0.0206812 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.102221 Acc: 0.968224 MiF: 0.975255 MCC: 0.931832
-Epoch-69 train loss: 2.07144e-06 Acc: 0.998921 MiF: 0.999146 MCC: 0.997682
-Epoch-69 validation loss: 0.0179498 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.0883098 Acc: 0.962617 MiF: 0.97076 MCC: 0.91945
-Epoch-70 train loss: 2.16298e-06 Acc: 0.998652 MiF: 0.998933 MCC: 0.997101
-Epoch-70 validation loss: 0.018286 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.0896746 Acc: 0.964486 MiF: 0.972263 MCC: 0.923551
-Epoch-71 train loss: 2.12776e-06 Acc: 0.998921 MiF: 0.999146 MCC: 0.997682
-Epoch-71 validation loss: 0.0193368 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.0946473 Acc: 0.966355 MiF: 0.973761 MCC: 0.927679
-Epoch-72 train loss: 2.09053e-06 Acc: 0.998921 MiF: 0.999146 MCC: 0.997682
-Epoch-72 validation loss: 0.0209623 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.102649 Acc: 0.966355 MiF: 0.973761 MCC: 0.927679
-Epoch-73 train loss: 2.34953e-06 Acc: 0.998112 MiF: 0.998507 MCC: 0.995942
-Epoch-73 validation loss: 0.0175343 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.0833348 Acc: 0.964486 MiF: 0.972263 MCC: 0.923551
-Epoch-74 train loss: 2.13798e-06 Acc: 0.998652 MiF: 0.998933 MCC: 0.997101
-Epoch-74 validation loss: 0.0218803 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.101824 Acc: 0.968224 MiF: 0.975255 MCC: 0.931832
-Epoch-75 train loss: 2.08028e-06 Acc: 0.998382 MiF: 0.99872 MCC: 0.996521
-Epoch-75 validation loss: 0.0185797 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.0851562 Acc: 0.962617 MiF: 0.97076 MCC: 0.91945
-Epoch-76 train loss: 1.91753e-06 Acc: 0.998652 MiF: 0.998933 MCC: 0.997101
-Epoch-76 validation loss: 0.0230528 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.102857 Acc: 0.966355 MiF: 0.973761 MCC: 0.927679
-Epoch-77 train loss: 2.29797e-06 Acc: 0.998382 MiF: 0.99872 MCC: 0.996522
-Epoch-77 validation loss: 0.0247171 Acc: 0.992439 MiF: 0.994048 MCC: 0.983759
-Epoch-1000 test loss: 0.110928 Acc: 0.968224 MiF: 0.975255 MCC: 0.931832
-Epoch-78 train loss: 1.81877e-06 Acc: 0.998921 MiF: 0.999146 MCC: 0.997682
-Epoch-78 validation loss: 0.0205753 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.0931584 Acc: 0.964486 MiF: 0.972263 MCC: 0.923551
-Epoch-79 train loss: 2.18765e-06 Acc: 0.998652 MiF: 0.998933 MCC: 0.997103
-Epoch-79 validation loss: 0.019874 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.0916402 Acc: 0.964486 MiF: 0.972263 MCC: 0.923551
-Epoch-80 train loss: 2.39794e-06 Acc: 0.998112 MiF: 0.998507 MCC: 0.99594
-Epoch-80 validation loss: 0.0166594 Acc: 0.993384 MiF: 0.99478 MCC: 0.985766
-Epoch-1000 test loss: 0.0772017 Acc: 0.968224 MiF: 0.974889 MCC: 0.93164
-Epoch-81 train loss: 2.18597e-06 Acc: 0.998382 MiF: 0.99872 MCC: 0.996521
-Epoch-81 validation loss: 0.0227644 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.10849 Acc: 0.966355 MiF: 0.973761 MCC: 0.927679
-Epoch-82 train loss: 1.69149e-06 Acc: 0.999191 MiF: 0.99936 MCC: 0.998261
-Epoch-82 validation loss: 0.023943 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.114266 Acc: 0.966355 MiF: 0.973761 MCC: 0.927679
-Epoch-83 train loss: 2.09923e-06 Acc: 0.998382 MiF: 0.99872 MCC: 0.996521
-Epoch-83 validation loss: 0.0168274 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.0813022 Acc: 0.966355 MiF: 0.973529 MCC: 0.927501
-Epoch-84 train loss: 1.81837e-06 Acc: 0.998382 MiF: 0.998719 MCC: 0.996526
-Epoch-84 validation loss: 0.0230137 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.110244 Acc: 0.966355 MiF: 0.973761 MCC: 0.927679
-Epoch-85 train loss: 1.98465e-06 Acc: 0.998652 MiF: 0.998933 MCC: 0.997101
-Epoch-85 validation loss: 0.0217659 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.10296 Acc: 0.964486 MiF: 0.972263 MCC: 0.923551
-Epoch-86 train loss: 2.01198e-06 Acc: 0.998112 MiF: 0.998507 MCC: 0.995942
-Epoch-86 validation loss: 0.0233103 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.108691 Acc: 0.964486 MiF: 0.972263 MCC: 0.923551
-Epoch-87 train loss: 1.66858e-06 Acc: 0.998921 MiF: 0.999146 MCC: 0.997682
-Epoch-87 validation loss: 0.0199905 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.0946855 Acc: 0.964486 MiF: 0.972263 MCC: 0.923551
-Epoch-88 train loss: 1.60514e-06 Acc: 0.998921 MiF: 0.999146 MCC: 0.997682
-Epoch-88 validation loss: 0.018889 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.0905034 Acc: 0.964486 MiF: 0.972263 MCC: 0.923551
-Epoch-89 train loss: 1.69864e-06 Acc: 0.998921 MiF: 0.999146 MCC: 0.997682
-Epoch-89 validation loss: 0.021724 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.100034 Acc: 0.964486 MiF: 0.972263 MCC: 0.923551
-Epoch-90 train loss: 1.90583e-06 Acc: 0.998652 MiF: 0.998933 MCC: 0.997101
-Epoch-90 validation loss: 0.0161534 Acc: 0.994329 MiF: 0.995522 MCC: 0.987799
-Epoch-1000 test loss: 0.0741078 Acc: 0.975701 MiF: 0.980741 MCC: 0.947837
-Epoch-91 train loss: 1.55173e-06 Acc: 0.998921 MiF: 0.999146 MCC: 0.997682
-Epoch-91 validation loss: 0.0214557 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.0951714 Acc: 0.964486 MiF: 0.972263 MCC: 0.923551
-Epoch-92 train loss: 1.75646e-06 Acc: 0.998652 MiF: 0.998933 MCC: 0.997103
-Epoch-92 validation loss: 0.0214389 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.0957978 Acc: 0.964486 MiF: 0.972263 MCC: 0.923551
-Epoch-93 train loss: 1.58607e-06 Acc: 0.998921 MiF: 0.999146 MCC: 0.997682
-Epoch-93 validation loss: 0.0175875 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.0823643 Acc: 0.968224 MiF: 0.97511 MCC: 0.931569
-Epoch-94 train loss: 2.04358e-06 Acc: 0.998382 MiF: 0.99872 MCC: 0.996522
-Epoch-94 validation loss: 0.0226603 Acc: 0.992439 MiF: 0.994048 MCC: 0.983759
-Epoch-1000 test loss: 0.104441 Acc: 0.964486 MiF: 0.972263 MCC: 0.923551
-Epoch-95 train loss: 1.50755e-06 Acc: 0.998382 MiF: 0.99872 MCC: 0.996522
-Epoch-95 validation loss: 0.0215685 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.0989286 Acc: 0.964486 MiF: 0.972263 MCC: 0.923551
-Epoch-96 train loss: 1.75011e-06 Acc: 0.998382 MiF: 0.99872 MCC: 0.996521
-Epoch-96 validation loss: 0.0167691 Acc: 0.995274 MiF: 0.996266 MCC: 0.989833
-Epoch-1000 test loss: 0.0764296 Acc: 0.975701 MiF: 0.980798 MCC: 0.947727
-Epoch-97 train loss: 1.5742e-06 Acc: 0.998112 MiF: 0.998507 MCC: 0.995942
-Epoch-97 validation loss: 0.0171282 Acc: 0.994329 MiF: 0.995522 MCC: 0.987799
-Epoch-1000 test loss: 0.0797342 Acc: 0.973832 MiF: 0.97929 MCC: 0.943757
-Epoch-98 train loss: 1.54767e-06 Acc: 0.998382 MiF: 0.998719 MCC: 0.996526
-Epoch-98 validation loss: 0.0459885 Acc: 0.990548 MiF: 0.992571 MCC: 0.979715
-Epoch-1000 test loss: 0.18889 Acc: 0.958879 MiF: 0.968208 MCC: 0.912047
-Epoch-99 train loss: 1.48881e-06 Acc: 0.998382 MiF: 0.99872 MCC: 0.996522
-Epoch-99 validation loss: 0.0210605 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.0871293 Acc: 0.973832 MiF: 0.979351 MCC: 0.943668
-Epoch-100 train loss: 9.46403e-07 Acc: 0.998921 MiF: 0.999146 MCC: 0.997682
-Epoch-100 validation loss: 0.0288149 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.114141 Acc: 0.962617 MiF: 0.97093 MCC: 0.919716
-Epoch-101 train loss: 1.47536e-06 Acc: 0.998652 MiF: 0.998933 MCC: 0.997103
-Epoch-101 validation loss: 0.0211944 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.0880138 Acc: 0.971963 MiF: 0.977909 MCC: 0.939616
-Epoch-102 train loss: 1.89938e-06 Acc: 0.997843 MiF: 0.998293 MCC: 0.995363
-Epoch-102 validation loss: 0.0286183 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.116402 Acc: 0.960748 MiF: 0.969432 MCC: 0.915557
-Epoch-103 train loss: 1.46791e-06 Acc: 0.998652 MiF: 0.998933 MCC: 0.997103
-Epoch-103 validation loss: 0.0221367 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.0934374 Acc: 0.968224 MiF: 0.97511 MCC: 0.931569
-Epoch-104 train loss: 1.26579e-06 Acc: 0.998652 MiF: 0.998933 MCC: 0.997101
-Epoch-104 validation loss: 0.0323321 Acc: 0.992439 MiF: 0.994048 MCC: 0.983759
-Epoch-1000 test loss: 0.129733 Acc: 0.960748 MiF: 0.969521 MCC: 0.915743
-Epoch-105 train loss: 1.20532e-06 Acc: 0.998921 MiF: 0.999146 MCC: 0.997682
-Epoch-105 validation loss: 0.021129 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.0947908 Acc: 0.970093 MiF: 0.97654 MCC: 0.935587
-Epoch-106 train loss: 1.08005e-06 Acc: 0.998921 MiF: 0.999146 MCC: 0.997685
-Epoch-106 validation loss: 0.036678 Acc: 0.991493 MiF: 0.993309 MCC: 0.981736
-Epoch-1000 test loss: 0.153762 Acc: 0.964486 MiF: 0.972583 MCC: 0.92451
-Epoch-107 train loss: 8.17286e-07 Acc: 0.998921 MiF: 0.999146 MCC: 0.997682
-Epoch-107 validation loss: 0.028116 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.115672 Acc: 0.966355 MiF: 0.973761 MCC: 0.927679
-Epoch-108 train loss: 1.07498e-06 Acc: 0.998921 MiF: 0.999146 MCC: 0.997682
-Epoch-108 validation loss: 0.0231536 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.0973635 Acc: 0.966355 MiF: 0.973684 MCC: 0.927557
-Epoch-109 train loss: 7.89703e-07 Acc: 0.999461 MiF: 0.999573 MCC: 0.998841
-Epoch-109 validation loss: 0.0273117 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.112408 Acc: 0.966355 MiF: 0.973761 MCC: 0.927679
-Epoch-110 train loss: 8.82541e-07 Acc: 0.999191 MiF: 0.99936 MCC: 0.998261
-Epoch-110 validation loss: 0.0287673 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.112584 Acc: 0.964486 MiF: 0.972344 MCC: 0.923694
-Epoch-111 train loss: 1.29886e-06 Acc: 0.999191 MiF: 0.99936 MCC: 0.998261
-Epoch-111 validation loss: 0.0256105 Acc: 0.992439 MiF: 0.994048 MCC: 0.983759
-Epoch-1000 test loss: 0.0927956 Acc: 0.968224 MiF: 0.975182 MCC: 0.931669
-Epoch-112 train loss: 8.66012e-07 Acc: 0.999191 MiF: 0.99936 MCC: 0.998263
-Epoch-112 validation loss: 0.0244415 Acc: 0.992439 MiF: 0.994048 MCC: 0.983759
-Epoch-1000 test loss: 0.0859132 Acc: 0.973832 MiF: 0.979532 MCC: 0.943772
-Epoch-113 train loss: 6.58526e-07 Acc: 0.99973 MiF: 0.999787 MCC: 0.99942
-Epoch-113 validation loss: 0.0309888 Acc: 0.992439 MiF: 0.994048 MCC: 0.983759
-Epoch-1000 test loss: 0.114152 Acc: 0.966355 MiF: 0.973761 MCC: 0.927679
-Epoch-114 train loss: 1.19678e-06 Acc: 0.998112 MiF: 0.998506 MCC: 0.995944
-Epoch-114 validation loss: 0.0358251 Acc: 0.992439 MiF: 0.994048 MCC: 0.983759
-Epoch-1000 test loss: 0.135297 Acc: 0.966355 MiF: 0.973913 MCC: 0.928113
-Epoch-115 train loss: 1.09674e-06 Acc: 0.998382 MiF: 0.998721 MCC: 0.99652
-Epoch-115 validation loss: 0.0192333 Acc: 0.994329 MiF: 0.995522 MCC: 0.987799
-Epoch-1000 test loss: 0.0856155 Acc: 0.973832 MiF: 0.979412 MCC: 0.943641
-Epoch-116 train loss: 1.58544e-06 Acc: 0.998382 MiF: 0.99872 MCC: 0.996522
-Epoch-116 validation loss: 0.0494904 Acc: 0.991493 MiF: 0.993309 MCC: 0.981736
-Epoch-1000 test loss: 0.194723 Acc: 0.962617 MiF: 0.971182 MCC: 0.920597
-Epoch-117 train loss: 7.29704e-07 Acc: 0.999191 MiF: 0.99936 MCC: 0.998263
-Epoch-117 validation loss: 0.0237785 Acc: 0.992439 MiF: 0.994048 MCC: 0.983759
-Epoch-1000 test loss: 0.0982535 Acc: 0.971963 MiF: 0.978102 MCC: 0.939786
-Epoch-118 train loss: 6.68225e-07 Acc: 0.999191 MiF: 0.99936 MCC: 0.998261
-Epoch-118 validation loss: 0.0350414 Acc: 0.992439 MiF: 0.994048 MCC: 0.983759
-Epoch-1000 test loss: 0.135391 Acc: 0.968224 MiF: 0.975255 MCC: 0.931832
-Epoch-119 train loss: 7.26204e-07 Acc: 0.999461 MiF: 0.999573 MCC: 0.99884
-Epoch-119 validation loss: 0.031287 Acc: 0.992439 MiF: 0.994048 MCC: 0.983759
-Epoch-1000 test loss: 0.123869 Acc: 0.968224 MiF: 0.975255 MCC: 0.931832
-Epoch-120 train loss: 4.78797e-07 Acc: 0.999461 MiF: 0.999573 MCC: 0.99884
-Epoch-120 validation loss: 0.0260771 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.1039 Acc: 0.971963 MiF: 0.978102 MCC: 0.939786
-Epoch-121 train loss: 1.13051e-06 Acc: 0.998921 MiF: 0.999146 MCC: 0.997682
-Epoch-121 validation loss: 0.0220698 Acc: 0.993384 MiF: 0.99478 MCC: 0.985766
-Epoch-1000 test loss: 0.0860011 Acc: 0.971963 MiF: 0.977974 MCC: 0.93961
-Epoch-122 train loss: 7.29254e-07 Acc: 0.999461 MiF: 0.999573 MCC: 0.99884
-Epoch-122 validation loss: 0.0278073 Acc: 0.992439 MiF: 0.994048 MCC: 0.983759
-Epoch-1000 test loss: 0.093338 Acc: 0.970093 MiF: 0.976608 MCC: 0.935665
-Epoch-123 train loss: 5.73015e-07 Acc: 0.999191 MiF: 0.99936 MCC: 0.998261
-Epoch-123 validation loss: 0.0290928 Acc: 0.992439 MiF: 0.994048 MCC: 0.983759
-Epoch-1000 test loss: 0.100281 Acc: 0.971963 MiF: 0.978102 MCC: 0.939786
-Epoch-124 train loss: 6.65169e-07 Acc: 0.999191 MiF: 0.99936 MCC: 0.99826
-Epoch-124 validation loss: 0.0207147 Acc: 0.994329 MiF: 0.995522 MCC: 0.987799
-Epoch-1000 test loss: 0.0827949 Acc: 0.971963 MiF: 0.977778 MCC: 0.939811
-Epoch-125 train loss: 7.42039e-07 Acc: 0.999461 MiF: 0.999573 MCC: 0.99884
-Epoch-125 validation loss: 0.0494449 Acc: 0.992439 MiF: 0.994048 MCC: 0.983759
-Epoch-1000 test loss: 0.187377 Acc: 0.964486 MiF: 0.972583 MCC: 0.92451
-Epoch-126 train loss: 5.38129e-07 Acc: 0.999461 MiF: 0.999573 MCC: 0.998841
-Epoch-126 validation loss: 0.0405938 Acc: 0.992439 MiF: 0.994048 MCC: 0.983759
-Epoch-1000 test loss: 0.143102 Acc: 0.966355 MiF: 0.973837 MCC: 0.927864
-Epoch-127 train loss: 6.42083e-07 Acc: 0.999461 MiF: 0.999573 MCC: 0.99884
-Epoch-127 validation loss: 0.0345675 Acc: 0.992439 MiF: 0.994048 MCC: 0.983759
-Epoch-1000 test loss: 0.125284 Acc: 0.971963 MiF: 0.978102 MCC: 0.939786
-Epoch-128 train loss: 7.88059e-07 Acc: 0.999191 MiF: 0.99936 MCC: 0.998261
-Epoch-128 validation loss: 0.0478639 Acc: 0.991493 MiF: 0.993309 MCC: 0.981736
-Epoch-1000 test loss: 0.164294 Acc: 0.962617 MiF: 0.971098 MCC: 0.920237
-Epoch-129 train loss: 7.1575e-07 Acc: 0.999461 MiF: 0.999573 MCC: 0.99884
-Epoch-129 validation loss: 0.0373879 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.121477 Acc: 0.968224 MiF: 0.97511 MCC: 0.931569
-Epoch-130 train loss: 5.04055e-07 Acc: 0.999461 MiF: 0.999573 MCC: 0.998841
-Epoch-130 validation loss: 0.0386638 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.125065 Acc: 0.966355 MiF: 0.973684 MCC: 0.927557
-Epoch-131 train loss: 7.11041e-07 Acc: 0.999191 MiF: 0.99936 MCC: 0.99826
-Epoch-131 validation loss: 0.0403886 Acc: 0.992439 MiF: 0.994048 MCC: 0.983759
-Epoch-1000 test loss: 0.130642 Acc: 0.968224 MiF: 0.975182 MCC: 0.931669
-Epoch-132 train loss: 9.73832e-07 Acc: 0.998921 MiF: 0.999146 MCC: 0.997682
-Epoch-132 validation loss: 0.0378268 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.115766 Acc: 0.970093 MiF: 0.976676 MCC: 0.935806
-Epoch-133 train loss: 6.49727e-07 Acc: 0.999461 MiF: 0.999574 MCC: 0.998841
-Epoch-133 validation loss: 0.0275332 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.0937685 Acc: 0.971963 MiF: 0.977974 MCC: 0.93961
-Epoch-134 train loss: 4.47971e-07 Acc: 0.999461 MiF: 0.999573 MCC: 0.998841
-Epoch-134 validation loss: 0.0483186 Acc: 0.992439 MiF: 0.994048 MCC: 0.983759
-Epoch-1000 test loss: 0.163581 Acc: 0.962617 MiF: 0.971014 MCC: 0.919944
-Epoch-135 train loss: 4.74886e-07 Acc: 0.999461 MiF: 0.999573 MCC: 0.99884
-Epoch-135 validation loss: 0.0286471 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.098457 Acc: 0.971963 MiF: 0.977974 MCC: 0.93961
-Epoch-136 train loss: 7.42066e-07 Acc: 0.999461 MiF: 0.999573 MCC: 0.99884
-Epoch-136 validation loss: 0.0365311 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.119282 Acc: 0.971963 MiF: 0.978102 MCC: 0.939786
-Epoch-137 train loss: 5.68632e-07 Acc: 0.999461 MiF: 0.999573 MCC: 0.998841
-Epoch-137 validation loss: 0.0360912 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.119747 Acc: 0.971963 MiF: 0.978102 MCC: 0.939786
-Epoch-138 train loss: 5.59141e-07 Acc: 0.99973 MiF: 0.999787 MCC: 0.99942
-Epoch-138 validation loss: 0.0306675 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.101722 Acc: 0.973832 MiF: 0.979532 MCC: 0.943772
-Epoch-139 train loss: 8.63359e-07 Acc: 0.998652 MiF: 0.998934 MCC: 0.9971
-Epoch-139 validation loss: 0.0287292 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.0941581 Acc: 0.975701 MiF: 0.980966 MCC: 0.947765
-Epoch-140 train loss: 8.56178e-07 Acc: 0.999461 MiF: 0.999573 MCC: 0.99884
-Epoch-140 validation loss: 0.0279764 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.0950916 Acc: 0.970093 MiF: 0.976471 MCC: 0.935571
-Epoch-141 train loss: 2.47571e-07 Acc: 1.0 MiF: 1.0 MCC: 1.0
-Epoch-141 validation loss: 0.0332371 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.109878 Acc: 0.973832 MiF: 0.979532 MCC: 0.943772
-Epoch-142 train loss: 1.47181e-07 Acc: 1.0 MiF: 1.0 MCC: 1.0
-Epoch-142 validation loss: 0.0374987 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.124462 Acc: 0.971963 MiF: 0.978102 MCC: 0.939786
-Epoch-143 train loss: 6.9328e-07 Acc: 0.999191 MiF: 0.99936 MCC: 0.99826
-Epoch-143 validation loss: 0.034358 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.113484 Acc: 0.970093 MiF: 0.97654 MCC: 0.935587
-Epoch-144 train loss: 4.67764e-07 Acc: 0.99973 MiF: 0.999787 MCC: 0.99942
-Epoch-144 validation loss: 0.0375704 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.125695 Acc: 0.971963 MiF: 0.978038 MCC: 0.939667
-Epoch-145 train loss: 9.70848e-07 Acc: 0.999461 MiF: 0.999573 MCC: 0.99884
-Epoch-145 validation loss: 0.0348856 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.117622 Acc: 0.971963 MiF: 0.977974 MCC: 0.93961
-Epoch-146 train loss: 5.91974e-07 Acc: 0.999191 MiF: 0.99936 MCC: 0.99826
-Epoch-146 validation loss: 0.0250046 Acc: 0.993384 MiF: 0.994772 MCC: 0.985765
-Acc 0.9719626168224299
-Pre 0.9708454810495627
-Rec 0.985207100591716
-MiF 0.9779735682819383
-AUC 0.9975069834499745
-MCC 0.9396104736058051
-pr-auc 0.9985872433355276
-dataset_name: cresci-2015
-Data(edge_index=[2, 14220], y=[5301], edge_type=[14220], des_embedding=[5301, 768], tweet_embedding=[5301, 768], num_property_embedding=[5301, 5], cat_property_embedding=[5301, 1], train_idx=[3708], val_idx=[1058], test_idx=[535], num_nodes=5301)
-  0% 0/1000 [00:00<?, ?it/s]  0% 0/1000 [00:00<?, ?it/s, val acc 0.7731568998109641 no up cnt 0]  0% 1/1000 [00:00<11:00,  1.51it/s, val acc 0.7731568998109641 no up cnt 0]  0% 1/1000 [00:01<11:00,  1.51it/s, val acc 0.8232514177693762 no up cnt 0]  0% 2/1000 [00:01<08:44,  1.90it/s, val acc 0.8232514177693762 no up cnt 0]  0% 2/1000 [00:01<08:44,  1.90it/s, val acc 0.8260869565217391 no up cnt 0]  0% 3/1000 [00:01<08:02,  2.07it/s, val acc 0.8260869565217391 no up cnt 0]  0% 3/1000 [00:01<08:02,  2.07it/s, val acc 0.8478260869565217 no up cnt 0]  0% 4/1000 [00:01<07:40,  2.16it/s, val acc 0.8478260869565217 no up cnt 0]  0% 4/1000 [00:02<07:40,  2.16it/s, val acc 0.9376181474480151 no up cnt 0]  0% 5/1000 [00:02<07:29,  2.21it/s, val acc 0.9376181474480151 no up cnt 0]  0% 5/1000 [00:02<07:29,  2.21it/s, val acc 0.9546313799621928 no up cnt 0]  1% 6/1000 [00:02<07:23,  2.24it/s, val acc 0.9546313799621928 no up cnt 0]  1% 6/1000 [00:03<07:23,  2.24it/s, val acc 0.9706994328922496 no up cnt 0]  1% 7/1000 [00:03<07:20,  2.26it/s, val acc 0.9706994328922496 no up cnt 0]  1% 7/1000 [00:03<07:20,  2.26it/s, val acc 0.9754253308128544 no up cnt 0]  1% 8/1000 [00:03<07:15,  2.28it/s, val acc 0.9754253308128544 no up cnt 0]  1% 8/1000 [00:04<07:15,  2.28it/s, val acc 0.9858223062381852 no up cnt 0]  1% 9/1000 [00:04<07:13,  2.29it/s, val acc 0.9858223062381852 no up cnt 0]  1% 9/1000 [00:04<07:13,  2.29it/s, val acc 0.9867674858223062 no up cnt 0]  1% 10/1000 [00:04<07:35,  2.17it/s, val acc 0.9867674858223062 no up cnt 0]  1% 10/1000 [00:05<07:35,  2.17it/s, val acc 0.9877126654064272 no up cnt 0]  1% 11/1000 [00:05<07:27,  2.21it/s, val acc 0.9877126654064272 no up cnt 0]  1% 11/1000 [00:05<07:27,  2.21it/s, val acc 0.9896030245746692 no up cnt 0]  1% 12/1000 [00:05<07:21,  2.24it/s, val acc 0.9896030245746692 no up cnt 0]  1% 12/1000 [00:05<07:21,  2.24it/s, val acc 0.9896030245746692 no up cnt 0]  1% 13/1000 [00:05<07:16,  2.26it/s, val acc 0.9896030245746692 no up cnt 0]  1% 13/1000 [00:06<07:16,  2.26it/s, val acc 0.9905482041587902 no up cnt 0]  1% 14/1000 [00:06<07:13,  2.27it/s, val acc 0.9905482041587902 no up cnt 0]  1% 14/1000 [00:06<07:13,  2.27it/s, val acc 0.9896030245746692 no up cnt 1]  2% 15/1000 [00:06<07:11,  2.28it/s, val acc 0.9896030245746692 no up cnt 1]  2% 15/1000 [00:07<07:11,  2.28it/s, val acc 0.9905482041587902 no up cnt 0]  2% 16/1000 [00:07<07:09,  2.29it/s, val acc 0.9905482041587902 no up cnt 0]  2% 16/1000 [00:07<07:09,  2.29it/s, val acc 0.9914933837429112 no up cnt 0]  2% 17/1000 [00:07<07:09,  2.29it/s, val acc 0.9914933837429112 no up cnt 0]  2% 17/1000 [00:08<07:09,  2.29it/s, val acc 0.9914933837429112 no up cnt 0]  2% 18/1000 [00:08<07:07,  2.30it/s, val acc 0.9914933837429112 no up cnt 0]  2% 18/1000 [00:08<07:07,  2.30it/s, val acc 0.994328922495274 no up cnt 0]   2% 19/1000 [00:08<07:08,  2.29it/s, val acc 0.994328922495274 no up cnt 0]  2% 19/1000 [00:08<07:08,  2.29it/s, val acc 0.9924385633270322 no up cnt 1]  2% 20/1000 [00:08<07:07,  2.29it/s, val acc 0.9924385633270322 no up cnt 1]  2% 20/1000 [00:09<07:07,  2.29it/s, val acc 0.994328922495274 no up cnt 0]   2% 21/1000 [00:09<07:31,  2.17it/s, val acc 0.994328922495274 no up cnt 0]  2% 21/1000 [00:09<07:31,  2.17it/s, val acc 0.9933837429111532 no up cnt 1]  2% 22/1000 [00:09<07:21,  2.21it/s, val acc 0.9933837429111532 no up cnt 1]  2% 22/1000 [00:10<07:21,  2.21it/s, val acc 0.994328922495274 no up cnt 2]   2% 23/1000 [00:10<07:14,  2.25it/s, val acc 0.994328922495274 no up cnt 2]  2% 23/1000 [00:10<07:14,  2.25it/s, val acc 0.9933837429111532 no up cnt 3]  2% 24/1000 [00:10<07:09,  2.27it/s, val acc 0.9933837429111532 no up cnt 3]  2% 24/1000 [00:11<07:09,  2.27it/s, val acc 0.994328922495274 no up cnt 4]   2% 25/1000 [00:11<07:06,  2.29it/s, val acc 0.994328922495274 no up cnt 4]  2% 25/1000 [00:11<07:06,  2.29it/s, val acc 0.994328922495274 no up cnt 5]  3% 26/1000 [00:11<07:04,  2.29it/s, val acc 0.994328922495274 no up cnt 5]  3% 26/1000 [00:12<07:04,  2.29it/s, val acc 0.9933837429111532 no up cnt 6]  3% 27/1000 [00:12<07:01,  2.31it/s, val acc 0.9933837429111532 no up cnt 6]  3% 27/1000 [00:12<07:01,  2.31it/s, val acc 0.9933837429111532 no up cnt 7]  3% 28/1000 [00:12<06:59,  2.32it/s, val acc 0.9933837429111532 no up cnt 7]  3% 28/1000 [00:12<06:59,  2.32it/s, val acc 0.9933837429111532 no up cnt 8]  3% 29/1000 [00:12<06:57,  2.32it/s, val acc 0.9933837429111532 no up cnt 8]  3% 29/1000 [00:13<06:57,  2.32it/s, val acc 0.994328922495274 no up cnt 9]   3% 30/1000 [00:13<06:56,  2.33it/s, val acc 0.994328922495274 no up cnt 9]  3% 30/1000 [00:13<06:56,  2.33it/s, val acc 0.994328922495274 no up cnt 10]  3% 31/1000 [00:13<06:56,  2.33it/s, val acc 0.994328922495274 no up cnt 10]  3% 31/1000 [00:14<06:56,  2.33it/s, val acc 0.994328922495274 no up cnt 11]  3% 32/1000 [00:14<06:55,  2.33it/s, val acc 0.994328922495274 no up cnt 11]  3% 32/1000 [00:14<06:55,  2.33it/s, val acc 0.994328922495274 no up cnt 12]  3% 33/1000 [00:14<06:55,  2.33it/s, val acc 0.994328922495274 no up cnt 12]  3% 33/1000 [00:15<06:55,  2.33it/s, val acc 0.994328922495274 no up cnt 13]  3% 34/1000 [00:15<07:09,  2.25it/s, val acc 0.994328922495274 no up cnt 13]  3% 34/1000 [00:15<07:09,  2.25it/s, val acc 0.9933837429111532 no up cnt 14]  4% 35/1000 [00:15<07:06,  2.26it/s, val acc 0.9933837429111532 no up cnt 14]  4% 35/1000 [00:15<07:06,  2.26it/s, val acc 0.994328922495274 no up cnt 15]   4% 36/1000 [00:15<07:02,  2.28it/s, val acc 0.994328922495274 no up cnt 15]  4% 36/1000 [00:16<07:02,  2.28it/s, val acc 0.994328922495274 no up cnt 16]  4% 37/1000 [00:16<06:59,  2.30it/s, val acc 0.994328922495274 no up cnt 16]  4% 37/1000 [00:16<06:59,  2.30it/s, val acc 0.994328922495274 no up cnt 17]  4% 38/1000 [00:16<07:00,  2.29it/s, val acc 0.994328922495274 no up cnt 17]  4% 38/1000 [00:17<07:00,  2.29it/s, val acc 0.994328922495274 no up cnt 18]  4% 39/1000 [00:17<06:59,  2.29it/s, val acc 0.994328922495274 no up cnt 18]  4% 39/1000 [00:17<06:59,  2.29it/s, val acc 0.994328922495274 no up cnt 19]  4% 40/1000 [00:17<06:57,  2.30it/s, val acc 0.994328922495274 no up cnt 19]  4% 40/1000 [00:18<06:57,  2.30it/s, val acc 0.994328922495274 no up cnt 20]  4% 41/1000 [00:18<06:55,  2.31it/s, val acc 0.994328922495274 no up cnt 20]  4% 41/1000 [00:18<06:55,  2.31it/s, val acc 0.994328922495274 no up cnt 21]  4% 42/1000 [00:18<06:53,  2.32it/s, val acc 0.994328922495274 no up cnt 21]  4% 42/1000 [00:18<06:53,  2.32it/s, val acc 0.994328922495274 no up cnt 22]  4% 43/1000 [00:19<06:51,  2.32it/s, val acc 0.994328922495274 no up cnt 22]  4% 43/1000 [00:19<06:51,  2.32it/s, val acc 0.994328922495274 no up cnt 23]  4% 44/1000 [00:19<06:51,  2.33it/s, val acc 0.994328922495274 no up cnt 23]  4% 44/1000 [00:19<06:51,  2.33it/s, val acc 0.994328922495274 no up cnt 24]  4% 45/1000 [00:19<06:50,  2.33it/s, val acc 0.994328922495274 no up cnt 24]  4% 45/1000 [00:20<06:50,  2.33it/s, val acc 0.994328922495274 no up cnt 25]  5% 46/1000 [00:20<07:12,  2.21it/s, val acc 0.994328922495274 no up cnt 25]  5% 46/1000 [00:20<07:12,  2.21it/s, val acc 0.994328922495274 no up cnt 26]  5% 47/1000 [00:20<07:05,  2.24it/s, val acc 0.994328922495274 no up cnt 26]  5% 47/1000 [00:21<07:05,  2.24it/s, val acc 0.994328922495274 no up cnt 27]  5% 48/1000 [00:21<06:59,  2.27it/s, val acc 0.994328922495274 no up cnt 27]  5% 48/1000 [00:21<06:59,  2.27it/s, val acc 0.994328922495274 no up cnt 28]  5% 49/1000 [00:21<06:56,  2.28it/s, val acc 0.994328922495274 no up cnt 28]  5% 49/1000 [00:22<06:56,  2.28it/s, val acc 0.994328922495274 no up cnt 29]  5% 50/1000 [00:22<06:53,  2.30it/s, val acc 0.994328922495274 no up cnt 29]  5% 50/1000 [00:22<06:53,  2.30it/s, val acc 0.994328922495274 no up cnt 30]  5% 51/1000 [00:22<06:51,  2.30it/s, val acc 0.994328922495274 no up cnt 30]  5% 51/1000 [00:22<06:51,  2.30it/s, val acc 0.994328922495274 no up cnt 31]  5% 52/1000 [00:22<06:50,  2.31it/s, val acc 0.994328922495274 no up cnt 31]  5% 52/1000 [00:23<06:50,  2.31it/s, val acc 0.994328922495274 no up cnt 32]  5% 53/1000 [00:23<06:49,  2.31it/s, val acc 0.994328922495274 no up cnt 32]  5% 53/1000 [00:23<06:49,  2.31it/s, val acc 0.994328922495274 no up cnt 33]  5% 54/1000 [00:23<06:47,  2.32it/s, val acc 0.994328922495274 no up cnt 33]  5% 54/1000 [00:24<06:47,  2.32it/s, val acc 0.994328922495274 no up cnt 34]  6% 55/1000 [00:24<06:48,  2.32it/s, val acc 0.994328922495274 no up cnt 34]  6% 55/1000 [00:24<06:48,  2.32it/s, val acc 0.994328922495274 no up cnt 35]  6% 56/1000 [00:24<06:47,  2.32it/s, val acc 0.994328922495274 no up cnt 35]  6% 56/1000 [00:25<06:47,  2.32it/s, val acc 0.994328922495274 no up cnt 36]  6% 57/1000 [00:25<06:46,  2.32it/s, val acc 0.994328922495274 no up cnt 36]  6% 57/1000 [00:25<06:46,  2.32it/s, val acc 0.994328922495274 no up cnt 37]  6% 58/1000 [00:25<06:48,  2.31it/s, val acc 0.994328922495274 no up cnt 37]  6% 58/1000 [00:26<06:48,  2.31it/s, val acc 0.994328922495274 no up cnt 38]  6% 59/1000 [00:26<07:09,  2.19it/s, val acc 0.994328922495274 no up cnt 38]  6% 59/1000 [00:26<07:09,  2.19it/s, val acc 0.9933837429111532 no up cnt 39]  6% 60/1000 [00:26<07:01,  2.23it/s, val acc 0.9933837429111532 no up cnt 39]  6% 60/1000 [00:26<07:01,  2.23it/s, val acc 0.994328922495274 no up cnt 40]   6% 61/1000 [00:26<06:55,  2.26it/s, val acc 0.994328922495274 no up cnt 40]  6% 61/1000 [00:27<06:55,  2.26it/s, val acc 0.994328922495274 no up cnt 41]  6% 62/1000 [00:27<06:51,  2.28it/s, val acc 0.994328922495274 no up cnt 41]  6% 62/1000 [00:27<06:51,  2.28it/s, val acc 0.9933837429111532 no up cnt 42]  6% 63/1000 [00:27<06:49,  2.29it/s, val acc 0.9933837429111532 no up cnt 42]  6% 63/1000 [00:28<06:49,  2.29it/s, val acc 0.995274102079395 no up cnt 0]    6% 64/1000 [00:28<06:46,  2.30it/s, val acc 0.995274102079395 no up cnt 0]  6% 64/1000 [00:28<06:46,  2.30it/s, val acc 0.995274102079395 no up cnt 1]  6% 65/1000 [00:28<06:45,  2.31it/s, val acc 0.995274102079395 no up cnt 1]  6% 65/1000 [00:29<06:45,  2.31it/s, val acc 0.995274102079395 no up cnt 2]  7% 66/1000 [00:29<06:44,  2.31it/s, val acc 0.995274102079395 no up cnt 2]  7% 66/1000 [00:29<06:44,  2.31it/s, val acc 0.995274102079395 no up cnt 3]  7% 67/1000 [00:29<06:42,  2.32it/s, val acc 0.995274102079395 no up cnt 3]  7% 67/1000 [00:29<06:42,  2.32it/s, val acc 0.9933837429111532 no up cnt 4]  7% 68/1000 [00:29<06:42,  2.32it/s, val acc 0.9933837429111532 no up cnt 4]  7% 68/1000 [00:30<06:42,  2.32it/s, val acc 0.9933837429111532 no up cnt 5]  7% 69/1000 [00:30<06:41,  2.32it/s, val acc 0.9933837429111532 no up cnt 5]  7% 69/1000 [00:30<06:41,  2.32it/s, val acc 0.994328922495274 no up cnt 6]   7% 70/1000 [00:30<06:41,  2.32it/s, val acc 0.994328922495274 no up cnt 6]  7% 70/1000 [00:31<06:41,  2.32it/s, val acc 0.9933837429111532 no up cnt 7]  7% 71/1000 [00:31<06:55,  2.24it/s, val acc 0.9933837429111532 no up cnt 7]  7% 71/1000 [00:31<06:55,  2.24it/s, val acc 0.9933837429111532 no up cnt 8]  7% 72/1000 [00:31<06:50,  2.26it/s, val acc 0.9933837429111532 no up cnt 8]  7% 72/1000 [00:32<06:50,  2.26it/s, val acc 0.9933837429111532 no up cnt 9]  7% 73/1000 [00:32<06:46,  2.28it/s, val acc 0.9933837429111532 no up cnt 9]  7% 73/1000 [00:32<06:46,  2.28it/s, val acc 0.9933837429111532 no up cnt 10]  7% 74/1000 [00:32<06:43,  2.29it/s, val acc 0.9933837429111532 no up cnt 10]  7% 74/1000 [00:32<06:43,  2.29it/s, val acc 0.9933837429111532 no up cnt 11]  8% 75/1000 [00:33<06:41,  2.31it/s, val acc 0.9933837429111532 no up cnt 11]  8% 75/1000 [00:33<06:41,  2.31it/s, val acc 0.996219281663516 no up cnt 0]    8% 76/1000 [00:33<06:40,  2.31it/s, val acc 0.996219281663516 no up cnt 0]  8% 76/1000 [00:33<06:40,  2.31it/s, val acc 0.9933837429111532 no up cnt 1]  8% 77/1000 [00:33<06:39,  2.31it/s, val acc 0.9933837429111532 no up cnt 1]  8% 77/1000 [00:34<06:39,  2.31it/s, val acc 0.995274102079395 no up cnt 2]   8% 78/1000 [00:34<06:38,  2.32it/s, val acc 0.995274102079395 no up cnt 2]  8% 78/1000 [00:34<06:38,  2.32it/s, val acc 0.9933837429111532 no up cnt 3]  8% 79/1000 [00:34<06:39,  2.31it/s, val acc 0.9933837429111532 no up cnt 3]  8% 79/1000 [00:35<06:39,  2.31it/s, val acc 0.994328922495274 no up cnt 4]   8% 80/1000 [00:35<06:38,  2.31it/s, val acc 0.994328922495274 no up cnt 4]  8% 80/1000 [00:35<06:38,  2.31it/s, val acc 0.9933837429111532 no up cnt 5]  8% 81/1000 [00:35<06:37,  2.31it/s, val acc 0.9933837429111532 no up cnt 5]  8% 81/1000 [00:36<06:37,  2.31it/s, val acc 0.9933837429111532 no up cnt 6]  8% 82/1000 [00:36<06:39,  2.30it/s, val acc 0.9933837429111532 no up cnt 6]  8% 82/1000 [00:36<06:39,  2.30it/s, val acc 0.994328922495274 no up cnt 7]   8% 83/1000 [00:36<06:37,  2.31it/s, val acc 0.994328922495274 no up cnt 7]  8% 83/1000 [00:36<06:37,  2.31it/s, val acc 0.9933837429111532 no up cnt 8]  8% 84/1000 [00:36<06:57,  2.19it/s, val acc 0.9933837429111532 no up cnt 8]  8% 84/1000 [00:37<06:57,  2.19it/s, val acc 0.994328922495274 no up cnt 9]   8% 85/1000 [00:37<06:51,  2.22it/s, val acc 0.994328922495274 no up cnt 9]  8% 85/1000 [00:37<06:51,  2.22it/s, val acc 0.9933837429111532 no up cnt 10]  9% 86/1000 [00:37<06:45,  2.25it/s, val acc 0.9933837429111532 no up cnt 10]  9% 86/1000 [00:38<06:45,  2.25it/s, val acc 0.9933837429111532 no up cnt 11]  9% 87/1000 [00:38<06:41,  2.27it/s, val acc 0.9933837429111532 no up cnt 11]  9% 87/1000 [00:38<06:41,  2.27it/s, val acc 0.9933837429111532 no up cnt 12]  9% 88/1000 [00:38<06:38,  2.29it/s, val acc 0.9933837429111532 no up cnt 12]  9% 88/1000 [00:39<06:38,  2.29it/s, val acc 0.994328922495274 no up cnt 13]   9% 89/1000 [00:39<06:35,  2.30it/s, val acc 0.994328922495274 no up cnt 13]  9% 89/1000 [00:39<06:35,  2.30it/s, val acc 0.994328922495274 no up cnt 14]  9% 90/1000 [00:39<06:34,  2.31it/s, val acc 0.994328922495274 no up cnt 14]  9% 90/1000 [00:39<06:34,  2.31it/s, val acc 0.995274102079395 no up cnt 15]  9% 91/1000 [00:39<06:32,  2.31it/s, val acc 0.995274102079395 no up cnt 15]  9% 91/1000 [00:40<06:32,  2.31it/s, val acc 0.9924385633270322 no up cnt 16]  9% 92/1000 [00:40<06:31,  2.32it/s, val acc 0.9924385633270322 no up cnt 16]  9% 92/1000 [00:40<06:31,  2.32it/s, val acc 0.9933837429111532 no up cnt 17]  9% 93/1000 [00:40<06:30,  2.32it/s, val acc 0.9933837429111532 no up cnt 17]  9% 93/1000 [00:41<06:30,  2.32it/s, val acc 0.9933837429111532 no up cnt 18]  9% 94/1000 [00:41<06:29,  2.32it/s, val acc 0.9933837429111532 no up cnt 18]  9% 94/1000 [00:41<06:29,  2.32it/s, val acc 0.9933837429111532 no up cnt 19] 10% 95/1000 [00:41<06:29,  2.32it/s, val acc 0.9933837429111532 no up cnt 19] 10% 95/1000 [00:42<06:29,  2.32it/s, val acc 0.996219281663516 no up cnt 20]  10% 96/1000 [00:42<06:43,  2.24it/s, val acc 0.996219281663516 no up cnt 20] 10% 96/1000 [00:42<06:43,  2.24it/s, val acc 0.9933837429111532 no up cnt 21] 10% 97/1000 [00:42<06:38,  2.27it/s, val acc 0.9933837429111532 no up cnt 21] 10% 97/1000 [00:43<06:38,  2.27it/s, val acc 0.994328922495274 no up cnt 22]  10% 98/1000 [00:43<06:35,  2.28it/s, val acc 0.994328922495274 no up cnt 22] 10% 98/1000 [00:43<06:35,  2.28it/s, val acc 0.9933837429111532 no up cnt 23] 10% 99/1000 [00:43<06:32,  2.30it/s, val acc 0.9933837429111532 no up cnt 23] 10% 99/1000 [00:43<06:32,  2.30it/s, val acc 0.9933837429111532 no up cnt 24] 10% 100/1000 [00:43<06:29,  2.31it/s, val acc 0.9933837429111532 no up cnt 24] 10% 100/1000 [00:44<06:29,  2.31it/s, val acc 0.9933837429111532 no up cnt 25] 10% 101/1000 [00:44<06:28,  2.31it/s, val acc 0.9933837429111532 no up cnt 25] 10% 101/1000 [00:44<06:28,  2.31it/s, val acc 0.9933837429111532 no up cnt 26] 10% 102/1000 [00:44<06:27,  2.31it/s, val acc 0.9933837429111532 no up cnt 26] 10% 102/1000 [00:45<06:27,  2.31it/s, val acc 0.9933837429111532 no up cnt 27] 10% 103/1000 [00:45<06:27,  2.32it/s, val acc 0.9933837429111532 no up cnt 27] 10% 103/1000 [00:45<06:27,  2.32it/s, val acc 0.9933837429111532 no up cnt 28] 10% 104/1000 [00:45<06:26,  2.32it/s, val acc 0.9933837429111532 no up cnt 28] 10% 104/1000 [00:46<06:26,  2.32it/s, val acc 0.9933837429111532 no up cnt 29] 10% 105/1000 [00:46<06:25,  2.32it/s, val acc 0.9933837429111532 no up cnt 29] 10% 105/1000 [00:46<06:25,  2.32it/s, val acc 0.9933837429111532 no up cnt 30] 11% 106/1000 [00:46<06:24,  2.32it/s, val acc 0.9933837429111532 no up cnt 30] 11% 106/1000 [00:46<06:24,  2.32it/s, val acc 0.9933837429111532 no up cnt 31] 11% 107/1000 [00:46<06:24,  2.32it/s, val acc 0.9933837429111532 no up cnt 31] 11% 107/1000 [00:47<06:24,  2.32it/s, val acc 0.9933837429111532 no up cnt 32] 11% 108/1000 [00:47<06:26,  2.31it/s, val acc 0.9933837429111532 no up cnt 32] 11% 108/1000 [00:47<06:26,  2.31it/s, val acc 0.994328922495274 no up cnt 33]  11% 109/1000 [00:47<06:39,  2.23it/s, val acc 0.994328922495274 no up cnt 33] 11% 109/1000 [00:48<06:39,  2.23it/s, val acc 0.9933837429111532 no up cnt 34] 11% 110/1000 [00:48<06:34,  2.26it/s, val acc 0.9933837429111532 no up cnt 34] 11% 110/1000 [00:48<06:34,  2.26it/s, val acc 0.9933837429111532 no up cnt 35] 11% 111/1000 [00:48<06:32,  2.27it/s, val acc 0.9933837429111532 no up cnt 35] 11% 111/1000 [00:49<06:32,  2.27it/s, val acc 0.994328922495274 no up cnt 36]  11% 112/1000 [00:49<06:30,  2.28it/s, val acc 0.994328922495274 no up cnt 36] 11% 112/1000 [00:49<06:30,  2.28it/s, val acc 0.9933837429111532 no up cnt 37] 11% 113/1000 [00:49<06:27,  2.29it/s, val acc 0.9933837429111532 no up cnt 37] 11% 113/1000 [00:49<06:27,  2.29it/s, val acc 0.994328922495274 no up cnt 38]  11% 114/1000 [00:50<06:25,  2.30it/s, val acc 0.994328922495274 no up cnt 38] 11% 114/1000 [00:50<06:25,  2.30it/s, val acc 0.9933837429111532 no up cnt 39] 12% 115/1000 [00:50<06:23,  2.31it/s, val acc 0.9933837429111532 no up cnt 39] 12% 115/1000 [00:50<06:23,  2.31it/s, val acc 0.9933837429111532 no up cnt 40] 12% 116/1000 [00:50<06:22,  2.31it/s, val acc 0.9933837429111532 no up cnt 40] 12% 116/1000 [00:51<06:22,  2.31it/s, val acc 0.9924385633270322 no up cnt 41] 12% 117/1000 [00:51<06:20,  2.32it/s, val acc 0.9924385633270322 no up cnt 41] 12% 117/1000 [00:51<06:20,  2.32it/s, val acc 0.9924385633270322 no up cnt 42] 12% 118/1000 [00:51<06:19,  2.32it/s, val acc 0.9924385633270322 no up cnt 42] 12% 118/1000 [00:52<06:19,  2.32it/s, val acc 0.9924385633270322 no up cnt 43] 12% 119/1000 [00:52<06:19,  2.32it/s, val acc 0.9924385633270322 no up cnt 43] 12% 119/1000 [00:52<06:19,  2.32it/s, val acc 0.9933837429111532 no up cnt 44] 12% 120/1000 [00:52<06:19,  2.32it/s, val acc 0.9933837429111532 no up cnt 44] 12% 120/1000 [00:53<06:19,  2.32it/s, val acc 0.9924385633270322 no up cnt 45] 12% 121/1000 [00:53<06:39,  2.20it/s, val acc 0.9924385633270322 no up cnt 45] 12% 121/1000 [00:53<06:39,  2.20it/s, val acc 0.9933837429111532 no up cnt 46] 12% 122/1000 [00:53<06:33,  2.23it/s, val acc 0.9933837429111532 no up cnt 46] 12% 122/1000 [00:53<06:33,  2.23it/s, val acc 0.9933837429111532 no up cnt 47] 12% 123/1000 [00:53<06:28,  2.26it/s, val acc 0.9933837429111532 no up cnt 47] 12% 123/1000 [00:54<06:28,  2.26it/s, val acc 0.994328922495274 no up cnt 48]  12% 124/1000 [00:54<06:24,  2.28it/s, val acc 0.994328922495274 no up cnt 48] 12% 124/1000 [00:54<06:24,  2.28it/s, val acc 0.9933837429111532 no up cnt 49] 12% 125/1000 [00:54<06:21,  2.29it/s, val acc 0.9933837429111532 no up cnt 49] 12% 125/1000 [00:55<06:21,  2.29it/s, val acc 0.9933837429111532 no up cnt 50] 12% 125/1000 [00:55<06:26,  2.26it/s, val acc 0.9933837429111532 no up cnt 50]
-Epoch-0 train loss: 0.000161526 Acc: 0.724649 MiF: 0.774065 MCC: 0.424833
-Epoch-0 validation loss: 0.552499 Acc: 0.773157 MiF: 0.835165 MCC: 0.495608
-Epoch-1000 test loss: 0.563186 Acc: 0.788785 MiF: 0.8519 MCC: 0.541731
-Epoch-1 train loss: 0.000129794 Acc: 0.825243 MiF: 0.873289 MCC: 0.620037
-Epoch-1 validation loss: 0.44861 Acc: 0.823251 MiF: 0.876404 MCC: 0.63107
-Epoch-1000 test loss: 0.466206 Acc: 0.811215 MiF: 0.869677 MCC: 0.610275
-Epoch-2 train loss: 0.000102584 Acc: 0.846818 MiF: 0.890853 MCC: 0.679195
-Epoch-2 validation loss: 0.3889 Acc: 0.826087 MiF: 0.878628 MCC: 0.639825
-Epoch-1000 test loss: 0.420133 Acc: 0.807477 MiF: 0.867779 MCC: 0.604742
-Epoch-3 train loss: 7.96538e-05 Acc: 0.857335 MiF: 0.897896 MCC: 0.702613
-Epoch-3 validation loss: 0.281935 Acc: 0.847826 MiF: 0.892595 MCC: 0.687332
-Epoch-1000 test loss: 0.326762 Acc: 0.829907 MiF: 0.881356 MCC: 0.651103
-Epoch-4 train loss: 5.06347e-05 Acc: 0.93123 MiF: 0.94816 MCC: 0.854988
-Epoch-4 validation loss: 0.164046 Acc: 0.937618 MiF: 0.952991 MCC: 0.869352
-Epoch-1000 test loss: 0.248108 Acc: 0.895327 MiF: 0.923497 MCC: 0.783586
-Epoch-5 train loss: 2.92048e-05 Acc: 0.964132 MiF: 0.971982 MCC: 0.922722
-Epoch-5 validation loss: 0.107433 Acc: 0.954631 MiF: 0.965268 MCC: 0.903864
-Epoch-1000 test loss: 0.226928 Acc: 0.928972 MiF: 0.946779 MCC: 0.851785
-Epoch-6 train loss: 1.75938e-05 Acc: 0.977346 MiF: 0.982196 MCC: 0.95121
-Epoch-6 validation loss: 0.0809731 Acc: 0.970699 MiF: 0.977323 MCC: 0.937669
-Epoch-1000 test loss: 0.2249 Acc: 0.938318 MiF: 0.953456 MCC: 0.870884
-Epoch-7 train loss: 1.41796e-05 Acc: 0.984898 MiF: 0.98811 MCC: 0.967496
-Epoch-7 validation loss: 0.0659837 Acc: 0.975425 MiF: 0.980938 MCC: 0.947762
-Epoch-1000 test loss: 0.223907 Acc: 0.940187 MiF: 0.954802 MCC: 0.874715
-Epoch-8 train loss: 1.18849e-05 Acc: 0.987325 MiF: 0.990015 MCC: 0.972725
-Epoch-8 validation loss: 0.0495843 Acc: 0.985822 MiF: 0.988914 MCC: 0.969719
-Epoch-1000 test loss: 0.200246 Acc: 0.945794 MiF: 0.958865 MCC: 0.886231
-Epoch-9 train loss: 1.02314e-05 Acc: 0.988673 MiF: 0.99106 MCC: 0.975624
-Epoch-9 validation loss: 0.0467102 Acc: 0.986767 MiF: 0.989645 MCC: 0.971725
-Epoch-1000 test loss: 0.207081 Acc: 0.943925 MiF: 0.957507 MCC: 0.882388
-Epoch-10 train loss: 8.63619e-06 Acc: 0.990022 MiF: 0.992133 MCC: 0.978532
-Epoch-10 validation loss: 0.0416159 Acc: 0.987713 MiF: 0.990377 MCC: 0.973733
-Epoch-1000 test loss: 0.203947 Acc: 0.947664 MiF: 0.960227 MCC: 0.890078
-Epoch-11 train loss: 9.08512e-06 Acc: 0.988943 MiF: 0.991278 MCC: 0.976205
-Epoch-11 validation loss: 0.0302153 Acc: 0.989603 MiF: 0.991846 MCC: 0.977754
-Epoch-1000 test loss: 0.163279 Acc: 0.958879 MiF: 0.968481 MCC: 0.913257
-Epoch-12 train loss: 7.89389e-06 Acc: 0.992718 MiF: 0.994254 MCC: 0.984337
-Epoch-12 validation loss: 0.0294233 Acc: 0.989603 MiF: 0.991846 MCC: 0.977754
-Epoch-1000 test loss: 0.168999 Acc: 0.95514 MiF: 0.965714 MCC: 0.905512
-Epoch-13 train loss: 7.05867e-06 Acc: 0.993528 MiF: 0.994887 MCC: 0.986076
-Epoch-13 validation loss: 0.0269782 Acc: 0.990548 MiF: 0.992582 MCC: 0.979767
-Epoch-1000 test loss: 0.163715 Acc: 0.953271 MiF: 0.964235 MCC: 0.901109
-Epoch-14 train loss: 7.12449e-06 Acc: 0.992718 MiF: 0.994252 MCC: 0.984335
-Epoch-14 validation loss: 0.0303583 Acc: 0.989603 MiF: 0.991846 MCC: 0.977754
-Epoch-1000 test loss: 0.186227 Acc: 0.95514 MiF: 0.965714 MCC: 0.905512
-Epoch-15 train loss: 5.30128e-06 Acc: 0.995685 MiF: 0.99659 MCC: 0.990719
-Epoch-15 validation loss: 0.0264624 Acc: 0.990548 MiF: 0.992582 MCC: 0.979767
-Epoch-1000 test loss: 0.174099 Acc: 0.953271 MiF: 0.964235 MCC: 0.901109
-Epoch-16 train loss: 6.35355e-06 Acc: 0.993258 MiF: 0.994675 MCC: 0.985496
-Epoch-16 validation loss: 0.0232493 Acc: 0.991493 MiF: 0.993318 MCC: 0.981782
-Epoch-1000 test loss: 0.164344 Acc: 0.953271 MiF: 0.964235 MCC: 0.901109
-Epoch-17 train loss: 5.56245e-06 Acc: 0.994337 MiF: 0.995521 MCC: 0.987821
-Epoch-17 validation loss: 0.0230522 Acc: 0.991493 MiF: 0.993318 MCC: 0.981782
-Epoch-1000 test loss: 0.16697 Acc: 0.95514 MiF: 0.965616 MCC: 0.904997
-Epoch-18 train loss: 5.81558e-06 Acc: 0.992988 MiF: 0.994461 MCC: 0.984915
-Epoch-18 validation loss: 0.0182706 Acc: 0.994329 MiF: 0.995536 MCC: 0.987838
-Epoch-1000 test loss: 0.136314 Acc: 0.958879 MiF: 0.968391 MCC: 0.912786
-Epoch-19 train loss: 5.49509e-06 Acc: 0.994337 MiF: 0.995525 MCC: 0.987817
-Epoch-19 validation loss: 0.0240707 Acc: 0.992439 MiF: 0.994056 MCC: 0.983799
-Epoch-1000 test loss: 0.174376 Acc: 0.951402 MiF: 0.962857 MCC: 0.897227
-Epoch-20 train loss: 4.39004e-06 Acc: 0.995685 MiF: 0.996587 MCC: 0.990722
-Epoch-20 validation loss: 0.0188246 Acc: 0.994329 MiF: 0.995536 MCC: 0.987838
-Epoch-1000 test loss: 0.144059 Acc: 0.958879 MiF: 0.968391 MCC: 0.912786
-Epoch-21 train loss: 4.32147e-06 Acc: 0.994876 MiF: 0.995955 MCC: 0.988981
-Epoch-21 validation loss: 0.0173985 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.133322 Acc: 0.960748 MiF: 0.969784 MCC: 0.916689
-Epoch-22 train loss: 5.03715e-06 Acc: 0.995146 MiF: 0.996162 MCC: 0.98956
-Epoch-22 validation loss: 0.0197932 Acc: 0.994329 MiF: 0.995536 MCC: 0.987838
-Epoch-1000 test loss: 0.154292 Acc: 0.960748 MiF: 0.969784 MCC: 0.916689
-Epoch-23 train loss: 4.1886e-06 Acc: 0.996224 MiF: 0.997015 MCC: 0.99188
-Epoch-23 validation loss: 0.0177441 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.141251 Acc: 0.960748 MiF: 0.969784 MCC: 0.916689
-Epoch-24 train loss: 3.95373e-06 Acc: 0.996224 MiF: 0.997017 MCC: 0.99188
-Epoch-24 validation loss: 0.0148568 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.114335 Acc: 0.968224 MiF: 0.975398 MCC: 0.932352
-Epoch-25 train loss: 4.37035e-06 Acc: 0.995955 MiF: 0.996801 MCC: 0.991301
-Epoch-25 validation loss: 0.0189396 Acc: 0.994329 MiF: 0.995536 MCC: 0.987838
-Epoch-1000 test loss: 0.150365 Acc: 0.960748 MiF: 0.969784 MCC: 0.916689
-Epoch-26 train loss: 3.86382e-06 Acc: 0.995955 MiF: 0.996802 MCC: 0.991299
-Epoch-26 validation loss: 0.0190652 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.152856 Acc: 0.960748 MiF: 0.969784 MCC: 0.916689
-Epoch-27 train loss: 3.10762e-06 Acc: 0.997303 MiF: 0.997869 MCC: 0.9942
-Epoch-27 validation loss: 0.0173802 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.141678 Acc: 0.960748 MiF: 0.969784 MCC: 0.916689
-Epoch-28 train loss: 3.69544e-06 Acc: 0.997033 MiF: 0.997654 MCC: 0.993621
-Epoch-28 validation loss: 0.0192884 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.156185 Acc: 0.960748 MiF: 0.969784 MCC: 0.916689
-Epoch-29 train loss: 3.21537e-06 Acc: 0.997033 MiF: 0.997654 MCC: 0.993621
-Epoch-29 validation loss: 0.0167985 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.132435 Acc: 0.962617 MiF: 0.971182 MCC: 0.920597
-Epoch-30 train loss: 3.27946e-06 Acc: 0.997033 MiF: 0.997655 MCC: 0.99362
-Epoch-30 validation loss: 0.0161715 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.127796 Acc: 0.964486 MiF: 0.972583 MCC: 0.92451
-Epoch-31 train loss: 2.93524e-06 Acc: 0.996224 MiF: 0.997011 MCC: 0.991889
-Epoch-31 validation loss: 0.0178322 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.141114 Acc: 0.962617 MiF: 0.971182 MCC: 0.920597
-Epoch-32 train loss: 3.00148e-06 Acc: 0.998112 MiF: 0.998507 MCC: 0.99594
-Epoch-32 validation loss: 0.0169094 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.13289 Acc: 0.962617 MiF: 0.971182 MCC: 0.920597
-Epoch-33 train loss: 2.93008e-06 Acc: 0.997573 MiF: 0.998081 MCC: 0.99478
-Epoch-33 validation loss: 0.0160546 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.123366 Acc: 0.962617 MiF: 0.971182 MCC: 0.920597
-Epoch-34 train loss: 2.42219e-06 Acc: 0.998112 MiF: 0.998506 MCC: 0.995944
-Epoch-34 validation loss: 0.0196196 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.15159 Acc: 0.960748 MiF: 0.969784 MCC: 0.916689
-Epoch-35 train loss: 2.90045e-06 Acc: 0.997303 MiF: 0.997868 MCC: 0.9942
-Epoch-35 validation loss: 0.0155458 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.115659 Acc: 0.970093 MiF: 0.976812 MCC: 0.936282
-Epoch-36 train loss: 2.65682e-06 Acc: 0.997573 MiF: 0.998081 MCC: 0.99478
-Epoch-36 validation loss: 0.0179717 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.133604 Acc: 0.964486 MiF: 0.972583 MCC: 0.92451
-Epoch-37 train loss: 2.72861e-06 Acc: 0.997573 MiF: 0.99808 MCC: 0.994782
-Epoch-37 validation loss: 0.0186542 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.13712 Acc: 0.962617 MiF: 0.971182 MCC: 0.920597
-Epoch-38 train loss: 2.50268e-06 Acc: 0.997843 MiF: 0.998293 MCC: 0.995363
-Epoch-38 validation loss: 0.0215071 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.158485 Acc: 0.960748 MiF: 0.969784 MCC: 0.916689
-Epoch-39 train loss: 2.83236e-06 Acc: 0.997573 MiF: 0.998081 MCC: 0.99478
-Epoch-39 validation loss: 0.0161949 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.11199 Acc: 0.970093 MiF: 0.976812 MCC: 0.936282
-Epoch-40 train loss: 2.42629e-06 Acc: 0.997843 MiF: 0.998294 MCC: 0.995361
-Epoch-40 validation loss: 0.0178688 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.124609 Acc: 0.970093 MiF: 0.976812 MCC: 0.936282
-Epoch-41 train loss: 2.24804e-06 Acc: 0.998382 MiF: 0.99872 MCC: 0.996522
-Epoch-41 validation loss: 0.0188588 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.13047 Acc: 0.964486 MiF: 0.972504 MCC: 0.924173
-Epoch-42 train loss: 2.56463e-06 Acc: 0.997573 MiF: 0.998081 MCC: 0.99478
-Epoch-42 validation loss: 0.0191448 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.134021 Acc: 0.966355 MiF: 0.973988 MCC: 0.928428
-Epoch-43 train loss: 2.21152e-06 Acc: 0.998652 MiF: 0.998933 MCC: 0.997101
-Epoch-43 validation loss: 0.020223 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.143077 Acc: 0.964486 MiF: 0.972583 MCC: 0.92451
-Epoch-44 train loss: 2.20412e-06 Acc: 0.998652 MiF: 0.998933 MCC: 0.997101
-Epoch-44 validation loss: 0.0173606 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.117477 Acc: 0.970093 MiF: 0.976812 MCC: 0.936282
-Epoch-45 train loss: 2.0848e-06 Acc: 0.998921 MiF: 0.999146 MCC: 0.997682
-Epoch-45 validation loss: 0.0201336 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.139187 Acc: 0.966355 MiF: 0.973988 MCC: 0.928428
-Epoch-46 train loss: 2.6771e-06 Acc: 0.997843 MiF: 0.998294 MCC: 0.99536
-Epoch-46 validation loss: 0.0199403 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.139144 Acc: 0.970093 MiF: 0.976812 MCC: 0.936282
-Epoch-47 train loss: 2.0177e-06 Acc: 0.998382 MiF: 0.99872 MCC: 0.996522
-Epoch-47 validation loss: 0.0181233 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.12495 Acc: 0.970093 MiF: 0.976812 MCC: 0.936282
-Epoch-48 train loss: 1.41038e-06 Acc: 0.998921 MiF: 0.999146 MCC: 0.997682
-Epoch-48 validation loss: 0.0193857 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.134665 Acc: 0.968224 MiF: 0.975327 MCC: 0.932059
-Epoch-49 train loss: 1.96799e-06 Acc: 0.998921 MiF: 0.999146 MCC: 0.997682
-Epoch-49 validation loss: 0.0188333 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.127265 Acc: 0.970093 MiF: 0.976744 MCC: 0.936012
-Epoch-50 train loss: 1.85308e-06 Acc: 0.998652 MiF: 0.998933 MCC: 0.997103
-Epoch-50 validation loss: 0.0198037 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.133276 Acc: 0.970093 MiF: 0.976812 MCC: 0.936282
-Epoch-51 train loss: 1.97171e-06 Acc: 0.998652 MiF: 0.998933 MCC: 0.997101
-Epoch-51 validation loss: 0.0222648 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.149371 Acc: 0.968224 MiF: 0.975398 MCC: 0.932352
-Epoch-52 train loss: 1.89643e-06 Acc: 0.998382 MiF: 0.99872 MCC: 0.996521
-Epoch-52 validation loss: 0.0209398 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.138168 Acc: 0.970093 MiF: 0.976744 MCC: 0.936012
-Epoch-53 train loss: 1.95799e-06 Acc: 0.998652 MiF: 0.998933 MCC: 0.997103
-Epoch-53 validation loss: 0.0216017 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.142725 Acc: 0.966355 MiF: 0.973913 MCC: 0.928113
-Epoch-54 train loss: 1.61008e-06 Acc: 0.998921 MiF: 0.999146 MCC: 0.997682
-Epoch-54 validation loss: 0.0208949 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.142402 Acc: 0.968224 MiF: 0.975327 MCC: 0.932059
-Epoch-55 train loss: 1.92504e-06 Acc: 0.997843 MiF: 0.998293 MCC: 0.995363
-Epoch-55 validation loss: 0.0200544 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.129873 Acc: 0.970093 MiF: 0.976744 MCC: 0.936012
-Epoch-56 train loss: 1.84673e-06 Acc: 0.998652 MiF: 0.998933 MCC: 0.997101
-Epoch-56 validation loss: 0.0200579 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.130047 Acc: 0.968224 MiF: 0.975255 MCC: 0.931832
-Epoch-57 train loss: 1.99101e-06 Acc: 0.998652 MiF: 0.998933 MCC: 0.997103
-Epoch-57 validation loss: 0.0191731 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.125956 Acc: 0.968224 MiF: 0.975255 MCC: 0.931832
-Epoch-58 train loss: 1.45793e-06 Acc: 0.998921 MiF: 0.999146 MCC: 0.997682
-Epoch-58 validation loss: 0.0184245 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.115457 Acc: 0.968224 MiF: 0.975255 MCC: 0.931832
-Epoch-59 train loss: 1.44232e-06 Acc: 0.998652 MiF: 0.998933 MCC: 0.997101
-Epoch-59 validation loss: 0.0223504 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.143809 Acc: 0.968224 MiF: 0.975327 MCC: 0.932059
-Epoch-60 train loss: 1.51982e-06 Acc: 0.998921 MiF: 0.999146 MCC: 0.997685
-Epoch-60 validation loss: 0.0218896 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.138678 Acc: 0.968224 MiF: 0.975327 MCC: 0.932059
-Epoch-61 train loss: 2.12785e-06 Acc: 0.998652 MiF: 0.998933 MCC: 0.997101
-Epoch-61 validation loss: 0.0200949 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.122567 Acc: 0.970093 MiF: 0.976744 MCC: 0.936012
-Epoch-62 train loss: 1.54693e-06 Acc: 0.998652 MiF: 0.998933 MCC: 0.997101
-Epoch-62 validation loss: 0.0208712 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.130807 Acc: 0.970093 MiF: 0.976812 MCC: 0.936282
-Epoch-63 train loss: 1.23875e-06 Acc: 0.998921 MiF: 0.999146 MCC: 0.997682
-Epoch-63 validation loss: 0.0188125 Acc: 0.995274 MiF: 0.996271 MCC: 0.989838
-Epoch-1000 test loss: 0.118743 Acc: 0.970093 MiF: 0.976744 MCC: 0.936012
-Epoch-64 train loss: 1.3701e-06 Acc: 0.998921 MiF: 0.999146 MCC: 0.997682
-Epoch-64 validation loss: 0.0178636 Acc: 0.995274 MiF: 0.996271 MCC: 0.989838
-Epoch-1000 test loss: 0.11058 Acc: 0.971963 MiF: 0.978166 MCC: 0.93997
-Epoch-65 train loss: 1.62844e-06 Acc: 0.998112 MiF: 0.998507 MCC: 0.995942
-Epoch-65 validation loss: 0.0171984 Acc: 0.995274 MiF: 0.996271 MCC: 0.989838
-Epoch-1000 test loss: 0.104441 Acc: 0.971963 MiF: 0.978102 MCC: 0.939786
-Epoch-66 train loss: 1.58171e-06 Acc: 0.998652 MiF: 0.998933 MCC: 0.997103
-Epoch-66 validation loss: 0.0183227 Acc: 0.995274 MiF: 0.996271 MCC: 0.989838
-Epoch-1000 test loss: 0.113469 Acc: 0.970093 MiF: 0.976744 MCC: 0.936012
-Epoch-67 train loss: 1.5447e-06 Acc: 0.998652 MiF: 0.998933 MCC: 0.997101
-Epoch-67 validation loss: 0.0213124 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.127605 Acc: 0.970093 MiF: 0.976744 MCC: 0.936012
-Epoch-68 train loss: 1.16638e-06 Acc: 0.998921 MiF: 0.999146 MCC: 0.997682
-Epoch-68 validation loss: 0.0218744 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.13195 Acc: 0.968224 MiF: 0.975327 MCC: 0.932059
-Epoch-69 train loss: 1.56581e-06 Acc: 0.998652 MiF: 0.998933 MCC: 0.997101
-Epoch-69 validation loss: 0.0208509 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.124303 Acc: 0.968224 MiF: 0.975255 MCC: 0.931832
-Epoch-70 train loss: 1.35809e-06 Acc: 0.998652 MiF: 0.998933 MCC: 0.997101
-Epoch-70 validation loss: 0.0238553 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.137676 Acc: 0.968224 MiF: 0.975255 MCC: 0.931832
-Epoch-71 train loss: 9.54952e-07 Acc: 0.999191 MiF: 0.99936 MCC: 0.998263
-Epoch-71 validation loss: 0.0265917 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.154493 Acc: 0.968224 MiF: 0.975327 MCC: 0.932059
-Epoch-72 train loss: 1.37194e-06 Acc: 0.998921 MiF: 0.999146 MCC: 0.997682
-Epoch-72 validation loss: 0.0256642 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.146524 Acc: 0.968224 MiF: 0.975327 MCC: 0.932059
-Epoch-73 train loss: 1.19413e-06 Acc: 0.998652 MiF: 0.998933 MCC: 0.997101
-Epoch-73 validation loss: 0.0222273 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.125888 Acc: 0.970093 MiF: 0.976744 MCC: 0.936012
-Epoch-74 train loss: 1.15455e-06 Acc: 0.998652 MiF: 0.998933 MCC: 0.997101
-Epoch-74 validation loss: 0.0229171 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.133834 Acc: 0.970093 MiF: 0.976744 MCC: 0.936012
-Epoch-75 train loss: 1.546e-06 Acc: 0.998652 MiF: 0.998933 MCC: 0.997101
-Epoch-75 validation loss: 0.0168281 Acc: 0.996219 MiF: 0.997015 MCC: 0.991869
-Epoch-1000 test loss: 0.0998422 Acc: 0.97757 MiF: 0.982405 MCC: 0.951764
-Epoch-76 train loss: 9.59127e-07 Acc: 0.998921 MiF: 0.999146 MCC: 0.997682
-Epoch-76 validation loss: 0.0241865 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.145407 Acc: 0.970093 MiF: 0.976812 MCC: 0.936282
-Epoch-77 train loss: 1.03477e-06 Acc: 0.998921 MiF: 0.999146 MCC: 0.997682
-Epoch-77 validation loss: 0.0192533 Acc: 0.995274 MiF: 0.996271 MCC: 0.989838
-Epoch-1000 test loss: 0.114687 Acc: 0.971963 MiF: 0.978166 MCC: 0.93997
-Epoch-78 train loss: 8.30193e-07 Acc: 0.999191 MiF: 0.99936 MCC: 0.998263
-Epoch-78 validation loss: 0.0303448 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.179228 Acc: 0.966355 MiF: 0.973988 MCC: 0.928428
-Epoch-79 train loss: 7.96197e-07 Acc: 0.999191 MiF: 0.99936 MCC: 0.998261
-Epoch-79 validation loss: 0.0207462 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.11878 Acc: 0.970093 MiF: 0.976744 MCC: 0.936012
-Epoch-80 train loss: 7.15573e-07 Acc: 0.999461 MiF: 0.999573 MCC: 0.998841
-Epoch-80 validation loss: 0.0247561 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.147613 Acc: 0.970093 MiF: 0.976812 MCC: 0.936282
-Epoch-81 train loss: 1.00029e-06 Acc: 0.998921 MiF: 0.999147 MCC: 0.99768
-Epoch-81 validation loss: 0.0239868 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.141976 Acc: 0.970093 MiF: 0.976812 MCC: 0.936282
-Epoch-82 train loss: 1.06107e-06 Acc: 0.999191 MiF: 0.99936 MCC: 0.998261
-Epoch-82 validation loss: 0.0239479 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.134034 Acc: 0.970093 MiF: 0.976676 MCC: 0.935806
-Epoch-83 train loss: 7.66718e-07 Acc: 0.99973 MiF: 0.999787 MCC: 0.99942
-Epoch-83 validation loss: 0.027509 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.150406 Acc: 0.970093 MiF: 0.976812 MCC: 0.936282
-Epoch-84 train loss: 6.98917e-07 Acc: 0.999461 MiF: 0.999573 MCC: 0.99884
-Epoch-84 validation loss: 0.0237771 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.129912 Acc: 0.970093 MiF: 0.976676 MCC: 0.935806
-Epoch-85 train loss: 7.67932e-07 Acc: 0.999191 MiF: 0.99936 MCC: 0.998263
-Epoch-85 validation loss: 0.0405512 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.217974 Acc: 0.962617 MiF: 0.971182 MCC: 0.920597
-Epoch-86 train loss: 5.69852e-07 Acc: 0.99973 MiF: 0.999787 MCC: 0.99942
-Epoch-86 validation loss: 0.0330569 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.177201 Acc: 0.966355 MiF: 0.973837 MCC: 0.927864
-Epoch-87 train loss: 1.05206e-06 Acc: 0.999191 MiF: 0.99936 MCC: 0.998261
-Epoch-87 validation loss: 0.0221224 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.12658 Acc: 0.970093 MiF: 0.976676 MCC: 0.935806
-Epoch-88 train loss: 1.03219e-06 Acc: 0.998652 MiF: 0.998933 MCC: 0.997101
-Epoch-88 validation loss: 0.0241442 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.133304 Acc: 0.971963 MiF: 0.978166 MCC: 0.93997
-Epoch-89 train loss: 6.29871e-07 Acc: 0.999191 MiF: 0.99936 MCC: 0.99826
-Epoch-89 validation loss: 0.0239091 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.134418 Acc: 0.970093 MiF: 0.976744 MCC: 0.936012
-Epoch-90 train loss: 8.10664e-07 Acc: 0.999191 MiF: 0.99936 MCC: 0.99826
-Epoch-90 validation loss: 0.0216926 Acc: 0.995274 MiF: 0.996271 MCC: 0.989838
-Epoch-1000 test loss: 0.121556 Acc: 0.973832 MiF: 0.979472 MCC: 0.943675
-Epoch-91 train loss: 6.88261e-07 Acc: 0.999191 MiF: 0.99936 MCC: 0.998261
-Epoch-91 validation loss: 0.036993 Acc: 0.992439 MiF: 0.994048 MCC: 0.983759
-Epoch-1000 test loss: 0.212518 Acc: 0.962617 MiF: 0.971182 MCC: 0.920597
-Epoch-92 train loss: 1.18768e-06 Acc: 0.998652 MiF: 0.998933 MCC: 0.997101
-Epoch-92 validation loss: 0.0250373 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.134971 Acc: 0.966355 MiF: 0.973837 MCC: 0.927864
-Epoch-93 train loss: 7.93055e-07 Acc: 0.998921 MiF: 0.999146 MCC: 0.997682
-Epoch-93 validation loss: 0.0415074 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.234424 Acc: 0.960748 MiF: 0.969784 MCC: 0.916689
-Epoch-94 train loss: 2.01886e-06 Acc: 0.998112 MiF: 0.998506 MCC: 0.995944
-Epoch-94 validation loss: 0.0350621 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.201628 Acc: 0.960748 MiF: 0.969784 MCC: 0.916689
-Epoch-95 train loss: 7.16169e-07 Acc: 0.999191 MiF: 0.99936 MCC: 0.99826
-Epoch-95 validation loss: 0.0163131 Acc: 0.996219 MiF: 0.99701 MCC: 0.991869
-Epoch-1000 test loss: 0.0974675 Acc: 0.975701 MiF: 0.98091 MCC: 0.94769
-Epoch-96 train loss: 6.86549e-07 Acc: 0.999191 MiF: 0.99936 MCC: 0.998263
-Epoch-96 validation loss: 0.0291816 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.188909 Acc: 0.968224 MiF: 0.975398 MCC: 0.932352
-Epoch-97 train loss: 5.10708e-07 Acc: 0.99973 MiF: 0.999787 MCC: 0.99942
-Epoch-97 validation loss: 0.0205952 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.13316 Acc: 0.971963 MiF: 0.978166 MCC: 0.93997
-Epoch-98 train loss: 6.29419e-07 Acc: 0.999461 MiF: 0.999573 MCC: 0.99884
-Epoch-98 validation loss: 0.0249533 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.163199 Acc: 0.971963 MiF: 0.978166 MCC: 0.93997
-Epoch-99 train loss: 4.5649e-07 Acc: 0.99973 MiF: 0.999787 MCC: 0.99942
-Epoch-99 validation loss: 0.0291313 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.189078 Acc: 0.968224 MiF: 0.975327 MCC: 0.932059
-Epoch-100 train loss: 4.36995e-07 Acc: 0.99973 MiF: 0.999787 MCC: 0.99942
-Epoch-100 validation loss: 0.0250802 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.162537 Acc: 0.971963 MiF: 0.978166 MCC: 0.93997
-Epoch-101 train loss: 4.63195e-07 Acc: 0.99973 MiF: 0.999787 MCC: 0.99942
-Epoch-101 validation loss: 0.0274526 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.173993 Acc: 0.968224 MiF: 0.975327 MCC: 0.932059
-Epoch-102 train loss: 2.50292e-07 Acc: 0.99973 MiF: 0.999787 MCC: 0.99942
-Epoch-102 validation loss: 0.028834 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.181074 Acc: 0.968224 MiF: 0.975327 MCC: 0.932059
-Epoch-103 train loss: 4.62225e-07 Acc: 0.999461 MiF: 0.999573 MCC: 0.998841
-Epoch-103 validation loss: 0.0251851 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.152189 Acc: 0.971963 MiF: 0.978166 MCC: 0.93997
-Epoch-104 train loss: 3.43932e-07 Acc: 0.99973 MiF: 0.999787 MCC: 0.99942
-Epoch-104 validation loss: 0.0258151 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.152184 Acc: 0.971963 MiF: 0.978166 MCC: 0.93997
-Epoch-105 train loss: 5.08752e-07 Acc: 0.999461 MiF: 0.999573 MCC: 0.99884
-Epoch-105 validation loss: 0.0289224 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.168467 Acc: 0.970093 MiF: 0.976744 MCC: 0.936012
-Epoch-106 train loss: 4.08261e-07 Acc: 0.99973 MiF: 0.999787 MCC: 0.99942
-Epoch-106 validation loss: 0.0241092 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.141171 Acc: 0.971963 MiF: 0.978102 MCC: 0.939786
-Epoch-107 train loss: 3.42298e-07 Acc: 0.999461 MiF: 0.999573 MCC: 0.998841
-Epoch-107 validation loss: 0.0372203 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.205352 Acc: 0.966355 MiF: 0.973988 MCC: 0.928428
-Epoch-108 train loss: 4.34792e-07 Acc: 0.999191 MiF: 0.99936 MCC: 0.99826
-Epoch-108 validation loss: 0.0221949 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.12228 Acc: 0.973832 MiF: 0.979532 MCC: 0.943772
-Epoch-109 train loss: 1.81326e-07 Acc: 1.0 MiF: 1.0 MCC: 1.0
-Epoch-109 validation loss: 0.0286158 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.16115 Acc: 0.970093 MiF: 0.976744 MCC: 0.936012
-Epoch-110 train loss: 6.52655e-07 Acc: 0.998921 MiF: 0.999146 MCC: 0.997682
-Epoch-110 validation loss: 0.0263725 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.14461 Acc: 0.973832 MiF: 0.979651 MCC: 0.944159
-Epoch-111 train loss: 2.03361e-07 Acc: 0.99973 MiF: 0.999787 MCC: 0.99942
-Epoch-111 validation loss: 0.0220389 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.133731 Acc: 0.975701 MiF: 0.981022 MCC: 0.947904
-Epoch-112 train loss: 1.25834e-07 Acc: 0.99973 MiF: 0.999787 MCC: 0.99942
-Epoch-112 validation loss: 0.036297 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.213325 Acc: 0.966355 MiF: 0.973913 MCC: 0.928113
-Epoch-113 train loss: 2.08833e-07 Acc: 0.99973 MiF: 0.999787 MCC: 0.99942
-Epoch-113 validation loss: 0.0238043 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.137649 Acc: 0.973832 MiF: 0.979592 MCC: 0.943934
-Epoch-114 train loss: 7.52785e-07 Acc: 0.999191 MiF: 0.99936 MCC: 0.998261
-Epoch-114 validation loss: 0.0247138 Acc: 0.993384 MiF: 0.99478 MCC: 0.985766
-Epoch-1000 test loss: 0.134631 Acc: 0.971963 MiF: 0.978102 MCC: 0.939786
-Epoch-115 train loss: 5.24734e-07 Acc: 0.999461 MiF: 0.999574 MCC: 0.998841
-Epoch-115 validation loss: 0.0238438 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.145192 Acc: 0.971963 MiF: 0.978102 MCC: 0.939786
-Epoch-116 train loss: 4.78278e-07 Acc: 0.999461 MiF: 0.999573 MCC: 0.998841
-Epoch-116 validation loss: 0.0388654 Acc: 0.992439 MiF: 0.994048 MCC: 0.983759
-Epoch-1000 test loss: 0.250595 Acc: 0.964486 MiF: 0.972583 MCC: 0.92451
-Epoch-117 train loss: 3.91733e-07 Acc: 0.999191 MiF: 0.99936 MCC: 0.998261
-Epoch-117 validation loss: 0.0335863 Acc: 0.992439 MiF: 0.994048 MCC: 0.983759
-Epoch-1000 test loss: 0.220287 Acc: 0.966355 MiF: 0.973988 MCC: 0.928428
-Epoch-118 train loss: 9.6413e-08 Acc: 1.0 MiF: 1.0 MCC: 1.0
-Epoch-118 validation loss: 0.0320371 Acc: 0.992439 MiF: 0.994048 MCC: 0.983759
-Epoch-1000 test loss: 0.211669 Acc: 0.971963 MiF: 0.978229 MCC: 0.940218
-Epoch-119 train loss: 2.54415e-07 Acc: 0.999461 MiF: 0.999573 MCC: 0.99884
-Epoch-119 validation loss: 0.0271849 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.178024 Acc: 0.971963 MiF: 0.978166 MCC: 0.93997
-Epoch-120 train loss: 7.37718e-07 Acc: 0.999461 MiF: 0.999573 MCC: 0.99884
-Epoch-120 validation loss: 0.0382497 Acc: 0.992439 MiF: 0.994048 MCC: 0.983759
-Epoch-1000 test loss: 0.212724 Acc: 0.968224 MiF: 0.975327 MCC: 0.932059
-Epoch-121 train loss: 1.68534e-07 Acc: 0.99973 MiF: 0.999787 MCC: 0.99942
-Epoch-121 validation loss: 0.0325446 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.183896 Acc: 0.971963 MiF: 0.978166 MCC: 0.93997
-Epoch-122 train loss: 3.83539e-07 Acc: 0.99973 MiF: 0.999787 MCC: 0.99942
-Epoch-122 validation loss: 0.0335317 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.18915 Acc: 0.968224 MiF: 0.975327 MCC: 0.932059
-Epoch-123 train loss: 9.57236e-08 Acc: 1.0 MiF: 1.0 MCC: 1.0
-Epoch-123 validation loss: 0.0247078 Acc: 0.994329 MiF: 0.995529 MCC: 0.98781
-Epoch-1000 test loss: 0.143046 Acc: 0.973832 MiF: 0.979592 MCC: 0.943934
-Epoch-124 train loss: 8.32875e-08 Acc: 1.0 MiF: 1.0 MCC: 1.0
-Epoch-124 validation loss: 0.0286791 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Epoch-1000 test loss: 0.164388 Acc: 0.971963 MiF: 0.978166 MCC: 0.93997
-Epoch-125 train loss: 1.63144e-07 Acc: 1.0 MiF: 1.0 MCC: 1.0
-Epoch-125 validation loss: 0.034004 Acc: 0.993384 MiF: 0.994788 MCC: 0.985784
-Acc 0.9719626168224299
-Pre 0.9627507163323782
-Rec 0.9940828402366864
-MiF 0.9781659388646287
-AUC 0.9977322560297961
-MCC 0.9399695201597599
-pr-auc 0.9987107063826965

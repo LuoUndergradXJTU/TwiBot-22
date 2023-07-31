@@ -1,19 +1,0 @@
-  0%|          | 0/5301 [00:00<?, ?it/s]/scratch/network/rr4001/projects/voon/TwitterBotBusters/src/BotRGCN/cresci_15/dataset_tool.py:74: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame
-
-See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  user["label"][i] = id_to_label[user["id"][i]]
-/scratch/network/rr4001/projects/voon/TwitterBotBusters/src/BotRGCN/cresci_15/dataset_tool.py:75: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame
-
-See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  user["split"][i] = id_to_split[user["id"][i]]
-  1%|          | 52/5301 [00:00<00:10, 518.71it/s] 16%|█▋        | 872/5301 [00:00<00:00, 5030.73it/s] 32%|███▏      | 1700/5301 [00:00<00:00, 6510.45it/s] 48%|████▊     | 2529/5301 [00:00<00:00, 7210.30it/s] 63%|██████▎   | 3356/5301 [00:00<00:00, 7592.01it/s] 79%|███████▊  | 4164/5301 [00:00<00:00, 7756.40it/s] 94%|█████████▍| 4994/5301 [00:00<00:00, 7930.97it/s]100%|██████████| 5301/5301 [00:00<00:00, 7184.42it/s]
-Traceback (most recent call last):
-  File "preprocess_2.py", line 14, in <module>
-    each_user_tweets=torch.from_numpy(np.load('./processed_data/each_user_tweets.npy'))
-  File "/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/numpy/lib/npyio.py", line 441, in load
-    pickle_kwargs=pickle_kwargs)
-  File "/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/numpy/lib/format.py", line 743, in read_array
-    raise ValueError("Object arrays cannot be loaded when "
-ValueError: Object arrays cannot be loaded when allow_pickle=False

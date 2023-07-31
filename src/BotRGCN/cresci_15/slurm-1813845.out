@@ -1,7 +1,0 @@
-Running feature1 embedding
-Traceback (most recent call last):
-  File "preprocess_combined.py", line 81, in <module>
-    Des_embbeding()
-  File "preprocess_combined.py", line 20, in Des_embbeding
-    for k,each in enumerate(tqdm(user_text)):
-NameError: name 'user_text' is not defined

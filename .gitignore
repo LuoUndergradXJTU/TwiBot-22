@@ -4,6 +4,7 @@ src/BotRGCN/twibot-20/processed_data/*.pt
 tmp/*
 src/*/tmp/*
 src/tmp*
+*.slurm
 *.log
 *.log.*
 __pycache__/*
@@ -35,4 +36,5 @@ glove.*
 lightning_logs
 *.out
 *.slurm
+**.slurm
 *.out

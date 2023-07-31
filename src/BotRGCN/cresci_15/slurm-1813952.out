@@ -1,32 +1,0 @@
-  0%|          | 0/5301 [00:00<?, ?it/s]/scratch/network/rr4001/projects/voon/TwitterBotBusters/src/BotRGCN/cresci_15/dataset_tool.py:74: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame
-
-See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  user["label"][i] = id_to_label[user["id"][i]]
-/scratch/network/rr4001/projects/voon/TwitterBotBusters/src/BotRGCN/cresci_15/dataset_tool.py:75: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame
-
-See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  user["split"][i] = id_to_split[user["id"][i]]
-  1%|          | 52/5301 [00:00<00:10, 501.75it/s] 17%|█▋        | 901/5301 [00:00<00:00, 5127.87it/s] 33%|███▎      | 1754/5301 [00:00<00:00, 6667.38it/s] 49%|████▉     | 2598/5301 [00:00<00:00, 7360.15it/s] 65%|██████▌   | 3449/5301 [00:00<00:00, 7773.02it/s] 81%|████████  | 4303/5301 [00:00<00:00, 8030.68it/s] 97%|█████████▋| 5157/5301 [00:00<00:00, 8195.51it/s]100%|██████████| 5301/5301 [00:00<00:00, 7352.49it/s]
-Traceback (most recent call last):
-  File "/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/torch/serialization.py", line 308, in _check_seekable
-    f.seek(f.tell())
-AttributeError: 'dict' object has no attribute 'seek'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "preprocess_2.py", line 19, in <module>
-    each_user_tweets = torch.load(dictionary)
-  File "/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/torch/serialization.py", line 594, in load
-    with _open_file_like(f, 'rb') as opened_file:
-  File "/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/torch/serialization.py", line 235, in _open_file_like
-    return _open_buffer_reader(name_or_buffer)
-  File "/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/torch/serialization.py", line 220, in __init__
-    _check_seekable(buffer)
-  File "/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/torch/serialization.py", line 311, in _check_seekable
-    raise_err_msg(["seek", "tell"], e)
-  File "/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/torch/serialization.py", line 304, in raise_err_msg
-    raise type(e)(msg)
-AttributeError: 'dict' object has no attribute 'seek'. You can only torch.load from a file that is seekable. Please pre-load the data into a buffer like io.BytesIO and try to load from it instead.

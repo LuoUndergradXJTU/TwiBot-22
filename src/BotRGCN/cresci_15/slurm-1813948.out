@@ -1,15 +1,0 @@
-  0%|          | 0/5301 [00:00<?, ?it/s]/scratch/network/rr4001/projects/voon/TwitterBotBusters/src/BotRGCN/cresci_15/dataset_tool.py:74: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame
-
-See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  user["label"][i] = id_to_label[user["id"][i]]
-/scratch/network/rr4001/projects/voon/TwitterBotBusters/src/BotRGCN/cresci_15/dataset_tool.py:75: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame
-
-See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  user["split"][i] = id_to_split[user["id"][i]]
-  1%|          | 52/5301 [00:00<00:10, 495.21it/s] 17%|█▋        | 879/5301 [00:00<00:00, 4974.22it/s] 33%|███▎      | 1724/5301 [00:00<00:00, 6541.30it/s] 48%|████▊     | 2569/5301 [00:00<00:00, 7287.13it/s] 64%|██████▍   | 3414/5301 [00:00<00:00, 7701.28it/s] 80%|████████  | 4262/5301 [00:00<00:00, 7961.96it/s] 96%|█████████▋| 5110/5301 [00:00<00:00, 8130.51it/s]100%|██████████| 5301/5301 [00:00<00:00, 7279.89it/s]
-Traceback (most recent call last):
-  File "preprocess_2.py", line 17, in <module>
-    dictionary = pickle.load(handle)
-NameError: name 'pickle' is not defined

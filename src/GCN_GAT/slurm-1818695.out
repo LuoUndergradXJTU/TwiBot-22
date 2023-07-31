@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "train.py", line 20, in <module>
-    parser = argparse.ArgumentParser(description='GCN_GAN')
-NameError: name 'argparse' is not defined
