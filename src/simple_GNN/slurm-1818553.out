@@ -1,76 +1,0 @@
-/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/matplotlib/__init__.py:202: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
-  if LooseVersion(module.__version__) < minver:
-/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/setuptools/_distutils/version.py:346: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
-  other = LooseVersion(other)
-/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/matplotlib/__init__.py:202: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
-  if LooseVersion(module.__version__) < minver:
-/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/setuptools/_distutils/version.py:346: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
-  other = LooseVersion(other)
-/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/matplotlib/__init__.py:202: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
-  if LooseVersion(module.__version__) < minver:
-/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/setuptools/_distutils/version.py:346: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
-  other = LooseVersion(other)
-/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/matplotlib/__init__.py:202: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
-  if LooseVersion(module.__version__) < minver:
-/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/setuptools/_distutils/version.py:346: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
-  other = LooseVersion(other)
-/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/matplotlib/__init__.py:202: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
-  if LooseVersion(module.__version__) < minver:
-/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/setuptools/_distutils/version.py:346: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
-  other = LooseVersion(other)
-/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/matplotlib/backend_bases.py:60: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
-  if LooseVersion(PILLOW_VERSION) >= "3.4":
-/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/setuptools/_distutils/version.py:346: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
-  other = LooseVersion(other)
-  0%|          | 0/5301 [00:00<?, ?it/s]  1%|▏         | 71/5301 [00:00<00:07, 671.92it/s] 16%|█▋        | 873/5301 [00:00<00:00, 4893.72it/s] 31%|███▏      | 1666/5301 [00:00<00:00, 6259.59it/s] 47%|████▋     | 2474/5301 [00:00<00:00, 6971.09it/s] 62%|██████▏   | 3281/5301 [00:00<00:00, 7362.21it/s] 77%|███████▋  | 4091/5301 [00:00<00:00, 7611.66it/s] 92%|█████████▏| 4902/5301 [00:00<00:00, 7771.60it/s]100%|██████████| 5301/5301 [00:00<00:00, 7017.07it/s]
-  0%|          | 0/29 [00:00<?, ?it/s]  0%|          | 0/29 [00:00<?, ?it/s]
-Traceback (most recent call last):
-  File "train.py", line 256, in <module>
-    trainer.train()
-  File "train.py", line 154, in train
-    loss = self.loss_func(pred, data.y[:batch_size])
-  File "/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
-    return forward_call(*input, **kwargs)
-  File "/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/torch/nn/modules/loss.py", line 716, in forward
-    reduction=self.reduction)
-  File "/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/torch/nn/functional.py", line 2958, in binary_cross_entropy_with_logits
-    raise ValueError("Target size ({}) must be the same as input size ({})".format(target.size(), input.size()))
-ValueError: Target size (torch.Size([128])) must be the same as input size (torch.Size([128, 2]))
-/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/matplotlib/__init__.py:202: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
-  if LooseVersion(module.__version__) < minver:
-/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/setuptools/_distutils/version.py:346: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
-  other = LooseVersion(other)
-/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/matplotlib/__init__.py:202: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
-  if LooseVersion(module.__version__) < minver:
-/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/setuptools/_distutils/version.py:346: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
-  other = LooseVersion(other)
-/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/matplotlib/__init__.py:202: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
-  if LooseVersion(module.__version__) < minver:
-/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/setuptools/_distutils/version.py:346: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
-  other = LooseVersion(other)
-/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/matplotlib/__init__.py:202: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
-  if LooseVersion(module.__version__) < minver:
-/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/setuptools/_distutils/version.py:346: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
-  other = LooseVersion(other)
-/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/matplotlib/__init__.py:202: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
-  if LooseVersion(module.__version__) < minver:
-/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/setuptools/_distutils/version.py:346: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
-  other = LooseVersion(other)
-/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/matplotlib/backend_bases.py:60: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
-  if LooseVersion(PILLOW_VERSION) >= "3.4":
-/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/setuptools/_distutils/version.py:346: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
-  other = LooseVersion(other)
-  0%|          | 0/5301 [00:00<?, ?it/s]  1%|▏         | 71/5301 [00:00<00:07, 671.50it/s] 16%|█▋        | 870/5301 [00:00<00:00, 4874.94it/s] 32%|███▏      | 1671/5301 [00:00<00:00, 6284.94it/s] 46%|████▋     | 2462/5301 [00:00<00:00, 6920.53it/s] 62%|██████▏   | 3265/5301 [00:00<00:00, 7317.83it/s] 77%|███████▋  | 4069/5301 [00:00<00:00, 7561.77it/s] 92%|█████████▏| 4873/5301 [00:00<00:00, 7717.48it/s]100%|██████████| 5301/5301 [00:00<00:00, 6979.90it/s]
-  0%|          | 0/29 [00:00<?, ?it/s]  0%|          | 0/29 [00:00<?, ?it/s]
-Traceback (most recent call last):
-  File "train.py", line 256, in <module>
-    trainer.train()
-  File "train.py", line 154, in train
-    loss = self.loss_func(pred, data.y[:batch_size])
-  File "/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
-    return forward_call(*input, **kwargs)
-  File "/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/torch/nn/modules/loss.py", line 716, in forward
-    reduction=self.reduction)
-  File "/scratch/network/rr4001/projects/voon/envs/botbusters/lib/python3.7/site-packages/torch/nn/functional.py", line 2958, in binary_cross_entropy_with_logits
-    raise ValueError("Target size ({}) must be the same as input size ({})".format(target.size(), input.size()))
-ValueError: Target size (torch.Size([128])) must be the same as input size (torch.Size([128, 2]))

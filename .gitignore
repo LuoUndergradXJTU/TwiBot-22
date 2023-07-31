@@ -34,3 +34,5 @@ result*
 glove.*
 lightning_logs
 *.out
+*.slurm
+*.out

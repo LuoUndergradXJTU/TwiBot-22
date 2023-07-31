@@ -1,8 +1,0 @@
-  File "train.py", line 187
-    labels.append(data.y[:batch_size].cpu().numpy())                    print(batch_size)
-                                                                            ^
-SyntaxError: invalid syntax
-  File "train.py", line 187
-    labels.append(data.y[:batch_size].cpu().numpy())                    print(batch_size)
-                                                                            ^
-SyntaxError: invalid syntax

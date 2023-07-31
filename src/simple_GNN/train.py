@@ -10,7 +10,7 @@ CS7643 Instructions for Chaeyoung/Michael
 import warnings
 with warnings.catch_warnings():
     import torch
-    from model import GNN_classifier, GNN_classifier_1_layer, GNN_classifier_3_layer
+    from model import GNN_classifier, GNN_classifier_1_layer, GNN_classifier_3_layer, GNN_classifier_4_layer, GNN_classifier_5_layer, GNN_classifier_6_layer, GNN_classifier_7_layer, GNN_classifier_8_layer
     from preprocess import generate_hetero_graph_loader, generate_homo_graph_loader_only_user
     from tqdm import tqdm
     import numpy as np
@@ -78,10 +78,20 @@ class homo_Trainer:
         self.activation = activation
         if num_hidden_layers == 1:
             self.model = GNN_classifier_1_layer(input_dim, 2, hidden_dim, activation)
+        elif num_hidden_layers == 2:
+            self.model = GNN_classifier(input_dim, 2, hidden_dim, activation)
         elif num_hidden_layers == 3:
             self.model = GNN_classifier_3_layer(input_dim, 2, hidden_dim, activation)
-        else:
-            self.model = GNN_classifier(input_dim, 2, hidden_dim, activation)
+        elif num_hidden_layers == 4:
+            self.model = GNN_classifier_4_layer(input_dim, 2, hidden_dim, activation)
+        elif num_hidden_layers == 5:
+            self.model = GNN_classifier_5_layer(input_dim, 2, hidden_dim, activation)
+        elif num_hidden_layers == 6:
+            self.model = GNN_classifier_6_layer(input_dim, 2, hidden_dim, activation)
+        elif num_hidden_layers == 7:
+            self.model = GNN_classifier_7_layer(input_dim, 2, hidden_dim, activation)
+        elif num_hidden_layers == 8:
+            self.model = GNN_classifier_8_layer(input_dim, 2, hidden_dim, activation)
         self.train_loader, self.valid_loader, self.test_loader = generate_homo_graph_loader_only_user(num_layers, num_neighbors, batch_size, True, dataset, server_id)
         
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
