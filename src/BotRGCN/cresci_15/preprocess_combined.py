@@ -106,6 +106,12 @@ for each in user['public_metrics']:
     else:
         followers_count.append(0)
 
+tweet_count=[]
+for each in user['public_metrics']:
+    if each is not None and each['tweet_count'] is not None:
+        tweet_count.append(int(each['tweet_count']))
+    else:
+        tweet_count.append(0)
         
 screen_name_length=[]
 for each in user['username']:
@@ -142,11 +148,15 @@ following_count=pd.DataFrame(following_count)
 following_count=(following_count-following_count.mean())/following_count.std()
 following_count=torch.tensor(np.array(following_count),dtype=torch.float32)
 
+tweet_count=pd.DataFrame(tweet_count)
+tweet_count=(tweet_count-tweet_count.mean())/tweet_count.std()
+tweet_count=torch.tensor(np.array(tweet_count),dtype=torch.float32)
+
 statues=pd.DataFrame(statues)
 statues=(statues-statues.mean())/statues.std()
 statues=torch.tensor(np.array(statues),dtype=torch.float32)
 
-num_properties_tensor=torch.cat([followers_count,active_days,screen_name_length,following_count,statues],dim=1)
+num_properties_tensor=torch.cat([followers_count,active_days,screen_name_length,following_count,statues, tweet_count],dim=1)
 torch.save(num_properties_tensor,path+'num_properties_tensor.pt')
 
 #cat_properties
@@ -173,8 +183,19 @@ for each in user['profile_image_url']:
     else:
         default_profile_image.append(int(1))
 default_profile_image_tensor=torch.tensor(default_profile_image,dtype=torch.float)
+default_profile_image_tensor=default_profile_image_tensor.reshape([5301,1])
 
-cat_properties_tensor=default_profile_image_tensor.reshape([5301,1])
+location_one_hot = []
+for location in user['locations']:
+    one_hot_vector = [0] * len(unique_locations)
+    if location is not None:
+        location_index = location_to_index[location]
+        one_hot_vector[location_index] = 1
+    location_one_hot.append(one_hot_vector)
+location_tensor = torch.tensor(location_one_hot, dtype=torch.float32)
+
+cat_properties_tensor = torch.cat([default_profile_image_tensor, location_tensor], dim=1)
+    
 torch.save(cat_properties_tensor,path+'cat_properties_tensor.pt')
 
 #get each_user_tweets
@@ -226,10 +247,30 @@ tweet_text = [text for text in tweet.text]
 # each_user_tweets=torch.load('./processed_data/each_user_tweets.npy')
 # feature_extract=pipeline('feature-extraction',model='roberta-base',tokenizer='roberta-base',device=3,padding=True, truncation=True,max_length=50, add_special_tokens = True)
 
-from transformers import RobertaTokenizer, RobertaModel
-tokenizer = RobertaTokenizer.from_pretrained('roberta-base', local_files_only=True)
-model = RobertaModel.from_pretrained('roberta-base', local_files_only=True)
-feature_extract=pipeline('feature-extraction',model=model,tokenizer=tokenizer,device=0)
+# from transformers import RobertaTokenizer, RobertaModel
+# tokenizer = RobertaTokenizer.from_pretrained('roberta-base')
+# model = RobertaModel.from_pretrained('roberta-base')
+# feature_extract=pipeline('feature-extraction',model=model,tokenizer=tokenizer,device=0)
+
+# from transformers import BertTokenizer, BertModel
+# tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+# model = BertModel.from_pretrained('bert-base-uncased')
+# feature_extract=pipeline('feature-extraction',model=model,tokenizer=tokenizer)
+
+# from transformers import BartTokenizer, BartModel
+# tokenizer = BartTokenizer.from_pretrained('facebook/bart-base')
+# model = BartModel.from_pretrained('facebook/bart-base')
+# feature_extract=pipeline('feature-extraction',model=model,tokenizer=tokenizer)
+
+from transformers import AutoTokenizer, AutoModel
+tokenizer = AutoTokenizer.from_pretrained('intfloat/e5-base-v2')
+model = AutoModel.from_pretrained('intfloat/e5-base-v2')
+feature_extract=pipeline('feature-extraction',model=model,tokenizer=tokenizer)
+
+# from transformers import DebertaTokenizer, DebertaModel
+# tokenizer = DebertaTokenizer.from_pretrained('microsoft/deberta-base')
+# model = DebertaModel.from_pretrained('microsoft/deberta-base')
+# feature_extract=pipeline('feature-extraction',model=model,tokenizer=tokenizer)
 
 def Des_embbeding():
         print('Running feature1 embedding')
