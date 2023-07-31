@@ -171,6 +171,7 @@ def train(results):
     elif mode == 'GCN':
         model = BotGCN(hidden_dim=args.hidden_dim,
                        dropout=args.dropout,
+                       skip_connection=args.skip_connection,
                        num_prop_size=data.num_property_embedding.shape[-1],
                        cat_prop_size=data.cat_property_embedding.shape[-1]).to(device)
     elif mode == 'RGCN':
@@ -211,6 +212,8 @@ def train(results):
             
         model.load_state_dict(best_state_dict)
         _, test_results = validation(args.max_epoch, 'test', model, loss_fn, test_loader)
+        print("test results: ")
+        print(test_results)
 
         one_epoch_results = {'epoch': epoch,
                 'train_loss': train_loss,
@@ -269,6 +272,8 @@ def train(results):
     torch.save(best_state_dict, f'checkpoints/{config}_{timenow}.pt')
     for key, value in test_results.items():
         print(key, value)
+    print("best test_results: ")
+    print(test_results)
 
 if __name__ == '__main__':
 
