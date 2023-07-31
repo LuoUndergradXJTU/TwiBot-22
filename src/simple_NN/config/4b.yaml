@@ -1,0 +1,11 @@
+Train:
+  epochs: 200
+  model: twoLayerMLP
+  batch_size: 128
+  hidden_dim: 256
+  activation: relu
+  optimizer: adam
+  lr: 0.00001
+  weight_decay: 0.1
+  loss_func: cross_entropy
+  save_best: False

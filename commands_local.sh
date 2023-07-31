@@ -10,3 +10,6 @@ conda install --name botbusters packaging==21.3 -y
 conda install --name botbusters tqdm -y
 conda install --name botbusters -c conda-forge matplotlib -y
 conda install --name botbusters scikit-learn -y
+# conda install -p /scratch/network/rr4001/projects/voon/envs/botbusters/ python-louvain -y
+# conda install -p /scratch/network/rr4001/projects/voon/envs/botbusters/ leidenalg -y
+conda install --name botbusters python-louvain -y
