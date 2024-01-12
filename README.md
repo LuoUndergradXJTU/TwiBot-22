@@ -1,6 +1,6 @@
 # TwiBot-22
 
-This is the official repository of [TwiBot-22](https://twibot22.github.io/) @ NeurIPS 2022, Datasets and Benchmarks Track.
+This is the official repository of [TwiBot-22](https://twibot22.github.io/) @ NeurIPS 2022, Datasets and Benchmarks Track. This dataset is collected from the Twitter website before 2022.  
 
 ### Introduction
 
