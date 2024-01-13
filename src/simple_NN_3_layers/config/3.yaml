@@ -1,0 +1,10 @@
+Train:
+  epochs: 50
+  batch_size: 128
+  hidden_dim: 512
+  activation: relu
+  optimizer: adam
+  lr: 0.00001
+  weight_decay: 0.00001
+  loss_func: cross_entropy
+  save_best: False

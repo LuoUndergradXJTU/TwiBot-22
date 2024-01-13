@@ -1,8 +1,10 @@
-*.pt
-*.pth
+commands.sh
+src/BotRGCN/datasets/*
+src/BotRGCN/twibot-20/processed_data/*.pt
 tmp/*
 src/*/tmp/*
 src/tmp*
+*.slurm
 *.log
 *.log.*
 __pycache__/*
@@ -12,15 +14,15 @@ datasets/*
 *.npy
 *.npz
 *.ipynb
-*.csv
+# *.csv
 *.txt
 # *.md
 data/*
 test.py
 *.json
 events.*
-*.yaml
-*.ckpt
+# *.yaml
+# *.ckpt
 *.zip
 *.rar
 *.tar
@@ -32,3 +34,7 @@ result*
 *.word2vec
 glove.*
 lightning_logs
+*.out
+*.slurm
+**.slurm
+*.out

@@ -1,55 +1,55 @@
-gdown
-gensim
-h5py
-huggingface-hub
-ijson
-imbalanced-learn
-imblearn
-isort
-joblib
+# gdown
+# gensim
+# h5py
+# huggingface-hub
+# ijson
+# imbalanced-learn
+# imblearn
+# isort
+# joblib
 matplotlib
-matplotlib-inline
-multiprocess
-munch
-nest-asyncio
-networkx
-ninja
-nltk
-node2vec
-numpy
-numpydoc
-openpyxl
-opt-einsum
-pandas
-pytorch-lightning
-pytorch-pretrained-bert
-pytorch-transformers
-PyYAML
-rdflib
-sacred
-scikit-learn
-scipy
-seaborn
-snorkel
-spacy
-spacy-alignments
-spacy-legacy
-spacy-loggers
-spacy-transformers
-tensorboardX
-tokenizers
-torch==1.9.1
-torch-cluster
-torch-geometric
-torch-scatter
-torch-sparse
-torch-spline-conv
-torch-tb-profiler
-torchmetrics
-torchsummary
-tqdm
-traitlets
+# matplotlib-inline
+# multiprocess
+# munch
+# nest-asyncio
+# networkx
+# ninja
+# nltk
+# node2vec
+# numpy
+# numpydoc
+# openpyxl
+# opt-einsum
+# pandas
+# pytorch-lightning
+# pytorch-pretrained-bert
+# pytorch-transformers
+# PyYAML
+# rdflib
+# sacred
+# scikit-learn
+# scipy
+# seaborn
+# snorkel
+# spacy
+# spacy-alignments
+# spacy-legacy
+# spacy-loggers
+# spacy-transformers
+# tensorboardX
+# tokenizers
+# torch==1.9.1 
+# torch-cluster
+# torch-geometric
+# torch-scatter
+# torch-sparse
+# torch-spline-conv
+# torch-tb-profiler
+# torchmetrics
+# torchsummary
+# tqdm
+# traitlets
 transformers
-tweepy
-urllib3
-wandb
+# tweepy
+# urllib3
+# wandb
