@@ -1,0 +1,13 @@
+Train:
+  mode: GCN
+  hidden_dim: 128
+  max_epoch: 1000
+  batch_size: 128
+  no_up: 50
+  lr: 0.0001
+  optimizer: adam
+  loss_func: cross_entropy
+  weight_decay: 0.00001
+  dropout: 0.3
+  save_best: False
+  visible: True

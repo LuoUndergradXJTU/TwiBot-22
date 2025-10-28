@@ -5,18 +5,68 @@ from tqdm import tqdm
 from datetime import datetime as dt
 import json
 print('loading raw data')
-path='../datasets/Twibot-22/'
+path='../datasets/Twibot-22-sampled/'
 
-user=pd.read_json(path+'user.json')
-edge=pd.read_csv(path+'edge.csv')
+user=pd.read_json(path+'user.json', nrows=10, lines=True)
+print("done with loading users!")
+print(user.to_string())
+# Convert user['id'] to int
+
+# edge=pd.read_csv(path+'edge.csv')
+# Read edge in chunks. 
+# Find edges that correspond to these user, either source_id or target_id is in user['id']
+edges=pd.read_csv(path+'edge.csv', chunksize=10000000)
+print()
+# Create an empty pandas dataframe with the same columns as edges
+edges_list = []
+for idx, chunk in enumerate(edges):
+    if idx == 0:
+        edge=pd.DataFrame(columns=chunk.columns)
+    # 
+    chunk=chunk[chunk['source_id'].isin(user['id']) | chunk['target_id'].isin(user['id'])]
+    # Append chunk into the "edge" dataframe
+    edges_list.append(chunk)
+    print(idx)
+    # break
+edge = pd.concat(edges_list, ignore_index=True)
+
+print("Done with edges!")
+print(edge.to_string())
+
 user_idx=user['id']
 uid_index={uid:index for index,uid in enumerate(user_idx.values)}
 user_index_to_uid = list(user.id)
 uid_to_user_index = {x : i for i, x in enumerate(user_index_to_uid)}
 
 print('extracting labels and splits')
-split=pd.read_csv("../datasets/Twibot-22/split.csv")
-label=pd.read_csv("../datasets/Twibot-22/label.csv")
+split=pd.read_csv("../datasets/Twibot-22-sampled/split.csv")
+
+# splits=pd.read_csv("../datasets/Twibot-22/split.csv", chunksize=1000000)
+# Create a empty pandas dataframe with the same columns as splits
+# split_list = []
+# for idx, chunk in enumerate(splits):
+#     if idx == 0:
+#         edge=pd.DataFrame(columns=chunk.columns)
+#     chunk=chunk[chunk['id'].isin(user['id'])]
+#     # Append chunk into the "split" dataframe
+#     split_list.append(chunk)
+    
+# split = pd.concat(split_list, ignore_index=True)    
+print("Dont with splits!")
+# Get relevant splits only
+
+# print(split.to_string())
+label = pd.read_csv('../datasets/Twibot-22/label.csv')
+# labels=pd.read_csv("../datasets/Twibot-22/label.csv")
+# label_list = []
+# for chunk in labels:
+#     if idx == 0:
+#         edge=pd.DataFrame(columns=chunk.columns)
+#     chunk=chunk[chunk['id'].isin(user['id'])]
+#     # Append chunk into the "split" dataframe
+#     label_list.append(chunk)
+
+# label = pd.concat(label_list, ignore_index=True)
 uid_label={uid:label for uid, label in zip(label['id'].values,label['label'].values)}
 uid_split={uid:split for uid, split in zip(split['id'].values,split['split'].values)}
 label_new=[]
